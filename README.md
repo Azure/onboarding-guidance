@@ -1,3 +1,6 @@
+# Meet the team!
+The Azure Onboarding team is a customer success service which will provide customers with a rich, efficient and friction free onboarding experience to Azure– accelerating the customer velocity from sale to onboarding to use.  It is designed to assist new to Azure customers with foundational set up & configuration of Azure services and associated best practice guidance. All customer engagement will be delivered remotely.
+
 # Who are we?
 ## We are the Microsoft Azure Customer Experience (CXP) team!
 * Customer obsessed engineering team
