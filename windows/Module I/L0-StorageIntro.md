@@ -6,7 +6,11 @@ During this module, you will Learn about Azure Storage, and how to create applic
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* TBD
+* Create a storage account using PowerShell
+* Create a Resource Group
+* Verify creation of StorageAccount
+* List all of the blobs in all of your containers
+* Delete Storage Account
 
 # Prerequisite 
 * TBD
