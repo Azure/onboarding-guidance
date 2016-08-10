@@ -1,7 +1,28 @@
+# Module: Azure Storage
+
+# Abstract
+
+During this module, you will Learn about Azure Storage, and how to create applications using Azure blobs, tables, queues, and files.
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* TBD
+
+# Prerequisite 
+* TBD
+
+# Estimated time to complete this module:
+30 minutes
+
+# What is Azure Storage?
+Azure Storage is the cloud storage solution for modern applications that rely on durability, availability, and scalability to meet the needs of their customers.
+* What Azure Storage is, and how you can take advantage of it in your cloud, mobile, server, and desktop applications
+* What kinds of data you can store with the Azure Storage services: blob (object) data, NoSQL table data, queue messages, and file shares.
+* How access to your data in Azure Storage is managed
+* How your Azure Storage data is made durable via redundancy and replication
+* Where to go next to build your first Azure Storage application
 
 ## Azure Storage
-
-[Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)
 
 1. Types of Azure Storage
   * [Standard Storage](https://azure.microsoft.com/en-us/services/storage/)
@@ -33,3 +54,7 @@ Other Useful Links :-
 [Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 
 [Azure Storage Scalability and Performance Targets](https://azure.microsoft.com/en-us/documentation/articles/storage-scalability-targets/)
+
+# See the following resources to learn more
+[Microsoft Official Article] - [Click here for Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)
+
