@@ -1,32 +1,37 @@
-## Synopsis
+# Who are we?
+## We are the Microsoft Azure Customer Experience (CXP) team!
+* Customer obsessed engineering team
+* Focused on delivering positive customer outcomes and experiences
+* Proactively assisting customers
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+# What are we offering?
+## We have created a new program (currently in pilot) for Azure customers, to provide you with a rich, efficient and no-charge onboarding experience to Azure.
+* 100% Remote engagement
+* Work directly with Azure Engineers
+* Setup and configuration of Azure infrastructure (compute, storage, network)
+* Receive architecture concepts, best practices and design principles
 
-## Code Example
+# What are the benefits?
+## The benefits of the program is to provide customers with foundational guidance to get started on Azure in an effective manner.
+* No-charge
+* Direct engineering engagement to assess & assist with your Azure needs.
+* Build your confidence in using Azure from day one
+* Achieve a level of self-sufficiency with Azure
+* Raise your quality of initial deployment enabling you to efficiently architect, build, and maintain your applications in Azure
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+# Onboarding Services Overview
+## Setup & Configuration
+* Azure 101
+* Basic Setup: Tooling
+* Core Setup: Storage
+* Core Setup: Virtual Machine
+* Core Setup: Virtual Network
 
-## Motivation
+## Architectural Guidance
+* Scope and Discovery
+* Architecture Design Review
+* Architecture Mapping
+* Dependency Mapping
+* Best Practice Discussion
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
-
-## Installation
-
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
 

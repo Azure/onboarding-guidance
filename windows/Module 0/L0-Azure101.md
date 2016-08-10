@@ -1,28 +1,21 @@
-## Module Overview
+# Module: Azure 101 Presentation
 
-Abstract
+# Abstract
 
-During this lab, you will create an environment using a Microsoft Azure Resource Manager template for you to work on labs throughout the workshop. You will also use GIT source control to clone a repository to retrieve files for this workshop.
+This presentation provides an overview of Microsoff Azure. After this presentation you will understand the services Microsoft is providing as part of the Azure Cloud Platform. 
 
-The Azure Resource Manager is a convenient way of deploying multiple technologies to the cloud. You can customize the JSON to suit your deployment needs with your environment requirements. PowerShell can also be used to deploy an ARM template.
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Use an open and flexible cloud service platform
+* Extend your existing IT
+* Scale as you need, pay as you go
+* Protect your data
 
-Learning objectives
+# Prerequisite 
+None
 
-After completing the exercises in this lab, you will be able to:
-•	Create an environment including Azure virtual machines (VM).
-•	Connect via Remote Desktop to VM.
-•	Clone workshop files on your VM.
-•	Set up legacy TaskVision application.
-
-
-
-Prerequisite 
-Download Development Setup Artifacts to your local machine from 
-https://aka.ms/ma-app-mod-hol. 
-
-
-
-Estimated time to complete this lab: 30 minutes
+# Estimated time to complete this module:
+30 minutes
 
 # Azure 101
 
