@@ -11,7 +11,7 @@ After completing the exercises in this module, you will be able to:
 * Check if Azure PowerShell is installed correctly
 
 # Prerequisite 
-TBD
+TBD -TEst
 
 # Estimated time to complete this module:
 30 minutes
