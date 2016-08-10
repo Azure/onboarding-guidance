@@ -3,7 +3,7 @@
 
 ## Module 0 (Basic Setup)
 
-Lesson 0. [Place holder - Azure Walkthrough](https://github.com/abhishekanand/AzureLearning/blob/master/Module%200/L0-PalceHolder.md)
+Lesson 0. [Azure 101 Presentation](https://github.com/abhishekanand/AzureLearning/blob/master/Module%200/L0-PalceHolder.md)
 
 Lesson 1. [Azure PowerShell SetUp](https://github.com/abhishekanand/AzureLearning/blob/master/Module%200/L1-AzurePowershellSetup.md)
 

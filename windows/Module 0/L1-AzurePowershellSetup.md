@@ -2,8 +2,7 @@
 
 # Abstract
 
-During this module, you will be using PowerShell to connect to Azure and login to the Resource Manager
-can also be used to deploy an ARM template.
+During this module, you will be installing PowerShell on to your machine.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
