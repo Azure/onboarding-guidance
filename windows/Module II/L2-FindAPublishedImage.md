@@ -12,7 +12,7 @@ After completing the exercises in this module, you will be able to:
 * Select your desired image for deployment
 
 # Prerequisite 
-* [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
+* Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
 
 # Estimated time to complete this module:
 30 min

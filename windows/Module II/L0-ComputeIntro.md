@@ -11,7 +11,7 @@ After completing the exercises in this module, you will be able to:
 * About the A8, A9, A10, and A11 compute-intensive instances
 
 # Prerequisite 
-* Module on Storage
+* Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
 
 # Estimated time to complete this module:
 3-4 hours
