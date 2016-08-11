@@ -147,4 +147,4 @@ PurchasePlan     : null
 DataDiskImages   : []
 ```
 # See the following resources to learn more
-[Microsoft Official Article] - [Virtual Machines Marketplace](https://azure.microsoft.com/en-us/marketplace/virtual-machines/)
+* [Virtual Machines Marketplace](https://azure.microsoft.com/en-us/marketplace/virtual-machines/)

@@ -1,5 +1,5 @@
 
-# Module:- Create a new VM from a captured Image on Azure 
+# Module:- Capture a Windows VM as an Image on Azure 
 
 # Abstract
 
@@ -111,4 +111,4 @@ myvm1_os.vhd
 #>
 ```
 # See the following resources to learn more
-[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-capture-image/)
+* [How to create a VM image from an existing Azure VM](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-capture-image/)

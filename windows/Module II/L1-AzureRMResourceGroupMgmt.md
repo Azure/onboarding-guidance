@@ -140,4 +140,4 @@ Remove-AzureRmResourceGroup -Name FTResourceGroupTagged -verbose
 Get-AzureRmResourceGroup | Remove-AzureRmResourceGroup -Verbose
 ```
 # See the following resources to learn more
-[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)
+* [Resource Group Overview](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)

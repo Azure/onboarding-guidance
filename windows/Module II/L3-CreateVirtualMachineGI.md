@@ -7,10 +7,11 @@ During this module, you will learn to find available images on Azure and create 
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* Find available images on Azure
-* List All the Datacenters that a Subscription has access too
-* List all the Images offered under selected SKU
-* Select your desired image for deployment
+* List all locations that subscription has access too
+* Choose Desired Location
+* Setup Resource Group and Storage Account
+* Setup Networking
+* Setting up of OS Disk Name and Deploying the VM
 
 # Prerequisite 
 * [Module on Storage](https://#)
@@ -122,4 +123,4 @@ $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osdiskName -VhdUri $osDiskUri -CreateOp
 New-AzureRmVM -ResourceGroupName $rgName -Location $locName -VM $vm -Verbose -Debug
 ```
 # See the following resources to learn more
-[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-ps-create/)
+* [Create a Windows VM using Resource Manager and PowerShell](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-ps-create/)
