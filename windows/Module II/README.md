@@ -7,4 +7,4 @@
 * [Lesson 5. Capture a windows VM as an Image on Azure](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L5-CaptureWindowsVMImage.md)
 * [Lesson 6. Create a new VM from a captured Image on Azure](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L6-DeployCapturedVM.md)
 * [Lesson 7. Upload a Windows OS Image (Syspreped) / Windows OS VHD(Non Syspreped)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L7-UploadedVMfromOnpremise.md)
-* [Lesson 8. Create a new VM from an existing Disk/uploaded image & Vhd](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L8-DeployVMuploadedVHD.md)
+* [Lesson 8. Create a new VM from an existing Disk/uploaded image & VHD](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L8-DeployVMuploadedVHD.md)

@@ -1,4 +1,4 @@
-# Module: Azure Compute
+# Module: Compute Introduction
 
 # Abstract
 

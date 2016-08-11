@@ -1,4 +1,4 @@
-# Module: Create a Storage Account
+# Module:- Create a Storage Account
 
 # Abstract
 
@@ -19,9 +19,6 @@ After completing the exercises in this module, you will be able to:
 30 minutes
 
 ### Creating your first storage account using PowerShell
-[Visual Studio]
-[Microsoft Official Article] - [Click Here]()
-
 For this example  :
 * Region : West US
 * SkuName : Premium_LRS
@@ -93,7 +90,6 @@ Get-AzureRmContext
 Get-AzureRmStorageAccount | Get-AzureStorageContainer | Get-AzureStorageBlob
 ```
 
-
 #### Delete Storage Account
 ```PowerShell
 # Delete Storage Account
@@ -104,3 +100,6 @@ Note :
 
 1. Based on IOPs requirement and stability of the Virtual Machine its recommended to use Premium_LRS.(Standard IOPs)(Premium IOPs).
 2. In case you decide to use Standard storage, recommended sku is Standard_LRS.
+
+# See the following resources to learn more
+[Microsoft Official Article] - [Click here for Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)

@@ -59,7 +59,7 @@ Other Useful Links :-
 
 [Azure Storage Scalability and Performance Targets](https://azure.microsoft.com/en-us/documentation/articles/storage-scalability-targets/)
 
-### Core Setup - Azure Storage
+### # Module:- Core Setup - Azure Storage
 * [Lesson 1. Storage Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L1-StorageIntro.md)
 * [Lesson 2. Create a Storage Account](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L2-CreateStorageAccount.md)
 
