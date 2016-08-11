@@ -10,7 +10,7 @@ After completing the exercises in this module, you will be able to:
 * See some examples of how you can achieve this through REST API
 
 # Prerequisite 
-* Completion of [Module on Storage](https://#)
+* Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
 
 # Estimated time to complete this module:
 30 min

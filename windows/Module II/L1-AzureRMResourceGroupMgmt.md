@@ -11,7 +11,7 @@ After completing the exercises in this module, you will be able to:
 * Delete a resource group
 
 # Prerequisite 
-* [Module on Storage](https://#)
+* [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
 
 # Estimated time to complete this module:
 30 min

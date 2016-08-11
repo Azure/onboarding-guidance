@@ -12,7 +12,7 @@ After completing the exercises in this module, you will be able to:
 * Create a new IP Address
 
 # Prerequisite 
-* Completion of [Module on Storage](https://#)
+* Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
 * A virtual machine running Windows - There are many tools for creating virtual machines on-premises.
 For example, see [Install the Hyper-V Role and configure a virtual machine](https://technet.microsoft.com/library/hh846766.aspx).
 To know which Windows operating systems are supported by Azure, see [Microsoft server software support for Microsoft Azure virtual machines.](https://support.microsoft.com/en-us/kb/2721672)
