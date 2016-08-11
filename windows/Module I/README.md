@@ -1,5 +1,4 @@
 # Module I (Basic Setup)
 
-Lesson 0. [Storage Introduction](https://github.com/abhishekanand/AzureLearning/blob/master/Module%20I/L0-StorageIntro.md)
-
-Lesson 1. [Create a Storage Account](https://github.com/abhishekanand/AzureLearning/blob/master/Module%20I/L1-CreateStorageAccount.md)
+* [Lesson 1. Storage Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L1-StorageIntro.md)
+* [Lesson 2. Create a Storage Account](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L2-StorageAccountMetricsLogging.md)
