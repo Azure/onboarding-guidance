@@ -9,7 +9,7 @@
 
 ## Module 1 (Core Setup - Azure Storage )
 * [Lesson 1. Storage Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L1-StorageIntro.md)
-* [Lesson 2. Create a Storage Account](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L2-StorageAccountMetricsLogging.md)
+* [Lesson 2. Create a Storage Account](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L2-CreateStorageAccount.md)
 
 ## Module II (Core Setup - Virtual Machine)
 * [Lesson 1. Compute Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L1-ComputeIntro.md)

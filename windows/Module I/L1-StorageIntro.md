@@ -61,7 +61,7 @@ Other Useful Links :-
 
 ### Core Setup - Azure Storage
 * [Lesson 1. Storage Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L1-StorageIntro.md)
-* [Lesson 2. Create a Storage Account](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L2-StorageAccountMetricsLogging.md)
+* [Lesson 2. Create a Storage Account](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L2-CreateStorageAccount.md)
 
 # See the following resources to learn more
 [Microsoft Official Article] - [Click here for Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)
