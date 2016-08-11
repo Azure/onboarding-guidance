@@ -1,3 +1,25 @@
+# Module:- Find desired image on Azure Platform
+
+# Abstract
+
+During this module, you will learn to find available images on Azure and create a new virtual machine from it.
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Find available images on Azure
+* List All the Datacenters that a Subscription has access too
+* List all the Images offered under selected SKU
+* Select your desired image for deployment
+
+# Prerequisite 
+* [Module on Storage](https://#)
+
+# Estimated time to complete this module:
+30 min
+
+# What are Marketplace Virtual Machine Images?
+Virtual Machines Marketplace images are download certified pre-configured software images for your Linux or Windows Server VMs from Microsoft and industry-leading software providers.
+
 # Find available images on Azure
 
 To find published image on Azure. Customer needs to go through few steps
@@ -7,8 +29,6 @@ To find published image on Azure. Customer needs to go through few steps
 3. Each publisher has multiple offer - Choose right offer form selected publisher in the given region
 4. Each offer has multiple sku  - Choose right sku from correct offer from  selected publisher in the given region.
 5. Each sku has multiple version  - Each version correspond to one image.
-
-[Microsoft Official Article] - [Click Here]()
 
 #### List All the Datacenter that Subscription has access too.
 ```PowerShell
@@ -126,3 +146,5 @@ OSDiskImage      : {
 PurchasePlan     : null
 DataDiskImages   : []
 ```
+# See the following resources to learn more
+[Microsoft Official Article] - [Virtual Machines Marketplace](https://azure.microsoft.com/en-us/marketplace/virtual-machines/)

@@ -1,7 +1,28 @@
+# Module:- Create a new VM from a captured Image on Azure 
+
+# Abstract
+
+During this module, you will learn how to delpy a captured image to Azure.
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Deploy a new VM from the captured image
+* Get information regarding Storage Account
+* Get information regarding Virtual Network
+* Create a new IP Address
+
+# Prerequisite 
+* [Module on Storage](https://#)
+
+# Estimated time to complete this module:
+30 min
+
+# How do I create a VM image from an existing Azure VM
+Using Azure PowerShell create a generalized image of an existing Azure VM. You can then use the image to create another VM. This image includes the OS disk and the data disks that are attached to the virtual machine. The image doesn't include the virtual network resources, so you need to set up those resources when you create a VM using the image.
+
 # DeployCapturedVM
 ## Deploy a new VM from the captured image into exiting infrastructure 
 
-[Microsoft Official Article] - [Click Here]()
 # (Resource Group/ VNET/Subnet/Avilibity Set/Storage Account)
 Using Exiting VNET :
 
@@ -11,8 +32,6 @@ Find-AzureRmResource -ResourceGroupNameContains "myGroup"
 ```
 # DeployCapturedVM
 ### Deploy a new VM from the captured image into exiting infrastructure (Resource Group/ VNET/Subnet/AvailabilitySet/Storage Account)
-
-Original Article :[Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-capture-image/#deploy-a-new-vm-from-the-captured-image)
 
 #### ====================== Details of Existing Resource ============
 ```
@@ -92,3 +111,5 @@ $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osdiskName -VhdUri $osDiskUri -CreateOp
 New-AzureRmVM -ResourceGroupName $rgName -Location $locName -VM $vm -Verbose -Debug
 
 ```
+# See the following resources to learn more
+Original Article :[Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-capture-image/#deploy-a-new-vm-from-the-captured-image)

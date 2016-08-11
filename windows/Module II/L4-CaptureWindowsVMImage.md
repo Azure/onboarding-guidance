@@ -1,6 +1,26 @@
-# How to capture a Windows virtual machine in the Resource Manager deployment model
 
-[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-capture-image/)
+# Module:- Create a new VM from a captured Image on Azure 
+
+# Abstract
+
+During this module, you will learn how to Capture a windows VM as an Image on Azure.
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Prepare the VM for image capture
+* Capture the VM using PowerShell
+* Generalize a virtual machine
+
+# Prerequisite 
+* [Module on Storage](https://#)
+
+# Estimated time to complete this module:
+30 min
+
+# How do I create a VM image from an existing Azure VM
+Using Azure PowerShell create a generalized image of an existing Azure VM. You can then use the image to create another VM. This image includes the OS disk and the data disks that are attached to the virtual machine. The image doesn't include the virtual network resources, so you need to set up those resources when you create a VM using the image.
+
+# How to capture a Windows virtual machine in the Resource Manager deployment model
 
 ### Prepare the VM for image capture
 * Sign in to your Windows virtual machine. In the Azure portal, navigate through Browse > Virtual machines > Your Windows virtual machine > Connect.
@@ -90,3 +110,5 @@ myvm1.7e5505ce-57c5-4cbb-a881-258a60b5c2df.status
 myvm1_os.vhd
 #>
 ```
+# See the following resources to learn more
+[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-capture-image/)

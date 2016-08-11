@@ -1,14 +1,32 @@
+# Module:- Azure Resource Group Management
+
+# Abstract
+
+During this module, you will learn to create resource groups, create tags for resource groups, and delete resource groups.
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Create a new resource group
+* Create a resource group with tags
+* Delete a resource group
+
+# Prerequisite 
+* [Module on Storage](https://#)
+
+# Estimated time to complete this module:
+30 min
+
+# What are Resource Groups?
+The infrastructure for your application is typically made up of many components – maybe a virtual machine, storage account, and virtual network, or a web app, database, database server, and 3rd party services. You do not see these components as separate entities, instead you see them as related and interdependent parts of a single entity. You want to deploy, manage, and monitor them as a group. Azure Resource Manager enables you to work with the resources in your solution as a group. You can deploy, update or delete all of the resources for your solution in a single, coordinated operation.
+
 ### Azure Resource Manager overview
-
-[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)
-
 
 * Creation of Empty Azure Resource group
 * Creation of Empty Azure Resource group with tags
 * Cleaning Tags from Azure Resource group
 * Updating Tags for Azure Resource group
 
-There are some important factors to consider when defining your resource group:
+### Important factors to consider when defining your resource group:
 
 1. All of the resources in your group should share the same lifecycle. You will deploy, update and delete them together. If one resource, such as a database server, needs to exist on a different deployment cycle it should be in another resource group.
 2. Each resource can only exist in one resource group.
@@ -121,3 +139,5 @@ Remove-AzureRmResourceGroup -Name FTResourceGroupTagged -verbose
 ```PowerShell
 Get-AzureRmResourceGroup | Remove-AzureRmResourceGroup -Verbose
 ```
+# See the following resources to learn more
+[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)

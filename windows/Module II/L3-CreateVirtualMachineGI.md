@@ -1,7 +1,27 @@
 
-# Create a Windows VM using Resource Manager and PowerShell
+# Module:- Create a new VM from Gallery Image
 
-[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-ps-create/)
+# Abstract
+
+During this module, you will learn to find available images on Azure and create a new virtual machine from it.
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Find available images on Azure
+* List All the Datacenters that a Subscription has access too
+* List all the Images offered under selected SKU
+* Select your desired image for deployment
+
+# Prerequisite 
+* [Module on Storage](https://#)
+
+# Estimated time to complete this module:
+30 min
+
+# What are Marketplace Virtual Machine Images?
+Virtual Machines Marketplace images are download certified pre-configured software images for your Linux or Windows Server VMs from Microsoft and industry-leading software providers.
+
+# Create a Windows VM using Resource Manager and PowerShell
 
 ### Find Azure location that subscription has access too.
 ```PowerShell
@@ -101,3 +121,5 @@ $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osdiskName -VhdUri $osDiskUri -CreateOp
 ```PowerShell
 New-AzureRmVM -ResourceGroupName $rgName -Location $locName -VM $vm -Verbose -Debug
 ```
+# See the following resources to learn more
+[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-ps-create/)

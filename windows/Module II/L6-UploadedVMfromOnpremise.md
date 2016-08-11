@@ -1,12 +1,29 @@
-# Upload a Windows VM VHD (Lift and Shift) to Azure for Resource Manager deployments
+# Module:- Upload a Windows OS Image (Syspreped) / Windows OS VHD(Non Syspreped 
 
-[Microsoft Official Article] - [Click Here]()
+# Abstract
 
-Prerequisites:-
+During this module, you will learn how to upload a (Syspreped) image to Azure.
 
-*  A virtual machine running Windows - There are many tools for creating virtual machines on-premises.
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Deploy a new VM from the captured image
+* Get information regarding Storage Account
+* Get information regarding Virtual Network
+* Create a new IP Address
+
+# Prerequisite 
+* Completion of [Module on Storage](https://#)
+* A virtual machine running Windows - There are many tools for creating virtual machines on-premises.
 For example, see [Install the Hyper-V Role and configure a virtual machine](https://technet.microsoft.com/library/hh846766.aspx).
 To know which Windows operating systems are supported by Azure, see [Microsoft server software support for Microsoft Azure virtual machines.](https://support.microsoft.com/en-us/kb/2721672)
+
+# Estimated time to complete this module:
+30 min
+
+# How do I create a VM image from an existing Azure VM
+Using Azure PowerShell create a generalized image of an existing Azure VM. You can then use the image to create another VM. This image includes the OS disk and the data disks that are attached to the virtual machine. The image doesn't include the virtual network resources, so you need to set up those resources when you create a VM using the image.
+
+# Upload a Windows VM VHD (Lift and Shift) to Azure for Resource Manager deployments
 
 ## Make sure that the VM has the right file format
 
@@ -46,3 +63,6 @@ or
 Select-AzureRmSubscription -SubscriptionId "xxxx-xxxx-xxxx-xxxx"
 
 You can find the subscriptions that your Azure account has by using the command Get-AzureRmSubscription.
+
+# See the following resources to learn more
+Original Article :[Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-capture-image/#deploy-a-new-vm-from-the-captured-image)
