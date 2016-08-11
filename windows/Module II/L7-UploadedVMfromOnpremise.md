@@ -65,4 +65,4 @@ Select-AzureRmSubscription -SubscriptionId "xxxx-xxxx-xxxx-xxxx"
 You can find the subscriptions that your Azure account has by using the command Get-AzureRmSubscription.
 
 # See the following resources to learn more
-Original Article :[Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-capture-image/#deploy-a-new-vm-from-the-captured-image)
+* [How to create a VM image from an existing Azure VM](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-capture-image/#deploy-a-new-vm-from-the-captured-image)
