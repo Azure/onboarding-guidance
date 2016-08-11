@@ -1,4 +1,4 @@
-# Module: Connecting to Azure using Azure PowerShell
+# Module: Connect To Azure using PowerShell
 
 # Abstract
 

@@ -1,3 +1,22 @@
+# Module: Create a Storage Account
+
+# Abstract
+
+During this module, you will Learn about Azure Storage, and how to create applications using Azure blobs, tables, queues, and files.
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Create a storage account using PowerShell
+* Create a Resource Group
+* Verify creation of StorageAccount
+* List all of the blobs in all of your containers
+* Delete Storage Account
+
+# Prerequisite 
+* [Basic Setup Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L2-SetupIntro.md)
+
+# Estimated time to complete this module:
+30 minutes
 
 ### Creating your first storage account using PowerShell
 [Visual Studio]

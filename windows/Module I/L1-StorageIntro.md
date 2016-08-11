@@ -1,4 +1,4 @@
-# Module: Azure Storage
+# Module: Storage Introduction
 
 # Abstract
 
@@ -13,7 +13,7 @@ After completing the exercises in this module, you will be able to:
 * Delete Storage Account
 
 # Prerequisite 
-* TBD
+* [Basic Setup Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L2-SetupIntro.md)
 
 # Estimated time to complete this module:
 30 minutes
@@ -58,6 +58,10 @@ Other Useful Links :-
 [Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 
 [Azure Storage Scalability and Performance Targets](https://azure.microsoft.com/en-us/documentation/articles/storage-scalability-targets/)
+
+### Core Setup - Azure Storage
+* [Lesson 1. Storage Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L1-StorageIntro.md)
+* [Lesson 2. Create a Storage Account](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L2-StorageAccountMetricsLogging.md)
 
 # See the following resources to learn more
 [Microsoft Official Article] - [Click here for Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)
