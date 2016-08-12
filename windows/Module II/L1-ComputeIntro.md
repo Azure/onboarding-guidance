@@ -6,9 +6,12 @@ During this module, you will learn to provision, migrate, and manage your Window
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* Services by region
-* Sizes for virtual machines
-* About the A8, A9, A10, and A11 compute-intensive instances
+* Work with resource groups.
+* Work with images, search datacenter capabilities, and select desired images.
+* Setup Resource Groups, Storage Account, and Networking.
+* Prepare VM images for capture by generalizing.
+* Deploy a new VM from captured images.
+* Get information regarding Storage Accounts and Virtual Networks.
 
 # Prerequisite 
 * Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
@@ -20,7 +23,7 @@ After completing the exercises in this module, you will be able to:
 Virtual Machines gives you lots of control over the virtual machines your small or multi-tier applications are running on – as if the VMs were another rack in your datacenter. This learning path will help you understand how to create and manage VMs using the Azure portal, PowerShell, the Azure CLI, and Resource Manager templates.
 Azure Virtual Machines is one of several types of on-demand, scalable computing resources that Azure offers. Typically, you'll choose a virtual machine if you need more control over the computing environment than the other choices offer.
 
-# Why do I want to use Virtual Machines
+# Why do I want to use Virtual Machines?
 An Azure virtual machine gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs the virtual machine. However, you still need to maintain the virtual machine -- configuring, patching, and maintaining the software that runs on the virtual machine.
 
 # Azure Resource Manager
@@ -39,6 +42,7 @@ An Azure virtual machine gives you the flexibility of virtualization without hav
 * [Lesson 7. Upload a Windows OS Image (Syspreped) / Windows OS VHD(Non Syspreped)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L7-UploadedVMfromOnpremise.md)
 
 # See the following resources to learn more
+* [Compute documentation](https://azure.microsoft.com/en-us/documentation/services/virtual-machines/)
 * [SLA for Virtual Machines](https://azure.microsoft.com/en-us/support/legal/sla/virtual-machines/v1_2/)
 * [Azure Resource Manager overview](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)
-* [Click here for Compute documentation](https://azure.microsoft.com/en-us/documentation/services/virtual-machines/)
+

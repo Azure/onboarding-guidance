@@ -1,28 +1,47 @@
-# Module: Compute Introduction
+# Module: Networking Introduction
 
 # Abstract
 
-During this module, you will learn to provision, migrate, and manage your Windows virtual machines.
+During this module, you will learn how Microsoft Azure networking provides the infrastructure necessary to securely connect Virtual Machines (VMs) to one another, and be the bridge between the cloud and on-premises datacenter.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* Services by region
-* Sizes for virtual machines
-* About the A8, A9, A10, and A11 compute-intensive instances
+* Create a virtual network by using PowerShell.
+* Learn how to assign names and subnets to VNETs.
+* Create a Point to Site Connection (On-premise to Azure).
+* Create Site to site Connection (On-premises to Azure).
+* Connect two Virtual Network (Azure to Azure).
 
 # Prerequisite 
 * Completion of [Module on Compute](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L1-ComputeIntro.md)
 
 # Estimated time to complete this module:
-3-4 hours
+4-6 hours
 
 # What is a Virtual Network?
-Virtual Machines gives you lots of control over the virtual machines your small or multi-tier applications are running on – as if the VMs were another rack in your datacenter. This learning path will help you understand how to create and manage VMs using the Azure portal, PowerShell, the Azure CLI, and Resource Manager templates.
-Azure Virtual Machines is one of several types of on-demand, scalable computing resources that Azure offers. Typically, you'll choose a virtual machine if you need more control over the computing environment than the other choices offer.
+An Azure virtual network (VNet) is a representation of your own network in the cloud. It is a logical isolation of the Azure cloud dedicated to your subscription. You can fully control the IP address blocks, DNS settings, security policies, and route tables within this network. You can also further segment your VNet into subnets and launch Azure IaaS virtual machines (VMs) and/or Cloud services (PaaS role instances). Additionally, you can connect the virtual network to your on-premises network using one of the connectivity options available in Azure. In essence, you can expand your network to Azure, with complete control on IP address blocks with the benefit of enterprise scale Azure provides.
 
-# Why do I want to use Virtual Machines
-An Azure virtual machine gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs the virtual machine. However, you still need to maintain the virtual machine -- configuring, patching, and maintaining the software that runs on the virtual machine.
+# Why do I want to use a Virtual Network?
+**Isolation.** VNets are completely isolated from one another. That allows you to create disjoint networks for development, testing, and production that use the same CIDR address blocks.
+
+**Access to the public Internet.** All IaaS VMs and PaaS role instances in a VNet can access the public Internet by default. You can control access by using Network Security Groups (NSGs).
+
+**Access to VMs within the VNet.** PaaS role instances and IaaS VMs can be launched in the same virtual network and they can connect to each other using private IP addresses even if they are in different subnets without the need to configure a gateway or use public IP addresses.
+
+**Name resolution.** Azure provides internal name resolution for IaaS VMs and PaaS role instances deployed in your VNet. You can also deploy your own DNS servers and configure the VNet to use them.
+
+**Security.** Traffic entering and exiting the virtual machines and PaaS role instances in a VNet can be controlled using Network Security groups.
+
+**Connectivity.** VNets can be connected to each other, and even to your on-premises datacenter, by using a site-to-site VPN connection, or ExpressRoute connection.
+
+# Module III (Core Setup - Virtual Network)
+
+* [Lesson 1. Azure Networking Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20III/L1-NetworkIntro.md)
+* [Lesson 2. Create a Virtual Network](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20III/L2-CreateVirtualNetwork.md)
+* [Lesson 3. Create Point to site Connection (On-premises to Azure)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20III/L3-Point2Site.md)
+* [Lesson 4. Create Site to site Connection (On-premises to Azure)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20III/L4-Site2SiteAuzreonPremise.md)
+* [Lesson 5. Connect two Virtual Network (Azure to Azure)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20III/L5-Site2Site2Vnets.md)
 
 # See the following resources to learn more
-* [Virtual Network](https://azure.microsoft.com/en-us/documentation/services/virtual-network/)
+* [Virtual Network Overview](https://azure.microsoft.com/en-us/documentation/services/virtual-network/)
 * [SLA for VPN Gateway](https://azure.microsoft.com/en-us/support/legal/sla/vpn-gateway/v1_0/)

@@ -2,13 +2,12 @@
 
 # Abstract
 
-During this module, you will be using PowerShell to connect to Azure and login to the Resource Manager
-can also be used to deploy an ARM template.
+During this module, you will be using PowerShell to connect to Azure and login to your account. Once logged in, you can view all the subscriptions you have access too and select one to work with.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
 * Connect to Azure using Azure PowerShell
-* Login to Azure Resource Manager
+* Login to your Azure account
 * View all subscriptions and select default for current session 
 * See Registered Azure Resource Provider
 
@@ -65,4 +64,4 @@ C:\> Get-AzureRmResourceProvider -ListAvailable
 ```
 
 # See the following resources to learn more
-[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/)
+* [How to install and configure Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/)
