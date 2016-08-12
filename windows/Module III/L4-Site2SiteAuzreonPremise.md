@@ -1,6 +1,23 @@
+# Module:- Create Site to Site Connection (On-premise to Azure)
+
+# Abstract
+
+During this module, you will learn how Microsoft Azure networking provides the infrastructure necessary to securely connect Virtual Machines (VMs) to one another, and be the bridge between the cloud and on-premises datacenter.
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Create a Site to Site Connection (On-premise to Azure).
+
+# Prerequisite 
+* Completion of [Module on Compute](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L1-ComputeIntro.md)
+
+# Estimated time to complete this module:
+4-6 hours
+
+# What is a Virtual Network?
+An Azure virtual network (VNet) is a representation of your own network in the cloud. It is a logical isolation of the Azure cloud dedicated to your subscription. You can fully control the IP address blocks, DNS settings, security policies, and route tables within this network. You can also further segment your VNet into subnets and launch Azure IaaS virtual machines (VMs) and/or Cloud services (PaaS role instances). Additionally, you can connect the virtual network to your on-premises network using one of the connectivity options available in Azure. In essence, you can expand your network to Azure, with complete control on IP address blocks with the benefit of enterprise scale Azure provides.
 
 # Create a virtual network with a Site-to-Site VPN connection using PowerShell and Azure Resource Manager
-### [Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-create-site-to-site-rm-powershell/)
 
 #### Open Azure PowerShell and sign in to your Azure account.
 ```
@@ -114,3 +131,6 @@ New-AzureRmVirtualNetworkGatewayConnection -Name localtovon -ResourceGroupName $
 ```
 Get-AzureRmVirtualNetworkGatewayConnection -Name localtovon -ResourceGroupName $RG -Debug
 ```
+# See the following resources to learn more
+* [Configure a Site-to-Site connection to a virtual network using PowerShell](https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-create-site-to-site-rm-powershell/)
+
