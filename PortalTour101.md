@@ -1,17 +1,46 @@
-# Module - Azure Portal Overview
-# Background
-Have you heard the buzz about the new Microsoft Azure Management Portal? The Silverlight app-based portal of yesterday has been replaced with a slick HTML5 website with much better accessibility from iPads, iPhones, and Android-based devices and is great from the desktop, too. Gone are the days of being able to browse your Azure-hosted website on your mobile device but not be able to check on your Web Role's status.
+# Module:- Azure Portal Overview
 
-# Getting to the New Portal
-You access the new portal the same way you've always accessed it.
-Getting to the Azure Portal [Visit the Azure Portal](https://pages.github.com/).
+# Abstract
 
-# Home
-# All Resources
-# Browse
-# Favorites
-# New Resource Group
-# New Storage
-# New Virtual Machines
-# A Better Azure Portal
-The new Microsoft Azure Management Portal, offers a much more streamlined approach to managing your Azure services, from a much broader array of clients than the previous version of the portal. I recommend you check out the portal—the experience is truly many times better than the previous version.
+Have you heard the buzz about the Microsoft Azure Management Portal? The Portal a slick HTML5 website with accessibility from iPads, iPhones, and Android-based devices and is great from the desktop, too. Gone are the days of being able to browse your Azure-hosted website on your mobile device but not be able to check on your Web Role's status.
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Feel comfortable with the Azure portal and understand the basic navigation concepts.
+* Build, manage, and monitor everything from simple web apps to complex cloud applications in a single, unified console
+
+# Prerequisite 
+* None
+
+# Estimated time to complete this module:
+30 min
+
+# Getting to the Portal
+You access the portal the same way you've always accessed it.
+* [Visit the Azure Portal](https://portal.azure.com/)
+
+# Examples of Portal
+![Screenshot](AzurePortal-1.png)
+![Screenshot](AzurePortal-2.png)
+![Screenshot](AzurePortal-3.png)
+
+## Home
+
+## All Resources
+
+## Browse
+
+## Favorites
+
+## Marketplace
+
+## Resource Groups
+
+## Storages
+
+## Virtual Machines
+
+
+# See the following resources to learn more
+* [Getting to the Azure Portal](https://pages.github.com/)
+* [Video: Tips, Tricks, How Tos and the Azure Portal](https://www.youtube.com/watch?v=DASqJEs1NiQ)
