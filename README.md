@@ -23,14 +23,16 @@ Onboarding guidance will be applicable across multiple scenarios that leverage A
 ## Overview of Azure
 
 ### Set up & configuration guidance of Azure infrastructure
-* Guide your technical team to provision compute, storage and set up hybrid connectivity
+* Guide your technical team to provision compute, storage and set up hybrid connectivity.
 
 ### Architectural guidance
-* Understand the solution and review application architecture
-* Provide best practices that enables you to deploy highly resilient and scalable applications in Azure
+* Understand the solution and review application architecture.
+
+* Provide best practices that enables you to deploy highly resilient and scalable applications in Azure.
 
 ### Integration of Azure Active Directory
 * For Microsoft accounts, we will enable you to migrate to organization accounts.
+
 * We will provide guidance to set up management policies using RBAC (Role Based Access Control).
 
 ## Azure Portal Tour
