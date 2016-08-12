@@ -19,9 +19,6 @@ An Azure virtual network (VNet) is a representation of your own network in the c
 
 # Create Point to Site Connection (On-premise to Azure)
 
-### [Supported scenario in Point to Site connection :](https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-vpn-faq/#point-to-site-connections)
-
-
 #### Open Azure PowerShell and sign in to your Azure account.
 ```PowerShell
 Login-AzureRmAccount
@@ -172,3 +169,4 @@ PPP adapter TestVNet:
  ```
 # See the following resources to learn more
 * [Configure a Point-to-Site connection to a virtual network using PowerShell](https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-howto-point-to-site-rm-ps/)
+* [Supported scenario in Point to Site connection](https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-vpn-faq/#point-to-site-connections)

@@ -24,7 +24,7 @@ An Azure virtual network (VNet) is a representation of your own network in the c
 
 Login-AzureRmAccount
 
-#### Note: This command will open a pop-up window for you to enter your Azure credentials.
+#### :memo: Note: This command will open a pop-up window for you to enter your Azure credentials.
 
 #### If the subscription ID that is selected by default is different from the one that you want to work in, use either of the following commands to set the right subscription.
 
