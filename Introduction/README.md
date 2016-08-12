@@ -26,14 +26,14 @@
 
 ## Overview of Azure
 
-## Set up & configuration guidance of Azure services
+### Set up & configuration guidance of Azure services
 * Guide your technical team to provision compute, storage and set up hybrid connectivity
 
-## Architectural guidance
+### Architectural guidance
 * Understand the solution and review application architecture
 * Provide best practices that enables you to deploy highly resilient and scalable applications in Azure
 
-## Integration of Azure Active Directory
+### Integration of Azure Active Directory
 * For Microsoft accounts, we will enable you to migrate to organization accounts.
 * We will provide guidance to set up management policies using RBAC (Role Based Access Control).
 
