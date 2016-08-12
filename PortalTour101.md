@@ -20,7 +20,7 @@ You access the portal the same way you've always accessed it.
 * [Visit the Azure Portal](https://portal.azure.com/)
 
 # Example of Portal
-![Screenshot](../images/AzurePortal-3.png)
+![Screenshot](/images/AzurePortal-3.png)
 
 ## Home
 
