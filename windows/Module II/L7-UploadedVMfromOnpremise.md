@@ -18,7 +18,7 @@ For example, see [Install the Hyper-V Role and configure a virtual machine](http
 To know which Windows operating systems are supported by Azure, see [Microsoft server software support for Microsoft Azure virtual machines.](https://support.microsoft.com/en-us/kb/2721672)
 
 # Estimated time to complete this module:
-30 min
+Self-guided
 
 # How do I create a VM image from an existing Azure VM
 Using Azure PowerShell create a generalized image of an existing Azure VM. You can then use the image to create another VM. This image includes the OS disk and the data disks that are attached to the virtual machine. The image doesn't include the virtual network resources, so you need to set up those resources when you create a VM using the image.

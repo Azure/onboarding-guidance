@@ -15,7 +15,7 @@ After completing the exercises in this module, you will be able to:
 * Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
 
 # Estimated time to complete this module:
-30 min
+Self-guided
 
 # What are Marketplace Virtual Machine Images?
 Virtual Machines Marketplace images are download certified pre-configured software images for your Linux or Windows Server VMs from Microsoft and industry-leading software providers.

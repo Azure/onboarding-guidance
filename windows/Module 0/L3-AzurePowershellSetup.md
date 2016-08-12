@@ -11,10 +11,10 @@ After completing the exercises in this module, you will be able to:
 * Check if Azure PowerShell is installed correctly
 
 # Prerequisite 
-TBD -TEst
+None
 
 # Estimated time to complete this module:
-30 minutes
+Self-guided
 
 # What is PowerShell?
 PowerShell is a powerful scripting tool that can greatly expedite your admin tasks. PowerShell combines command-line speed, the flexibility of scripting, and the power of a GUI-based admin tool.
@@ -179,4 +179,4 @@ Manifest   1.1.1      AzureRM.Websites
 * To check latest Released PowerShell Command : [Click Here](https://github.com/Azure/azure-powershell/blob/dev/ChangeLog.md)
 
 # See the following resources to learn more
-[Microsoft Official Article] - [Click Here](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/)
+* [How to install and configure Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/)

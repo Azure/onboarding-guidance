@@ -15,7 +15,7 @@ After completing the exercises in this module, you will be able to:
 * Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
 
 # Estimated time to complete this module:
-30 min
+Self-guided
 
 # How do I create a VM image from an existing Azure VM
 Using Azure PowerShell create a generalized image of an existing Azure VM. You can then use the image to create another VM. This image includes the OS disk and the data disks that are attached to the virtual machine. The image doesn't include the virtual network resources, so you need to set up those resources when you create a VM using the image.

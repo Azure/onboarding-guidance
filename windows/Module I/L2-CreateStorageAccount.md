@@ -16,7 +16,7 @@ After completing the exercises in this module, you will be able to:
 * [Basic Setup Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L2-SetupIntro.md)
 
 # Estimated time to complete this module:
-30 minutes
+Self-guided
 
 ### Creating your first storage account using PowerShell
 For this example  :
@@ -102,4 +102,4 @@ Note :
 2. In case you decide to use Standard storage, recommended sku is Standard_LRS.
 
 # See the following resources to learn more
-[Microsoft Official Article] - [Click here for Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)
+* [Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)
