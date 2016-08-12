@@ -13,7 +13,7 @@ After completing the exercises in this module, you will be able to:
 * None
 
 # Estimated time to complete this module:
-30 min
+Self-guided
 
 # Getting to the Portal
 You access the portal the same way you've always accessed it.
