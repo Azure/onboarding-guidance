@@ -22,6 +22,9 @@ The Azure Onboarding team is a customer success service which will provide custo
 * Achieve a level of self-sufficiency with Azure
 * Raise your quality of initial deployment enabling you to efficiently architect, build, and maintain your applications in Azure
 
+# What is the Engagement Process?
+![Screenshot](EngagementProcess.png)
+
 # Onboarding Services Overview
 ## Setup & Configuration
 ### Basic Setup
