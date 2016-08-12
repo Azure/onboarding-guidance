@@ -16,7 +16,7 @@ The Azure Onboarding team is a team of Azure engineers dedicated to customers wi
 * For customers using Microsoft account we will enable you to migrate to organization account. This involves adding a domain to MS Azure Active Directory and Directory integration. We will also provide guidance to set up management policies using RBAC. 
 
 # What is the Engagement Process?
-![Screenshot](\images\EngagementProcess.png)
+![Screenshot](./images/EngagementProcess.png)
 
 # Onboarding Services Overview
 
