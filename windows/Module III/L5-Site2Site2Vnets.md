@@ -6,7 +6,7 @@ During this module, you will learn how Microsoft Azure networking provides the i
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* Create a Site to Site Connection (On-premise to Azure).
+* Create Site to Site VNet Connection (Azure to Azure).
 
 # Prerequisite 
 * Completion of [Module on Compute](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L1-ComputeIntro.md)
