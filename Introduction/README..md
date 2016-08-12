@@ -1,32 +1,28 @@
-# Who are we?
-## We are the Microsoft Azure Customer Experience (CXP) team!
-* Customer obsessed engineering team
-* Focused on delivering positive customer outcomes and experiences
-* Proactively assisting customers
+# Meet the team!
+The Azure Onboarding team is a team of Azure engineers dedicated to customers with a structured and efficient onboarding experience to Azure. It is designed to assist new to Azure customers with foundational set up & configuration of Azure services and associated best practice guidance. 
 
 # What are we offering?
-## We have created a new program (currently in pilot) for Azure customers, to provide you with a rich, efficient and no-charge onboarding experience to Azure.
-* 100% Remote engagement
-* Work directly with Azure Engineers
-* Setup and configuration of Azure infrastructure (compute, storage, network)
-* Receive architecture concepts, best practices and design principles
+### Onboarding guidance will be applicable across multiple scenarios that leverage Azure infrastructure services and includes the following: 
 
-# What are the benefits?
-## The benefits of the program is to provide customers with foundational guidance to get started on Azure in an effective manner.
-* No-charge
-* Direct engineering engagement to assess & assist with your Azure needs.
-* Build your confidence in using Azure from day one
-* Achieve a level of self-sufficiency with Azure
-* Raise your quality of initial deployment enabling you to efficiently architect, build, and maintain your applications in Azure
+### Overview of Azure 
+
+### Set up & configuration guidance of Azure services 
+* We will guide your technical team to provision compute, storage and to set up hybrid connectivity from on premises to Azure (point-to-site and site-to-site VPN).
+
+### Architectural guidance to run a highly resilient app in Azure IaaS 
+* We will work with your Architect to understand the solution and to review application architecture, dependencies and monitoring requirements. Based on the discussion we will provide best practices that enables you to deploy highly resilient and scalable applications in Azure.
+
+### Integration of Azure Active Directory 
+* For customers using Microsoft account we will enable you to migrate to organization account. This involves adding a domain to MS Azure Active Directory and Directory integration. We will also provide guidance to set up management policies using RBAC. 
 
 # What is the Engagement Process?
-![Screenshot](EngagementProcess.png)
+![Screenshot](\images\EngagementProcess.png)
 
 # Onboarding Services Overview
 
 ## Overview of Azure
 
-### Set up & configuration guidance of Azure services
+### Set up & configuration guidance of Azure infrastructure
 * Guide your technical team to provision compute, storage and set up hybrid connectivity
 
 ### Architectural guidance
@@ -44,8 +40,8 @@
 ### Basic Setup
 * [Lesson 1. Azure 101 Presentation](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L1-Azure101.md)
 * [Lesson 2. Basic Setup Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L2-SetupIntro.md)
-* [Lesson 3. Azure PowerShell Setup](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L3-AzurePowershellSetup.md)
-* [Lesson 4. Connect To Azure using PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L4-ConnectToAzure.md)
+* [Lesson 3. Azure to PowerShell Setup](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L3-AzurePowershellSetup.md)
+* [Lesson 4. Connect to Azure using PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L4-ConnectToAzure.md)
 
 ### Core Setup - Azure Storage
 * [Lesson 1. Storage Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L1-StorageIntro.md)
@@ -59,6 +55,7 @@
 * [Lesson 5. Capture a windows VM as an Image on Azure](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L5-CaptureWindowsVMImage.md)
 * [Lesson 6. Create a new VM from a captured Image on Azure](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L6-DeployCapturedVM.md)
 * [Lesson 7. Upload a Windows OS Image (Syspreped) / Windows OS VHD(Non Syspreped)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L7-UploadedVMfromOnpremise.md)
+* [Lesson 8. Create a new VM from an existing Disk/uploaded image & Vhd](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L8-DeployVMuploadedVHD.md)
 
 ### Core Setup - Virtual Network
 * [Lesson 1. Azure Networking Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20III/L1-NetworkIntro.md)
@@ -73,6 +70,3 @@
 * Architecture Mapping
 * Dependency Mapping
 * Best Practice Discussion
-
-
-

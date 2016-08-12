@@ -4,7 +4,7 @@
 * [Lesson 1. Azure 101 Presentation](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L1-Azure101.md)
 * [Lesson 2. Basic Setup Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L2-SetupIntro.md)
 * [Lesson 3. Azure PowerShell Setup](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L3-AzurePowershellSetup.md)
-* [Lesson 4. Connect To Azure using PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L4-ConnectToAzure.md)
+* [Lesson 4. Connect to Azure using PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L4-ConnectToAzure.md)
 
 ### Core Setup - Azure Storage
 * [Lesson 1. Storage Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L1-StorageIntro.md)

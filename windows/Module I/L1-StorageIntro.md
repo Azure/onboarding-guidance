@@ -2,13 +2,13 @@
 
 # Abstract
 
-During this module, you will Learn about Azure Storage, and how to create applications using Azure blobs, tables, queues, and files.
+During this module, you will learn about Azure Storage, and how to create applications using Azure blobs, tables, queues, and files.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
 * Create a storage account using PowerShell
 * Create a Resource Group
-* Verify creation of StorageAccount
+* Verify creation of Storage Account
 * List all of the blobs in all of your containers
 * Delete Storage Account
 
@@ -26,6 +26,16 @@ Azure Storage is the cloud storage solution for modern applications that rely on
 * How your Azure Storage data is made durable via redundancy and replication.
 * Where to go next to build your first Azure Storage application.
 
+# See the following resources to learn more
+* [Click here for Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)
+* [SLA for Storage](https://azure.microsoft.com/en-us/support/legal/sla/storage/v1_1/)
+* [Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+* [Azure Storage Scalability and Performance Targets](https://azure.microsoft.com/en-us/documentation/articles/storage-scalability-targets/)
+* [Azure Storage replication](https://azure.microsoft.com/en-us/documentation/articles/storage-redundancy/)
+* [Azure Storage Client Tools](https://azure.microsoft.com/en-us/documentation/articles/storage-explorers/)
+* [Moving data to and from Azure Storage](https://azure.microsoft.com/en-us/documentation/articles/storage-moving-data/)
+
+# Ask Anusha about the following
 ## Azure Storage
 
 ### Types of Azure Storage
@@ -44,17 +54,3 @@ Azure Storage is the cloud storage solution for modern applications that rely on
   * [Table Storage](https://azure.microsoft.com/en-us/services/storage/tables/) (Entities)
   * [Queue Storage](https://azure.microsoft.com/en-us/services/storage/queues/) (Messages)
   * Share (Directories/ [File storage](https://azure.microsoft.com/en-us/services/storage/files/))
-
-## Module:- Core Setup - Azure Storage
-* [Lesson 1. Storage Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L1-StorageIntro.md)
-* [Lesson 2. Create a Storage Account](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L2-CreateStorageAccount.md)
-
-# See the following resources to learn more
-* [Click here for Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)
-* [SLA for Storage](https://azure.microsoft.com/en-us/support/legal/sla/storage/v1_1/)
-* [Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
-* [Azure Storage Scalability and Performance Targets](https://azure.microsoft.com/en-us/documentation/articles/storage-scalability-targets/)
-* [Azure Storage replication](https://azure.microsoft.com/en-us/documentation/articles/storage-redundancy/)
-* [Azure Storage Client Tools](https://azure.microsoft.com/en-us/documentation/articles/storage-explorers/)
-* [Moving data to and from Azure Storage](https://azure.microsoft.com/en-us/documentation/articles/storage-moving-data/)
-

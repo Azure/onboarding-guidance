@@ -1,8 +1,8 @@
-# Module: Connect To Azure using PowerShell
+# Module: Connect to Azure using PowerShell
 
 # Abstract
 
-During this module, you will be using PowerShell to connect to Azure and login to your account. Once logged in, you can view all the subscriptions you have access too and select one to work with.
+During this module, you will be using PowerShell to connect to Azure and login to your subscription. Once logged in, you can view all the subscriptions you have access too and select one to work with.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
