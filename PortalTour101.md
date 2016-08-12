@@ -19,9 +19,7 @@ After completing the exercises in this module, you will be able to:
 You access the portal the same way you've always accessed it.
 * [Visit the Azure Portal](https://portal.azure.com/)
 
-# Examples of Portal
-![Screenshot](AzurePortal-1.png)
-![Screenshot](AzurePortal-2.png)
+# Example of Portal
 ![Screenshot](AzurePortal-3.png)
 
 ## Home

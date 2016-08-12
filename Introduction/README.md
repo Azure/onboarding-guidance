@@ -23,6 +23,9 @@
 ![Screenshot](EngagementProcess.png)
 
 # Onboarding Services Overview
+## Azure Portal Tour
+* [Getting started with the Azure Portal](https://github.com/Azure/onboarding-guidance/blob/master/PortalTour101.md)
+
 ## Setup & Configuration
 ### Basic Setup
 * [Lesson 1. Azure 101 Presentation](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L1-Azure101.md)

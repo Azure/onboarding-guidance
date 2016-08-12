@@ -37,6 +37,9 @@ The Azure Onboarding team is a customer success service which will provide custo
   * ### For Microsoft accounts, we will enable you to migrate to organization accounts.
   * ### We will provide guidance to set up management policies using RBAC (Role Based Access Control).
 
+## Azure Portal Tour
+* [Getting started with the Azure Portal](https://github.com/Azure/onboarding-guidance/blob/master/PortalTour101.md)
+
 ## Setup & Configuration
 ### Basic Setup
 * [Lesson 1. Azure 101 Presentation](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L1-Azure101.md)
