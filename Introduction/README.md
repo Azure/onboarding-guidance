@@ -2,7 +2,7 @@
 The Azure Onboarding team is a team of Azure engineers dedicated to customers with a structured and efficient onboarding experience to Azure. It is designed to assist new to Azure customers with foundational set up & configuration of Azure services and associated best practice guidance. 
 
 # What are we offering?
-### Onboarding guidance will be applicable across multiple scenarios that leverage Azure infrastructure services and includes the following: 
+Onboarding guidance will be applicable across multiple scenarios that leverage Azure infrastructure services and includes the following: 
 
 ### Overview of Azure 
 
