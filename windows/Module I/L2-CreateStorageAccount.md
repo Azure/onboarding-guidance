@@ -33,7 +33,8 @@ Login-AzureRmAccount
 ```PowerShell
 $rgName = "mygroup2"  # Resource Group Name
 $locName = "West US"  # Location
-$stName = "mystorageaccountft2" # storage Account Name
+$stName = "mystorageaccountft2" # storage Account Name - Should be unique across Azure Infrastructure
+#  https://mystorageaccountft2.blob.core.windows.net/
 ```
 
 #### Create a Resource Group in the desired region
@@ -90,6 +91,7 @@ Get-AzureRmContext
 Get-AzureRmStorageAccount | Get-AzureStorageContainer | Get-AzureStorageBlob
 ```
 
+
 #### Delete Storage Account
 ```PowerShell
 # Delete Storage Account
@@ -100,6 +102,7 @@ Note :
 
 1. Based on IOPs requirement and stability of the Virtual Machine its recommended to use Premium_LRS.(Standard IOPs)(Premium IOPs).
 2. In case you decide to use Standard storage, recommended sku is Standard_LRS.
+
 
 # See the following resources to learn more
 * [Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)
