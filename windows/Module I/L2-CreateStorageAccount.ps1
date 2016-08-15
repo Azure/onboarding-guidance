@@ -6,10 +6,9 @@ Login-AzureRmAccount
 
 # Variables needed to create storage account 
 
-$rgName = "mygroup2"  # Resource Group Name
+$rgName = "rgdemo"  # Resource Group Name
 $locName = "West US"  # Location
 $stName = "mystorageaccountft2" # storage Account Name
-
 
 
 #To create a new resource group, provide a name and location for your resource group.
@@ -43,6 +42,7 @@ New-AzureRmStorageAccount -ResourceGroupName $rgName -Name $stName -Location $lo
 # Standard_LRS (Standard Locally-redundant storage) 
 New-AzureRmStorageAccount -ResourceGroupName $rgName -Name $stName -Location $locName -SkuName "Standard_LRS" -Kind "Storage" -Verbose
 
+
 # Verify creation of StorageAccount
 Get-AzureRmStorageAccount -ResourceGroupName $rgName -Name $stName
 
@@ -58,4 +58,25 @@ Remove-AzureRmStorageAccount -ResourceGroupName $rgName -Name $stName -Verbose
 
 # Remove a resource group  
 Remove-AzureRmResourceGroup -Name $rgName -verbose
+
+
+<#
+# ============== Tag based Resource Creation in a ResourceGroup=============== 
+
+# Variables needed to create storage account 
+
+$rgName = "rgdemo"  # Resource Group Name
+$locName = "West US"  # Location
+$stName = "mystorageaccountft3" # storage Account Name
+
+#To create a new resource group, provide a name and location for your resource group.
+New-AzureRmResourceGroup -Name $rgName -Location $locName
+
+$tags = @{Department="IT";Environment="Test"}
+
+# Standard_LRS (Standard Locally-redundant storage) 
+New-AzureRmStorageAccount -ResourceGroupName $rgName -Name $stName -Location $locName -SkuName "Standard_LRS" -Kind "Storage" -Tags $tags
+
+#>
+
 
