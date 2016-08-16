@@ -53,7 +53,7 @@ ResourceId        : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resource
 This command creates a new empty resource group. This command  assigns tags to the resource group. The first tag, named "Empty," could be used to identify resource groups that have no resources.
 The second tag is named "Department" and has a value of "IT". You can use a tag like this one to categorize resource groups for administration or budgeting.
 ```PowerShell
-New-AzureRmResourceGroup -Location "West US" -Name FTResourceGroupTagged -Tag @{Name="Empty"}, @{Name="Department";Value="IT"} -Verbose -Debug
+New-AzureRmResourceGroup -Location "West US" -Name FTResourceGroupTagged -Tag @{Empty=$null; Department="Marketing"} -Verbose -Debug
 
 Output :
 
@@ -99,7 +99,7 @@ ResourceId        : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resource
 
 ##### Apply a tag to a resource group   
 ```PowerShell
-Set-AzureRmResourceGroup -Name FTResourceGroupTagged -Tag @{Name="Department";Value="IT"}
+Set-AzureRmResourceGroup -Name FTResourceGroupTagged -Tag @{Department="IT";Environment="Test"}
 
 output :
 ResourceGroupName : FTResourceGroupTagged
@@ -116,7 +116,7 @@ ResourceId        : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resource
 ##### Add tags to a resource group  
 ```PowerShell
 $tags = (Get-AzureRmResourceGroup -Name FTResourceGroupTagged).Tags
-$tags += @{Name="Status";Value="Approved"}
+$tags += @{Status="Approved"}
 Set-AzureRmResourceGroup -Name FTResourceGroupTagged -Tag $tags
 
 Output :
@@ -131,13 +131,40 @@ Tags              :
 
 ResourceId        : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/FTResourceGroupTagged
 ```
+
+```PowerShell
+# Add tags to a resource that has no existing tags by using the Set-AzureRmResource command
+
+Set-AzureRmResource -ResourceName $stName -ResourceGroupName $rgName -ResourceType "Microsoft.Storage/storageAccounts" -Tag $tags
+
+
+# Enter your subscription and Resource Name (This example is for storage resource)
+Set-AzureRmResource -ResourceId /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/rgdemo/providers/Microsoft.Storage/storageAccounts/mystorageaccountft2  -Tag $tags
+
+
+# ============
+
+# To get a list of all tags within a subscription using PowerShell
+Get-AzureRmTag 
+Get-AzureRmTag -Detailed
+
+
+# --------------------------  FindByTagName  --------------------------
+# Finds all resource group with a tag with name 'Department'.
+Find-AzureRmResourceGroup -Tag @{ Department = $null }
+
+#Finds all resource group with a tag with name 'Department' and value 'IT'.
+
+Find-AzureRmResourceGroup -Tag @{ Department ="IT" }
+```
+
 ##### Remove a resource group  
 ```PowerShell
 Remove-AzureRmResourceGroup -Name FTResourceGroupTagged -verbose
 ```
 ##### Caution : DON'T USE THIS - Remove all resource groups  
 ```PowerShell
-Get-AzureRmResourceGroup | Remove-AzureRmResourceGroup -Verbose
+# Get-AzureRmResourceGroup | Remove-AzureRmResourceGroup -Verbose
 ```
 # See the following resources to learn more
 * [Resource Group Overview](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)
