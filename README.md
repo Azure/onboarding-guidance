@@ -21,7 +21,7 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * [Lesson 4. Create a new VM from Gallery Image](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L4-CreateVirtualMachineGI.md)
 * [Lesson 5. Capture a windows VM as an Image on Azure](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L5-CaptureWindowsVMImage.md)
 * [Lesson 6. Create a new VM from a captured Image on Azure](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L6-DeployCapturedVM.md)
-* [Lesson 7.. Upload a Windows OS Image (Syspreped) / Windows OS VHD(Non Syspreped)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L7-UploadedVMfromOnpremise.md)
+* [Lesson 7. Upload a Windows OS Image (Syspreped) / Windows OS VHD(Non Syspreped)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L7-UploadedVMfromOnpremise.md)
 
 ### Core Setup - Virtual Network
 * [Lesson 1. Azure Networking Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20III/L1-NetworkIntro.md)
