@@ -33,7 +33,15 @@ To view your AzureRM SubscriptionName
 PS C:\> Get-AzureRmSubscription
 
 # To select a default subscription for your current session
-PS C:\> Get-AzureRmSubscription –SubscriptionName “your sub” | Select-AzureRmSubscription
+PS C:\> Get-AzureRmSubscription –SubscriptionName “your sub” | Select-AzureRmSubscription 
+```
+
+```PowerShell
+#### If the subscription ID that is selected by default is different from the one that you want to work in, use either of the following commands to set the right subscription.
+
+Set-AzureRmContext -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
+###### or
+Select-AzureRmSubscription -SubscriptionId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
 ```
 
 To see Location that can be  under your subscriptions
@@ -47,12 +55,14 @@ To check the AzureRM Subscription Context
 PS C:\> Get-AzureRmContext
 
 Environment           : AzureCloud
-Account               : abhanand@microsoft.com
-TenantId              : 72f988bf-86f1-41af-91ab-2d7cd011db47
-SubscriptionId        : 6b6a59a6-e367-4913-bea7-34b6862095bf
+Account               : user@user.com
+TenantId              : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx
+SubscriptionId        : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx
 SubscriptionName      : Microsoft Azure Internal Consumption
 CurrentStorageAccount :
 ```
+
+
 
 To check Available AzureRmResourceProvider
 ```PowerShell

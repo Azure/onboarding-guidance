@@ -29,6 +29,16 @@ Today, using PowerShell, it is possible to accomplish nearly everything from the
 -------------------
 
 First Time installation  
+WebPI installer : [Download](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids/)
+
+Command Line : PowerShell Gallery
+
+Note :  
+* The WebPI installer will install the Azure modules in %ProgramFiles(x86)%\Microsoft SDKs\Azure\PowerShell.  
+* PowerShell Gallery modules will normally install in %ProgramFiles%\WindowsPowerShell\Modules. 
+
+
+### Install Azure PowerShell from the PowerShell Gallery using an elevated ((Run as Administrator) Windows PowerShell or PowerShell Integrated Scripting Environment (ISE) prompt using the following commands:
 
 ```PowerShell
 # Check Basic Machine Info :-
@@ -65,12 +75,12 @@ To check is Azure PowerShell is already installed
 
 ### Installing Azure PowerShell from the PowerShell Gallery (ARM)
 
-Install Azure PowerShell from the PowerShell Gallery using an elevated Windows PowerShell or PowerShell Integrated Scripting Environment (ISE) prompt using the following commands:
+
 
 ```PowerShell
 # Install the Azure Resource Manager modules from the PowerShell Gallery
 
-PS C:\Windows\system32> Install-Module AzureRM
+PS C:\Windows\system32> Install-Module AzureRM -Verbose
 
 NuGet provider is required to continue
 PowerShellGet requires NuGet provider version '2.8.5.201' or newer to interact with NuGet-based repositories. The NuGet provider must be available in 'C:\Program
@@ -85,6 +95,7 @@ You are installing the modules from an untrusted repository. If you trust this r
 PS C:\Windows\system32>
 
 ```
+Note : If an error occurs during install, you can manually remove the Azure* folders in your %ProgramFiles%\WindowsPowerShell\Modules folder, and try the installation again.
 
 ### For Microsoft Windows Server 2012 R2 (You can skip this section if you are not using Windows Server )
 ```PowerShell
@@ -134,49 +145,54 @@ PS C:\Windows\system32> Get-Module -ListAvailable Azure*
     Directory: C:\Program Files\WindowsPowerShell\Modules
 
 
-ModuleType Version    Name
----------- -------    ----
-Manifest   1.1.3      Azure.Storage
-Script     1.5.0      AzureRM
-Manifest   1.1.1      AzureRM.ApiManagement
-Manifest   1.0.9      AzureRM.Automation
-Manifest   1.0.9      AzureRM.Backup
-Manifest   1.1.1      AzureRM.Batch
-Manifest   1.0.3      AzureRM.Cdn
-Manifest   1.3.1      AzureRM.Compute
-Manifest   1.0.9      AzureRM.DataFactories
-Manifest   1.1.1      AzureRM.DataLakeAnalytics
-Manifest   1.0.9      AzureRM.DataLakeStore
-Manifest   1.0.0      AzureRM.DevTestLabs
-Manifest   1.0.9      AzureRM.Dns
-Manifest   1.1.1      AzureRM.HDInsight
-Manifest   1.0.9      AzureRM.Insights
-Manifest   1.1.8      AzureRM.KeyVault
-Manifest   1.0.5      AzureRM.LogicApp
-Manifest   0.9.0      AzureRM.MachineLearning
-Manifest   1.0.10     AzureRM.Network
-Manifest   1.0.9      AzureRM.NotificationHubs
-Manifest   1.0.9      AzureRM.OperationalInsights
-Manifest   1.0.9      AzureRM.profile
-Manifest   1.1.1      AzureRM.RecoveryServices
-Manifest   1.0.1      AzureRM.RecoveryServices.Backup
-Manifest   1.1.7      AzureRM.RedisCache
-Manifest   2.0.0      AzureRM.Resources
-Manifest   1.0.0      AzureRM.ServerManagement
-Manifest   1.1.8      AzureRM.SiteRecovery
-Manifest   1.0.9      AzureRM.Sql
-Manifest   1.1.1      AzureRM.Storage
-Manifest   1.0.9      AzureRM.StreamAnalytics
-Manifest   1.0.9      AzureRM.Tags
-Manifest   1.0.9      AzureRM.TrafficManager
-Manifest   1.0.9      AzureRM.UsageAggregates
-Manifest   1.1.1      AzureRM.Websites
+ModuleType Version Name
+---------- ------- ----
+  Manifest 2.0.1   Azure.Storage
+    Script 2.0.1   AzureRM
+  Manifest 2.0.1   AzureRM.ApiManagement
+  Manifest 2.0.1   AzureRM.Automation
+  Manifest 2.0.1   AzureRM.Backup
+  Manifest 2.0.1   AzureRM.Batch
+  Manifest 2.0.1   AzureRM.Cdn
+  Manifest 0.2.1   AzureRM.CognitiveServices
+  Manifest 2.0.1   AzureRM.Compute
+  Manifest 2.0.1   AzureRM.DataFactories
+  Manifest 2.0.1   AzureRM.DataLakeAnalytics
+  Manifest 2.0.1   AzureRM.DataLakeStore
+  Manifest 2.0.1   AzureRM.DevTestLabs
+  Manifest 2.0.1   AzureRM.Dns
+  Manifest 2.0.1   AzureRM.HDInsight
+  Manifest 2.0.1   AzureRM.Insights
+  Manifest 2.0.1   AzureRM.KeyVault
+  Manifest 2.0.1   AzureRM.LogicApp
+  Manifest 0.9.4   AzureRM.MachineLearning
+  Manifest 0.1.1   AzureRM.Media
+  Manifest 2.0.1   AzureRM.Network
+  Manifest 2.0.1   AzureRM.NotificationHubs
+  Manifest 2.0.1   AzureRM.OperationalInsights
+  Manifest 2.0.1   AzureRM.PowerBIEmbedded
+  Manifest 2.0.1   AzureRM.profile
+  Manifest 2.0.1   AzureRM.RecoveryServices
+  Manifest 2.0.1   AzureRM.RecoveryServices.Backup
+  Manifest 2.0.1   AzureRM.RedisCache
+  Manifest 3.0.1   AzureRM.Resources
+  Manifest 0.9.1   AzureRM.Scheduler
+  Manifest 2.0.1   AzureRM.ServerManagement
+  Manifest 2.0.1   AzureRM.SiteRecovery
+  Manifest 2.0.1   AzureRM.Sql
+  Manifest 2.0.1   AzureRM.Storage
+  Manifest 2.0.1   AzureRM.StreamAnalytics
+  Manifest 2.0.1   AzureRM.Tags
+  Manifest 2.0.1   AzureRM.TrafficManager
+  Manifest 2.0.1   AzureRM.UsageAggregates
+  Manifest 2.0.1   AzureRM.Websites
 
 ```
 
 #### Tips
-* Installed AzureRM version is same as Azure PowerShell version.(In this case : 1.5.0)
+* Installed AzureRM version is same as Azure PowerShell version.(In this case : 2.0.1)
 * To check latest Released PowerShell Command : [Click Here](https://github.com/Azure/azure-powershell/blob/dev/ChangeLog.md)
+
 
 # See the following resources to learn more
 * [How to install and configure Azure PowerShell](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/)
