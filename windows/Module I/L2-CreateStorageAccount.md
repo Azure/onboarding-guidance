@@ -14,6 +14,8 @@ After completing the exercises in this module, you will be able to:
 
 # Prerequisite 
 * [Basic Setup Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L2-SetupIntro.md)
+* [Storage Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20I/L1-StorageIntro.md)
+* [Compute Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L1-ComputeIntro.md)
 
 # Estimated time to complete this module:
 Self-guided
