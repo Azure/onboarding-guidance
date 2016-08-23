@@ -31,5 +31,5 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * [Lesson 5. Connect two Virtual Network (Azure to Azure)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20III/L5-Site2Site2Vnets.md)
 
 ### POC Scenario
-* [Lesson 1. Deploying Website on Azure IaaS VMs](#)
+* [Lesson 1. Deploying Website on Azure IaaS VMs](https://github.com/Azure/onboarding-guidance/blob/master/windows/POC%20Scenario.md)
 
