@@ -8,7 +8,7 @@ During this module, you will learn about bringing together all the infrastructur
 After completing the exercises in this module, you will be able to:
 * Create a Resource Group
 * Create a Virtual Network
-* Create mulitple virtual machines
+* Create multiple virtual machines
 * Create and setup a load balancer
 * Create an availability set for VMs
 * Update Network Security Groups(NSG)
@@ -152,5 +152,5 @@ For VM2: <h1>This is Web Server 02</h1>
   * Visulize your Architecture with **ArmViz**
   * Open browser and goto **http://armviz.io** to view the template.
 
-   ![Screenshot](xyzArmVizDiagram.png)
+   ![Screenshot](ArmVizDiagram.png)
 
