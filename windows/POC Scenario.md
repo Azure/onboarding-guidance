@@ -41,10 +41,10 @@ Self-guided
   * Create a App Subnet named **namegoeshere**-app-snet
 
 # Virtual Machine Creation
-* ### Create 2 VMs
-* ### Select from the marketplace, **Windows Server 2012 R2 Datacenter**
-* ### Name the 1st VM **namegoeshere**-web01-vm
-* ### Name the 2nd VM **namegoeshere**-web02-vm
+  * ### Create 2 VMs
+  * ### Select from the marketplace, **Windows Server 2012 R2 Datacenter**
+  * ### Name the 1st VM **namegoeshere**-web01-vm
+  * ### Name the 2nd VM **namegoeshere**-web02-vm
   * Make sure to choose **HDD disk**
   * For the size select **F1S**
   * Create Storage account - **namegoeshere**web01vmst01
@@ -151,5 +151,5 @@ For VM2: <h1>This is Web Server 02</h1>
   * ### Visulize your Architecture with **ArmViz**
   * ### Open browser and goto **http://armviz.io** to view the template.
 
-   ![Screenshot](../images/ArmVizDiagram.png)
+   ![Screenshot](../../images/ArmVizDiagram.png)
 
