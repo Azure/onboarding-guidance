@@ -23,22 +23,22 @@ After completing the exercises in this module, you will be able to:
 Self-guided
 
 # Customize your Azure Portal
-* ### Launch [Azure Portal](http://www.azure.portal.com)
-* ### On left most panel, scroll to bottom, then click **More Services**
-*  Find and Pin, **Virtual Network**
-*  Find and Pin, **Availability Set**
-*  Find and Pin, **Load Balancer**
-*  Find and Pin, **Network Security Group**
+* Launch [Azure Portal](http://www.azure.portal.com)
+* On left most panel, scroll to bottom, then click **More Services**
+* Find and Pin, **Virtual Network**
+* Find and Pin, **Availability Set**
+* Find and Pin, **Load Balancer**
+* Find and Pin, **Network Security Group**
 
 # Resource Group creation
-> Note: For all **namegoeshere** references, use a globally unique name to be used throughout this walkthrough.
+  > Note: For all **namegoeshere** references, use a globally unique name to be used throughout this walkthrough.
 
-* ### Create Resource Group - **namegoeshere**-poc-rg
+  * ### Create Resource Group - **namegoeshere**-poc-rg
 
 # Virtual Network Creation
-* ### Create a VNET named **namegoeshere**-vnet-usw1
-* ### Create a Web Subnet named **namegoeshere**-web-snet
-* ### Create a App Subnet named **namegoeshere**-app-snet
+  * ### Create a VNET named **namegoeshere**-vnet-usw1
+  * ### Create a Web Subnet named **namegoeshere**-web-snet
+  * ### Create a App Subnet named **namegoeshere**-app-snet
 
 # Virtual Machine Creation
 * ### Create 2 VMs
