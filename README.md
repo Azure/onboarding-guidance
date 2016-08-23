@@ -30,3 +30,6 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * [Lesson 4. Create Site to site Connection (On-premises to Azure)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20III/L4-Site2SiteAuzreonPremise.md)
 * [Lesson 5. Connect two Virtual Network (Azure to Azure)](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20III/L5-Site2Site2Vnets.md)
 
+### POC Scenario
+* [Lesson 1. Deploying Website on Azure IaaS VMs](#)
+
