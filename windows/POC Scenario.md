@@ -100,13 +100,13 @@ For VM2: <h1>This is Web Server 02</h1>
 
 # Update the NSG (inbound security rule)
 ## Virtual machine #1
-  * From the left panel on the Azure Portal, select **Virtual machines*, then select **namegoeshere**-web01-vm.
+  * From the left panel on the Azure Portal, select **Virtual machines**, then select **namegoeshere**-web01-vm.
   * Under **Settings** select **Network Interfaces** 
   * Click on **namegoeshere**-web01-vm-nsg.
   * Under **Settings** select **Network Security Groups**.
   * Click on **namegoeshere**-web01-vm-nsg.
   * Under **Settings**, click on **Inbound Security Rules**.
-  * Click **Add**, Enter name ****namegoeshere**-web01-vm-nsgr-http-allow
+  * Click **Add**, Enter name **namegoeshere**-web01-vm-nsgr-http-allow
     *  Priority:**1010**
     *  Source: **any**
     *  Service: **HTTP**
