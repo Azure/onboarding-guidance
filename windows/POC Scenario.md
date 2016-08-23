@@ -50,7 +50,7 @@ Self-guided
   * Create Storage account - **namegoeshere**web01vmst01
   * Create Storage account - **namegoeshere**web02vmst01
   * Create availability set - **namegoeshere**-as-web
-    >Note: During 2nd VM creation pick the previously created Availability set
+  > Note: During 2nd VM creation pick the previously created Availability set
   * Create Diagnostics Storage account named **namegoeshere**webdiag
 
 # Install IIs on VMs
