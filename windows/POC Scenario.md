@@ -33,12 +33,12 @@ Self-guided
 # Resource Group creation
   > Note: For all **namegoeshere** references, use a globally unique name to be used throughout this walkthrough.
 
-  * ### Create Resource Group - **namegoeshere**-poc-rg
+  * Create Resource Group - **namegoeshere**-poc-rg
 
 # Virtual Network Creation
-  * ### Create a VNET named **namegoeshere**-vnet-usw1
-  * ### Create a Web Subnet named **namegoeshere**-web-snet
-  * ### Create a App Subnet named **namegoeshere**-app-snet
+  * Create a VNET named **namegoeshere**-vnet-usw1
+  * Create a Web Subnet named **namegoeshere**-web-snet
+  * Create a App Subnet named **namegoeshere**-app-snet
 
 # Virtual Machine Creation
 * ### Create 2 VMs
