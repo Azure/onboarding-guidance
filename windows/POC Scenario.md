@@ -41,10 +41,10 @@ Self-guided
   * Create a App Subnet named **namegoeshere**-app-snet
 
 # Virtual Machine Creation
-  * ### Create 2 VMs
-  * ### Select from the marketplace, **Windows Server 2012 R2 Datacenter**
-  * ### Name the 1st VM **namegoeshere**-web01-vm
-  * ### Name the 2nd VM **namegoeshere**-web02-vm
+  * Create 2 VMs
+  * Select from the marketplace, **Windows Server 2012 R2 Datacenter**
+  * Name the 1st VM **namegoeshere**-web01-vm
+  * Name the 2nd VM **namegoeshere**-web02-vm
   * Make sure to choose **HDD disk**
   * For the size select **F1S**
   * Create Storage account - **namegoeshere**web01vmst01
@@ -54,13 +54,13 @@ Self-guided
   * Create Diagnostics Storage account named **namegoeshere**webdiag
 
 # Install IIs on VMs
-  * ### From Virtual Machine blade, select 1st VM, click **Connect** and login to machine
-  * ### From the **Server Manager Dashboard**, select **Add Roles and Features**
-    * ### Click **Next** on **Before you Begin**
-    * ### Click **Next** on **Installation Type**
-    * ### Click **Next** on **Server Selection**
-    * ### On **Server Roles**, select **IIS**, click **Next**
-    * ### Click **Next** and accept all the defaults to finish Installation
+  * #### From Virtual Machine blade, select 1st VM, click **Connect** and login to machine
+  * #### From the **Server Manager Dashboard**, select **Add Roles and Features**
+  * #### Click **Next** on **Before you Begin**
+  * #### Click **Next** on **Installation Type**
+  * #### Click **Next** on **Server Selection**
+  * #### On **Server Roles**, select **IIS**, click **Next**
+  * #### Click **Next** and accept all the defaults to finish Installation
   * ### From the **Start** menu, type **IIS**, and Launch
   * ### In the **Connections** panel, **Right-Click** on **Default Web Site**, and select **Switch to Content View**
   * ### **Right-Click** anywhere in panel and selct **Explore**
