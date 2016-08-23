@@ -99,7 +99,7 @@ For VM2: <h1>This is Web Server 02</h1>
     *  Idle timeout (min):**4**
 
 # Update the NSG (inbound security rule)
-  ## Virtual machine #1
+## Virtual machine #1
   * From the left panel on the Azure Portal, select **Virtual machines*, then select **namegoeshere**-web01-vm.
   * Under **Settings** select **Network Interfaces** 
   * Click on **namegoeshere**-web01-vm-nsg.
@@ -113,14 +113,15 @@ For VM2: <h1>This is Web Server 02</h1>
     *  Protocol: **TCP**
     *  Port range: **80**
     *  Action: **Allow**
-  ## Virtual machine #2
+
+## Virtual machine #2
   * From the left panel on the Azure Portal, select **Virtual machines*, then select **namegoeshere**-web02-vm.
   * Under **Settings** select **Network Interfaces** 
   * Click on **namegoeshere**-web02-vm-nsg.
   * Under **Settings** select **Network Security Groups**.
   * Click on **namegoeshere**-web02-vm-nsg.
   * Under **Settings**, click on **Inbound Security Rules**.
-  * Click **Add**, Enter name ****namegoeshere**-web02-vm-nsgr-http-allow
+  * Click **Add**, Enter name **namegoeshere**-web02-vm-nsgr-http-allow
     *  Priority:**1010**
     *  Source: **any**
     *  Service: **HTTP**
@@ -151,5 +152,5 @@ For VM2: <h1>This is Web Server 02</h1>
   * Visulize your Architecture with **ArmViz**
   * Open browser and goto **http://armviz.io** to view the template.
 
-   ![Screenshot](../../images/ArmVizDiagram.png)
+   ![Screenshot](/images/ArmVizDiagram.png)
 
