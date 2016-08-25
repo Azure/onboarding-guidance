@@ -31,9 +31,9 @@ Self-guided
 * Find and Pin, **Network Security Group**
 
 # Resource Group creation
-  > Note: For all **namegoeshere** references, use a globally unique name to be used throughout this walkthrough.
+  > Note: For all **<namegoeshere>** references, use a globally unique name to be used throughout this walkthrough.
 
-  * Create Resource Group - **namegoeshere**-poc-rg
+  * Create Resource Group - **< namegoeshere >**-poc-rg
 
 # Virtual Network Creation
   * Create a VNET named **namegoeshere**-vnet-usw1
