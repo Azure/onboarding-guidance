@@ -1,9 +1,3 @@
-# Meet the team!
-We are a team of dedicated engineers providing customers structured guidance to get started with Azure. We help setup and configure Azure infrastructure as well as provide architecture concepts, best practices and design principles for deploying applications on Azure.
-
-# Set up & configuration  of Azure infrastructure
-The below onboarding guidance will be applicable across multiple scenarios that leverage Azure infrastructure services. It helps you to provision compute, storage and set up hybrid connectivity. 
-
 # Table of Contents
 
 ## Azure 101
@@ -47,6 +41,3 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * Lesson 6. Create Site to site Connection (On-premises to Azure) ( [Portal](#) | [PowerShell](#) | [XPlatCLI ](#) | [ARM](#) )
 * Lesson 7. Connect two Virtual Network (Azure to Azure) ( [Portal](#) | [PowerShell](#) | [XPlatCLI ](#) | [ARM](#) )
 >Supporting Resources
-
-## Proof of Concept
-* Deploying Website on Azure IaaS VMs ( [Portal](#) | [PowerShell](#) | [XPlatCLI ](#) | [ARM](#) )

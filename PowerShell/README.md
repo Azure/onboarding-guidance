@@ -1,10 +1,4 @@
-# Meet the team!
-We are a team of dedicated engineers providing customers structured guidance to get started with Azure. We help setup and configure Azure infrastructure as well as provide architecture concepts, best practices and design principles for deploying applications on Azure.
-
-# Set up & configuration  of Azure infrastructure
-The below onboarding guidance will be applicable across multiple scenarios that leverage Azure infrastructure services. It helps you to provision compute, storage and set up hybrid connectivity. 
-
-# Table of Contents
+# Table of Contents: PowerShell
 
 ## Azure 101
 * Onboarding Team Introduction ([ Introduction](#) )
