@@ -14,12 +14,12 @@ Get-AzureRmLocation | sort Location | Select Location
 $locName = "centralus"
 
 ### Setup ResourceGroup
-$rgName = "mygroup2"
+$rgName = "mygroup3"
 
 New-AzureRmResourceGroup -Name $rgName -Location $locName
 
 ### Setup Storage Account
-$stName = "mystorageaccountft1"
+$stName = "mystorageaccountft3"
 
 ### To Check Availibilty of Storage Account Name
 Get-AzureRmStorageAccountNameAvailability $stName 
