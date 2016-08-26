@@ -1,4 +1,4 @@
-# Storage: Lesson 1. Storage Introduction
+# Storage Introduction
 
 # Abstract
 

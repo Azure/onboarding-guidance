@@ -7,9 +7,9 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 # Table of Contents
 
 ## Azure 101
-* Onboarding Team Introduction ([ Introduction](#) )
-* Azure 101 ( [Azure Overview](#) )
-* Azure Portal 101 ( [Azure Portal Walkthrough](#) )
+* Onboarding Team Introduction ([ Introduction] )
+* Azure 101 ( [Azure Overview](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Azure101.md) )
+* Azure Portal 101 ( [Azure Portal Walkthrough](https://github.com/Azure/onboarding-guidance/blob/master/Portal/PortalTour101.md) )
 >Supporting Resources
 
 ## Tools Setup

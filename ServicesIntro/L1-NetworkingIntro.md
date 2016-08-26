@@ -1,4 +1,4 @@
-# Module:- Networking Introduction
+# Networking Introduction
 
 # Abstract
 

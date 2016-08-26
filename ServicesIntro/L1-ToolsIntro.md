@@ -1,4 +1,4 @@
-# Setup: Lesson 1. Tools Introduction
+# Tools Introduction
 
 # Abstract
 

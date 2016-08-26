@@ -1,4 +1,4 @@
-# Compute: Lesson 1. Compute Introduction
+# Compute Introduction
 
 # Abstract
 
