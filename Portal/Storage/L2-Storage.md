@@ -35,5 +35,5 @@ Self-guided
 ![Screenshot](images/Storage-L2-3.png)
 
 # See the following resources to learn more
->[**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Storage.md)
+:memo: [**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Storage.md)
 
