@@ -18,7 +18,7 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * Lesson 2. Azure Tools Setup ( [Portal] | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Setup/L2-AzurePowershellSetup.md) | [XPlatCLI ](#) | [ARM](#) )
 * Lesson 3. Connecting To Azure ( [Portal] | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Setup/L3-ConnectToAzure.md) | [XPlatCLI ](#) | [ARM](#) )
 
->[**Supporting Resources**](#)
+>[**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-ToolsSetup.md)
 
 ## Storage
 * Lesson 1. Storage Introduction ([ Introduction](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-StorageIntro.md) )
@@ -29,13 +29,13 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 
 ##  Compute
 * Lesson 1. Compute Introduction ([ Introduction](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-ComputeIntro.md) )
-* Lesson 2. Find desired image on Azure Marketplace ( [Portal](#) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L2-FindAPublishedImage.md) | [XPlatCLI ](#) | [ARM](#) )
-* Lesson 3. Create a new VM from Azure Marketplace image ( [Portal](#) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L3-CreateVirtualMachineGI.md) | [XPlatCLI ](#) | [ARM](#) )
-* Lesson 4. Place VM in an Availability Set ( [Portal](#) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L4-VMsInAvailability%20Set.md) | [XPlatCLI ](#) | [ARM](#) )
-* Lesson 5. Data disk management ( [Portal](#) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L5-DataDiskMgmt.md) | [XPlatCLI ](#) | [ARM](#) )
-* Lesson 6. Capture a windows VM as an Image on Azure ( [Portal](#) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L6-CaptureWindowsVMImage.md) | [XPlatCLI ](#) | [ARM](#) )
-* Lesson 7. Create a new VM from a captured Image on Azure ( [Portal](#) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L7-DeployCapturedVM.md) | [XPlatCLI ](#) | [ARM](#) )
-* Lesson 8. Upload a Windows OS Image (Syspreped) / Windows OS VHD(Non Syspreped) ( [Portal](#) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L8-UploadedVMfromOnpremise.md) | [XPlatCLI ](#) | [ARM](#) )
+* Lesson 2. Find desired image on Azure Marketplace ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Compute/L2-Compute.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L2-FindAPublishedImage.md) | [XPlatCLI ](#) | [ARM](#) )
+* Lesson 3. Create a new VM from Azure Marketplace image ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Compute/L3-Compute.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L3-CreateVirtualMachineGI.md) | [XPlatCLI ](#) | [ARM](#) )
+* Lesson 4. Place VM in an Availability Set ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Compute/L4-Compute.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L4-VMsInAvailability%20Set.md) | [XPlatCLI ](#) | [ARM](#) )
+* Lesson 5. Data disk management ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Compute/L5-Compute.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L5-DataDiskMgmt.md) | [XPlatCLI ](#) | [ARM](#) )
+* Lesson 6. Capture a windows VM as an Image on Azure ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Compute/L6-Compute.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L6-CaptureWindowsVMImage.md) | [XPlatCLI ](#) | [ARM](#) )
+* Lesson 7. Create a new VM from a captured Image on Azure ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Compute/L7-Compute.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L7-DeployCapturedVM.md) | [XPlatCLI ](#) | [ARM](#) )
+* Lesson 8. Upload a Windows OS Image (Syspreped) / Windows OS VHD(Non Syspreped) ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Compute/L8-Compute.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L8-UploadedVMfromOnpremise.md) | [XPlatCLI ](#) | [ARM](#) )
 
 >[**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Compute.md)
 
