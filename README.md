@@ -18,14 +18,14 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * Lesson 2. Azure Tools Setup ( [Portal] | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Setup/L2-AzurePowershellSetup.md) | [XPlatCLI ](#) | [ARM](#) )
 * Lesson 3. Connecting To Azure ( [Portal] | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Setup/L3-ConnectToAzure.md) | [XPlatCLI ](#) | [ARM](#) )
 
->**Supporting Resources**
+>[**Supporting Resources**](#)
 
 ## Storage
 * Lesson 1. Storage Introduction ([ Introduction](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-StorageIntro.md) )
 * Lesson 2. Azure Resource Group Management ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Storage/L2-Storage.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Storage/L2-AzureRMResourceGroupMgmt.md) | [XPlatCLI ](#) | [ARM](#) )
 * Lesson 3. Create a Storage Account ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Storage/L3-Storage.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Storage/L3-CreateStorageAccount.md) | [XPlatCLI ](#) | [ARM](#) )
 
->[**Supporting Resources**]()https://github.com/Azure/onboarding-guidance/blob/master/Portal/Storage/Supporting%20Resources.md)
+>[**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Storage/Supporting%20Resources.md)
 
 ##  Compute
 * Lesson 1. Compute Introduction ([ Introduction](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-ComputeIntro.md) )

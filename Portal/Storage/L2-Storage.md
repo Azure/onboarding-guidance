@@ -1,4 +1,4 @@
-# Storage: Lesson 2. Azure Resource Group Management
+# Storage: Azure Resource Group Management
 
 # Abstract
 
