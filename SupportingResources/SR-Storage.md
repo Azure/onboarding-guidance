@@ -1,6 +1,6 @@
 # Storage - Supporting Resources
 
-# See the following resources to learn more
+## See the following resources to learn more
 * [Click here for Storage documentation](https://azure.microsoft.com/en-us/documentation/services/storage/)
 * [SLA for Storage](https://azure.microsoft.com/en-us/support/legal/sla/storage/v1_1/)
 * [Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)

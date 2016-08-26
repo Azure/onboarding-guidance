@@ -1,6 +1,6 @@
 # Network - Supporting Resources
 
-# See the following resources to learn more
+## See the following resources to learn more
 * [Configure a Point-to-Site connection to a virtual network using PowerShell](https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-howto-point-to-site-rm-ps/)
 * [Supported scenario in Point to Site connection](https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-vpn-faq/#point-to-site-connections)
 * [Create a virtual network by using PowerShell](https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-create-vnet-arm-ps/)

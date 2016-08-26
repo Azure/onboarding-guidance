@@ -1,6 +1,6 @@
 # Compute - Supporting Resources
 
-# See the following resources to learn more
+## See the following resources to learn more
 * [Compute documentation](https://azure.microsoft.com/en-us/documentation/services/virtual-machines/)
 * [SLA for Virtual Machines](https://azure.microsoft.com/en-us/support/legal/sla/virtual-machines/v1_2/)
 * [Azure Resource Manager overview](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)
