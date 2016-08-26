@@ -1,4 +1,4 @@
-# Create a Windows VM using Resource Manager and PowerShell 
+﻿# Create a Windows VM using Resource Manager and PowerShell 
 
 #[Microsoft Official Article]- https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-ps-create/ 
 
@@ -14,16 +14,18 @@ Get-AzureRmLocation | sort Location | Select Location
 $locName = "centralus"
 
 ### Setup ResourceGroup
-$rgName = "mygroup3"
+$rgName = "mygroup2"
 
 New-AzureRmResourceGroup -Name $rgName -Location $locName
 
 ### Setup Storage Account
-$stName = "mystorageaccountft3"
+$stName = "mystorageaccountft1"  # OS/Data Disk 
+
 
 ### To Check Availibilty of Storage Account Name
-Get-AzureRmStorageAccountNameAvailability $stName 
+Get-AzureRmStorageAccountNameAvailability -Name $stName 
 
+### Creation of Storage Account Name
 $storageAcc = New-AzureRmStorageAccount -ResourceGroupName $rgName -Name $stName -SkuName "Standard_LRS" -Kind "Storage" -Location $locName 
 
 ### Setup Networking
@@ -47,7 +49,6 @@ $nic = New-AzureRmNetworkInterface -Name $nicName -ResourceGroupName $rgName -Lo
 
 New-AzureRmAvailabilitySet -ResourceGroupName $rgName -Name "AvailabilitySet01" -Location $locName
 $AvailabilitySet = Get-AzureRmAvailabilitySet -ResourceGroupName $rgName -Name "AvailabilitySet01"
-
 
 ### --------------------
 ### Setup Credentials
@@ -73,7 +74,7 @@ $cred = New-Object System.Management.Automation.PSCredential ($user, $securePass
 ### setup VM Configutation 
 
 $vmName = "myvm1"
-$vm = New-AzureRmVMConfig -VMName $vmName -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id
+$vm = New-AzureRmVMConfig -VMName $vmName -VMSize "Standard_A4" -AvailabilitySetID $AvailabilitySet.Id
 
 
 $compName = "myvm1"
@@ -131,12 +132,14 @@ $vm
 StatusCode                 : 0
 Name                       : myvm1
 AvailabilitySetReference   : 
-  Id                       : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/providers/Microsoft.Compute/availabilitySets/AvailabilitySet01
+  Id                       : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/mygroup2/provider
+s/Microsoft.Compute/availabilitySets/AvailabilitySet01
 HardwareProfile            : 
-  VmSize                   : Standard_A1
+  VmSize                   : Standard_A4
 NetworkProfile             : 
   NetworkInterfaces[0]     : 
-    Id                     : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/providers/Microsoft.Network/networkInterfaces/mynic1
+    Id                     : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/mygroup2/provider
+s/Microsoft.Network/networkInterfaces/mynic1
 OSProfile                  : 
   ComputerName             : myvm1
   AdminUsername            : youaretheadmin
@@ -155,10 +158,85 @@ StorageProfile             :
     Vhd                    : 
       Uri                  : https://mystorageaccountft1.blob.core.windows.net/vhds/myvm1_os.vhd
     CreateOption           : FromImage
-NetworkInterfaceIDs[0]     : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/providers/Microsoft.Network/networkInterfaces/mynic1
+  DataDisks[0]             : 
+    Lun                    : 0
+    Name                   : myvm1_DataDisk1
+    Vhd                    : 
+      Uri                  : https://mystorageaccountft1.blob.core.windows.net/vhds/myvm1_data1.vhd
+    Caching                : ReadOnly
+    CreateOption           : Empty
+    DiskSizeGB             : 10
+  DataDisks[1]             : 
+    Lun                    : 1
+    Name                   : myvm1_DataDisk2
+    Vhd                    : 
+      Uri                  : https://mystorageaccountft1.blob.core.windows.net/vhds/myvm1_data2.vhd
+    Caching                : ReadOnly
+    CreateOption           : Empty
+    DiskSizeGB             : 20
+  DataDisks[2]             : 
+    Lun                    : 2
+    Name                   : myvm1_DataDisk3
+    Vhd                    : 
+      Uri                  : https://mystorageaccountft1.blob.core.windows.net/vhds/myvm1_data3.vhd
+    Caching                : ReadOnly
+    CreateOption           : Empty
+    DiskSizeGB             : 30
+DataDiskNames[0]           : myvm1_DataDisk1
+DataDiskNames[1]           : myvm1_DataDisk2
+DataDiskNames[2]           : myvm1_DataDisk3
+NetworkInterfaceIDs[0]     : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/mygroup2/provider
+s/Microsoft.Network/networkInterfaces/mynic1
+
+
+workInterfaceIDs[0]     : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/providers/Microsoft.Network/networkInterfaces/mynic1
 
 #>
 
 ### Deploy the VM 
 New-AzureRmVM -ResourceGroupName $rgName -Location $locName -VM $vm -Verbose -Debug
 
+
+# -------- Creation of 2nd VM --------------
+
+
+$ipName2 = "myIPaddress2"
+$nicName2 = "mynic2"
+$vmName2 = "myvm2"
+$compName2 = "myvm2"
+
+$pip2 = New-AzureRmPublicIpAddress -Name $ipName2 -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
+$nic2 = New-AzureRmNetworkInterface -Name $nicName2 -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip2.Id 
+$vm2 = New-AzureRmVMConfig -VMName $vmName2 -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id
+
+
+
+$vm2 = Set-AzureRmVMOperatingSystem -VM $vm2 -Windows -ComputerName $compName2 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate 
+
+### Make sure you have validated the availbility of the image 
+### (https://github.com/abhishekanand/AzureLearning/blob/master/Module%20II/L2-FindAPublishedImage.
+$vm2 = Set-AzureRmVMSourceImage -VM $vm2 -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2012-R2-Datacenter -Version "latest" 
+
+
+$vm2 = Add-AzureRmVMNetworkInterface -VM $vm2 -Id $nic2.Id 
+
+### Setting up of OS Disk Name 
+$osdiskName2 = $vmname2+'_osDisk'
+
+# Defining Location of OS Disk to be palced
+
+$osblobPath2 = "vhds/"+$vmname2+"_os.vhd"
+$osDiskUri2 = $storageAcc.PrimaryEndpoints.Blob.ToString() + $osblobPath2
+# https://mystorageaccountft1.blob.core.windows.net/vhds/myvm1_os.vhd
+
+
+
+$vm2 = Set-AzureRmVMOSDisk -VM $vm2 -Name $osdiskName2 -VhdUri $osDiskUri2 -CreateOption fromImage 
+
+$vm2
+
+### Deploy the VM2 
+New-AzureRmVM -ResourceGroupName $rgName -Location $locName -VM $vm2 -Verbose 
+
+# View All VM in the Resoruce Group 
+get-AzureRMVM -ResourceGroupName $rgName
