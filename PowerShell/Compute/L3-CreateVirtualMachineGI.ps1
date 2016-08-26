@@ -48,6 +48,7 @@ $nic = New-AzureRmNetworkInterface -Name $nicName -ResourceGroupName $rgName -Lo
 New-AzureRmAvailabilitySet -ResourceGroupName $rgName -Name "AvailabilitySet01" -Location $locName
 $AvailabilitySet = Get-AzureRmAvailabilitySet -ResourceGroupName $rgName -Name "AvailabilitySet01"
 
+
 ### --------------------
 ### Setup Credentials
 
