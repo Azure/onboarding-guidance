@@ -1,4 +1,4 @@
-# Storage: Azure Resource Group Management
+# Azure Resource Group Management
 
 # Abstract
 

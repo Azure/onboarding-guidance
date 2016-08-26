@@ -1,4 +1,4 @@
-# Storage: Create a Storage Account
+# Create a Storage Account
 
 # Abstract
 
@@ -18,11 +18,11 @@ Self-guided
 # Launch the Azure Portal
 * Launch the Azure Portal, click [Azure Portal](http://www.azure.portal.com)
 
-* Make sure to select the correct **Subscription**. Click the Settings (wheel icon on the top right corner) and click **Switch Directories**
+* Make sure to select the correct **Subscription**. Click the Settings (wheel icon on the top right corner) and click **Switch Directories** or **Filter by subscriptions**
 
 ![Screenshot](images/Storage-L3-1.png)
  
-* From left navigation bar, click **New** | **Data + Storage** | **Storage Accounts**.
+* From left navigation bar, click **New** | **Data + Storage** | **Storage Account**.
 
 ![Screenshot](images/Storage-L3-2.png)
 

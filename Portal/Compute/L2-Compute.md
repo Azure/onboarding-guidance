@@ -1,4 +1,4 @@
-# Compute: Lesson 2. Find desired image on Azure Marketplace
+# Find desired image on Azure Marketplace
 
 # Abstract
 
@@ -16,3 +16,8 @@ Self-guided
 
 # Launch the Azure Portal
 * Launch the Azure Portal, click [Azure Portal](http://www.azure.portal.com)
+
+* Make sure to select the correct **Subscription**. Click the Settings (wheel icon on the top right corner) and click **Switch Directories** or **Filter by subscriptions**
+
+![Screenshot](images/Storage-L3-1.png)
+
