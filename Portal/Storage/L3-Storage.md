@@ -52,4 +52,4 @@ Self-guided
 * ### Repeat the above steps to create another storage account for diagnostics or another VM if needed.
 
 # See the following resources to learn more
-* [Supporting Resources](#)
+>[**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Storage.md)

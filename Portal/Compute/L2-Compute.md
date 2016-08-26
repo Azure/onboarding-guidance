@@ -2,7 +2,8 @@
 
 # Abstract
 
-During this module, you will 
+During this module, you will walk through on how to find an VM image for example: Ubuntu from Azure Marketplace.
+
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
@@ -19,5 +20,14 @@ Self-guided
 
 * Make sure to select the correct **Subscription**. Click the Settings (wheel icon on the top right corner) and click **Switch Directories** or **Filter by subscriptions**
 
-![Screenshot](images/Storage-L3-1.png)
+![Screenshot](images/Compute-L2-1.png)
+
+* From left navigation bar, click **New** | **Marketplace** | **See all**.
+* In the search box, enter **Ubuntu**, hit **Enter**
+* Search result will bring up all Ubuntu VM images available in the Marketplace. If needed you can create a VM by selecting one of the VM image. For this walkthrough VM creation is not needed.
+
+![Screenshot](images/Compute-L2-2.png)
+
+# See the following resources to learn more
+>[**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Compute.md)
 
