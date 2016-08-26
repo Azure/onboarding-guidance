@@ -22,14 +22,16 @@ Self-guided
 
 ![Screenshot](images/Storage-L3-1.png)
  
-* From left navigation bar, click **Storage Accounts**.
-  * On the **Storage accounts blade**, click **Add**.
+* From left navigation bar, click **New** | **Data + Storage** | **Storage Accounts**.
+
+![Screenshot](images/Storage-L3-2.png)
+
   * Enter the following details for the Name:
     * format (storage account for data): **(service short name)(type)(number)**
     * example: **azureftdat001**
     * or
     * format (storage account for disks): **(vm name without dashes)st(number)**
-    * example: azureftweb1vmst0
+    * example: **azureftweb1vmst0**
 
   * Deployment model: **Resource manager**
   * Account kind: **General purpose**
@@ -38,6 +40,8 @@ Self-guided
   * Subscription: **(select appropriate subscription)**
   * Resource group: Select **Use existing**. (Use the Resource group created in Lesson 2)
   * Location: **(select appropriate location)**
+
+![Screenshot](images/Storage-L3-3.png)
 
 ![Screenshot](images/Storage-L3-2.png)
 

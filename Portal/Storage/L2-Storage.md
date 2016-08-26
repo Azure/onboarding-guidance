@@ -18,6 +18,7 @@ Self-guided
 * Launch the Azure Portal, click [Azure Portal](http://www.azure.portal.com)
 
 * Make sure to select the correct **Subscription**. Click the Settings (wheel icon on the top right corner) and click **Switch Directories** or **Filter by subscriptions**
+
 ![Screenshot](./images/Storage-L2-1.png)
  
 * From left navigation bar, click **Resource groups**.
