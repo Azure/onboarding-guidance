@@ -11,7 +11,7 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * Azure 101 ( [Azure Overview](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Azure101.md) )
 * Azure Portal 101 ( [Azure Portal Walkthrough](https://github.com/Azure/onboarding-guidance/blob/master/Portal/PortalTour101.md) )
 
->:memo: **Supporting Resources**
+:memo: **Supporting Resources**
 
 ## Tools Setup
 * Lesson 1. Tools Introduction ([ Introduction](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-ToolsIntro.md) )
