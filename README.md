@@ -41,9 +41,9 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 
 ##  Networking
 * Lesson 1. Azure Networking Introduction ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-NetworkingIntro.md) )
-* Lesson 2. Create a Virtual Network and Subnet ( [Portal](#) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Networking/L2-CreateVirtualNetwork.md) | [XPlatCLI ](#) | [ARM](#) )
-* Lesson 3. Create and configure a load balancer ( [Portal](#) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Networking/L3-CreateLoadBalancer.md) | [XPlatCLI ](#) | [ARM](#) )
-* Lesson 4. Create and configure Network Security Groups(NSG) ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Networking/L4-CreateNSG.md) | [PowerShell](#) | [XPlatCLI ](#) | [ARM](#) )
+* Lesson 2. Create a Virtual Network and Subnet ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Networking/L2-Networking.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Networking/L2-CreateVirtualNetwork.md) | [XPlatCLI ](#) | [ARM](#) )
+* Lesson 3. Create and configure a load balancer ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Networking/L3-Networking.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Networking/L3-CreateLoadBalancer.md) | [XPlatCLI ](#) | [ARM](#) )
+* Lesson 4. Create and configure Network Security Groups(NSG) ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Networking/L4-Networking.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Networking/L4-CreateNSG.md) | [XPlatCLI ](#) | [ARM](#) )
 
 &nbsp;  Connectivity
 * Lesson 5. Create Point to site Connection (On-premises to Azure) ( [Portal]| [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Networking/L5-Point2Site.md) | [XPlatCLI ](#) | [ARM](#) )
