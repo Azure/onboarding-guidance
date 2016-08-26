@@ -1,3 +1,4 @@
+﻿
 # Run Login-AzureRmAccount to login
 Login-AzureRmAccount
 
@@ -44,7 +45,7 @@ Set-AzureRmResource -ResourceName $stName -ResourceGroupName $rgName -ResourceTy
 
 
 # Enter your subscription and Resource Name (This example is for storage resource)
-Set-AzureRmResource -ResourceId /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/rgdemo/providers/Microsoft.Storage/storageAccounts/mystorageaccountft2  -Tag $tags
+Set-AzureRmResource -ResourceId /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/rgdemo/providers/Microsoft.Storage/storageAccounts/mystorageaccountft2  -Tag $tags
 
 
 # ============
@@ -69,3 +70,43 @@ Remove-AzureRmResourceGroup -Name FTResourceGroupTagged -verbose
 
 # DONT USE THIS - Remove all resource groups
 # Get-AzureRmResourceGroup | Remove-AzureRmResourceGroup -Verbose
+
+
+
+<#
+-------
+# To get list of all Tags Key and its Values 
+
+(Find-AzureRmResourceGroup).tags
+# --------------------------  FindByTagName  --------------------------
+# Finds all resource group with a tag with name 'testtag'.
+Find-AzureRmResourceGroup -Tag @{ Department = $null }
+
+#Finds all resource group with a tag with name 'testtag' and value 'testval'.
+
+Find-AzureRmResourceGroup -Tag @{ Environment ="Test" }
+
+
+# To get all of the resources with a particular tag and value, use the Find-AzureRmResource cmdlet.
+Find-AzureRmResource -TagName Department -TagValue IT | %{ $_.ResourceName }
+
+(Find-AzureRmResource)| Where-Object { $_.tags -eq $null }|select name, location, tags
+(Find-AzureRmResource)| Where-Object { $_.tags -ne $null }|select name, location, tags
+(Find-AzureRmResource)| Where-Object { $_.tags -eq '{}'}|select name, location, tags
+(Find-AzureRmResource)| select name, location, tags
+
+
+# To find a ResourceGroup with specific Tag ( Name="";Value="")
+
+Find-AzureRmResourceGroup -Tag @{ Name="Department"; Value="IT" } | %{ $_.Name }
+
+# To List all resource group with with its location and tags 
+
+(Find-AzureRmResourceGroup)|select name, location ,tags
+
+(Find-AzureRmResourceGroup)| Where-Object { $_.tags -ne $null } |select name, location ,tags
+
+# To List all resource group not asociated with any tag 
+(Find-AzureRmResourceGroup)| Where-Object { $_.tags -eq $null }| select name, location, tags
+
+#>

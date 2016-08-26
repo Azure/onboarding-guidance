@@ -70,10 +70,10 @@ New-AzureRmVM -ResourceGroupName $rgName -Location $locName -VM $vm -Verbose -De
 <#
 
 
-PS C:\Users\abhanand> New-AzureRmVM -ResourceGroupName $rgName -Location $locName -VM $vm -Verbose -Debug
+PS C:\Users\user1> New-AzureRmVM -ResourceGroupName $rgName -Location $locName -VM $vm -Verbose -Debug
 DEBUG: 11:42:20 AM - NewAzureVMCommand begin processing with ParameterSet '__All
 ParameterSets'.
-DEBUG: 11:42:23 AM - using account id 'abhanand@microsoft.com'...
+DEBUG: 11:42:23 AM - using account id 'user1@microsoft.com'...
 WARNING: The  usability of Tag parameter in this cmdlet will be modified in a fu
 ture release.  This will impact creating, updating and appending tags for Azure 
 resources.  For more details about the change, please visit https://github.com/A
@@ -105,7 +105,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -181,7 +181,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -257,7 +257,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -334,7 +334,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -410,7 +410,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -486,7 +486,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -562,7 +562,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -639,7 +639,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -715,7 +715,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -791,7 +791,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -867,7 +867,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -943,7 +943,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1020,7 +1020,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1096,7 +1096,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1172,7 +1172,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1249,7 +1249,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1325,7 +1325,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1401,7 +1401,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1477,7 +1477,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1553,7 +1553,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1629,7 +1629,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1705,7 +1705,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1781,7 +1781,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1857,7 +1857,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -1933,7 +1933,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -2010,7 +2010,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/1ab5875e-02d1-42ca-8702-0f7243518055?api-version=2016-0
 3-30
 
@@ -2087,7 +2087,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/my
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/my
 group2/providers/Microsoft.Compute/virtualMachines/myvm2?api-version=2016-03-30
 
 Headers:
@@ -2118,7 +2118,7 @@ Body:
   "properties": {
     "vmId": "e59a8e59-e59e-44a7-8721-b74c4380e5ae",
     "availabilitySet": {
-      "id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/mygroup2/provider
+      "id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/provider
 s/Microsoft.Compute/availabilitySets/AVAILABILITYSET01"
     },
     "hardwareProfile": {
@@ -2152,7 +2152,7 @@ s/image/customimage-osDisk.7e5505ce-57c5-4cbb-a881-258a60b5c2df.vhd"
     "networkProfile": {
       "networkInterfaces": [
         {
-          "id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/mygroup2/prov
+          "id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/prov
 iders/Microsoft.Network/networkInterfaces/mynic2"
         }
       ]
@@ -2165,7 +2165,7 @@ iders/Microsoft.Network/networkInterfaces/mynic2"
     },
     "provisioningState": "Succeeded"
   },
-  "id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/mygroup2/providers/Mi
+  "id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/providers/Mi
 crosoft.Compute/virtualMachines/myvm2",
   "name": "myvm2",
   "type": "Microsoft.Compute/virtualMachines",
@@ -2214,7 +2214,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/publishers?api-version=2016-03-30
 
 Headers:
@@ -2242,180 +2242,180 @@ x-ms-routing-request-id       : CENTRALUS:20160713T185602Z:026ffd00-3e9e-4792-b7
 Date                          : Wed, 13 Jul 2016 18:56:01 GMT
 
 Body:
-[{"location":"centralus","name":"4psa","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/
+[{"location":"centralus","name":"4psa","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/
 Providers/Microsoft.Compute/Locations/centralus/Publishers/4psa"},{"location":"centralus","name":
-"4ward365","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/
+"4ward365","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/
 Locations/centralus/Publishers/4ward365"},{"location":"centralus","name":"7isolutions","id":"/Sub
-scriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/P
+scriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/P
 ublishers/7isolutions"},{"location":"centralus","name":"a10networks","id":"/Subscriptions/6b6a59a
 6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/a10netwo
 rks"},{"location":"centralus","name":"abiquo","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686
 2095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/abiquo"},{"location":"centralus
-","name":"accellion","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof
+","name":"accellion","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsof
 t.Compute/Locations/centralus/Publishers/accellion"},{"location":"centralus","name":"Acronis","id
-":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cent
+":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cent
 ralus/Publishers/Acronis"},{"location":"centralus","name":"Acronis.Abokov.Backup","id":"/Subscrip
-tions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publis
+tions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publis
 hers/Acronis.Abokov.Backup"},{"location":"centralus","name":"Acronis.Backup","id":"/Subscriptions
-/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/
+/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/
 Acronis.Backup"},{"location":"centralus","name":"Acronis2","id":"/Subscriptions/6b6a59a6-e367-491
 3-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Acronis2"},{"locat
 ion":"centralus","name":"Acronis2.Abokov.Backup","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b
 6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Acronis2.Abokov.Backup"},{"l
 ocation":"centralus","name":"actian_matrix","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68620
 95bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/actian_matrix"},{"location":"cent
-ralus","name":"active-navigation","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provi
+ralus","name":"active-navigation","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provi
 ders/Microsoft.Compute/Locations/centralus/Publishers/active-navigation"},{"location":"centralus"
-,"name":"activeeon","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft
+,"name":"activeeon","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft
 .Compute/Locations/centralus/Publishers/activeeon"},{"location":"centralus","name":"adam-software
-","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations
+","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations
 /centralus/Publishers/adam-software"},{"location":"centralus","name":"adatao","id":"/Subscription
-s/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers
+s/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers
 /adatao"},{"location":"centralus","name":"adobe","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b
 6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/adobe"},{"location":"central
-us","name":"adobe_test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micro
+us","name":"adobe_test","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micro
 soft.Compute/Locations/centralus/Publishers/adobe_test"},{"location":"centralus","name":"adra-mat
-ch","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locatio
+ch","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locatio
 ns/centralus/Publishers/adra-match"},{"location":"centralus","name":"advantech","id":"/Subscripti
-ons/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishe
+ons/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishe
 rs/advantech"},{"location":"centralus","name":"advantech-webaccess","id":"/Subscriptions/6b6a59a6
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/advantech
 -webaccess"},{"location":"centralus","name":"aerospike","id":"/Subscriptions/6b6a59a6-e367-4913-b
 ea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/aerospike"},{"locatio
 n":"centralus","name":"aerospike-database","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686209
 5bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/aerospike-database"},{"location":"
-centralus","name":"aimsinnovation","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Prov
+centralus","name":"aimsinnovation","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Prov
 iders/Microsoft.Compute/Locations/centralus/Publishers/aimsinnovation"},{"location":"centralus","
 name":"aiscaler-cache-control-ddos-and-url-rewriting-","id":"/Subscriptions/6b6a59a6-e367-4913-be
 a7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/aiscaler-cache-control
 -ddos-and-url-rewriting-"},{"location":"centralus","name":"akeron","id":"/Subscriptions/6b6a59a6-
 e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/akeron"},{
-"location":"centralus","name":"akumina","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf
+"location":"centralus","name":"akumina","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 /Providers/Microsoft.Compute/Locations/centralus/Publishers/akumina"},{"location":"centralus","na
-me":"alachisoft","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Co
+me":"alachisoft","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Co
 mpute/Locations/centralus/Publishers/alachisoft"},{"location":"centralus","name":"alertlogic","id
-":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cent
+":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cent
 ralus/Publishers/alertlogic"},{"location":"centralus","name":"AlertLogic.Extension","id":"/Subscr
-iptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publ
+iptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publ
 ishers/AlertLogic.Extension"},{"location":"centralus","name":"algebraix-data","id":"/Subscription
-s/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers
+s/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers
 /algebraix-data"},{"location":"centralus","name":"alldigital-brevity","id":"/Subscriptions/6b6a59
 a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/alldigi
 tal-brevity"},{"location":"centralus","name":"alteryx","id":"/Subscriptions/6b6a59a6-e367-4913-be
 a7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/alteryx"},{"location":
-"centralus","name":"altiar","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/M
+"centralus","name":"altiar","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/M
 icrosoft.Compute/Locations/centralus/Publishers/altiar"},{"location":"centralus","name":"alvao","
-id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/ce
+id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/ce
 ntralus/Publishers/alvao"},{"location":"centralus","name":"analitica","id":"/Subscriptions/6b6a59
 a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/analiti
 ca"},{"location":"centralus","name":"angoss","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862
 095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/angoss"},{"location":"centralus"
-,"name":"apigee","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Co
+,"name":"apigee","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Co
 mpute/Locations/centralus/Publishers/apigee"},{"location":"centralus","name":"appcelerator","id":
-"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centra
+"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centra
 lus/Publishers/appcelerator"},{"location":"centralus","name":"appcitoinc","id":"/Subscriptions/6b
 6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/app
 citoinc"},{"location":"centralus","name":"appex-networks","id":"/Subscriptions/6b6a59a6-e367-4913
 -bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/appex-networks"},{"
-location":"centralus","name":"appistry","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf
+location":"centralus","name":"appistry","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 /Providers/Microsoft.Compute/Locations/centralus/Publishers/appistry"},{"location":"centralus","n
-ame":"apprenda","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Com
+ame":"apprenda","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Com
 pute/Locations/centralus/Publishers/apprenda"},{"location":"centralus","name":"appveyorci","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/appveyorci"},{"location":"centralus","name":"appzero","id":"/Subscriptions/6b6a59a6
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/appzero"}
 ,{"location":"centralus","name":"arangodb","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686209
 5bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/arangodb"},{"location":"centralus"
-,"name":"aras","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comp
+,"name":"aras","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comp
 ute/Locations/centralus/Publishers/aras"},{"location":"centralus","name":"array_networks","id":"/
-Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralu
+Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralu
 s/Publishers/array_networks"},{"location":"centralus","name":"aspera","id":"/Subscriptions/6b6a59
 a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/aspera"
 },{"location":"centralus","name":"aspex","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095b
 f/Providers/Microsoft.Compute/Locations/centralus/Publishers/aspex"},{"location":"centralus","nam
-e":"aspex-managed-cloud","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micr
+e":"aspex-managed-cloud","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micr
 osoft.Compute/Locations/centralus/Publishers/aspex-managed-cloud"},{"location":"centralus","name"
-:"attunity_cloudbeam","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+:"attunity_cloudbeam","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/attunity_cloudbeam"},{"location":"centralus","name":"au
-raportal","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/L
+raportal","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/L
 ocations/centralus/Publishers/auraportal"},{"location":"centralus","name":"auriq-systems","id":"/
-Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralu
+Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralu
 s/Publishers/auriq-systems"},{"location":"centralus","name":"avepoint","id":"/Subscriptions/6b6a5
 9a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/avepoi
 nt"},{"location":"centralus","name":"averesystems","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-3
 4b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/averesystems"},{"location"
-:"centralus","name":"aviatrix-systems","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/
+:"centralus","name":"aviatrix-systems","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/
 Providers/Microsoft.Compute/Locations/centralus/Publishers/aviatrix-systems"},{"location":"centra
-lus","name":"awingu","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof
+lus","name":"awingu","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsof
 t.Compute/Locations/centralus/Publishers/awingu"},{"location":"centralus","name":"axway","id":"/S
-ubscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus
+ubscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus
 /Publishers/axway"},{"location":"centralus","name":"azul","id":"/Subscriptions/6b6a59a6-e367-4913
 -bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/azul"},{"location":
-"centralus","name":"AzureRT.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provi
+"centralus","name":"AzureRT.Test","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provi
 ders/Microsoft.Compute/Locations/centralus/Publishers/AzureRT.Test"},{"location":"centralus","nam
-e":"azuresyncfusion","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof
+e":"azuresyncfusion","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsof
 t.Compute/Locations/centralus/Publishers/azuresyncfusion"},{"location":"centralus","name":"AzureT
-ools1type","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/
+ools1type","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/
 Locations/centralus/Publishers/AzureTools1type"},{"location":"centralus","name":"AzureTools1type1
-00","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locatio
+00","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locatio
 ns/centralus/Publishers/AzureTools1type100"},{"location":"centralus","name":"AzureTools1type200",
-"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/c
+"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/c
 entralus/Publishers/AzureTools1type200"},{"location":"centralus","name":"balabit","id":"/Subscrip
-tions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publis
+tions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publis
 hers/balabit"},{"location":"centralus","name":"Barracuda.Azure.ConnectivityAgent","id":"/Subscrip
-tions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publis
+tions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publis
 hers/Barracuda.Azure.ConnectivityAgent"},{"location":"centralus","name":"barracudanetworks","id":
-"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centra
+"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centra
 lus/Publishers/barracudanetworks"},{"location":"centralus","name":"basho","id":"/Subscriptions/6b
 6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/bas
 ho"},{"location":"centralus","name":"Bitnami","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686
 2095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Bitnami"},{"location":"centralu
-s","name":"bizagi","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.
+s","name":"bizagi","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.
 Compute/Locations/centralus/Publishers/bizagi"},{"location":"centralus","name":"biztalk360","id":
-"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centra
+"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centra
 lus/Publishers/biztalk360"},{"location":"centralus","name":"blackberry","id":"/Subscriptions/6b6a
 59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/black
 berry"},{"location":"centralus","name":"blockapps","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-3
 4b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/blockapps"},{"location":"c
-entralus","name":"bluetalon","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/
+entralus","name":"bluetalon","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/
 Microsoft.Compute/Locations/centralus/Publishers/bluetalon"},{"location":"centralus","name":"bmc.
-com","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+com","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/bmc.com"},{"location":"centralus","name":"bmc.ctm","id":"/Subscriptions/
-6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/b
+XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/b
 mc.ctm"},{"location":"centralus","name":"bmc.ctm.agent","id":"/Subscriptions/6b6a59a6-e367-4913-b
 ea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/bmc.ctm.agent"},{"loc
-ation":"centralus","name":"bmcctm.josh","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf
+ation":"centralus","name":"bmcctm.josh","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 /Providers/Microsoft.Compute/Locations/centralus/Publishers/bmcctm.josh"},{"location":"centralus"
-,"name":"bmcctm.test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+,"name":"bmcctm.test","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/bmcctm.test"},{"location":"centralus","name":"boundless
-geo","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+geo","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/boundlessgeo"},{"location":"centralus","name":"boxless","id":"/Subscript
-ions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publish
+ions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publish
 ers/boxless"},{"location":"centralus","name":"brainshare-it","id":"/Subscriptions/6b6a59a6-e367-4
 913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/brainshare-it"},
 {"location":"centralus","name":"brocade_communications","id":"/Subscriptions/6b6a59a6-e367-4913-b
 ea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/brocade_communication
 s"},{"location":"centralus","name":"bryte","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686209
 5bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/bryte"},{"location":"centralus","n
-ame":"bssw","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute
+ame":"bssw","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute
 /Locations/centralus/Publishers/bssw"},{"location":"centralus","name":"buddhalabs","id":"/Subscri
-ptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publi
+ptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publi
 shers/buddhalabs"},{"location":"centralus","name":"bugrius","id":"/Subscriptions/6b6a59a6-e367-49
 13-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/bugrius"},{"locat
-ion":"centralus","name":"bwappengine","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/P
+ion":"centralus","name":"bwappengine","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/P
 roviders/Microsoft.Compute/Locations/centralus/Publishers/bwappengine"},{"location":"centralus","
-name":"Canonical","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.C
+name":"Canonical","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.C
 ompute/Locations/centralus/Publishers/Canonical"},{"location":"centralus","name":"caringo","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/caringo"},{"location":"centralus","name":"catechnologies","id":"/Subscriptions/6b6a
 59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/catec
 hnologies"},{"location":"centralus","name":"cautelalabs","id":"/Subscriptions/6b6a59a6-e367-4913-
 bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/cautelalabs"},{"loca
-tion":"centralus","name":"cds","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provider
+tion":"centralus","name":"cds","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provider
 s/Microsoft.Compute/Locations/centralus/Publishers/cds"},{"location":"centralus","name":"certivox
-","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations
+","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations
 /centralus/Publishers/certivox"},{"location":"centralus","name":"checkpoint","id":"/Subscriptions
-/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/
+/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/
 checkpoint"},{"location":"centralus","name":"checkpointsystems","id":"/Subscriptions/6b6a59a6-e36
 7-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/checkpointsys
 tems"},{"location":"centralus","name":"chef-software","id":"/Subscriptions/6b6a59a6-e367-4913-bea
@@ -2424,18 +2424,18 @@ ion":"centralus","name":"Chef.Bootstrap.WindowsAzure","id":"/Subscriptions/6b6a5
 7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Chef.Bootstrap.WindowsA
 zure"},{"location":"centralus","name":"cherwell","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b
 6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/cherwell"},{"location":"cent
-ralus","name":"cipherpoint","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/M
+ralus","name":"cipherpoint","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/M
 icrosoft.Compute/Locations/centralus/Publishers/cipherpoint"},{"location":"centralus","name":"cir
-cleci","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Loca
+cleci","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Loca
 tions/centralus/Publishers/circleci"},{"location":"centralus","name":"cires21","id":"/Subscriptio
-ns/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publisher
+ns/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publisher
 s/cires21"},{"location":"centralus","name":"cisco","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-3
 4b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/cisco"},{"location":"centr
-alus","name":"citrix","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+alus","name":"citrix","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/citrix"},{"location":"centralus","name":"clickberry","i
-d":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cen
+d":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cen
 tralus/Publishers/clickberry"},{"location":"centralus","name":"cloud-cruiser","id":"/Subscription
-s/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers
+s/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers
 /cloud-cruiser"},{"location":"centralus","name":"cloudbees","id":"/Subscriptions/6b6a59a6-e367-49
 13-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/cloudbees"},{"loc
 ation":"centralus","name":"cloudbees-enterprise-jenkins","id":"/Subscriptions/6b6a59a6-e367-4913-
@@ -2444,13 +2444,13 @@ bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/clo
 -4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/cloudbolt-soft
 ware"},{"location":"centralus","name":"cloudboost","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-3
 4b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/cloudboost"},{"location":"
-centralus","name":"cloudcoreo","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provider
+centralus","name":"cloudcoreo","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provider
 s/Microsoft.Compute/Locations/centralus/Publishers/cloudcoreo"},{"location":"centralus","name":"c
-loudera","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Lo
+loudera","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Lo
 cations/centralus/Publishers/cloudera"},{"location":"centralus","name":"cloudera1qaz2wsx","id":"/
-Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralu
+Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralu
 s/Publishers/cloudera1qaz2wsx"},{"location":"centralus","name":"cloudhouse","id":"/Subscriptions/
-6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/c
+XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/c
 loudhouse"},{"location":"centralus","name":"cloudlink","id":"/Subscriptions/6b6a59a6-e367-4913-be
 a7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/cloudlink"},{"location
 ":"centralus","name":"CloudLink.SecureVM","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095
@@ -2463,266 +2463,266 @@ tion":"centralus","name":"CloudLinkEMC.SecureVM.Test","id":"/Subscriptions/6b6a5
 7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/CloudLinkEMC.SecureVM.T
 est"},{"location":"centralus","name":"cloudsoft","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b
 6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/cloudsoft"},{"location":"cen
-tralus","name":"clustrix","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mic
+tralus","name":"clustrix","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mic
 rosoft.Compute/Locations/centralus/Publishers/clustrix"},{"location":"centralus","name":"codelath
-e","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Location
+e","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Location
 s/centralus/Publishers/codelathe"},{"location":"centralus","name":"codenvy","id":"/Subscriptions/
-6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/c
+XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/c
 odenvy"},{"location":"centralus","name":"cognosys","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-3
 4b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/cognosys"},{"location":"ce
-ntralus","name":"cohesive","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mi
+ntralus","name":"cohesive","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mi
 crosoft.Compute/Locations/centralus/Publishers/cohesive"},{"location":"centralus","name":"commvau
-lt","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locatio
+lt","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locatio
 ns/centralus/Publishers/commvault"},{"location":"centralus","name":"companyname-short","id":"/Sub
-scriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/P
+scriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/P
 ublishers/companyname-short"},{"location":"centralus","name":"comunity","id":"/Subscriptions/6b6a
 59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/comun
 ity"},{"location":"centralus","name":"Confer","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686
 2095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Confer"},{"location":"centralus
-","name":"Confer.TestSensor","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/
+","name":"Confer.TestSensor","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/
 Microsoft.Compute/Locations/centralus/Publishers/Confer.TestSensor"},{"location":"centralus","nam
-e":"confluentinc","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.C
+e":"confluentinc","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.C
 ompute/Locations/centralus/Publishers/confluentinc"},{"location":"centralus","name":"consensys","
-id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/ce
+id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/ce
 ntralus/Publishers/consensys"},{"location":"centralus","name":"convertigo","id":"/Subscriptions/6
 b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/co
 nvertigo"},{"location":"centralus","name":"cordis","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-3
 4b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/cordis"},{"location":"cent
-ralus","name":"corent-technology-pvt","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/P
+ralus","name":"corent-technology-pvt","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/P
 roviders/Microsoft.Compute/Locations/centralus/Publishers/corent-technology-pvt"},{"location":"ce
-ntralus","name":"CoreOS","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micr
+ntralus","name":"CoreOS","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micr
 osoft.Compute/Locations/centralus/Publishers/CoreOS"},{"location":"centralus","name":"cortical-io
-","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations
+","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations
 /centralus/Publishers/cortical-io"},{"location":"centralus","name":"couchbase","id":"/Subscriptio
-ns/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publisher
+ns/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publisher
 s/couchbase"},{"location":"centralus","name":"credativ","id":"/Subscriptions/6b6a59a6-e367-4913-b
 ea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/credativ"},{"location
-":"centralus","name":"csstest","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provider
+":"centralus","name":"csstest","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provider
 s/Microsoft.Compute/Locations/centralus/Publishers/csstest"},{"location":"centralus","name":"ctm.
-bmc.com","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Lo
+bmc.com","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Lo
 cations/centralus/Publishers/ctm.bmc.com"},{"location":"centralus","name":"dalet","id":"/Subscrip
-tions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publis
+tions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publis
 hers/dalet"},{"location":"centralus","name":"danielsol.AzureTools1","id":"/Subscriptions/6b6a59a6
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/danielsol
 .AzureTools1"},{"location":"centralus","name":"danielsol.AzureTools1pns","id":"/Subscriptions/6b6
 a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/dani
 elsol.AzureTools1pns"},{"location":"centralus","name":"danielsol.AzureTools1pns2","id":"/Subscrip
-tions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publis
+tions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publis
 hers/danielsol.AzureTools1pns2"},{"location":"centralus","name":"danielsol.AzureTools1pns3","id":
-"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centra
+"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centra
 lus/Publishers/danielsol.AzureTools1pns3"},{"location":"centralus","name":"Dans.Windows.App","id"
-:"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centr
+:"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centr
 alus/Publishers/Dans.Windows.App"},{"location":"centralus","name":"Dans2.Windows.App","id":"/Subs
-criptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pu
+criptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pu
 blishers/Dans2.Windows.App"},{"location":"centralus","name":"Dans3.Windows.App","id":"/Subscripti
-ons/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishe
+ons/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishe
 rs/Dans3.Windows.App"},{"location":"centralus","name":"dataart","id":"/Subscriptions/6b6a59a6-e36
 7-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/dataart"},{"l
 ocation":"centralus","name":"datacastle","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095b
 f/Providers/Microsoft.Compute/Locations/centralus/Publishers/datacastle"},{"location":"centralus"
-,"name":"Datadog.Agent","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micro
+,"name":"Datadog.Agent","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micro
 soft.Compute/Locations/centralus/Publishers/Datadog.Agent"},{"location":"centralus","name":"datae
-xpeditioninc","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compu
+xpeditioninc","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compu
 te/Locations/centralus/Publishers/dataexpeditioninc"},{"location":"centralus","name":"dataiku","i
-d":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cen
+d":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cen
 tralus/Publishers/dataiku"},{"location":"centralus","name":"datalayer","id":"/Subscriptions/6b6a5
 9a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/datala
 yer"},{"location":"centralus","name":"dataliberation","id":"/Subscriptions/6b6a59a6-e367-4913-bea
 7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/dataliberation"},{"loca
-tion":"centralus","name":"datastax","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Pro
+tion":"centralus","name":"datastax","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Pro
 viders/Microsoft.Compute/Locations/centralus/Publishers/datastax"},{"location":"centralus","name"
-:"datasunrise","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comp
+:"datasunrise","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comp
 ute/Locations/centralus/Publishers/datasunrise"},{"location":"centralus","name":"defacto_global_"
-,"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/
+,"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/
 centralus/Publishers/defacto_global_"},{"location":"centralus","name":"dell-software","id":"/Subs
-criptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pu
+criptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pu
 blishers/dell-software"},{"location":"centralus","name":"dell_software","id":"/Subscriptions/6b6a
 59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/dell_
 software"},{"location":"centralus","name":"denyall","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/denyall"},{"location":"ce
-ntralus","name":"derdack","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mic
+ntralus","name":"derdack","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mic
 rosoft.Compute/Locations/centralus/Publishers/derdack"},{"location":"centralus","name":"dgsecure"
-,"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/
+,"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/
 centralus/Publishers/dgsecure"},{"location":"centralus","name":"digitaloffice","id":"/Subscriptio
-ns/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publisher
+ns/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publisher
 s/digitaloffice"},{"location":"centralus","name":"docker","id":"/Subscriptions/6b6a59a6-e367-4913
 -bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/docker"},{"location
-":"centralus","name":"docscorp-us","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Prov
+":"centralus","name":"docscorp-us","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Prov
 iders/Microsoft.Compute/Locations/centralus/Publishers/docscorp-us"},{"location":"centralus","nam
-e":"dolbydeveloper","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft
+e":"dolbydeveloper","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft
 .Compute/Locations/centralus/Publishers/dolbydeveloper"},{"location":"centralus","name":"dome9","
-id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/ce
+id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/ce
 ntralus/Publishers/dome9"},{"location":"centralus","name":"donovapub","id":"/Subscriptions/6b6a59
 a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/donovap
 ub"},{"location":"centralus","name":"drone","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68620
 95bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/drone"},{"location":"centralus","
-name":"dundas","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comp
+name":"dundas","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comp
 ute/Locations/centralus/Publishers/dundas"},{"location":"centralus","name":"dynatrace","id":"/Sub
-scriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/P
+scriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/P
 ublishers/dynatrace"},{"location":"centralus","name":"dynatrace.ruxit","id":"/Subscriptions/6b6a5
 9a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/dynatr
 ace.ruxit"},{"location":"centralus","name":"easyterritory","id":"/Subscriptions/6b6a59a6-e367-491
 3-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/easyterritory"},{"
-location":"centralus","name":"edevtech","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf
+location":"centralus","name":"edevtech","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 /Providers/Microsoft.Compute/Locations/centralus/Publishers/edevtech"},{"location":"centralus","n
-ame":"egress","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compu
+ame":"egress","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compu
 te/Locations/centralus/Publishers/egress"},{"location":"centralus","name":"eip","id":"/Subscripti
-ons/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishe
+ons/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishe
 rs/eip"},{"location":"centralus","name":"eip-eipower","id":"/Subscriptions/6b6a59a6-e367-4913-bea
 7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/eip-eipower"},{"locatio
-n":"centralus","name":"elastacloud","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Pro
+n":"centralus","name":"elastacloud","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Pro
 viders/Microsoft.Compute/Locations/centralus/Publishers/elastacloud"},{"location":"centralus","na
-me":"elasticbox","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Co
+me":"elasticbox","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Co
 mpute/Locations/centralus/Publishers/elasticbox"},{"location":"centralus","name":"elecard","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/elecard"},{"location":"centralus","name":"elfiqnetworks","id":"/Subscriptions/6b6a5
 9a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/elfiqn
 etworks"},{"location":"centralus","name":"eloquera","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/eloquera"},{"location":"c
-entralus","name":"emercoin","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/M
+entralus","name":"emercoin","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/M
 icrosoft.Compute/Locations/centralus/Publishers/emercoin"},{"location":"centralus","name":"enforo
-ngo","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+ngo","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/enforongo"},{"location":"centralus","name":"eperi","id":"/Subscriptions/
-6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/e
+XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/e
 peri"},{"location":"centralus","name":"equilibrium","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/equilibrium"},{"location"
-:"centralus","name":"ESET","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mi
+:"centralus","name":"ESET","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mi
 crosoft.Compute/Locations/centralus/Publishers/ESET"},{"location":"centralus","name":"ESET.FileSe
-curity","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Loc
+curity","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Loc
 ations/centralus/Publishers/ESET.FileSecurity"},{"location":"centralus","name":"esri","id":"/Subs
-criptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pu
+criptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pu
 blishers/esri"},{"location":"centralus","name":"eurotech","id":"/Subscriptions/6b6a59a6-e367-4913
 -bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/eurotech"},{"locati
-on":"centralus","name":"evostream-inc","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/
+on":"centralus","name":"evostream-inc","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/
 Providers/Microsoft.Compute/Locations/centralus/Publishers/evostream-inc"},{"location":"centralus
-","name":"exasol","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.C
+","name":"exasol","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.C
 ompute/Locations/centralus/Publishers/exasol"},{"location":"centralus","name":"exit-games","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/exit-games"},{"location":"centralus","name":"expertime","id":"/Subscriptions/6b6a59
 a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/experti
 me"},{"location":"centralus","name":"f5-networks","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34
 b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/f5-networks"},{"location":"
-centralus","name":"fidesys","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/M
+centralus","name":"fidesys","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/M
 icrosoft.Compute/Locations/centralus/Publishers/fidesys"},{"location":"centralus","name":"filebri
-dge","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+dge","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/filebridge"},{"location":"centralus","name":"firehost","id":"/Subscripti
-ons/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishe
+ons/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishe
 rs/firehost"},{"location":"centralus","name":"flexerasoftware","id":"/Subscriptions/6b6a59a6-e367
 -4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/flexerasoftwar
 e"},{"location":"centralus","name":"flowforma","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68
 62095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/flowforma"},{"location":"centr
-alus","name":"foghorn-systems","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provider
+alus","name":"foghorn-systems","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provider
 s/Microsoft.Compute/Locations/centralus/Publishers/foghorn-systems"},{"location":"centralus","nam
-e":"folio3-dynamics-services","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers
+e":"folio3-dynamics-services","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers
 /Microsoft.Compute/Locations/centralus/Publishers/folio3-dynamics-services"},{"location":"central
-us","name":"forscene","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+us","name":"forscene","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/forscene"},{"location":"centralus","name":"fortinet","i
-d":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cen
+d":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cen
 tralus/Publishers/fortinet"},{"location":"centralus","name":"fortycloud","id":"/Subscriptions/6b6
 a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/fort
 ycloud"},{"location":"centralus","name":"fw","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862
 095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/fw"},{"location":"centralus","na
-me":"g-data-software","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+me":"g-data-software","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/g-data-software"},{"location":"centralus","name":"gemal
-to-safenet","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute
+to-safenet","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute
 /Locations/centralus/Publishers/gemalto-safenet"},{"location":"centralus","name":"Gemalto.SafeNet
-.ProtectV","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/
+.ProtectV","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/
 Locations/centralus/Publishers/Gemalto.SafeNet.ProtectV"},{"location":"centralus","name":"GitHub"
-,"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/
+,"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/
 centralus/Publishers/GitHub"},{"location":"centralus","name":"gitlab","id":"/Subscriptions/6b6a59
 a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/gitlab"
 },{"location":"centralus","name":"greathorn","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862
 095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/greathorn"},{"location":"central
-us","name":"greensql","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+us","name":"greensql","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/greensql"},{"location":"centralus","name":"gridgain","i
-d":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cen
+d":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cen
 tralus/Publishers/gridgain"},{"location":"centralus","name":"haivision","id":"/Subscriptions/6b6a
 59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/haivi
 sion"},{"location":"centralus","name":"halobicloud","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/halobicloud"},{"location"
-:"centralus","name":"hanu","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mi
+:"centralus","name":"hanu","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mi
 crosoft.Compute/Locations/centralus/Publishers/hanu"},{"location":"centralus","name":"hewlett-pac
-kard","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locat
+kard","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locat
 ions/centralus/Publishers/hewlett-packard"},{"location":"centralus","name":"hitachi-solutions","i
-d":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cen
+d":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cen
 tralus/Publishers/hitachi-solutions"},{"location":"centralus","name":"hortonworks","id":"/Subscri
-ptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publi
+ptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publi
 shers/hortonworks"},{"location":"centralus","name":"hpe","id":"/Subscriptions/6b6a59a6-e367-4913-
 bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/hpe"},{"location":"c
 entralus","name":"HPE.Security.ApplicationDefender","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/HPE.Security.ApplicationD
 efender"},{"location":"centralus","name":"humanlogic","id":"/Subscriptions/6b6a59a6-e367-4913-bea
 7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/humanlogic"},{"location
-":"centralus","name":"iaansys","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provider
+":"centralus","name":"iaansys","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provider
 s/Microsoft.Compute/Locations/centralus/Publishers/iaansys"},{"location":"centralus","name":"iamc
-loud","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locat
+loud","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locat
 ions/centralus/Publishers/iamcloud"},{"location":"centralus","name":"ibabs-eu","id":"/Subscriptio
-ns/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publisher
+ns/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publisher
 s/ibabs-eu"},{"location":"centralus","name":"imaginecommunications","id":"/Subscriptions/6b6a59a6
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/imagineco
 mmunications"},{"location":"centralus","name":"imc","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/imc"},{"location":"centra
-lus","name":"imperva","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+lus","name":"imperva","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/imperva"},{"location":"centralus","name":"incredibuild"
-,"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/
+,"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/
 centralus/Publishers/incredibuild"},{"location":"centralus","name":"infoblox","id":"/Subscription
-s/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers
+s/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers
 /infoblox"},{"location":"centralus","name":"infolibrarian","id":"/Subscriptions/6b6a59a6-e367-491
 3-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/infolibrarian"},{"
 location":"centralus","name":"informatica","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686209
 5bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/informatica"},{"location":"central
-us","name":"informatica-cloud","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provider
+us","name":"informatica-cloud","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provider
 s/Microsoft.Compute/Locations/centralus/Publishers/informatica-cloud"},{"location":"centralus","n
-ame":"informationbuilders","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mi
+ame":"informationbuilders","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mi
 crosoft.Compute/Locations/centralus/Publishers/informationbuilders"},{"location":"centralus","nam
-e":"infostrat","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comp
+e":"infostrat","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comp
 ute/Locations/centralus/Publishers/infostrat"},{"location":"centralus","name":"inriver","id":"/Su
-bscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/
+bscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/
 Publishers/inriver"},{"location":"centralus","name":"intel","id":"/Subscriptions/6b6a59a6-e367-49
 13-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/intel"},{"locatio
 n":"centralus","name":"intelligent-plant-ltd","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686
 2095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/intelligent-plant-ltd"},{"locat
-ion":"centralus","name":"iquest","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provid
+ion":"centralus","name":"iquest","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provid
 ers/Microsoft.Compute/Locations/centralus/Publishers/iquest"},{"location":"centralus","name":"ish
-langu-load-balancer-adc","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micr
+langu-load-balancer-adc","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micr
 osoft.Compute/Locations/centralus/Publishers/ishlangu-load-balancer-adc"},{"location":"centralus"
-,"name":"itelios","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.C
+,"name":"itelios","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.C
 ompute/Locations/centralus/Publishers/itelios"},{"location":"centralus","name":"jedox","id":"/Sub
-scriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/P
+scriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/P
 ublishers/jedox"},{"location":"centralus","name":"jelastic","id":"/Subscriptions/6b6a59a6-e367-49
 13-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/jelastic"},{"loca
-tion":"centralus","name":"jetnexus","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Pro
+tion":"centralus","name":"jetnexus","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Pro
 viders/Microsoft.Compute/Locations/centralus/Publishers/jetnexus"},{"location":"centralus","name"
-:"jfrog","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Lo
+:"jfrog","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Lo
 cations/centralus/Publishers/jfrog"},{"location":"centralus","name":"jitterbit_integration","id":
-"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centra
+"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centra
 lus/Publishers/jitterbit_integration"},{"location":"centralus","name":"Josh.linux.test","id":"/Su
-bscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/
+bscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/
 Publishers/Josh.linux.test"},{"location":"centralus","name":"Joshctm.test","id":"/Subscriptions/6
 b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Jo
 shctm.test"},{"location":"centralus","name":"kaazing","id":"/Subscriptions/6b6a59a6-e367-4913-bea
 7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/kaazing"},{"location":"
-centralus","name":"kaspersky_lab","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provi
+centralus","name":"kaspersky_lab","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provi
 ders/Microsoft.Compute/Locations/centralus/Publishers/kaspersky_lab"},{"location":"centralus","na
-me":"kemptech","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comp
+me":"kemptech","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comp
 ute/Locations/centralus/Publishers/kemptech"},{"location":"centralus","name":"kepion","id":"/Subs
-criptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pu
+criptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pu
 blishers/kepion"},{"location":"centralus","name":"knime","id":"/Subscriptions/6b6a59a6-e367-4913-
 bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/knime"},{"location":
-"centralus","name":"kollective","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provide
+"centralus","name":"kollective","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provide
 rs/Microsoft.Compute/Locations/centralus/Publishers/kollective"},{"location":"centralus","name":"
-lakesidesoftware","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.C
+lakesidesoftware","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.C
 ompute/Locations/centralus/Publishers/lakesidesoftware"},{"location":"centralus","name":"lansa","
-id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/ce
+id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/ce
 ntralus/Publishers/lansa"},{"location":"centralus","name":"le","id":"/Subscriptions/6b6a59a6-e367
 -4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/le"},{"locatio
 n":"centralus","name":"learningtechnolgy","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095
 bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/learningtechnolgy"},{"location":"ce
-ntralus","name":"lieberlieber","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provider
+ntralus","name":"lieberlieber","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provider
 s/Microsoft.Compute/Locations/centralus/Publishers/lieberlieber"},{"location":"centralus","name":
-"liebsoft","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/
+"liebsoft","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/
 Locations/centralus/Publishers/liebsoft"},{"location":"centralus","name":"linux.bmc.test","id":"/
-Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralu
+Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralu
 s/Publishers/linux.bmc.test"},{"location":"centralus","name":"literatu","id":"/Subscriptions/6b6a
 59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/liter
 atu"},{"location":"centralus","name":"loadbalancer","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
@@ -2733,112 +2733,112 @@ bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Loc
 7-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/logi-analytic
 s"},{"location":"centralus","name":"loginpeople","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b
 6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/loginpeople"},{"location":"c
-entralus","name":"logmein","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mi
+entralus","name":"logmein","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mi
 crosoft.Compute/Locations/centralus/Publishers/logmein"},{"location":"centralus","name":"logsign"
-,"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/
+,"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/
 centralus/Publishers/logsign"},{"location":"centralus","name":"logtrust","id":"/Subscriptions/6b6
 a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/logt
 rust"},{"location":"centralus","name":"looker","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68
 62095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/looker"},{"location":"centralu
-s","name":"luxoft","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.
+s","name":"luxoft","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.
 Compute/Locations/centralus/Publishers/luxoft"},{"location":"centralus","name":"mactores_inc","id
-":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cent
+":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cent
 ralus/Publishers/mactores_inc"},{"location":"centralus","name":"magelia","id":"/Subscriptions/6b6
 a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/mage
 lia"},{"location":"centralus","name":"manageengine","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/manageengine"},{"location
 ":"centralus","name":"mapr-technologies","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095b
 f/Providers/Microsoft.Compute/Locations/centralus/Publishers/mapr-technologies"},{"location":"cen
-tralus","name":"mariadb","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micr
+tralus","name":"mariadb","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micr
 osoft.Compute/Locations/centralus/Publishers/mariadb"},{"location":"centralus","name":"massiveana
-lytic-","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Loc
+lytic-","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Loc
 ations/centralus/Publishers/massiveanalytic-"},{"location":"centralus","name":"mavinglobal","id":
-"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centra
+"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centra
 lus/Publishers/mavinglobal"},{"location":"centralus","name":"McAfee.EndpointSecurity","id":"/Subs
-criptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pu
+criptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pu
 blishers/McAfee.EndpointSecurity"},{"location":"centralus","name":"McAfee.EndpointSecurity.test3"
-,"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/
+,"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/
 centralus/Publishers/McAfee.EndpointSecurity.test3"},{"location":"centralus","name":"meanio","id"
-:"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centr
+:"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centr
 alus/Publishers/meanio"},{"location":"centralus","name":"mediazenie","id":"/Subscriptions/6b6a59a
 6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/mediazen
 ie"},{"location":"centralus","name":"memsql","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862
 095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/memsql"},{"location":"centralus"
-,"name":"mendix","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Co
+,"name":"mendix","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Co
 mpute/Locations/centralus/Publishers/mendix"},{"location":"centralus","name":"mentalnotes","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/mentalnotes"},{"location":"centralus","name":"mesosphere","id":"/Subscriptions/6b6a
 59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/mesos
 phere"},{"location":"centralus","name":"metavistech","id":"/Subscriptions/6b6a59a6-e367-4913-bea7
 -34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/metavistech"},{"location
-":"centralus","name":"mfiles","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers
+":"centralus","name":"mfiles","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers
 /Microsoft.Compute/Locations/centralus/Publishers/mfiles"},{"location":"centralus","name":"Micros
-oft","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+oft","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/Microsoft"},{"location":"centralus","name":"microsoft-ads","id":"/Subscr
-iptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publ
+iptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publ
 ishers/microsoft-ads"},{"location":"centralus","name":"microsoft-r-products","id":"/Subscriptions
-/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/
+/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/
 microsoft-r-products"},{"location":"centralus","name":"Microsoft.Azure.Applications","id":"/Subsc
-riptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pub
+riptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pub
 lishers/Microsoft.Azure.Applications"},{"location":"centralus","name":"Microsoft.Azure.Backup.Tes
-t","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Location
+t","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Location
 s/centralus/Publishers/Microsoft.Azure.Backup.Test"},{"location":"centralus","name":"Microsoft.Az
-ure.Diagnostics","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Co
+ure.Diagnostics","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Co
 mpute/Locations/centralus/Publishers/Microsoft.Azure.Diagnostics"},{"location":"centralus","name"
-:"Microsoft.Azure.Extensions","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers
+:"Microsoft.Azure.Extensions","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers
 /Microsoft.Compute/Locations/centralus/Publishers/Microsoft.Azure.Extensions"},{"location":"centr
 alus","name":"Microsoft.Azure.Extensions.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68
 62095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.Azure.Extensions.Tes
 t"},{"location":"centralus","name":"Microsoft.Azure.Networking.SDN","id":"/Subscriptions/6b6a59a6
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft
 .Azure.Networking.SDN"},{"location":"centralus","name":"Microsoft.Azure.RecoveryServices","id":"/
-Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralu
+Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralu
 s/Publishers/Microsoft.Azure.RecoveryServices"},{"location":"centralus","name":"Microsoft.Azure.S
-ecurity","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Lo
+ecurity","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Lo
 cations/centralus/Publishers/Microsoft.Azure.Security"},{"location":"centralus","name":"Microsoft
-.Azure.Security.Internal","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mic
+.Azure.Security.Internal","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mic
 rosoft.Compute/Locations/centralus/Publishers/Microsoft.Azure.Security.Internal"},{"location":"ce
 ntralus","name":"Microsoft.Azure.SiteRecovery.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.Azure.SiteRecov
 ery.Test"},{"location":"centralus","name":"Microsoft.Azure.WindowsFabric.Test","id":"/Subscriptio
-ns/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publisher
+ns/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publisher
 s/Microsoft.Azure.WindowsFabric.Test"},{"location":"centralus","name":"Microsoft.AzureCAT.AzureEn
-hancedMonitoring","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.C
+hancedMonitoring","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.C
 ompute/Locations/centralus/Publishers/Microsoft.AzureCAT.AzureEnhancedMonitoring"},{"location":"c
 entralus","name":"Microsoft.AzureCAT.AzureEnhancedMonitoringTest","id":"/Subscriptions/6b6a59a6-e
 367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.A
 zureCAT.AzureEnhancedMonitoringTest"},{"location":"centralus","name":"Microsoft.Compute","id":"/S
-ubscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus
+ubscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus
 /Publishers/Microsoft.Compute"},{"location":"centralus","name":"Microsoft.EnterpriseCloud.Monitor
-ing","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+ing","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/Microsoft.EnterpriseCloud.Monitoring"},{"location":"centralus","name":"M
 icrosoft.EnterpriseCloud.Monitoring.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095
 bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.EnterpriseCloud.Monitorin
 g.Test"},{"location":"centralus","name":"Microsoft.Golive.Extensions","id":"/Subscriptions/6b6a59
 a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microso
 ft.Golive.Extensions"},{"location":"centralus","name":"Microsoft.HpcCompute","id":"/Subscriptions
-/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/
+/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/
 Microsoft.HpcCompute"},{"location":"centralus","name":"Microsoft.HpcPack","id":"/Subscriptions/6b
 6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Mic
 rosoft.HpcPack"},{"location":"centralus","name":"Microsoft.OSTCExtensions","id":"/Subscriptions/6
 b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Mi
 crosoft.OSTCExtensions"},{"location":"centralus","name":"Microsoft.OSTCExtensions.Test","id":"/Su
-bscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/
+bscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/
 Publishers/Microsoft.OSTCExtensions.Test"},{"location":"centralus","name":"Microsoft.Powershell",
-"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/c
+"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/c
 entralus/Publishers/Microsoft.Powershell"},{"location":"centralus","name":"Microsoft.Powershell.E
-rrorChange","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute
+rrorChange","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute
 /Locations/centralus/Publishers/Microsoft.Powershell.ErrorChange"},{"location":"centralus","name"
-:"Microsoft.Powershell.Internal","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provid
+:"Microsoft.Powershell.Internal","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provid
 ers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.Powershell.Internal"},{"location":
 "centralus","name":"Microsoft.Powershell.Internal.Telemetry","id":"/Subscriptions/6b6a59a6-e367-4
 913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.Powers
 hell.Internal.Telemetry"},{"location":"centralus","name":"Microsoft.Powershell.PaaS","id":"/Subsc
-riptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pub
+riptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pub
 lishers/Microsoft.Powershell.PaaS"},{"location":"centralus","name":"Microsoft.Powershell.Preview"
-,"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/
+,"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/
 centralus/Publishers/Microsoft.Powershell.Preview"},{"location":"centralus","name":"Microsoft.Pow
-ershell.Release.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+ershell.Release.Test","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/Microsoft.Powershell.Release.Test"},{"location":"centra
 lus","name":"Microsoft.Powershell.Telemetry","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862
 095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.Powershell.Telemetry"}
@@ -2847,68 +2847,68 @@ lus","name":"Microsoft.Powershell.Telemetry","id":"/Subscriptions/6b6a59a6-e367-
 ell.Test"},{"location":"centralus","name":"Microsoft.Powershell.Test.0","id":"/Subscriptions/6b6a
 59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Micro
 soft.Powershell.Test.0"},{"location":"centralus","name":"Microsoft.Powershell.Test.1","id":"/Subs
-criptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pu
+criptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pu
 blishers/Microsoft.Powershell.Test.1"},{"location":"centralus","name":"Microsoft.Powershell.Test0
-","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations
+","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations
 /centralus/Publishers/Microsoft.Powershell.Test0"},{"location":"centralus","name":"Microsoft.Powe
-rshell.Test2","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compu
+rshell.Test2","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compu
 te/Locations/centralus/Publishers/Microsoft.Powershell.Test2"},{"location":"centralus","name":"Mi
-crosoft.Powershell.Test3","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mic
+crosoft.Powershell.Test3","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mic
 rosoft.Compute/Locations/centralus/Publishers/Microsoft.Powershell.Test3"},{"location":"centralus
 ","name":"Microsoft.Powershell.UpgradeTest","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68620
 95bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.Powershell.UpgradeTest"
 },{"location":"centralus","name":"Microsoft.Powershell.UtcTest","id":"/Subscriptions/6b6a59a6-e36
 7-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.Pow
 ershell.UtcTest"},{"location":"centralus","name":"Microsoft.Powershell.Wmf","id":"/Subscriptions/
-6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/M
+XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/M
 icrosoft.Powershell.Wmf"},{"location":"centralus","name":"Microsoft.Powershell.Wmf4Test","id":"/S
-ubscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus
+ubscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus
 /Publishers/Microsoft.Powershell.Wmf4Test"},{"location":"centralus","name":"Microsoft.Powershell.
-Wmf5","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locat
+Wmf5","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locat
 ions/centralus/Publishers/Microsoft.Powershell.Wmf5"},{"location":"centralus","name":"Microsoft.P
-owershell.WmfRTM","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.C
+owershell.WmfRTM","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.C
 ompute/Locations/centralus/Publishers/Microsoft.Powershell.WmfRTM"},{"location":"centralus","name
 ":"Microsoft.SqlServer.Managability.IaaS.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68
 62095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.SqlServer.Managabili
 ty.IaaS.Test"},{"location":"centralus","name":"Microsoft.SqlServer.Management","id":"/Subscriptio
-ns/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publisher
+ns/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publisher
 s/Microsoft.SqlServer.Management"},{"location":"centralus","name":"Microsoft.SystemCenter","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/Microsoft.SystemCenter"},{"location":"centralus","name":"Microsoft.VisualStudio","i
-d":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cen
+d":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cen
 tralus/Publishers/Microsoft.VisualStudio"},{"location":"centralus","name":"Microsoft.VisualStudio
-.Azure.ETWTraceListenerService","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provide
+.Azure.ETWTraceListenerService","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provide
 rs/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.VisualStudio.Azure.ETWTraceListener
 Service"},{"location":"centralus","name":"Microsoft.VisualStudio.Azure.RemoteDebug","id":"/Subscr
-iptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publ
+iptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publ
 ishers/Microsoft.VisualStudio.Azure.RemoteDebug"},{"location":"centralus","name":"Microsoft.Visua
-lStudio.Azure.RemoteDebug.Json","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provide
+lStudio.Azure.RemoteDebug.Json","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provide
 rs/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.VisualStudio.Azure.RemoteDebug.Json
 "},{"location":"centralus","name":"Microsoft.VisualStudio.ServiceProfiler","id":"/Subscriptions/6
 b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Mi
 crosoft.VisualStudio.ServiceProfiler"},{"location":"centralus","name":"Microsoft.Windows.AzureRem
-oteApp.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comput
+oteApp.Test","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comput
 e/Locations/centralus/Publishers/Microsoft.Windows.AzureRemoteApp.Test"},{"location":"centralus",
 "name":"Microsoft.Windows.RemoteDesktop","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095b
 f/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.Windows.RemoteDesktop"},{"
 location":"centralus","name":"Microsoft.WindowsAzure.Compute","id":"/Subscriptions/6b6a59a6-e367-
 4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Microsoft.Windo
 wsAzure.Compute"},{"location":"centralus","name":"MicrosoftAzureSiteRecovery","id":"/Subscription
-s/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers
+s/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers
 /MicrosoftAzureSiteRecovery"},{"location":"centralus","name":"MicrosoftBizTalkServer","id":"/Subs
-criptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pu
+criptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pu
 blishers/MicrosoftBizTalkServer"},{"location":"centralus","name":"MicrosoftDynamicsAX","id":"/Sub
-scriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/P
+scriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/P
 ublishers/MicrosoftDynamicsAX"},{"location":"centralus","name":"MicrosoftDynamicsGP","id":"/Subsc
-riptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pub
+riptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pub
 lishers/MicrosoftDynamicsGP"},{"location":"centralus","name":"MicrosoftDynamicsNAV","id":"/Subscr
-iptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publ
+iptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publ
 ishers/MicrosoftDynamicsNAV"},{"location":"centralus","name":"MicrosoftHybridCloudStorage","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/MicrosoftHybridCloudStorage"},{"location":"centralus","name":"MicrosoftOSTC","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/MicrosoftOSTC"},{"location":"centralus","name":"MicrosoftRServer","id":"/Subscripti
-ons/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishe
+ons/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishe
 rs/MicrosoftRServer"},{"location":"centralus","name":"MicrosoftSharePoint","id":"/Subscriptions/6
 b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Mi
 crosoftSharePoint"},{"location":"centralus","name":"MicrosoftSQLServer","id":"/Subscriptions/6b6a
@@ -2918,216 +2918,216 @@ softSQLServer"},{"location":"centralus","name":"MicrosoftVisualStudio","id":"/Su
 oftVisualStudio"},{"location":"centralus","name":"MicrosoftWindowsServer","id":"/Subscriptions/6b
 6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Mic
 rosoftWindowsServer"},{"location":"centralus","name":"MicrosoftWindowsServerEssentials","id":"/Su
-bscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/
+bscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/
 Publishers/MicrosoftWindowsServerEssentials"},{"location":"centralus","name":"MicrosoftWindowsSer
-verHPCPack","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute
+verHPCPack","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute
 /Locations/centralus/Publishers/MicrosoftWindowsServerHPCPack"},{"location":"centralus","name":"M
-icrosoftWindowsServerRemoteDesktop","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Pro
+icrosoftWindowsServerRemoteDesktop","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Pro
 viders/Microsoft.Compute/Locations/centralus/Publishers/MicrosoftWindowsServerRemoteDesktop"},{"l
-ocation":"centralus","name":"midvision","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf
+ocation":"centralus","name":"midvision","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 /Providers/Microsoft.Compute/Locations/centralus/Publishers/midvision"},{"location":"centralus","
-name":"miraclelinux","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof
+name":"miraclelinux","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsof
 t.Compute/Locations/centralus/Publishers/miraclelinux"},{"location":"centralus","name":"miracl_li
-nux","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+nux","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/miracl_linux"},{"location":"centralus","name":"mobilab","id":"/Subscript
-ions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publish
+ions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publish
 ers/mobilab"},{"location":"centralus","name":"mokxa-technologies","id":"/Subscriptions/6b6a59a6-e
 367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/mokxa-techn
 ologies"},{"location":"centralus","name":"moviemasher","id":"/Subscriptions/6b6a59a6-e367-4913-be
 a7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/moviemasher"},{"locati
-on":"centralus","name":"msopentech","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Pro
+on":"centralus","name":"msopentech","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Pro
 viders/Microsoft.Compute/Locations/centralus/Publishers/msopentech"},{"location":"centralus","nam
-e":"msrazuresapservices","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micr
+e":"msrazuresapservices","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micr
 osoft.Compute/Locations/centralus/Publishers/msrazuresapservices"},{"location":"centralus","name"
-:"mtnfog","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/L
+:"mtnfog","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/L
 ocations/centralus/Publishers/mtnfog"},{"location":"centralus","name":"mvp-systems","id":"/Subscr
-iptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publ
+iptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publ
 ishers/mvp-systems"},{"location":"centralus","name":"mxhero","id":"/Subscriptions/6b6a59a6-e367-4
 913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/mxhero"},{"locat
-ion":"centralus","name":"my-com","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provid
+ion":"centralus","name":"my-com","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provid
 ers/Microsoft.Compute/Locations/centralus/Publishers/my-com"},{"location":"centralus","name":"nam
-irial","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Loca
+irial","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Loca
 tions/centralus/Publishers/namirial"},{"location":"centralus","name":"nasuni","id":"/Subscription
-s/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers
+s/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers
 /nasuni"},{"location":"centralus","name":"ncbi","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6
 862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/ncbi"},{"location":"centralus
-","name":"netapp","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.C
+","name":"netapp","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.C
 ompute/Locations/centralus/Publishers/netapp"},{"location":"centralus","name":"netgate","id":"/Su
-bscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/
+bscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/
 Publishers/netgate"},{"location":"centralus","name":"netiq","id":"/Subscriptions/6b6a59a6-e367-49
 13-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/netiq"},{"locatio
-n":"centralus","name":"netwrix","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provide
+n":"centralus","name":"netwrix","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provide
 rs/Microsoft.Compute/Locations/centralus/Publishers/netwrix"},{"location":"centralus","name":"neu
-soft-neteye","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comput
+soft-neteye","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comput
 e/Locations/centralus/Publishers/neusoft-neteye"},{"location":"centralus","name":"new-signature",
-"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/c
+"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/c
 entralus/Publishers/new-signature"},{"location":"centralus","name":"nextlimit","id":"/Subscriptio
-ns/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publisher
+ns/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publisher
 s/nextlimit"},{"location":"centralus","name":"nexus","id":"/Subscriptions/6b6a59a6-e367-4913-bea7
 -34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/nexus"},{"location":"cen
-tralus","name":"nginxinc","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mic
+tralus","name":"nginxinc","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mic
 rosoft.Compute/Locations/centralus/Publishers/nginxinc"},{"location":"centralus","name":"nicepeop
-leatwork","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/L
+leatwork","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/L
 ocations/centralus/Publishers/nicepeopleatwork"},{"location":"centralus","name":"nodejsapi","id":
-"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centra
+"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centra
 lus/Publishers/nodejsapi"},{"location":"centralus","name":"nuxeo","id":"/Subscriptions/6b6a59a6-e
 367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/nuxeo"},{"l
 ocation":"centralus","name":"officeclipsuite","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686
 2095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/officeclipsuite"},{"location":"
-centralus","name":"omega-software","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Prov
+centralus","name":"omega-software","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Prov
 iders/Microsoft.Compute/Locations/centralus/Publishers/omega-software"},{"location":"centralus","
-name":"ooyala","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comp
+name":"ooyala","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comp
 ute/Locations/centralus/Publishers/ooyala"},{"location":"centralus","name":"op5","id":"/Subscript
-ions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publish
+ions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publish
 ers/op5"},{"location":"centralus","name":"opencell","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/opencell"},{"location":"c
-entralus","name":"OpenLogic","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/
+entralus","name":"OpenLogic","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/
 Microsoft.Compute/Locations/centralus/Publishers/OpenLogic"},{"location":"centralus","name":"open
-meap","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locat
+meap","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locat
 ions/centralus/Publishers/openmeap"},{"location":"centralus","name":"opennebulasystems","id":"/Su
-bscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/
+bscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/
 Publishers/opennebulasystems"},{"location":"centralus","name":"opentext","id":"/Subscriptions/6b6
 a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/open
 text"},{"location":"centralus","name":"Oracle","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68
 62095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Oracle"},{"location":"centralu
-s","name":"orfast-technologies","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provide
+s","name":"orfast-technologies","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provide
 rs/Microsoft.Compute/Locations/centralus/Publishers/orfast-technologies"},{"location":"centralus"
-,"name":"orientdb","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.
+,"name":"orientdb","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.
 Compute/Locations/centralus/Publishers/orientdb"},{"location":"centralus","name":"osisoft","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/osisoft"},{"location":"centralus","name":"outsystems","id":"/Subscriptions/6b6a59a6
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/outsystem
 s"},{"location":"centralus","name":"paloaltonetworks","id":"/Subscriptions/6b6a59a6-e367-4913-bea
 7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/paloaltonetworks"},{"lo
 cation":"centralus","name":"panorama-necto","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68620
 95bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/panorama-necto"},{"location":"cen
-tralus","name":"panzura-file-system","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Pr
+tralus","name":"panzura-file-system","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Pr
 oviders/Microsoft.Compute/Locations/centralus/Publishers/panzura-file-system"},{"location":"centr
-alus","name":"pointmatter","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mi
+alus","name":"pointmatter","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mi
 crosoft.Compute/Locations/centralus/Publishers/pointmatter"},{"location":"centralus","name":"port
-alarchitects","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compu
+alarchitects","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compu
 te/Locations/centralus/Publishers/portalarchitects"},{"location":"centralus","name":"predictionio
-","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations
+","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations
 /centralus/Publishers/predictionio"},{"location":"centralus","name":"predixion","id":"/Subscripti
-ons/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishe
+ons/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishe
 rs/predixion"},{"location":"centralus","name":"prestashop","id":"/Subscriptions/6b6a59a6-e367-491
 3-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/prestashop"},{"loc
 ation":"centralus","name":"prime-strategy","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686209
 5bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/prime-strategy"},{"location":"cent
-ralus","name":"primestream","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/M
+ralus","name":"primestream","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/M
 icrosoft.Compute/Locations/centralus/Publishers/primestream"},{"location":"centralus","name":"pro
-cess-one","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/L
+cess-one","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/L
 ocations/centralus/Publishers/process-one"},{"location":"centralus","name":"profisee","id":"/Subs
-criptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pu
+criptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pu
 blishers/profisee"},{"location":"centralus","name":"progelspa","id":"/Subscriptions/6b6a59a6-e367
 -4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/progelspa"},{"
 location":"centralus","name":"ptv_group","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095b
 f/Providers/Microsoft.Compute/Locations/centralus/Publishers/ptv_group"},{"location":"centralus",
-"name":"puppet","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Com
+"name":"puppet","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Com
 pute/Locations/centralus/Publishers/puppet"},{"location":"centralus","name":"PuppetLabs","id":"/S
-ubscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus
+ubscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus
 /Publishers/PuppetLabs"},{"location":"centralus","name":"PuppetLabs.Test","id":"/Subscriptions/6b
 6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Pup
 petLabs.Test"},{"location":"centralus","name":"pxlag_swiss","id":"/Subscriptions/6b6a59a6-e367-49
 13-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/pxlag_swiss"},{"l
-ocation":"centralus","name":"quales","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Pr
+ocation":"centralus","name":"quales","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Pr
 oviders/Microsoft.Compute/Locations/centralus/Publishers/quales"},{"location":"centralus","name":
-"Qualys","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Lo
+"Qualys","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Lo
 cations/centralus/Publishers/Qualys"},{"location":"centralus","name":"Qualys.Test","id":"/Subscri
-ptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publi
+ptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publi
 shers/Qualys.Test"},{"location":"centralus","name":"Qualys.Test.2","id":"/Subscriptions/6b6a59a6-
 e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Qualys.Tes
 t.2"},{"location":"centralus","name":"Qualys.Test.3","id":"/Subscriptions/6b6a59a6-e367-4913-bea7
 -34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Qualys.Test.3"},{"locati
-on":"centralus","name":"qualysguard","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Pr
+on":"centralus","name":"qualysguard","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Pr
 oviders/Microsoft.Compute/Locations/centralus/Publishers/qualysguard"},{"location":"centralus","n
-ame":"quasardb","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Com
+ame":"quasardb","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Com
 pute/Locations/centralus/Publishers/quasardb"},{"location":"centralus","name":"qubole","id":"/Sub
-scriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/P
+scriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/P
 ublishers/qubole"},{"location":"centralus","name":"radware","id":"/Subscriptions/6b6a59a6-e367-49
 13-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/radware"},{"locat
-ion":"centralus","name":"rancher","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provi
+ion":"centralus","name":"rancher","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provi
 ders/Microsoft.Compute/Locations/centralus/Publishers/rancher"},{"location":"centralus","name":"R
-edHat","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Loca
+edHat","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Loca
 tions/centralus/Publishers/RedHat"},{"location":"centralus","name":"redpoint-global","id":"/Subsc
-riptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pub
+riptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pub
 lishers/redpoint-global"},{"location":"centralus","name":"relevance-lab","id":"/Subscriptions/6b6
 a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/rele
 vance-lab"},{"location":"centralus","name":"remotelearner","id":"/Subscriptions/6b6a59a6-e367-491
 3-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/remotelearner"},{"
-location":"centralus","name":"res","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Prov
+location":"centralus","name":"res","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Prov
 iders/Microsoft.Compute/Locations/centralus/Publishers/res"},{"location":"centralus","name":"revo
-lution-analytics","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.C
+lution-analytics","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.C
 ompute/Locations/centralus/Publishers/revolution-analytics"},{"location":"centralus","name":"Righ
-tScaleLinux","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comput
+tScaleLinux","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comput
 e/Locations/centralus/Publishers/RightScaleLinux"},{"location":"centralus","name":"RightScaleWind
-owsServer","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/
+owsServer","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/
 Locations/centralus/Publishers/RightScaleWindowsServer"},{"location":"centralus","name":"riverbed
-","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations
+","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations
 /centralus/Publishers/riverbed"},{"location":"centralus","name":"RiverbedTechnology","id":"/Subsc
-riptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pub
+riptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pub
 lishers/RiverbedTechnology"},{"location":"centralus","name":"rocketsoftware","id":"/Subscriptions
-/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/
+/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/
 rocketsoftware"},{"location":"centralus","name":"rocket_software","id":"/Subscriptions/6b6a59a6-e
 367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/rocket_soft
 ware"},{"location":"centralus","name":"rp","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686209
 5bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/rp"},{"location":"centralus","name
-":"saama","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/L
+":"saama","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/L
 ocations/centralus/Publishers/saama"},{"location":"centralus","name":"saltstack","id":"/Subscript
-ions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publish
+ions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publish
 ers/saltstack"},{"location":"centralus","name":"sap","id":"/Subscriptions/6b6a59a6-e367-4913-bea7
 -34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/sap"},{"location":"centr
-alus","name":"scalearc","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micro
+alus","name":"scalearc","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micro
 soft.Compute/Locations/centralus/Publishers/scalearc"},{"location":"centralus","name":"scalebase"
-,"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/
+,"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/
 centralus/Publishers/scalebase"},{"location":"centralus","name":"scsk","id":"/Subscriptions/6b6a5
 9a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/scsk"}
 ,{"location":"centralus","name":"seagate","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095
 bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/seagate"},{"location":"centralus","
-name":"searchblox","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.
+name":"searchblox","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.
 Compute/Locations/centralus/Publishers/searchblox"},{"location":"centralus","name":"sensorberg","
-id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/ce
+id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/ce
 ntralus/Publishers/sensorberg"},{"location":"centralus","name":"servoy","id":"/Subscriptions/6b6a
 59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/servo
 y"},{"location":"centralus","name":"sharefile","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68
 62095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/sharefile"},{"location":"centr
-alus","name":"shareshiftneeraj.test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Pr
+alus","name":"shareshiftneeraj.test","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Pr
 oviders/Microsoft.Compute/Locations/centralus/Publishers/shareshiftneeraj.test"},{"location":"cen
-tralus","name":"shavlik","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micr
+tralus","name":"shavlik","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micr
 osoft.Compute/Locations/centralus/Publishers/shavlik"},{"location":"centralus","name":"sightapps"
-,"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/
+,"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/
 centralus/Publishers/sightapps"},{"location":"centralus","name":"silver-peak-systems","id":"/Subs
-criptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pu
+criptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pu
 blishers/silver-peak-systems"},{"location":"centralus","name":"simmachinesinc","id":"/Subscriptio
-ns/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publisher
+ns/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publisher
 s/simmachinesinc"},{"location":"centralus","name":"sinefa","id":"/Subscriptions/6b6a59a6-e367-491
 3-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/sinefa"},{"locatio
-n":"centralus","name":"sios_datakeeper","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf
+n":"centralus","name":"sios_datakeeper","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 /Providers/Microsoft.Compute/Locations/centralus/Publishers/sios_datakeeper"},{"location":"centra
-lus","name":"sisense","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+lus","name":"sisense","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/sisense"},{"location":"centralus","name":"Site24x7","id
-":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cent
+":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cent
 ralus/Publishers/Site24x7"},{"location":"centralus","name":"snaplogic","id":"/Subscriptions/6b6a5
 9a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/snaplo
 gic"},{"location":"centralus","name":"snip2code","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b
 6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/snip2code"},{"location":"cen
-tralus","name":"soasta","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micro
+tralus","name":"soasta","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micro
 soft.Compute/Locations/centralus/Publishers/soasta"},{"location":"centralus","name":"softnas","id
-":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cent
+":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cent
 ralus/Publishers/softnas"},{"location":"centralus","name":"soha","id":"/Subscriptions/6b6a59a6-e3
 67-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/soha"},{"loc
-ation":"centralus","name":"solanolabs","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/
+ation":"centralus","name":"solanolabs","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/
 Providers/Microsoft.Compute/Locations/centralus/Publishers/solanolabs"},{"location":"centralus","
-name":"solarwinds","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.
+name":"solarwinds","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.
 Compute/Locations/centralus/Publishers/solarwinds"},{"location":"centralus","name":"sophos","id":
-"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centra
+"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centra
 lus/Publishers/sophos"},{"location":"centralus","name":"spacecurve","id":"/Subscriptions/6b6a59a6
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/spacecurv
 e"},{"location":"centralus","name":"spagobi","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862
 095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/spagobi"},{"location":"centralus
-","name":"sphere3d","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft
+","name":"sphere3d","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft
 .Compute/Locations/centralus/Publishers/sphere3d"},{"location":"centralus","name":"splunk","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/splunk"},{"location":"centralus","name":"sqlsentry","id":"/Subscriptions/6b6a59a6-e
 367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/sqlsentry"}
 ,{"location":"centralus","name":"stackato-platform-as-a-service","id":"/Subscriptions/6b6a59a6-e3
@@ -3136,150 +3136,150 @@ tform-as-a-service"},{"location":"centralus","name":"stackstorm","id":"/Subscrip
 67-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/stackstorm"}
 ,{"location":"centralus","name":"starwind","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686209
 5bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/starwind"},{"location":"centralus"
-,"name":"StatusReport.Diagnostics.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf
+,"name":"StatusReport.Diagnostics.Test","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 /Providers/Microsoft.Compute/Locations/centralus/Publishers/StatusReport.Diagnostics.Test"},{"loc
-ation":"centralus","name":"steelhive","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/P
+ation":"centralus","name":"steelhive","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/P
 roviders/Microsoft.Compute/Locations/centralus/Publishers/steelhive"},{"location":"centralus","na
-me":"stonefly","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comp
+me":"stonefly","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comp
 ute/Locations/centralus/Publishers/stonefly"},{"location":"centralus","name":"stormshield","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/stormshield"},{"location":"centralus","name":"storreduce","id":"/Subscriptions/6b6a
 59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/storr
 educe"},{"location":"centralus","name":"stratalux","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-3
 4b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/stratalux"},{"location":"c
-entralus","name":"stratus-id","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers
+entralus","name":"stratus-id","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers
 /Microsoft.Compute/Locations/centralus/Publishers/stratus-id"},{"location":"centralus","name":"su
-mologic","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Lo
+mologic","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Lo
 cations/centralus/Publishers/sumologic"},{"location":"centralus","name":"sunview-software","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/sunview-software"},{"location":"centralus","name":"SUSE","id":"/Subscriptions/6b6a5
 9a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/SUSE"}
 ,{"location":"centralus","name":"Symantec","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686209
 5bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Symantec"},{"location":"centralus"
-,"name":"Symantec.QA","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+,"name":"Symantec.QA","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/Symantec.QA"},{"location":"centralus","name":"Symantec.
-staging","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Lo
+staging","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Lo
 cations/centralus/Publishers/Symantec.staging"},{"location":"centralus","name":"Symantec.test","i
-d":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cen
+d":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cen
 tralus/Publishers/Symantec.test"},{"location":"centralus","name":"symantectest1","id":"/Subscript
-ions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publish
+ions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publish
 ers/symantectest1"},{"location":"centralus","name":"SymantecTest11","id":"/Subscriptions/6b6a59a6
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/SymantecT
 est11"},{"location":"centralus","name":"SymantecTest12","id":"/Subscriptions/6b6a59a6-e367-4913-b
 ea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/SymantecTest12"},{"lo
 cation":"centralus","name":"SymantecTest6","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686209
 5bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/SymantecTest6"},{"location":"centr
-alus","name":"SymantecTest7","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/
+alus","name":"SymantecTest7","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/
 Microsoft.Compute/Locations/centralus/Publishers/SymantecTest7"},{"location":"centralus","name":"
-SymantecTest9","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comp
+SymantecTest9","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comp
 ute/Locations/centralus/Publishers/SymantecTest9"},{"location":"centralus","name":"SymantecTestLs
-TestLogonImport","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Co
+TestLogonImport","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Co
 mpute/Locations/centralus/Publishers/SymantecTestLsTestLogonImport"},{"location":"centralus","nam
-e":"SymantecTestLsTestSerdefDat","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provid
+e":"SymantecTestLsTestSerdefDat","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provid
 ers/Microsoft.Compute/Locations/centralus/Publishers/SymantecTestLsTestSerdefDat"},{"location":"c
-entralus","name":"SymantecTestNoLu","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Pro
+entralus","name":"SymantecTestNoLu","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Pro
 viders/Microsoft.Compute/Locations/centralus/Publishers/SymantecTestNoLu"},{"location":"centralus
-","name":"SymantecTestQB","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Mic
+","name":"SymantecTestQB","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Mic
 rosoft.Compute/Locations/centralus/Publishers/SymantecTestQB"},{"location":"centralus","name":"Sy
-mantecTestRU4","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Comp
+mantecTestRU4","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Comp
 ute/Locations/centralus/Publishers/SymantecTestRU4"},{"location":"centralus","name":"syncfusionbi
-gdataplatfor","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compu
+gdataplatfor","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compu
 te/Locations/centralus/Publishers/syncfusionbigdataplatfor"},{"location":"centralus","name":"tabl
-eau","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+eau","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/tableau"},{"location":"centralus","name":"tactic","id":"/Subscriptions/6
 b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/ta
 ctic"},{"location":"centralus","name":"talon","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686
 2095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/talon"},{"location":"centralus"
-,"name":"targit","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Co
+,"name":"targit","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Co
 mpute/Locations/centralus/Publishers/targit"},{"location":"centralus","name":"tavendo","id":"/Sub
-scriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/P
+scriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/P
 ublishers/tavendo"},{"location":"centralus","name":"techdivision","id":"/Subscriptions/6b6a59a6-e
 367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/techdivisio
 n"},{"location":"centralus","name":"telepat","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862
 095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/telepat"},{"location":"centralus
-","name":"tenable","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.
+","name":"tenable","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.
 Compute/Locations/centralus/Publishers/tenable"},{"location":"centralus","name":"tentity","id":"/
-Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralu
+Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralu
 s/Publishers/tentity"},{"location":"centralus","name":"Teradici","id":"/Subscriptions/6b6a59a6-e3
 67-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Teradici"},{
 "location":"centralus","name":"Test.Barracuda.Azure.ConnectivityAgent","id":"/Subscriptions/6b6a5
 9a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Test.B
 arracuda.Azure.ConnectivityAgent"},{"location":"centralus","name":"test.dynatrace.ruxit","id":"/S
-ubscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus
+ubscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus
 /Publishers/test.dynatrace.ruxit"},{"location":"centralus","name":"Test.Gemalto.SafeNet.ProtectV"
-,"id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/
+,"id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/
 centralus/Publishers/Test.Gemalto.SafeNet.ProtectV"},{"location":"centralus","name":"Test.Gemalto
-.SafeNet.ProtectV.Azure","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micr
+.SafeNet.ProtectV.Azure","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micr
 osoft.Compute/Locations/centralus/Publishers/Test.Gemalto.SafeNet.ProtectV.Azure"},{"location":"c
-entralus","name":"Test.HP.AppDefender","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/
+entralus","name":"Test.HP.AppDefender","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/
 Providers/Microsoft.Compute/Locations/centralus/Publishers/Test.HP.AppDefender"},{"location":"cen
-tralus","name":"Test.NJHP.AppDefender","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/
+tralus","name":"Test.NJHP.AppDefender","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/
 Providers/Microsoft.Compute/Locations/centralus/Publishers/Test.NJHP.AppDefender"},{"location":"c
 entralus","name":"Test.TrendMicro.DeepSecurity","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6
 862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Test.TrendMicro.DeepSecurity"
 },{"location":"centralus","name":"Test.TrendMicro.DeepSecurity2","id":"/Subscriptions/6b6a59a6-e3
 67-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Test.TrendMi
 cro.DeepSecurity2"},{"location":"centralus","name":"Test.TrendMicro.DeepSecurity3","id":"/Subscri
-ptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publi
+ptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publi
 shers/Test.TrendMicro.DeepSecurity3"},{"location":"centralus","name":"Test1.NJHP.AppDefender","id
-":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cent
+":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cent
 ralus/Publishers/Test1.NJHP.AppDefender"},{"location":"centralus","name":"test1extnnocert","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/test1extnnocert"},{"location":"centralus","name":"Test3.Symantec.SymantecEndpointPr
-otection","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/L
+otection","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/L
 ocations/centralus/Publishers/Test3.Symantec.SymantecEndpointProtection"},{"location":"centralus"
 ,"name":"Test4.Symantec.SymantecEndpointProtection","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Test4.Symantec.SymantecEn
 dpointProtection"},{"location":"centralus","name":"Test5.Symantec.SymantecEndpointProtection","id
-":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cent
+":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cent
 ralus/Publishers/Test5.Symantec.SymantecEndpointProtection"},{"location":"centralus","name":"thin
-kboxsoftware","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compu
+kboxsoftware","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compu
 te/Locations/centralus/Publishers/thinkboxsoftware"},{"location":"centralus","name":"tibco-softwa
-re","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locatio
+re","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locatio
 ns/centralus/Publishers/tibco-software"},{"location":"centralus","name":"topdesk","id":"/Subscrip
-tions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publis
+tions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publis
 hers/topdesk"},{"location":"centralus","name":"torusware","id":"/Subscriptions/6b6a59a6-e367-4913
 -bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/torusware"},{"locat
 ion":"centralus","name":"townsend-security","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68620
 95bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/townsend-security"},{"location":"
-centralus","name":"transvault","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provider
+centralus","name":"transvault","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provider
 s/Microsoft.Compute/Locations/centralus/Publishers/transvault"},{"location":"centralus","name":"t
-rendmicro","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/
+rendmicro","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/
 Locations/centralus/Publishers/trendmicro"},{"location":"centralus","name":"TrendMicro.DeepSecuri
-ty","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locatio
+ty","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locatio
 ns/centralus/Publishers/TrendMicro.DeepSecurity"},{"location":"centralus","name":"TrendMicro.Deep
-Security.Test2","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Com
+Security.Test2","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Com
 pute/Locations/centralus/Publishers/TrendMicro.DeepSecurity.Test2"},{"location":"centralus","name
-":"TrendMicro.PortalProtect","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/
+":"TrendMicro.PortalProtect","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/
 Microsoft.Compute/Locations/centralus/Publishers/TrendMicro.PortalProtect"},{"location":"centralu
-s","name":"tsa-public-service","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provider
+s","name":"tsa-public-service","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provider
 s/Microsoft.Compute/Locations/centralus/Publishers/tsa-public-service"},{"location":"centralus","
-name":"typesafe","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Co
+name":"typesafe","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Co
 mpute/Locations/centralus/Publishers/typesafe"},{"location":"centralus","name":"ubercloud","id":"
-/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/central
+/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/central
 us/Publishers/ubercloud"},{"location":"centralus","name":"unidesk","id":"/Subscriptions/6b6a59a6-
 e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/unidesk"},
 {"location":"centralus","name":"unidesk-corp","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b686
 2095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/unidesk-corp"},{"location":"cen
-tralus","name":"usp","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof
+tralus","name":"usp","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsof
 t.Compute/Locations/centralus/Publishers/usp"},{"location":"centralus","name":"vbot","id":"/Subsc
-riptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pub
+riptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pub
 lishers/vbot"},{"location":"centralus","name":"vecompsoftware","id":"/Subscriptions/6b6a59a6-e367
 -4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/vecompsoftware
 "},{"location":"centralus","name":"veeam","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095
 bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/veeam"},{"location":"centralus","na
-me":"vidispine","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Com
+me":"vidispine","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Com
 pute/Locations/centralus/Publishers/vidispine"},{"location":"centralus","name":"vidizmo","id":"/S
-ubscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus
+ubscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus
 /Publishers/vidizmo"},{"location":"centralus","name":"vintegris","id":"/Subscriptions/6b6a59a6-e3
 67-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/vintegris"},
-{"location":"centralus","name":"vircom","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf
+{"location":"centralus","name":"vircom","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 /Providers/Microsoft.Compute/Locations/centralus/Publishers/vircom"},{"location":"centralus","nam
-e":"virtualworks","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.C
+e":"virtualworks","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.C
 ompute/Locations/centralus/Publishers/virtualworks"},{"location":"centralus","name":"vision_solut
-ions","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locat
+ions","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locat
 ions/centralus/Publishers/vision_solutions"},{"location":"centralus","name":"vmturbo","id":"/Subs
-criptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Pu
+criptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Pu
 blishers/vmturbo"},{"location":"centralus","name":"Vormetric","id":"/Subscriptions/6b6a59a6-e367-
 4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/Vormetric"},{"l
 ocation":"centralus","name":"Vormetric.TestExt","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6
@@ -3290,44 +3290,44 @@ rmetricTransparentEncryption"},{"location":"centralus","name":"vte","id":"/Subsc
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/vte"},{"l
 ocation":"centralus","name":"WAD-VMSS.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68620
 95bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/WAD-VMSS.Test"},{"location":"cent
-ralus","name":"WAD2AI.Diagnostics.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf
+ralus","name":"WAD2AI.Diagnostics.Test","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 /Providers/Microsoft.Compute/Locations/centralus/Publishers/WAD2AI.Diagnostics.Test"},{"location"
 :"centralus","name":"WAD2EventHub.Diagnostics.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-
 34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/WAD2EventHub.Diagnostics.
 Test"},{"location":"centralus","name":"WADVMSS.Test","id":"/Subscriptions/6b6a59a6-e367-4913-bea7
 -34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/WADVMSS.Test"},{"locatio
-n":"centralus","name":"wallix","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Provider
+n":"centralus","name":"wallix","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Provider
 s/Microsoft.Compute/Locations/centralus/Publishers/wallix"},{"location":"centralus","name":"warat
-ek","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locatio
+ek","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locatio
 ns/centralus/Publishers/waratek"},{"location":"centralus","name":"warewolf-esb","id":"/Subscripti
-ons/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishe
+ons/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishe
 rs/warewolf-esb"},{"location":"centralus","name":"watchfulsoftware","id":"/Subscriptions/6b6a59a6
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/watchfuls
 oftware"},{"location":"centralus","name":"websense-apmailpe","id":"/Subscriptions/6b6a59a6-e367-4
 913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/websense-apmailp
 e"},{"location":"centralus","name":"wipro-ltd","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68
 62095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/wipro-ltd"},{"location":"centr
-alus","name":"wmspanel","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micro
+alus","name":"wmspanel","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micro
 soft.Compute/Locations/centralus/Publishers/wmspanel"},{"location":"centralus","name":"workshare-
-technology","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute
+technology","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute
 /Locations/centralus/Publishers/workshare-technology"},{"location":"centralus","name":"wowza","id
-":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/cent
+":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/cent
 ralus/Publishers/wowza"},{"location":"centralus","name":"xebialabs","id":"/Subscriptions/6b6a59a6
 -e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/xebialabs
 "},{"location":"centralus","name":"xfinityinc","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b68
 62095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/xfinityinc"},{"location":"cent
-ralus","name":"xmpro","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microso
+ralus","name":"xmpro","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microso
 ft.Compute/Locations/centralus/Publishers/xmpro"},{"location":"centralus","name":"xrm","id":"/Sub
-scriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/P
+scriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/P
 ublishers/xrm"},{"location":"centralus","name":"xtremedata","id":"/Subscriptions/6b6a59a6-e367-49
 13-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/xtremedata"},{"lo
-cation":"centralus","name":"yellowfin","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/
+cation":"centralus","name":"yellowfin","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/
 Providers/Microsoft.Compute/Locations/centralus/Publishers/yellowfin"},{"location":"centralus","n
-ame":"your-shop-online","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Micro
+ame":"your-shop-online","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Micro
 soft.Compute/Locations/centralus/Publishers/your-shop-online"},{"location":"centralus","name":"ze
-mentis","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Loc
+mentis","id":"/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Loc
 ations/centralus/Publishers/zementis"},{"location":"centralus","name":"zend","id":"/Subscriptions
-/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/
+/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locations/centralus/Publishers/
 zend"},{"location":"centralus","name":"zoomdata","id":"/Subscriptions/6b6a59a6-e367-4913-bea7-34b
 6862095bf/Providers/Microsoft.Compute/Locations/centralus/Publishers/zoomdata"}]
 
@@ -3373,7 +3373,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/publishers/Microsoft.Compute/artifacttypes/vmextension/types?api-v
 ersion=2016-03-30
 
@@ -3406,27 +3406,27 @@ Body:
   {
     "location": "centralus",
     "name": "BGInfo",
-    "id": "/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+    "id": "/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/BGInfo"
   },
   {
     "location": "centralus",
     "name": "CustomScriptExtension",
-    "id": "/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+    "id": "/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/CustomScriptExtension"
 
   },
   {
     "location": "centralus",
     "name": "JsonADDomainExtension",
-    "id": "/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+    "id": "/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/JsonADDomainExtension"
 
   },
   {
     "location": "centralus",
     "name": "VMAccessAgent",
-    "id": "/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+    "id": "/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/VMAccessAgent"
   }
 ]
@@ -3473,7 +3473,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/publishers/Microsoft.Compute/artifacttypes/vmextension/types/BGInf
 o/versions?api-version=2016-03-30
 
@@ -3506,7 +3506,7 @@ Body:
   {
     "location": "centralus",
     "name": "2.1",
-    "id": "/Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locati
+    "id": "/Subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/Providers/Microsoft.Compute/Locati
 ons/centralus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/BGInfo/Versions/2.1"
   }
 ]
@@ -3553,7 +3553,7 @@ HTTP Method:
 PUT
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/my
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/my
 group2/providers/Microsoft.Compute/virtualMachines/myvm2/extensions/BGInfo?api-version=2016-03-30
 
 
@@ -3602,7 +3602,7 @@ Body:
     "autoUpgradeMinorVersion": true,
     "provisioningState": "Creating"
   },
-  "id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/mygroup2/providers/Mi
+  "id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/providers/Mi
 crosoft.Compute/virtualMachines/myvm2/extensions/BGInfo",
   "name": "BGInfo",
   "type": "Microsoft.Compute/virtualMachines/extensions",
@@ -3651,7 +3651,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/38074ed3-bd51-4b21-ad40-14855bbdcc49?api-version=2016-0
 3-30
 
@@ -3727,7 +3727,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/38074ed3-bd51-4b21-ad40-14855bbdcc49?api-version=2016-0
 3-30
 
@@ -3803,7 +3803,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/38074ed3-bd51-4b21-ad40-14855bbdcc49?api-version=2016-0
 3-30
 
@@ -3879,7 +3879,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microso
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microso
 ft.Compute/locations/centralus/operations/38074ed3-bd51-4b21-ad40-14855bbdcc49?api-version=2016-0
 3-30
 
@@ -3956,7 +3956,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/my
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/my
 group2/providers/Microsoft.Compute/virtualMachines/myvm2/extensions/BGInfo?api-version=2016-03-30
 
 
@@ -3992,7 +3992,7 @@ Body:
     "autoUpgradeMinorVersion": true,
     "provisioningState": "Succeeded"
   },
-  "id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/mygroup2/providers/Mi
+  "id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/providers/Mi
 crosoft.Compute/virtualMachines/myvm2/extensions/BGInfo",
   "name": "BGInfo",
   "type": "Microsoft.Compute/virtualMachines/extensions",
@@ -4009,17 +4009,17 @@ RequestId IsSuccessStatusCode StatusCode ReasonPhrase
 
 
 
-PS C:\Users\abhanand> $vnet.Subnets[0].Id
-/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/mygroup2/provider
+PS C:\Users\user1> $vnet.Subnets[0].Id
+/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/provider
 s/Microsoft.Network/virtualNetworks/myvnet1/subnets/mysubnet1
 
-PS C:\Users\abhanand> $vnet.Subnets[1].Id
+PS C:\Users\user1> $vnet.Subnets[1].Id
 
-PS C:\Users\abhanand> $vnet.Subnets[0].Id
-/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/mygroup2/providers/Microsoft.Network/virtualN
+PS C:\Users\user1> $vnet.Subnets[0].Id
+/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/mygroup2/providers/Microsoft.Network/virtualN
 etworks/myvnet1/subnets/mysubnet1
 
-PS C:\Users\abhanand>  Get-AzureRmResource -ResourceGroupName mygroup2
+PS C:\Users\user1>  Get-AzureRmResource -ResourceGroupName mygroup2
 Get-AzureRmResource : Parameter set cannot be resolved using the specified named parameters.
 At line:1 char:2
 +  Get-AzureRmResource -ResourceGroupName mygroup2
@@ -4029,7 +4029,7 @@ At line:1 char:2
    ation.GetAzureResourceCmdlet
  
 
-PS C:\Users\abhanand>  Get-AzureRmResource -ResourceGroupName mygroup2
+PS C:\Users\user1>  Get-AzureRmResource -ResourceGroupName mygroup2
 Get-AzureRmResource : Parameter set cannot be resolved using the specified named parameters.
 At line:1 char:2
 +  Get-AzureRmResource -ResourceGroupName mygroup2
@@ -4039,6 +4039,6 @@ At line:1 char:2
    ation.GetAzureResourceCmdlet
  
 
-PS C:\Users\abhanand> 
+PS C:\Users\user1> 
 
 #>

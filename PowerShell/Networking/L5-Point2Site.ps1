@@ -90,24 +90,24 @@ New-AzureRmVirtualNetworkGateway -Name $GWName -ResourceGroupName $RG -Location 
 
  
 
-PS C:\Users\abhanand> Login-AzureRmAccount
+PS C:\Users\user1> Login-AzureRmAccount
 
-PS C:\Users\abhanand> 
+PS C:\Users\user1> 
 Login-AzureRmAccount
 
 
 
 Environment           : AzureCloud
-Account               : abhanand@microsoft.com
+Account               : user1@microsoft.com
 TenantId              : 72f988bf-86f1-41af-91ab-2d7cd011db47
-SubscriptionId        : 6b6a59a6-e367-4913-bea7-34b6862095bf
+SubscriptionId        : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 SubscriptionName      : Microsoft Azure Internal Consumption
 CurrentStorageAccount : 
 
 
 
 
-PS C:\Users\abhanand> $VNetName  = "TestVNet"
+PS C:\Users\user1> $VNetName  = "TestVNet"
 $FESubName = "FrontEnd"
 $BESubName = "Backend"
 $GWSubName = "GatewaySubnet"
@@ -126,7 +126,7 @@ $GWIPconfName = "gwipconf"
 $P2SRootCertName = "ARMP2SRootCert.cer"
 
 
-PS C:\Users\abhanand> New-AzureRmResourceGroup -Name $RG -Location $Location
+PS C:\Users\user1> New-AzureRmResourceGroup -Name $RG -Location $Location
 
 WARNING: The usability of Tag parameter in this cmdlet will be modified in a future release. Th
 is will impact creating, updating and appending tags for Azure resources. For more details abou
@@ -138,12 +138,12 @@ ResourceGroupName : TestRG
 Location          : eastus
 ProvisioningState : Succeeded
 Tags              : 
-ResourceId        : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/TestRG
+ResourceId        : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/TestRG
 
 
 
 
-PS C:\Users\abhanand> # Create the subnet configurations for the virtual network, naming them FrontEnd, BackEnd, and GatewaySubnet. Note that these prefixes must be part of the VNet address space declared above.
+PS C:\Users\user1> # Create the subnet configurations for the virtual network, naming them FrontEnd, BackEnd, and GatewaySubnet. Note that these prefixes must be part of the VNet address space declared above.
 
 $fesub = New-AzureRmVirtualNetworkSubnetConfig -Name $FESubName -AddressPrefix $FESubPrefix
 $besub = New-AzureRmVirtualNetworkSubnetConfig -Name $BESubName -AddressPrefix $BESubPrefix
@@ -174,7 +174,7 @@ t creating, updating and appending tags for Azure resources. For more details ab
 Name              : TestVNet
 ResourceGroupName : TestRG
 Location          : eastus
-Id                : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/TestRG/
+Id                : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/TestRG/
                     providers/Microsoft.Network/virtualNetworks/TestVNet
 Etag              : W/"f0452e27-3780-481e-80cc-1facd19d9a94"
 ResourceGuid      : eb7b9c86-ed1f-4c10-9561-bfe8be5d1ff7
@@ -195,7 +195,7 @@ Subnets           : [
                       {
                         "Name": "FrontEnd",
                         "Etag": "W/\"f0452e27-3780-481e-80cc-1facd19d9a94\"",
-                        "Id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGro
+                        "Id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGro
                     ups/TestRG/providers/Microsoft.Network/virtualNetworks/TestVNet/subnets/Fr
                     ontEnd",
                         "AddressPrefix": "192.168.1.0/24",
@@ -205,7 +205,7 @@ Subnets           : [
                       {
                         "Name": "Backend",
                         "Etag": "W/\"f0452e27-3780-481e-80cc-1facd19d9a94\"",
-                        "Id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGro
+                        "Id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGro
                     ups/TestRG/providers/Microsoft.Network/virtualNetworks/TestVNet/subnets/Ba
                     ckend",
                         "AddressPrefix": "10.254.1.0/24",
@@ -215,7 +215,7 @@ Subnets           : [
                       {
                         "Name": "GatewaySubnet",
                         "Etag": "W/\"f0452e27-3780-481e-80cc-1facd19d9a94\"",
-                        "Id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGro
+                        "Id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGro
                     ups/TestRG/providers/Microsoft.Network/virtualNetworks/TestVNet/subnets/Ga
                     tewaySubnet",
                         "AddressPrefix": "192.168.200.0/26",
@@ -231,12 +231,12 @@ t creating, updating and appending tags for Azure resources. For more details ab
 
 
 
-PS C:\Users\abhanand> 
+PS C:\Users\user1> 
 
 $MyP2SRootCertPubKeyBase64 = "MIIDETCCAf2gAwIBAgIQVi/tBDmaVJ5EiXtYGpZ24jAJBgUrDgMCHQUAMB4xHDAaBgNVBAMTE1Jvb3RDZXJ0aWZpY2F0ZU5hbWUwHhcNMTYwNzE5MjM1MzE2WhcNMzkxMjMxMjM1OTU5WjAeMRwwGgYDVQQDExNSb290Q2VydGlmaWNhdGVOYW1lMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqD7L5Y0vyY/Rc7T+Lr6H6NeKiCO3cu2Ww6nQWk8S/YDO+gZPGz98nGIS2FhWcJv/hqoao/f1YI9gzTplLT4FGvGFvZzuo66feBrQXrDIQLIiMxtbOOnXtrn0fvsI7SGrTpT4WZ3UIoWR2/uT8FnYAwkBUsP2c1ZRMZj0JSnfXMk5QPBVgNghqhYY2sm8xo8nYasqD72Hbgd3VnvAWh23qF1S8N5E24ydBPxWcHZOxnQCHq/6E5arB6NNSR+h0rXmCiJqEGliv9PH6evKFW1KxmDYOYf2mCPRlI9ly/7AQAK3VhqIBu4zK5g6i33UQy5nbuIbXMI+0A/GKDG7pYDNhwIDAQABo1MwUTBPBgNVHQEESDBGgBCzfPkWGZCex08bE0WfpKjeoSAwHjEcMBoGA1UEAxMTUm9vdENlcnRpZmljYXRlTmFtZYIQVi/tBDmaVJ5EiXtYGpZ24jAJBgUrDgMCHQUAA4IBAQATiRBEdaOgbRTsJ+HN/x1J0B+8scQC29OYW3Kc2M+29okyZazAskVlZdqgdMhlpzEY9Ze7smpbS/+TRWyTVQZNZfYuTPCmGwvNZIHtjijmqsEWwJzWUJ3ncjxtXcKsi0bQBefzxEVGNDWnDbgRgOrq2VPTpafYaG/dsebe6+ypnuIl+jnpDAa7XlaraRAHK2cRZZ751HinjVFSj9JUyMmkDZHGzzlZeP0QVAc6Zbpq5tLf6m4K4OMq5RmlDQ15AcStjUhVu1vA+dmZJZ3BBDswTh4naSyNmn/rtN/e7V5OK84cc4Q1yFEGWoZ4wUtJGDbHX8/qhCDcIStou3gyZVRM"
 $p2srootcert = New-AzureRmVpnClientRootCertificate -Name $P2SRootCertName -PublicCertData $MyP2SRootCertPubKeyBase64
 
-PS C:\Users\abhanand> 
+PS C:\Users\user1> 
 New-AzureRmVirtualNetworkGateway -Name $GWName -ResourceGroupName $RG -Location $Location -IpConfigurations $ipconf -GatewayType Vpn -VpnType RouteBased -EnableBgp $false -GatewaySku Standard -VpnClientAddressPool $VPNClientAddressPool -VpnClientRootCertificates $p2srootcert
 
 WARNING: The output object type of this cmdlet will be modified in a future release. Also, the 
@@ -258,16 +258,16 @@ IpConfigurationsText       : [
                                {
                                  "PrivateIpAllocationMethod": "Dynamic",
                                  "Subnet": {
-                                   "Id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/TestRG/provid
+                                   "Id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/TestRG/provid
                              ers/Microsoft.Network/virtualNetworks/TestVNet/subnets/GatewaySubnet"
                                  },
                                  "PublicIpAddress": {
-                                   "Id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/TestRG/provid
+                                   "Id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/TestRG/provid
                              ers/Microsoft.Network/publicIPAddresses/GWIP"
                                  },
                                  "Name": "gwipconf",
                                  "Etag": "W/\"efa9621b-746a-4d1a-a72b-b306279edf29\"",
-                                 "Id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/TestRG/provider
+                                 "Id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/TestRG/provider
                              s/Microsoft.Network/virtualNetworkGateways/GW/ipConfigurations/gwipconf"
                                }
                              ]
@@ -301,7 +301,7 @@ VpnClientConfigurationText : {
                              /rtN/e7V5OK84cc4Q1yFEGWoZ4wUtJGDbHX8/qhCDcIStou3gyZVRM",
                                    "Name": "ARMP2SRootCert.cer",
                                    "Etag": "W/\"efa9621b-746a-4d1a-a72b-b306279edf29\"",
-                                   "Id": "/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/TestRG/provid
+                                   "Id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/TestRG/provid
                              ers/Microsoft.Network/virtualNetworkGateways/GW/vpnClientRootCertificates/ARMP2SRootCert.cer"
                                  }
                                ]
@@ -318,13 +318,13 @@ Tag                        : {}
 TagsTable                  : 
 Name                       : GW
 Etag                       : W/"efa9621b-746a-4d1a-a72b-b306279edf29"
-Id                         : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/TestRG/providers/Microsoft
+Id                         : /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/TestRG/providers/Microsoft
                              .Network/virtualNetworkGateways/GW
 
 
 
 
-PS C:\Users\abhanand> 
+PS C:\Users\user1> 
 
 #>
 
@@ -361,7 +361,7 @@ O%2F5faW9uj7khXCUHYii5Z0P%2Fd0MyL8%3D&st=2016-07-20T17%3A53%3A51Z&se=2016-07-20T
 
 
 
-# https://resources.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/TestRG/providers/Microsoft.Network/virtualNetworkGateways/GW 
+# https://resources.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/TestRG/providers/Microsoft.Network/virtualNetworkGateways/GW 
 <#
 
    "vpnClientRevokedCertificates": [],

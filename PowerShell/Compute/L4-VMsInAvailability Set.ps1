@@ -136,17 +136,17 @@ $vmList.Name
 
 <#
 
-PS C:\Users\abhanand> $subnetName = "mysubnet1"
+PS C:\Users\user1> $subnetName = "mysubnet1"
 $vnetName = "myvnet1"
 $rgName = "mygroup2"
 $locName = "centralus"
 $stName = "mystorageaccountft"
 
-PS C:\Users\abhanand> $storageAcc = Get-AzureRmStorageAccount -ResourceGroupName $rgName -Name $stName
+PS C:\Users\user1> $storageAcc = Get-AzureRmStorageAccount -ResourceGroupName $rgName -Name $stName
 
-PS C:\Users\abhanand> $vnet = Get-AzureRmVirtualNetwork -Name $vnetName -ResourceGroupName $rgName 
+PS C:\Users\user1> $vnet = Get-AzureRmVirtualNetwork -Name $vnetName -ResourceGroupName $rgName 
 
-PS C:\Users\abhanand> $ipName = "myIPaddress3"
+PS C:\Users\user1> $ipName = "myIPaddress3"
 $pip = New-AzureRmPublicIpAddress -Name $ipName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 
 WARNING: The output object type of this cmdlet will be modified in a future release. Also, the usability o
@@ -154,7 +154,7 @@ f Tag parameter in this cmdlet will be modified in a future release. This will i
 nd appending tags for Azure resources. For more details about the change, please visit https://github.com/
 Azure/azure-powershell/issues/726#issuecomment-213545494
 
-PS C:\Users\abhanand> $nicName = "mynic3"
+PS C:\Users\user1> $nicName = "mynic3"
 $nic = New-AzureRmNetworkInterface -Name $nicName -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id 
 
 WARNING: The output object type of this cmdlet will be modified in a future release. Also, the usability o
@@ -162,28 +162,28 @@ f Tag parameter in this cmdlet will be modified in a future release. This will i
 nd appending tags for Azure resources. For more details about the change, please visit https://github.com/
 Azure/azure-powershell/issues/726#issuecomment-213545494
 
-PS C:\Users\abhanand> 
+PS C:\Users\user1> 
 $AvailabilitySet = Get-AzureRmAvailabilitySet -ResourceGroupName $rgName -Name "AvailabilitySet01"
 
 
-PS C:\Users\abhanand> 
+PS C:\Users\user1> 
 $osDiskUri ="https://mystorageaccountft.blob.core.windows.net/vhds/uploaded.vhd" # This would be the URL of the OS VHD which we want to use here for creating the new VM
 
 
-PS C:\Users\abhanand> 
+PS C:\Users\user1> 
 $vmName = "myvm3"
 $vm = New-AzureRmVMConfig -VMName $vmName -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id 
 
 
-PS C:\Users\abhanand> $vm = Add-AzureRmVMNetworkInterface -VM $vm -Id $nic.Id 
+PS C:\Users\user1> $vm = Add-AzureRmVMNetworkInterface -VM $vm -Id $nic.Id 
 
-PS C:\Users\abhanand> $osdiskName = $vmname+'_osDisk'
+PS C:\Users\user1> $osdiskName = $vmname+'_osDisk'
 
-PS C:\Users\abhanand> $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osDiskName -VhdUri $osDiskUri -CreateOption attach -Windows
+PS C:\Users\user1> $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osDiskName -VhdUri $osDiskUri -CreateOption attach -Windows
 
-PS C:\Users\abhanand> New-AzureRmVM -ResourceGroupName $rgName -Location $locName -VM $vm -Verbose -Debug
+PS C:\Users\user1> New-AzureRmVM -ResourceGroupName $rgName -Location $locName -VM $vm -Verbose -Debug
 DEBUG: 5:50:14 PM - NewAzureVMCommand begin processing with ParameterSet '__AllParameterSets'.
-DEBUG: 5:50:16 PM - using account id 'abhanand@microsoft.com'...
+DEBUG: 5:50:16 PM - using account id 'user1@microsoft.com'...
 WARNING: The  usability of Tag parameter in this cmdlet will be modified in a future release.  This will i
 mpact creating, updating and appending tags for Azure resources.  For more details about the change, pleas
 e visit https://github.com/Azure/azure-powershell/issues/726#issuecomment-213545494
@@ -214,7 +214,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -289,7 +289,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -364,7 +364,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -439,7 +439,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -514,7 +514,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -589,7 +589,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -664,7 +664,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -739,7 +739,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -814,7 +814,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -889,7 +889,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -964,7 +964,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1039,7 +1039,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1114,7 +1114,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1189,7 +1189,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1264,7 +1264,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1339,7 +1339,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1414,7 +1414,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1489,7 +1489,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1564,7 +1564,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1640,7 +1640,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1715,7 +1715,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1790,7 +1790,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1865,7 +1865,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -1941,7 +1941,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2016,7 +2016,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2091,7 +2091,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2167,7 +2167,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2242,7 +2242,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2317,7 +2317,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2393,7 +2393,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2468,7 +2468,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2543,7 +2543,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2618,7 +2618,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2693,7 +2693,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2768,7 +2768,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:
@@ -2843,7 +2843,7 @@ HTTP Method:
 GET
 
 Absolute Uri:
-https://management.azure.com/subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/providers/Microsoft.Comput
+https://management.azure.com/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/providers/Microsoft.Comput
 e/locations/centralus/operations/dfe00619-7b71-4338-9b8d-91a9c0a7374e?api-version=2016-03-30
 
 Headers:

@@ -55,7 +55,7 @@ Time          :
 #### Capture the virtual machine image to a destination storage container
 
 
-Save-AzureRmVMImage -ResourceGroupName MYGROUP2 -Name myvm1 -DestinationContainerName image -VHDNamePrefix customimage -Path C:\Users\abhanand\Documents\temp\customimage.json -Verbose
+Save-AzureRmVMImage -ResourceGroupName MYGROUP2 -Name myvm1 -DestinationContainerName image -VHDNamePrefix customimage -Path C:\Users\user1\Documents\temp\customimage.json -Verbose
 
 
 #### Verify Creation of Image 

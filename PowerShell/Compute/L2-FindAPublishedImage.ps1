@@ -1,5 +1,8 @@
 ﻿# To find published image on Azure. Customer needs to go through few steps
 
+# To login to Azure Resource Manager
+Login-AzureRmAccount
+
 # List All the Datacenter that Subscription has access too.
 Get-AzureRmLocation | select Location, DisplayName
 
