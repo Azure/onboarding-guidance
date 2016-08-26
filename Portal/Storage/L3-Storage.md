@@ -43,12 +43,11 @@ Self-guided
 
 ![Screenshot](images/Storage-L3-3.png)
 
-![Screenshot](images/Storage-L3-2.png)
-
-
 * Click **Create**
 
 * To verify Storage Account (or any resources) creation status, click **Notification** (bell icon on the top right corner). Make sure it is created first before moving on to the next step.
+
+![Screenshot](images/Storage-L3-4.png)
 
 * ### Repeat the above steps to create another storage account for diagnostics or another VM if needed.
 
