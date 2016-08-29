@@ -1,4 +1,4 @@
-# Module: Azure PowerShell Setup
+# Azure PowerShell Setup
 
 # Abstract
 

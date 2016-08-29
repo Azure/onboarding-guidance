@@ -2,7 +2,7 @@
 
 ## See the following resources to learn more
 
-## Additional Resources
+## Resources
 * [Azure/onboarding-guidance](https://github.com/Azure/onboarding-guidance)
 * [Microsoft Azure Storage Explorer](http://storageexplorer.com/)
 * [Running a Windows VM on Azure](https://azure.microsoft.com/en-us/documentation/articles/guidance-compute-single-vm/)
