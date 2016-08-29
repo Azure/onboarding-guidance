@@ -25,7 +25,6 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * Lesson 2. Azure Resource Group Management ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Storage/L2-Storage.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Storage/L2-AzureRMResourceGroupMgmt.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Storage/L2-AzureRMResourceGroupMgmt.md) )
 * Lesson 3. Create a Storage Account ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Storage/L3-Storage.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Storage/L3-CreateStorageAccount.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Storage/L3-CreateStorageAccount.md) )
 
-:memo: ( [**Exercises**]([PowerShell](#) | [XplatCLI](#) ) )
 :memo: [**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Storage.md)
 
 ##  Compute
