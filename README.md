@@ -25,7 +25,7 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * Lesson 2. Azure Resource Group Management ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Storage/L2-Storage.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Storage/L2-AzureRMResourceGroupMgmt.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Storage/L2-AzureRMResourceGroupMgmt.md) )
 * Lesson 3. Create a Storage Account ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Storage/L3-Storage.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Storage/L3-CreateStorageAccount.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Storage/L3-CreateStorageAccount.md) )
 
-:memo: Exercises ( [PowerShell](#) | [XPlatCLI ](#) ) &nbsp;&nbsp;&nbsp;:memo: [Supporting Resources](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Storage.md)
+:memo: Exercises ( [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellDay1.ps1) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Exercises/XplatDay1.md) ) &nbsp;&nbsp;&nbsp;:memo: [Supporting Resources](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Storage.md)
 
 ##  Compute
 * Lesson 1. Compute Introduction ([ Introduction](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-ComputeIntro.md) )
@@ -36,7 +36,7 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * Lesson 6. Create a new VM from a captured Image on Azure ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Compute/L6-Compute.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L7-DeployCapturedVM.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Compute/L6-DeployCapturedLinuxVM.md) )
 * Lesson 7. Upload a supporting OS Image (Syspreped) / OS VHD(Non Syspreped) ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Compute/L7-Compute.md) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Compute/L8-UploadedVMfromOnpremise.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Compute/L7-UploadedVMfromOnpremise.md) )
 
-:memo: Exercises ( [PowerShell](#) | [XPlatCLI ](#) ) &nbsp;&nbsp;&nbsp;:memo: [Supporting Resources](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Compute.md)
+:memo: Exercises ( [PowerShell]https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellDay2.ps1) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Exercises/XplatDay2.md) ) &nbsp;&nbsp;&nbsp;:memo: [Supporting Resources](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Compute.md)
 
 ##  Networking
 * Lesson 1. Azure Networking Introduction ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-NetworkingIntro.md) )
