@@ -1,57 +1,39 @@
-# Data disk management 
+# Module:- Capture a Windows VM as an Image on Azure
 
 # Abstract
 
-During this module, you will learn how to attach a data disk to an existing VM. 
+During this module, you will learn how to Capture a windows VM as an Image on Azure.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* Attach a data disk to an existing VM.
+* Prepare the VM for image capture
+* Capture the VM using PowerShell
+* Generalize a virtual machine
 
-# Prerequisite 
-None
+# Prerequisite
+* Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
 
 # Estimated time to complete this module:
-Self-guided
+30 min
 
-# Launch the Azure Portal
-* Launch the Azure Portal, click [Azure Portal](http://www.azure.portal.com)
+# How do I create a VM image from an existing Azure VM
+Using Azure PowerShell create a generalized image of an existing Azure VM. You can then use the image to create another VM. This image includes the OS disk and the data disks that are attached to the virtual machine. The image doesn't include the virtual network resources, so you need to set up those resources when you create a VM using the image.
 
-* Make sure to select the correct **Subscription**. Click the Settings (wheel icon on the top right corner) and click **Switch Directories** or **Filter by subscriptions**
+# How to capture a Windows virtual machine in the Resource Manager deployment model
 
-![Screenshot](images/Compute-L5-1.png)
+### Prepare the VM for image capture
+* Sign in to your Windows virtual machine. In the Azure portal, navigate through Browse > Virtual machines > Your Windows virtual machine > Connect.
 
-* From left navigation bar, click **Virtual Machines**.
-* From the Virtual Machines page, select the VM (example: **azureft-web1-vm**) to which data disk needs to be added.
-* Under SETTINGS, click **Disks**
-* From the next blade, click **Attach new**
+* Open a Command Prompt window as an administrator.
 
-![Screenshot](images/Compute-L5-2.png)
+* Change the directory to %windir%\system32\sysprep, and then run sysprep.exe.
 
-* Enter following details
-  * Name: format (storage account for VM data disk): <**vm name without dashes**>dat<**number**>
-    * example: **azureftweb1vmdat01**
-    * Type: **HDD** (or SSD if premium storage needed)
-    * Size: **1023**
-    * Leave rest of the values default
+* In the System Preparation Tool dialog box, do the following:
 
-![Screenshot](images/Compute-L5-3.png)
+   * ###### In System Cleanup Action, select Enter System Out-of-Box Experience (OOBE) and make sure that Generalize is checked.
 
-* Click **OK**
+  * ###### In Shutdown Options, select Shutdown.
 
-* To verify data disk (or any resources) creation status, click Notification (bell icon on the top right corner). Make sure it is created first before moving on to the next step.
+* Click OK.
 
-![Screenshot](images/Compute-L5-4.png)
-
-* From left navigation bar, click **Virtual Machines**.
-* From the Virtual Machines page, select the VM (example: **azureft-web1-vm**) to which we just attached the data disk.
-* Under SETTINGS, click **Disks**
-
-#  To be continued...
-* more steps....
-
-# See the following resources to learn more
-:memo: [**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Compute.md)
-
-
-
+## Now you have to Capture the VM using PowerShell
