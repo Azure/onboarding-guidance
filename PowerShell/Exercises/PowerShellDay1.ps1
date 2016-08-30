@@ -1,4 +1,6 @@
 ﻿
+# This tutorial will help you to create a storage account in a resrource Group. 
+
 
 # Run Login-AzureRmAccount to login
 # Login-AzureRmAccount

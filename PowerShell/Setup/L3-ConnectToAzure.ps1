@@ -21,11 +21,13 @@ Get-AzureRmLocation | select Location, DisplayName
 # To check the AzureRM Subscription Context
 Get-AzureRmContext
 
-# To check Available AzureRmResourceProvider
+# To check Registered AzureRmResourceProvider
 
-Get-AzureRmResourceProvider
+Get-AzureRmResourceProvider | FT
 
-Get-AzureRmResourceProvider -ListAvailable 
+# To check availalbe AzureRmResourceProvider
+
+Get-AzureRmResourceProvider -ListAvailable | FT
 
 #  Registers a subscription with a resource provider. A subscription must be registered with a resource provider before you can start using the resources supported by that provider. You can check the registration state of the providers in your subscription by running Get-AzureRmResourceProvider -ListAvailable
 
