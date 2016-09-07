@@ -13,3 +13,5 @@ azure network public-ip create -g TestRGVnet -n NRPPublicIP -l centralus -d load
 #### Create a load balancer
 
 azure network lb create TestRGVnet NRPlb centralus
+
+Test
