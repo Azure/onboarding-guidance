@@ -14,4 +14,3 @@ azure network public-ip create -g TestRGVnet -n NRPPublicIP -l centralus -d load
 
 azure network lb create TestRGVnet NRPlb centralus
 
-Test2
