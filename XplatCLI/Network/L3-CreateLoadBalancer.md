@@ -14,3 +14,10 @@ azure network public-ip create -g TestRGVnet -n NRPPublicIP -l centralus -d load
 
 azure network lb create TestRGVnet NRPlb centralus
 
+### Create a front end IP pool and a backend address pool
+
+#### Create a front end IP pool associating the public IP
+azure network lb frontend-ip create TestRGVnet NRPlb NRPfrontendpool -i nrppublicip
+
+#### Set up a back end address pool used to receive incoming traffic from the front end IP pool.
+azure network lb address-pool create TestRGVnet NRPlb NRPbackendpool
