@@ -152,5 +152,5 @@ For VM2: <h1>This is Web Server 02</h1>
   * Visulize your Architecture with **ArmViz**
   * Open browser and goto **http://armviz.io** to view the template.
 
-   ![Screenshot](images/ArmVizDiagram.png)
+   ![Screenshot](/images/ArmVizDiagram.png)
 
