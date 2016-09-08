@@ -27,12 +27,12 @@ Self-guided
   * Select the correct **subscription**.
   * Select the **Resource group location**.
 
-![Screenshot](images/Storage-L2-2.png)
+![Screenshot](./images/Storage-L2-2.png)
  
 * Click **Create**
 * To verify Resource Group (or any resources) creation status, click **Notification** (bell icon on the top right corner). Make sure it created first before moving on to the next step.
 
-![Screenshot](images/Storage-L2-3.png)
+![Screenshot](./images/Storage-L2-3.png)
 
 # See the following resources to learn more
 :memo: [**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Storage.md)
