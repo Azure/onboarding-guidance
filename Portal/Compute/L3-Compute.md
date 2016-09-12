@@ -4,6 +4,8 @@
 
 During this module, you will walk you through on how to create Virtual Machine by selecting an image from Azure Marketplace, create Virtual Network, Subnet and place them VM in Availability set.
 
+> Following these steps will walk you through on how to create a Virtual Network (VNET), Subnet first then create a Virtual Machine from an Azure Marketplace image and place that VM in the subnet. Also create an Availability set and place the same VM in the Availability set as well. Creating a VNET is mandatory for creating a VM. The VM can be created without an Availability set, but later if VM needs to be added to Availability set, the VM needs to be deleted and recreated from the existing VHD and added to Availability set via PowerShell.
+
 # Learning objectives
 After completing the exercises in this module, you will be able to:
 * Create a new VM from an Azure Marketplace image
@@ -120,6 +122,9 @@ Self-guided
 * To verify VM (or any resources) creation status, click Notification (bell icon on the top right corner). Make sure it is created first before moving on to the next step.
 
 ![Screenshot](images/Compute-L3-14.png)
+
+> Note: If the load balancer scenario needs to be tested out, follow the steps in this lesson again to create second VM (for example: azureft-web2-vm) and add it to the same web subnet (for example: azureft-web-snet) and add it to the Web Availability Set (for example: azureft-web-as)
+
 
 # See the following resources to learn more
 :memo: [**Supporting Resources**](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Compute.md)

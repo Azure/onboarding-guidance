@@ -1,8 +1,7 @@
-# Compute: Lesson 6. Capture a windows VM as an Image on Azure 
+# Capture a windows VM as an Image on Azure 
 
 # Abstract
-
-During this module, you will 
+During this module, you will learn how to attach a data disk to an existing VM via Azure Portal then connect to the VM and format the disk. 
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
