@@ -4,7 +4,7 @@
 
 During this module, you will learn how to create a load balancer, add Probes, Backend pools and Load balancing rules.
 
-> Having two or more VMs in an Availability Set is a pre-requisite to fully create and configure Load balancer. So if two VMs are not created and in Availability set, go back VM creation lesson to complete this step. 
+> Having two or more VMs in an Availability Set is a pre-requisite to fully create and configure a Load balancer. So if two VMs are not created and in an Availability set, go back to the VM creation lesson to complete this step. 
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:

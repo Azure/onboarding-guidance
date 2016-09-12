@@ -24,7 +24,7 @@ Self-guided
 ![Screenshot](./images/Networking-L4-1.png)
  
 * From left navigation bar, click **Network Security Groups**.
-  * > If Network Security Groups is not available, click **More Services** (towards the bottom of the left navigation bar). In the filter, type **Network Security Groups**, click the star icon (*) right next to **Network Security Groups**, this will pin the Network Security Groups to the left navigation bar.
+  > If Network Security Groups is not available, click **More Services** (towards the bottom of the left navigation bar). In the filter, type **Network Security Groups**, click the star icon (*) right next to **Network Security Groups**, this will pin the Network Security Groups to the left navigation bar.
 
   * From the Network Security Groups page, click **Add**
   * In the **Create Network Security** Group blade, enter the following details
@@ -51,10 +51,10 @@ Self-guided
 
 ![Screenshot](./images/Networking-L4-2.png)
 
-* > This NSG can be attached to VM’s NIC or to a Subnet under VNET. When VMs are created by default a NSG will get created and attached to VM’s NIC. This NSG will allow inbound RDP connection. If additional NSG rules (for example: HTTP Allow) needs to be added to VM’s NIC, you can go do VMs Network Interface, select existing NSG and add/delete rules to Inbound security rules or Outbound security rules. This is a right way to do it rather than creating new NSG and adding to VM’s NIC.
+* > This NSG can be attached to a VM’s NIC or to a Subnet under VNET. When VMs are created by default a NSG will get created and attached to VM’s NIC. This NSG will allow inbound RDP connections. If additional NSG rules (for example: HTTP Allow) needs to be added to VM’s NIC, you can go do VMs Network Interface, select existing NSG and add/delete rules to Inbound security rules or Outbound security rules. This is a right way to do it rather than creating new NSG and adding to VM’s NIC.
 
 * Following steps will walk through on how to add NSG to a Subnet under a VNET.
-  * > If VNET and subnet hasn’t created, make sure to create them first. Create a new VM from Azure Marketplace image lesson will walkthrough on how to create them first.
+  > If VNET and subnet hasn’t created, make sure to create them first. Create a new VM from Azure Marketplace image lesson will walkthrough on how to create them first.
   * Select **Virtual networks** from left navigation bar. Select a **VNET**, For example: **azureft-usw2-vnet**
   * Select **Subnet** under **SETTINGS**
   * Select one of the subnet from the next blade. For example: **azureft-web-snet**
