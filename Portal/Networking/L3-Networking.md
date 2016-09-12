@@ -24,7 +24,7 @@ Self-guided
 ![Screenshot](./images/Networking-L3-1.png)
  
 * From left navigation bar, click **Load balancers**.
-  * > If Load balancers is not available, click **More Services** (towards the bottom of the left navigation bar). In the filter type Load balancers, click the star icon (*) right next to Load balancers, this will pin the Load balancers to the left navigation bar.
+  > If Load balancers is not available, click **More Services** (towards the bottom of the left navigation bar). In the filter type Load balancers, click the star icon (*) right next to Load balancers, this will pin the Load balancers to the left navigation bar.
 
   * From the **Load balancer** page, click **Add**
   * In the **Create load balancer** blade, enter the following details
