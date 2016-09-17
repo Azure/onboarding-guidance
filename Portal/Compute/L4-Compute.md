@@ -52,6 +52,9 @@ Self-guided
   * From the **Computer Management**, expand **Storage** click **Disk Management**
   * This will bring up **Initialize Disk** dialog box
   * Leave default values, click **OK**
+
+  ![Screenshot](./images/Compute-L4-5.png)
+
   * Now the Disk (for instance 1023 GB) will say **Unallocated**
   * Right click on the Disk and select **New Simple Volume**
   * In the New **Simple Volume** Wizard, click **Next**
@@ -59,7 +62,12 @@ Self-guided
   * Select appropriate drive letter (for instance E) and click **Next**
   * In the **Format Partition** step, leave default values (or change according to your requirement) and click **Next**
   * Click **Finish**
+
+  ![Screenshot](./images/Compute-L4-6.png)
+
   * Now disk should be formatted and drive letter is assigned
-  *	Open up a **Windows Explorer**, go to the Drive (for instance E drive) we just formatted and here you can create a file or folder as needed.
+  * Open up a **Windows Explorer**, go to the Drive (for instance E drive) we just formatted and here you can create a file or folder as needed.
+
+  ![Screenshot](./images/Compute-L4-7.png)
 
 # See the following resources to learn more
