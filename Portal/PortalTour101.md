@@ -83,10 +83,12 @@ You can also look at the historical view to see the service health from the past
   * Click on **Resource groups** on the left navigation bar. On any of the services listed, click on the **ellipses** on the right and select **Pin to dashboard**.
   * Click the **Microsoft Azure** button in the upper left corner to return to the dashboard.
 
+![Screenshot](./Images/AzurePortal-8.png)
+
   > The portal has a breadcrumb feature to allow you to quickly jump back to where you left off. It will remember the last few paths.
   * Click the **down arrow** next to the Microsoft Azure button in the upper left corner.
 
-![Screenshot](./Images/AzurePortal-8.png)
+![Screenshot](./Images/AzurePortal-9.png)
 
   > You can clone any dashboard and customize it.
   * Click on the **Clone** button and enter a title **DevOps** Dashboard.
@@ -105,11 +107,11 @@ You can also look at the historical view to see the service health from the past
     * **Ask for help**. If you’re having any issues with Azure.
       > This will send a help request containing all the relevant information pulled from your current session. This will help the support engineer and escalate resolution to the problem with context aware information. i.e. virtual machine ID#, name, resource group name…etc.
 
-![Screenshot](./Images/AzurePortal-9.png)
+![Screenshot](./Images/AzurePortal-10.png)
 
 * You can always click on the **Restore default settings** button to restore your dashboard to the default settings.
 
-![Screenshot](./Images/AzurePortal-10.png)
+![Screenshot](./Images/AzurePortal-11.png)
 
 * The **What’s new** button will show you what has been released recently, similar to a news portal.
 
