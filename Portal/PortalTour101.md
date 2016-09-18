@@ -32,13 +32,16 @@ The top right most corner contains view settings for the portal.
 # All Resources
   > This is a list of all the services you have available in your subscription.
 
-  * Click on **More services** to search for a component.
+  * Scroll to the bottom and Click on **More services** to search for a component.
   * Type **Virtual** to provide a list of items.
   * Click on the **Star** to pin it as a favorite on the left navigation list.
+
+  ![Screenshot](./Images/AzurePortal-2.png)
+
   * After it’s pinned, you can **click** and drag up or down to reposition in the list.
   * On the left navigation bar, click **All resources**.
   
-  ![Screenshot](./Images/AzurePortal-2.png)
+  ![Screenshot](./Images/AzurePortal-3.png)
 
   > This will list everything that you have on your portal or have access too from other subscriptions.
 
@@ -48,7 +51,7 @@ The top right most corner contains view settings for the portal.
   * Click **See all**, this shows you the marketplace segments. This is a list of services provided by Microsoft and our partners.
   * Type **Ubuntu** in the search box. This will show you everything related to Ubuntu. To deploy any of the images, you simply select the one you want.
 
-![Screenshot](./Images/AzurePortal-3.png)
+![Screenshot](./Images/AzurePortal-4.png)
 
 # Dashboard
 > You can easily customize dashboard and tiles.
@@ -63,11 +66,11 @@ The top right most corner contains view settings for the portal.
   > This page shows all the services running on Azure and the status for a particular datacenter. If there are any services that are in an unhealthy state, it will be indicated by a different icon.
 You can also look at the historical view to see the service health from the past.
 
-![Screenshot](./Images/AzurePortal-4.png)
+![Screenshot](./Images/AzurePortal-5.png)
 
   * Click on the **Status History** link in the upper right.
 
-![Screenshot](./Images/AzurePortal-5.png)
+![Screenshot](./Images/AzurePortal-6.png)
 
   > You can create new dashboards anytime.
   * Click on the **+ New dashboard** button. Type in **DevOps** for the title.
@@ -80,7 +83,7 @@ You can also look at the historical view to see the service health from the past
   > The portal has a breadcrumb feature to allow you to quickly jump back to where you left off. It will remember the last few paths.
   * Click the **down arrow** next to the Microsoft Azure button in the upper left corner.
 
-![Screenshot](./Images/AzurePortal-6.png)
+![Screenshot](./Images/AzurePortal-7.png)
 
   > You can clone any dashboard and customize it.
   * Click on the **Clone** button and enter a title **DevOps** Dashboard.
@@ -99,11 +102,11 @@ You can also look at the historical view to see the service health from the past
     * **Ask for help**. If you’re having any issues with Azure.
       > This will send a help request containing all the relevant information pulled from your current session. This will help the support engineer and escalate resolution to the problem with context aware information. i.e. virtual machine ID#, name, resource group name…etc.
 
-![Screenshot](./Images/AzurePortal-7.png)
+![Screenshot](./Images/AzurePortal-8.png)
 
 * You can always click on the **Restore default settings** button to restore your dashboard to the default settings.
 
-![Screenshot](./Images/AzurePortal-8.png)
+![Screenshot](./Images/AzurePortal-9.png)
 
 * The **What’s new** button will show you what has been released recently, similar to a news portal.
 
