@@ -34,6 +34,10 @@ Self-guided
   * Resource group: Select Use existing. <Use the Resource group created in previous lesson, for instance: **azureft-dev-rg**>
   * Location: <**select appropriate location**>
   * Click **Create**
+
+![Screenshot](./images/Networking-L4-2.png)
+
+
   > The following steps will walk through on how to add HTTP Allow rule.
   * Once NSG is created successfully, select the NSG. Under **Settings** select **Inbound security rules**.
   * Click **Add**
@@ -49,19 +53,20 @@ Self-guided
   * Action: **Allow**
   * Click **OK**
 
-![Screenshot](./images/Networking-L4-2.png)
+![Screenshot](./images/Networking-L4-3.png)
 
 * > This NSG can be attached to a VM’s NIC or to a Subnet under VNET. When VMs are created by default a NSG will get created and attached to VM’s NIC. This NSG will allow inbound RDP connections. If additional NSG rules (for example: HTTP Allow) needs to be added to VM’s NIC, you can go do VMs Network Interface, select existing NSG and add/delete rules to Inbound security rules or Outbound security rules. This is a right way to do it rather than creating new NSG and adding to VM’s NIC.
 
 * Following steps will walk through on how to add NSG to a Subnet under a VNET.
-  > If VNET and subnet hasn’t created, make sure to create them first. Create a new VM from Azure Marketplace image lesson will walkthrough on how to create them first.
-  * Select **Virtual networks** from left navigation bar. Select a **VNET**, For example: **azureft-usw2-vnet**
+  > If a NET and subnet hasn’t been created, make sure to create them first. Create a new VM from Azure Marketplace image lesson will walkthrough on how to create them first.
+  * Select **Virtual networks** from left navigation bar.
+  * Select a **VNET**, For example: **azureft-usw2-vnet**
   * Select **Subnet** under **SETTINGS**
   * Select one of the subnet from the next blade. For example: **azureft-web-snet**
   * Select **Network security group** from next blade
   * From the **Choose network security group** blade, select appropriate **NSG**
   * Click **Save**
 
-![Screenshot](./images/Networking-L4-3.png)
+![Screenshot](./images/Networking-L4-4.png)
 
 # See the following resources to learn more
