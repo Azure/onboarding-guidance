@@ -1,4 +1,4 @@
-# Module:- Create a virtual network by using PowerShell
+# Create a virtual network by using PowerShell
 
 # Abstract
 

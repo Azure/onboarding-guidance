@@ -1,4 +1,4 @@
-# Module:- Create Point to Site Connection (On-premise to Azure)
+# Create Point to Site Connection (On-premise to Azure)
 
 # Abstract
 

@@ -1,5 +1,4 @@
-
-# Module:- Create a new VM from Gallery Image
+# Create a new VM from Gallery Image
 
 # Abstract
 

@@ -1,4 +1,4 @@
-# POC Scenario: Deploying Website on Azure IaaS VMs
+# POC Scenario 1: Deploying Website on Azure IaaS VMs
 
 # Abstract
 

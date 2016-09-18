@@ -1,4 +1,4 @@
-# Compute: Lesson 8. Upload a Windows OS Image (Syspreped) or Windows OS VHD(Non Syspreped)
+# Upload a Windows OS Image (Syspreped) or Windows OS VHD(Non Syspreped)
 
 # Abstract
 

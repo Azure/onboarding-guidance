@@ -1,4 +1,4 @@
-# Module:- Create Site to Site VNet Connection (Azure to Azure)
+# Create Site to Site VNet Connection (Azure to Azure)
 
 # Abstract
 

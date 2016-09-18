@@ -1,4 +1,4 @@
-# Module:- Create a Storage Account
+# Create a Storage Account
 
 # Abstract
 

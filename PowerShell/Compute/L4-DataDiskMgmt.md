@@ -1,4 +1,4 @@
-# Module II (Core Setup - Virtual Machine)
+# Core Setup - Virtual Machine
 
 * [Lesson 1. Compute Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L1-ComputeIntro.md)
 * [Lesson 2. Azure Resource Group Management](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%20II/L2-AzureRMResourceGroupMgmt.md)

@@ -1,4 +1,4 @@
-# Module:- Capture a Windows VM as an Image on Azure
+# Capture a Windows VM as an Image on Azure
 
 # Abstract
 

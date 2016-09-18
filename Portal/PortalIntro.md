@@ -1,4 +1,4 @@
-# Module: Azure 101 Presentation
+# Azure 101 Presentation
 
 # Abstract
 

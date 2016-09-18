@@ -1,4 +1,4 @@
-# Module:- Create a new VM from a captured Image on Azure 
+# Create a new VM from a captured Image on Azure 
 
 # Abstract
 

@@ -1,4 +1,4 @@
-# Module:- Find desired image on Azure Platform
+# Find desired image on Azure Platform
 
 # Abstract
 

@@ -1,4 +1,4 @@
-# Module:- Upload a Windows OS Image (Syspreped) / Windows OS VHD(Non Syspreped 
+# Upload a Windows OS Image (Syspreped) / Windows OS VHD(Non Syspreped 
 
 # Abstract
 
