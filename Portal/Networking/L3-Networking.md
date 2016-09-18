@@ -46,6 +46,10 @@ Self-guided
 
 ![Screenshot](./images/Networking-L3-2.png)
  
+ * To verify creation status, click **Notification** (bell icon on the top right corner). Make sure it is created first before moving on to the next step.
+
+![Screenshot](./images/Networking-L3-3.png)
+ 
 * To add **Probes**, from left navigation bar, click **Load balancers**.
   * Select the **Load balancer** just created for instance: **azureft-web-lb** 
   * From the next blade, click **Probes** then click **Add**
@@ -55,7 +59,7 @@ Self-guided
   * Protocol: **HTTP**
   * Leave rest of the values default, click **OK**
 
-![Screenshot](./images/Networking-L3-3.png)
+![Screenshot](./images/Networking-L3-4.png)
 
 * To add VMs to the Load balancer Backend pools, from left navigation bar, click **Load balancers**
   * Select the Load balancer just created for instance: **ureft-web-lb** 
@@ -68,11 +72,14 @@ Self-guided
   * From **Choose an availability** set blade, select the **Availability set** created previously for instance: **azureft-web-as**
   * From **Choose virtual machines** blade, click **Virtual machines**
   * From **Choose virtual machines** blade, click select two VMs, for instance **azureft-web1-vm** & **azureft-web2-vm** then click **Select**
+
+  ![Screenshot](./images/Networking-L3-5.png)
+
   * On the **Choose virtual machines** blade, click **OK**
   * On the **Add backend pool** blade, click **OK**
   * To verify Backend pools creation status, click **Notification** (bell icon on the top right corner). Make sure it is created first before moving on to the next step.
 
-![Screenshot](./images/Networking-L3-4.png)
+![Screenshot](./images/Networking-L3-6.png)
 
 * To create **Load balancing rules**, from left navigation bar, click **Load balancers**
   * Select the Load balancer just created for instance: **azureft-web-lb** 
@@ -91,6 +98,6 @@ Self-guided
   * Floating IP: **Disabled**
   * Click **OK**
 
-![Screenshot](./images/Networking-L3-5.png)
+![Screenshot](./images/Networking-L3-7.png)
 
 # See the following resources to learn more
