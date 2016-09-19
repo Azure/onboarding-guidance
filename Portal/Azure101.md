@@ -15,7 +15,7 @@ After completing the exercises in this module, you will be familiar with:
 None
 
 # Estimated time to complete this module:
-1 hour
+20 min
 
 # Azure 101
 
