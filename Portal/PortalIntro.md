@@ -19,4 +19,4 @@ None
 
 # Azure 101
 
-![Screenshot](./images/AzureServicesDiagram.png)
+![Screenshot](./Images/AzureServicesDiagram.png)
