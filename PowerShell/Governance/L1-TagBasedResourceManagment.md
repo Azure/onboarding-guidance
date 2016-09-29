@@ -1,6 +1,23 @@
+# Tag Based Resource Group with Azure Resource Manager
 
-# TODO: Randy to add header info by EOD 9/29
+# Abstract
 
+During this module, you will learn ...
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* 1
+* 2
+* 3
+
+# Prerequisite 
+* Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
+
+# Estimated time to complete this module:
+Self-guided
+
+# What are Tags?
+Coming soon...
 
 ################################################################################ ABOVE #####################
 
