@@ -2,13 +2,16 @@
 
 # Abstract
 
-During this module, you will learn ...
+During this module, you will learn how to use locks to prevent other users in your organization from accidentally deleting or modifying critical resources.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* 1
-* 2
-* 3
+* Lock resources with Azure Resource Manager
+* You can set locks at resource, resource group, or subscription
+* Creating a lock with Azure PowerShell
+* Putting a Lock on a subscription Level
+* Putting a Lock on a Resource Group
+* Putting a Lock on Resource Level
 
 # Prerequisite 
 * Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
@@ -17,9 +20,7 @@ After completing the exercises in this module, you will be able to:
 Self-guided
 
 # What are Locks?
-Coming soon...
-
-######################################## ABOVE #####################
+As an administrator, you may need to lock a subscription, resource group, or resource to prevent other users in your organization from accidentally deleting or modifying critical resources. You can set the lock level to CanNotDelete or ReadOnly.
 
 # Lock resources with Azure Resource Manager
 

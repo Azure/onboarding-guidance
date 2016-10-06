@@ -2,13 +2,15 @@
 
 # Abstract
 
-During this module, you will learn ...
+During this module, you will learn how to use tags to organize your Azure resources.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* 1
-* 2
-* 3
+* Add a value to a resource tag
+* Create a resource tag
+* Delete a resource tag
+* List all resource tags and values
+* Remove a value from a resource tag
 
 # Prerequisite 
 * Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
@@ -17,9 +19,7 @@ After completing the exercises in this module, you will be able to:
 Self-guided
 
 # What are Tags?
-Coming soon...
-
-################################################################################ ABOVE #####################
+Predefined tags let you establish standard, consistent, predictable names and values for the tags in your subscription.  Resources and resource groups can be tagged with a set of name-value pairs. Adding tags to resources enables you to group resources together across resource groups and to create your own views. Each resource or resource group can have a maximum of 15 tags. The tag name can have a maximum of 512 characters, and the tag value 256 characters.
 
 # Tag Based Resource Group with Azure Resource Manager
 
