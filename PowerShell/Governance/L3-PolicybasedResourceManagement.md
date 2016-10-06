@@ -2,13 +2,16 @@
 
 # Abstract
 
-During this module, you will learn ...
+During this module, you will learn how to control access through custom policies with Azure Resource Manager. 
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* 1
-* 2
-* 3
+* Define a Policy Definition structure
+* Set Policy Evaluation
+* Use logical operators and conditions
+* Create Policy Definition using PowerShell
+* Create Policy Definition using Azure CLI
+* How to apply a Policy
 
 # Prerequisite 
 * Completion of [Module on Storage](https://github.com/Azure/onboarding-guidance/tree/master/windows/Module%20I)
@@ -16,13 +19,11 @@ After completing the exercises in this module, you will be able to:
 # Estimated time to complete this module:
 Self-guided
 
-# What are Policies?
-Coming soon...
-
-######################################## ABOVE #####################
+# What is a Policy?
+With policies, you can prevent users in your organization from breaking conventions that are needed to manage your organization's resources. 
+You create policy definitions that describe the actions or resources that are specifically denied. You assign those policy definitions at the desired scope, such as the subscription, resource group, or an individual resource.
 
 # [Use Policy to manage resources and control access]( https://azure.microsoft.com/en-us/documentation/articles/resource-manager-policy/)
-
 
 With policies, you can prevent users in your organization from breaking conventions that are needed to manage your organization's resources.
 
