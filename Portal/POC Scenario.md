@@ -99,7 +99,7 @@ For VM2: <h1>This is Web Server 02</h1>
     *  Idle timeout (min):**4**
 
 # Update the NSG (inbound security rule)
-## Virtual machine #1
+I## Virtual machine #1
   * From the left panel on the Azure Portal, select **Virtual machines**, then select **(prefix)**-web01-vm.
   * Under **Settings** select **Network Interfaces** 
   * Click on **(prefix)**-web01-vm-nsg.
@@ -152,5 +152,5 @@ For VM2: <h1>This is Web Server 02</h1>
   * Visulize your Architecture with **ArmViz**
   * Open browser and goto **http://armviz.io** to view the template.
 
-   ![Screenshot](./images/ArmVizDiagram.png)
+   ![Screenshot](./Images/ArmVizDiagram.png)
 
