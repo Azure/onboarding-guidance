@@ -35,37 +35,37 @@ Self-guided
 # Resource Group creation
   > Note: For all **(prefix)** references, use a globally unique name to be used throughout this walkthrough.
 
-  * Create Resource Group - **(prefix)**-poc-rg
+  * Create Resource Group - **(prefix)-poc-rg**
 
    ![Screenshot](./Images/POC-2.png)
 
 # Virtual Network Creation
-  * Create a VNET named **(prefix)**-vnet-usw1
-  * Create a Web Subnet named **(prefix)**-web-snet
+  * Create a VNET named **(prefix)-vnet-usw1**
+  * Create a Web Subnet named **(prefix)-web-snet**
 
    ![Screenshot](./Images/POC-3.png)
 
-  * Create a App Subnet named **(prefix)**-app-snet
+  * Create a App Subnet named **(prefix)-app-snet**
 
    ![Screenshot](./Images/POC-4.png)
 
 # Virtual Machine Creation
   * Create 2 VMs
   * Select from the marketplace, **Windows Server 2012 R2 Datacenter**
-  * Name the 1st VM **(prefix)**-web01-vm
-  * Name the 2nd VM **(prefix)**-web02-vm
+  * Name the 1st VM **(prefix)-web01-vm**
+  * Name the 2nd VM **(prefix)-web02-vm**
   * Make sure to choose **HDD disk**
 
      ![Screenshot](./Images/POC-5.png)
 
   * For the size select **D1_V2**
-  * Create Storage account - (**prefix**)web01vmst01
-  * Create Storage account - (**prefix**)web02vmst01
-  * Create availability set - (**prefix**)as-web
+  * Create Storage account - **(prefix)web01vmst01**
+  * Create Storage account - **(prefix)web02vmst01**
+  * Create availability set - **(prefix)as-web**
   
    ![Screenshot](./Images/POC-6.png)
 
-  * Create Diagnostics Storage account named (**prefix**)webdiag
+  * Create Diagnostics Storage account named **(prefix)webdiag**
 
    ![Screenshot](./Images/POC-7.png)
   > Note: During 2nd VM creation pick the previously created Availability set
@@ -120,7 +120,7 @@ For VM2: <h1>This is Web Server 02</h1>
 # Create Load Balancer
   * From the left panel on the Azure Portal, select **Load Balancers**.
   * Click on **Add**
-  * Name: **(prefix)**-web-lb
+  * Name: **(prefix)-web-lb**
   * Click **Public IP Address**, click **New**
   * Enter name **(prefix)-web-pip**, set assignment to **Static**, click **Ok**
 
