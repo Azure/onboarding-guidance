@@ -99,7 +99,7 @@ Self-guided
   * From the **Start** menu, type **IIS**, and Launch IIS manager
   * In the **Connections** panel, drill down to **Sites**
   * On **Default Web Site**, **Right-Click** and select **Switch to Content View**
-  * **Right-Click** anywhere in panel and selct **Explore**
+  * **Right-Click** anywhere in panel and select **Explore**
   * From the **Windows Explorer**, **Right-Click** on the file **IISStart.html**, and open in **Notepad**.
 
   ![Screenshot](./Images/POC-12.png)
@@ -230,7 +230,7 @@ For VM2: <h1>This is Web Server 02</h1>
 # Automation Scripts (ARM Template)
   * From the left panel on the Azure Portal, select **Resource Groups**.
   * Select **(prefix)-poc-rg**.
-  * Click **Download** | **Save As** | (select location)
+  * Under Settings, click **Download** | **Save As** | (select location)
 
    ![Screenshot](./Images/POC-29.png)
 
@@ -238,7 +238,7 @@ For VM2: <h1>This is Web Server 02</h1>
   
   ![Screenshot](./Images/POC-30.png)
 
-# Visulize your Architecture with **ArmViz**
+# Visualize your Architecture with **ArmViz**
   * Open browser and goto **http://armviz.io** to view the template.
 
    ![Screenshot](./Images/ArmVizDiagram.png)
