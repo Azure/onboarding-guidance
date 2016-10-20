@@ -23,8 +23,7 @@ The infrastructure for your application is typically made up of many components 
 
 * Creation of Empty Azure Resource group
 * Creation of Empty Azure Resource group with tags
-* Cleaning Tags from Azure Resource group
-* Updating Tags for Azure Resource group
+
 
 ### Important factors to consider when defining your resource group:
 
@@ -64,7 +63,7 @@ Tags              :
                     Name        Value
                     ==========  =====
                     Empty            
-                    Department  IT   
+                    Department  Marketing    
 
 ResourceId        : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/FTResourceGroupTagged
 ```
@@ -75,12 +74,7 @@ ResourceId        : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resource
 
 Output :
 
-Name                           Value                                                                                                           
-----                           -----                                                                                                                 
-Value                                                                                                                                                
-Name                           Empty                                                                                                                 
-Value                          IT                                                                                                                    
-Name                           Department  
+Name                           Value                                                                                                      ----                           -----                                                                                                      Value                                                                                                                                    Name                           Empty                                                                                                      Value                          Marketing                                                                                                  Name                           Department  
 ```
 
 ##### This command deletes all tags from the resource group. It uses the Tag parameter with an empty hash table value.
@@ -108,7 +102,8 @@ ProvisioningState : Succeeded
 Tags              :
                     Name        Value
                     ==========  =====
-                    Department  IT   
+                    Department  IT
+                    Environment Test
 
 ResourceId        : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/FTResourceGroupTagged
 ```
@@ -132,39 +127,10 @@ Tags              :
 ResourceId        : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/FTResourceGroupTagged
 ```
 
-```PowerShell
-# Add tags to a resource that has no existing tags by using the Set-AzureRmResource command
-
-Set-AzureRmResource -ResourceName $stName -ResourceGroupName $rgName -ResourceType "Microsoft.Storage/storageAccounts" -Tag $tags
-
-
-# Enter your subscription and Resource Name (This example is for storage resource)
-Set-AzureRmResource -ResourceId /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resourceGroups/rgdemo/providers/Microsoft.Storage/storageAccounts/mystorageaccountft2  -Tag $tags
-
-
-# ============
-
-# To get a list of all tags within a subscription using PowerShell
-Get-AzureRmTag 
-Get-AzureRmTag -Detailed
-
-
-# --------------------------  FindByTagName  --------------------------
-# Finds all resource group with a tag with name 'Department'.
-Find-AzureRmResourceGroup -Tag @{ Department = $null }
-
-#Finds all resource group with a tag with name 'Department' and value 'IT'.
-
-Find-AzureRmResourceGroup -Tag @{ Department ="IT" }
-```
 
 ##### Remove a resource group  
 ```PowerShell
 Remove-AzureRmResourceGroup -Name FTResourceGroupTagged -verbose
-```
-##### Caution : DON'T USE THIS - Remove all resource groups  
-```PowerShell
-# Get-AzureRmResourceGroup | Remove-AzureRmResourceGroup -Verbose
 ```
 # See the following resources to learn more
 * [Resource Group Overview](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/)
