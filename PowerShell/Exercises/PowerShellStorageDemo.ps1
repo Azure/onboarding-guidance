@@ -1,11 +1,22 @@
-﻿
+﻿##################################################################
+
+# Microsoft Azure Storage Explorer  : http://storageexplorer.com/ 
+
+#################################################
 #login to the Account 
 Login-AzureRmAccount
+
+# Uploading VHD using Powershell 
+
+Add-AzureRmVhd -ResourceGroupName ftdnt-poc-rg -Destination https://ftdntweb02vmst.blob.core.windows.net/vhds/uploaded.vhd -LocalFilePath "C:\Users\abhanand\Downloads\9600.16415.amd64fre.winblue_refresh.130928-2229_server_serverdatacentereval_en-us.vhd" -Verbose
+
+#################################################
+
 
 # List all Storage Account 
 Get-AzureRmStorageAccount |select ResourceGroupName,storageAccountName,Location
 
-# Verify Coorect account where you would like to upload
+# Verify Correct storage account details  where you would like to upload data 
 Get-AzureRmStorageAccount -ResourceGroupName ftdnt-poc-rg -StorageAccountName ftdntweb02vmst
 
 #Get Storage account Key 
@@ -37,12 +48,5 @@ Set-AzureStorageBlobContent -File "C:\Users\abhanand\Downloads\data\cat1.jpg" -C
 
 ##################################################################
 
-# Uploading VHD using Powershell 
 
-Add-AzureRmVhd -ResourceGroupName ftdnt-poc-rg -Destination https://ftdntweb02vmst.blob.core.windows.net/vhds/uploaded.vhd -LocalFilePath "C:\Users\abhanand\Downloads\9600.16415.amd64fre.winblue_refresh.130928-2229_server_serverdatacentereval_en-us.vhd" -Verbose
 
-##################################################################
-
-# Microsoft Azure Storage Explorer  : http://storageexplorer.com/ 
-
-#################################################
