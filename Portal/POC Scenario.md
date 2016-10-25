@@ -12,7 +12,7 @@ After completing the exercises in this module, you will be able to:
 * Create and setup a load balancer
 * Create an availability set for VMs
 * Update Network Security Groups(NSG)
-* Deploy a website
+* Deploy a website on IaaS
 
 # Prerequisite 
 * [Basic Setup Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L2-SetupIntro.md)
