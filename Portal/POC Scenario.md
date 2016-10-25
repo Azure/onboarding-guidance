@@ -209,7 +209,7 @@ For VM2: <h1>This is Web Server 02</h1>
 
    ![Screenshot](./Images/POC-24.png)
 
- **Important Note:**  Following step is optional and only needed if HTTPS traffic needs to be allowed.
+**Important Note:**  Following step is optional and only needed if HTTPS traffic needs to be allowed.
  * Under **Settings**, click on **Inbound Security Rules**.
   * Click **Add**, Enter name **(prefix)-web01-vm-nsgr-https-allow**
     *  Priority:**1030**
