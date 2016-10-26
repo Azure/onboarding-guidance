@@ -23,7 +23,7 @@ After completing the exercises in this module, you will be able to:
 Self-guided
 
 # Customize your Azure Portal
-* Launch [Azure Portal](http://www.azure.portal.com)
+* Launch [Azure Portal](https://portal.azure.com/)
 * On left most panel, scroll to bottom, then click **More Services**
 * Find and Pin, **Virtual Network**
 * Find and Pin, **Availability Set**
