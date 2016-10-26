@@ -49,5 +49,5 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * Lesson 6. Create Site to site Connection (On-premises to Azure) (  [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Networking/L6-Site2SiteAuzreonPremise.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Network/L6-Site2SiteAuzreonPremise.md) )
 * Lesson 7. Connect two Virtual Network (Azure to Azure) (  [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Networking/L7-Site2Site2Vnets.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Network/L7-Site2Site2Vnets.md) )
 
-## Proof of Concept
-* Deploying Website on Azure IaaS VMs ( [Portal](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario.md) )
+## Reference Proof of Concept
+* Deploying Website on Azure IaaS VMs ([HTTP](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTP.md) | [HTTPS](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTPS.md))
