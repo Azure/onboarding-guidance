@@ -54,7 +54,7 @@ Append adds the defined set of fields to the request
 ###################################################
 
 #### The below policy denies all requests which don’t have a tag containing "costCenter" key.
-
+```
 $chargebackPolicy = New-AzureRmPolicyDefinition -Name chargebackPolicyDefination -Description "policy denies all requests which don’t have a tag containing costCenter key" -Policy '{
   "if": {
     "not" : {
@@ -66,15 +66,17 @@ $chargebackPolicy = New-AzureRmPolicyDefinition -Name chargebackPolicyDefination
     "effect" : "deny"
   }
 }'
-
+```
 
 # Policy Assignment using PowerShell
+```
 New-AzureRmPolicyAssignment -Name regionPolicyAssignment -PolicyDefinition $chargebackPolicy -Scope /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/ -Verbose -Debug
-
+```
 #To create a new resource group, provide a name and location for your resource group. - This will succeed
+```
 New-AzureRmResourceGroup -Name MyFirstStorageRG -Location "West US" -Verbose 
 
-
+```
 
 2. Geo Compliance: Ensure resource locations
 
@@ -83,7 +85,7 @@ New-AzureRmResourceGroup -Name MyFirstStorageRG -Location "West US" -Verbose
 ###################
 
 #### The below examples creates a policy for allowing resources only in North Europe and West Europe.
-
+```
 $policy = New-AzureRmPolicyDefinition -Name regionPolicyDefinition -Description "Policy to allow resource creation only in certain regions" -Policy '{  
   "if" : {
     "not" : {
@@ -96,20 +98,24 @@ $policy = New-AzureRmPolicyDefinition -Name regionPolicyDefinition -Description 
   }
 }'          
 
-
+```
 #### Policy Assignment using PowerShell
+```
 New-AzureRmPolicyAssignment -Name regionPolicyAssignment -PolicyDefinition $policy -Scope /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/ -Verbose -Debug
-
+```
 
 ## Policy Validation 
 
 #### To create a new resource group, provide a name and location for your resource group.
+```
 New-AzureRmResourceGroup -Name MyFirstStorageRG -Location "West US" -Verbose
-
+```
 #### To Check Availibilty of Storage Account Name 
+```
 Get-AzureRmStorageAccountNameAvailability mystorageaccountft
-
+```
 #### creation of Storage Account (This should fail due to above policy )
+```
 New-AzureRmStorageAccount -ResourceGroupName "MyFirstStorageRG" -Name "mystorageaccountft" -Location "West US" -SkuName "Standard_GRS" -Kind "Storage" -Verbose
 
 
@@ -123,18 +129,21 @@ At line:1 char:1
     + FullyQualifiedErrorId : Microsoft.Azure.Commands.Management.Storage.NewA 
    zureStorageAccountCommand
 
-
+```
 #### If you want to remove the above policy assignment 
+```
 Remove-AzureRmPolicyAssignment -Name regionPolicyAssignment -Scope /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/ -Verbose -Debug
-
+```
 ## To validate the ploicy has been removed. 
 
 #### creation of Storage Account (This command shoulf succeed as there are no policy to restrict it. )
+```
 New-AzureRmStorageAccount -ResourceGroupName "MyFirstStorageRG" -Name "mystorageaccountft" -Location "West US" -SkuName "Standard_GRS" -Kind "Storage" -Verbose
 
-
+```
 #### Policy Audit Events
 
+```
 Get-AzureRmLog | where {$_.OperationName -eq "Microsoft.Authorization/policies/deny/action"} 
 
 <#
@@ -160,6 +169,7 @@ SubscriptionId    : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 SubStatus         : 
 
 #>
+``` 
 
 
 ##############################
