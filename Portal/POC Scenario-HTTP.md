@@ -171,22 +171,6 @@ For VM2: <h1>This is Web Server 02</h1>
 
    ![Screenshot](./Images/POC-22.png)
 
-# Create Load Balancing Rules for HTTPS
-  **This is a optional step, needed only if you are planning to receive HTTPS traffic.** 
-
-  * Under **Settings** select **Load balancing rules**, click **Add**.
-  * Enter name **(prefix)-https-lbr**.
-    *  Protocol: **TCP**
-    *  Port:**443**
-    *  Backend port: 443
-    *  Backend pool: **(prefix)-web-pool(2VMs)**
-    *  Probe: **(prefix)-web-prob(HTTP:80)**
-    *  Session Persistence: **None**
-    *  Idle timeout (min):**4**
-    *  Floating IP (direct server return): **Disabled**
-    *  Click **Ok**
-
-   ![Screenshot](./Images/POC-31.png)
 
 # Update the NSG (inbound security rule)
 ## Virtual machine #1
@@ -209,18 +193,6 @@ For VM2: <h1>This is Web Server 02</h1>
 
    ![Screenshot](./Images/POC-24.png)
 
-**Important Note:**  Following step is optional and only needed if HTTPS traffic needs to be allowed.
- * Under **Settings**, click on **Inbound Security Rules**.
-  * Click **Add**, Enter name **(prefix)-web01-vm-nsgr-https-allow**
-    *  Priority:**1030**
-    *  Source: **any**
-    *  Service: **HTTPS**
-    *  Protocol: **TCP**
-    *  Port range: **443**
-    *  Action: **Allow**
-
-   ![Screenshot](./Images/POC-32.png)
-
 
 ## Virtual machine #2
   * From the left panel on the Azure Portal, select **Virtual machines**, then select **(prefix)-web02-vm**.
@@ -242,17 +214,6 @@ For VM2: <h1>This is Web Server 02</h1>
 
    ![Screenshot](./Images/POC-26.png)
 
-**Important Note:**  Following step is optional and only needed if HTTPS traffic needs to be allowed.
- * Under **Settings**, click on **Inbound Security Rules**.
-  * Click **Add**, Enter name **(prefix)-web02-vm-nsgr-https-allow**
-    *  Priority:**1030**
-    *  Source: **any**
-    *  Service: **HTTPS**
-    *  Protocol: **TCP**
-    *  Port range: **443**
-    *  Action: **Allow**
-
-   ![Screenshot](./Images/POC-33.png)
 
 # Assign DNS name to Load Balancer
   * From the left panel on the Azure Portal, select **Public IP sddresses**.
