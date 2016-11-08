@@ -1,13 +1,12 @@
 # POC Scenario 1: Deploying Website on Azure IaaS VMs - HTTPS
 
 # Abstract
-To deploy website using HTTPS, follow all steps from [HTTP scenario](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTP.md), once that done complete the steps mentioend below.
+To deploy website using HTTPS, complete the steps first from [HTTP scenario](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTP.md), once that done, proceed to the steps mentioend below.
+Steps mentioned below only covers configuration needed on Azure side, it doesn't cover the steps that are needed to procure and install certificate on the VMs. These steps are beyond the scope of this document, and its exactly same as doing it in on-premises VMs. 
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* Create a Resource Group
-* Create a Virtual Network
-* Create multiple virtual machines
+* Run HTTPS site on Azure IaaS VMs
 
 
 # Prerequisite 
@@ -17,6 +16,10 @@ After completing the exercises in this module, you will be able to:
 Self-guided
 
 # Install Certificate on VMs
+Procure (or use self signed certificate for testing purpose only) SSL certificate, import/configure on both VMs IIS. Thse steps are beyond the scope of this document, and its exactly same as doing it in on-premises VMs. 
+
+To perform these steps, Login to VMs 
+
   * From Virtual Machine blade, select the 1st VM, click **Connect** and login to machine
 
    ![Screenshot](./Images/POC-9.png)
@@ -91,4 +94,4 @@ Following steps will add inbound security rule to allow HTTPS traffic to VM1 & V
   * You will see IIS server default page, with either VM1 or VM2.
   * If you see VM1, then RDP1 into VM1, stop Default Web Site in IIS. Refresh web page, you will see VM2. Load balancer detects VM1 is down and redirects traffic to VM2.
 
-   ![Screenshot](./Images/POC-28.png)
+   ![Screenshot](./Images/POC-34.png)
