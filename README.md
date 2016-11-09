@@ -50,5 +50,5 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 *Connect two Virtual Network (Azure to Azure) (  [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Networking/L7-Site2Site2Vnets.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Network/L7-Site2Site2Vnets.md) )
 
 ## Reference Proof of Concept
-* Data Migration to Stroage Account ([StorageExplorer](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellStorageDemo.ps1) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellStorageDemo.ps1) )
+* Data Migration to Storage Account ([StorageExplorer](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellStorageDemo.ps1) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellStorageDemo.ps1) )
 * Deploying Website on Azure IaaS VMs ([HTTP](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTP.md) | [HTTPS](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTPS.md))
