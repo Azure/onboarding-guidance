@@ -58,7 +58,7 @@ Get-AzureRmStorageAccountNameAvailability $stName
 #### Create a New StorageAccount
 Note : Storage account name must be between 3 and 24 characters in length and use numbers and lower-case letters only.
 
-SkuName Details : [click Here](https://msdn.microsoft.com/en-us/library/azure/mt712701.aspx)
+SkuName Details : [click Here](https://docs.microsoft.com/en-us/rest/api/storagerp/srp_sku_types)
 
 Kind : Indicates the type of storage account. For now, this must be set to 'Storage' (which supports Blob, Table, Queue, and File data) or 'BlobStorage' (which supports Blob data only).
 
