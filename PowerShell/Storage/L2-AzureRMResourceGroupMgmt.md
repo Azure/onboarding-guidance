@@ -50,7 +50,7 @@ ResourceId        : /subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/resource
 
 ##### To create a new resource group, provide a name and location for your resource group with Tag .
 This command creates a new empty resource group. This command  assigns tags to the resource group. The first tag, named "Empty," could be used to identify resource groups that have no resources.
-The second tag is named "Department" and has a value of "IT". You can use a tag like this one to categorize resource groups for administration or budgeting.
+The second tag is named "Department" and has a value of "Marketing". You can use a tag like this one to categorize resource groups for administration or budgeting.
 ```PowerShell
 New-AzureRmResourceGroup -Location "West US" -Name FTResourceGroupTagged -Tag @{Empty=$null; Department="Marketing"} -Verbose -Debug
 
