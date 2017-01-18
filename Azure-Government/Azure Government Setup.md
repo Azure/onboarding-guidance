@@ -14,8 +14,8 @@ When using PowerShell to manage Azure Government environment, you need to point 
 ```PowerShell
 # To Login in to Azure Government Environment:
 
-Add-AzureRMAccount -EnvironmentName AzureUSGovernment #Azure Resoure Manager:
+Add-AzureRMAccount -EnvironmentName AzureUSGovernment #Azure Resoure Manager
 Add-AzureAccount -Environment AzureUSGovernement #Azure Service Management (classic)
 
 ```
-This will configure all of the correct endpoints and let you login to Azure Government environment. Rest of the PowerShell commands are exactly same as in Azure public clould. 
+This will configure all of the correct endpoints and let you login to Azure Government environment. Rest of the PowerShell commands are exactly same as in Azure public cloud. 
