@@ -13,7 +13,7 @@ After completing the exercises in this module, you will be able to:
 * [Deploying Website on Azure IaaS VMs - HTTP](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTP.md)
 
 # Estimated time to complete this module:
-Self-guided
+Self-guided.
 
 # Install Certificate on VMs
 Procure (or use self signed certificate for testing purpose only) SSL certificate, import/configure on both VMs IIS. Thse steps are beyond the scope of this document, and its exactly same as doing it in on-premises VMs. 
