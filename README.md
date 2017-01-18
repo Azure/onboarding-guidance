@@ -52,3 +52,6 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 ## Reference Proof of Concept
 * Data Migration to Storage Account ([StorageExplorer](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellStorageDemo.ps1) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellStorageDemo.ps1) )
 * Deploying Website on Azure IaaS VMs ([HTTP](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTP.md) | [HTTPS](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTPS.md))
+
+## Azure Government
+* Initial Setup ([Setup](https://github.com/Azure/onboarding-guidance/blob/master/Azure-Government/Azure%20Government%20Setup.md))
