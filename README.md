@@ -17,6 +17,7 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 * Tools Introduction ([ Introduction](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-ToolsIntro.md) )
 * Azure Tools Setup ( [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Setup/L2-AzurePowershellSetup.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Setup/L1-xplatCLIWindowsSetup.md) )
 * Connecting To Azure ( [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Setup/L3-ConnectToAzure.md) | [XPlatCLI ](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Setup/L2-ConnectToAzure.md) )
+* Setup for Azure Government ([Setup](https://github.com/Azure/onboarding-guidance/blob/master/Azure-Government/Azure%20Government%20Setup.md))
 
 :memo: [Supporting Resources](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-ToolsSetup.md)
 
@@ -52,6 +53,3 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 ## Reference Proof of Concept
 * Data Migration to Storage Account ([StorageExplorer](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellStorageDemo.ps1) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellStorageDemo.ps1) )
 * Deploying Website on Azure IaaS VMs ([HTTP](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTP.md) | [HTTPS](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTPS.md))
-
-## Azure Government
-* Initial Setup ([Setup](https://github.com/Azure/onboarding-guidance/blob/master/Azure-Government/Azure%20Government%20Setup.md))
