@@ -27,7 +27,7 @@ Choose a cloud SQL Server option: [Azure SQL (PaaS) Database or SQL Server on Az
 
 
 # Prerequisite 
-* Azure Subscription and Understanding of Azure IaaS concepts
+* Understanding of Azure IaaS concepts & Azure Subscription to deploy SQL server.
 
 # Estimated time to complete this module:
 Self-guided.
