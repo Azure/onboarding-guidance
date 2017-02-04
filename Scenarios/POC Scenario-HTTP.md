@@ -30,24 +30,24 @@ Self-guided
 * Find and Pin, **Load Balancer**
 * Find and Pin, **Network Security Group**
 
-   ![Screenshot](./Images/POC-1.png)
+   ![Screenshot](/Images/POC-1.png)
 
 # Resource Group creation
   > Note: For all **(prefix)** references, use a globally unique name to be used throughout this walkthrough.
 
   * Create Resource Group - **(prefix)-poc-rg**
 
-   ![Screenshot](./Images/POC-2.png)
+   ![Screenshot](/Images/POC-2.png)
 
 # Virtual Network Creation
   * Create a VNET named **(prefix)-vnet-usw1**
   * Create a Web Subnet named **(prefix)-web-snet**
 
-   ![Screenshot](./Images/POC-3.png)
+   ![Screenshot](/Images/POC-3.png)
 
   * Create a App Subnet named **(prefix)-app-snet**
 
-   ![Screenshot](./Images/POC-4.png)
+   ![Screenshot](/Images/POC-4.png)
 
 # Virtual Machine Creation
   * Create 2 VMs
@@ -56,30 +56,30 @@ Self-guided
   * Name the 2nd VM **(prefix)-web02-vm**
   * Make sure to choose **HDD disk**
 
-     ![Screenshot](./Images/POC-5.png)
+     ![Screenshot](/Images/POC-5.png)
 
   * For the size select **D1_V2**
   * Create Storage account - **(prefix)web01vmst01**
   * Create Storage account - **(prefix)web02vmst01**
   * Create availability set - **(prefix)as-web**
   
-   ![Screenshot](./Images/POC-6.png)
+   ![Screenshot](/Images/POC-6.png)
 
   * Create Diagnostics Storage account named **(prefix)webdiag**
 
-   ![Screenshot](./Images/POC-7.png)
+   ![Screenshot](/Images/POC-7.png)
   > Note: During 2nd VM creation pick the previously created Availability set
 
-   ![Screenshot](./Images/POC-8.png)
+   ![Screenshot](/Images/POC-8.png)
 
 # Install IIs on VMs
   * From Virtual Machine blade, select the 1st VM, click **Connect** and login to machine
 
-   ![Screenshot](./Images/POC-9.png)
+   ![Screenshot](/Images/POC-9.png)
 
   * From the **Server Manager Dashboard**, select **Add Roles and Features**
 
-   ![Screenshot](./Images/POC-10.png)
+   ![Screenshot](/Images/POC-10.png)
 
   * Click **Next** on **Before you Begin**
   * Click **Next** on **Installation Type**
@@ -91,7 +91,7 @@ Self-guided
   * On **Role Services**, click **Next**
   * On  **Confirmation**, click **Install**
 
-  ![Screenshot](./Images/POC-11.png)
+  ![Screenshot](/Images/POC-11.png)
 
   >Note: Wait for installation to complete
  
@@ -102,7 +102,7 @@ Self-guided
   * **Right-Click** anywhere in panel and select **Explore**
   * From the **Windows Explorer**, **Right-Click** on the file **IISStart.html**, and open in **Notepad**.
 
-  ![Screenshot](./Images/POC-12.png)
+  ![Screenshot](/Images/POC-12.png)
 
   * Find the follow line right after the <**body**> tag and add the following.
 
@@ -111,11 +111,11 @@ For VM1: <h1>This is Web Server 01</h1>
 For VM2: <h1>This is Web Server 02</h1>
 ``` 
 
-  ![Screenshot](./Images/POC-13.png)
+  ![Screenshot](/Images/POC-13.png)
 
   * From Virtual Machine blade, select the 2nd VM, click **Connect** and login to machine and repeat all the steps above.
 
-  ![Screenshot](./Images/POC-14.png)
+  ![Screenshot](/Images/POC-14.png)
 
 # Create Load Balancer
   * From the left panel on the Azure Portal, select **Load Balancers**.
@@ -124,37 +124,37 @@ For VM2: <h1>This is Web Server 02</h1>
   * Click **Public IP Address**, click **New**
   * Enter name **(prefix)-web-pip**, set assignment to **Static**, click **Ok**
 
-     ![Screenshot](./Images/POC-15.png)
+     ![Screenshot](/Images/POC-15.png)
 
   * Select **Use Existing** for **Resource Group**, i.e. **(prefix)-poc-rg**, click **Create**
 
-     ![Screenshot](./Images/POC-16.png)
+     ![Screenshot](/Images/POC-16.png)
 
   * After the **Load Balancer** is created, select the one you added.
 
-     ![Screenshot](./Images/POC-17.png)
+     ![Screenshot](/Images/POC-17.png)
 
   * Under **Settings** select **Probes**, click **Add**.
   * Enter name **(prefix)-web-prob**, leaving all the defaults, click **Ok**
 
-   ![Screenshot](./Images/POC-18.png)
+   ![Screenshot](/Images/POC-18.png)
 
 # Add the VMs to Load Balancer
   * Under **Settings** select **Backend pools**, click **Add**.
   * Enter name **(prefix)-web-pool**.
   * Click **Add a virtual machine**.
 
-   ![Screenshot](./Images/POC-19.png)
+   ![Screenshot](/Images/POC-19.png)
 
   * Select **Availability set**, click **(prefix)-web-as**.
   * Click **Choose the virtual machines**, click and **check** both VMs, click **Select**
 
-   ![Screenshot](./Images/POC-20.png)
+   ![Screenshot](/Images/POC-20.png)
 
   * Click **Ok**
   * Click **Ok**
 
-   ![Screenshot](./Images/POC-21.png)
+   ![Screenshot](/Images/POC-21.png)
 
 # Create Load Balancing Rules for HTTP
   * Under **Settings** select **Load balancing rules**, click **Add**.
@@ -169,7 +169,7 @@ For VM2: <h1>This is Web Server 02</h1>
     *  Floating IP (direct server return): **Disabled**
     *  Click **Ok**
 
-   ![Screenshot](./Images/POC-22.png)
+   ![Screenshot](/Images/POC-22.png)
 
 
 # Update the NSG (inbound security rule)
@@ -180,7 +180,7 @@ For VM2: <h1>This is Web Server 02</h1>
   * Under **Settings** select **Network Security Groups**.
   * Under **Network Security Group**, click on **(prefix)-web01-vm-nsg**.
 
-   ![Screenshot](./Images/POC-23.png)
+   ![Screenshot](/Images/POC-23.png)
 
   * Under **Settings**, click on **Inbound Security Rules**.
   * Click **Add**, Enter name **(prefix)-web01-vm-nsgr-http-allow**
@@ -191,7 +191,7 @@ For VM2: <h1>This is Web Server 02</h1>
     *  Port range: **80**
     *  Action: **Allow**
 
-   ![Screenshot](./Images/POC-24.png)
+   ![Screenshot](/Images/POC-24.png)
 
 
 ## Virtual machine #2
@@ -200,7 +200,7 @@ For VM2: <h1>This is Web Server 02</h1>
   * Click on **(prefix)-web02-vm-nsg**.
   * Under **Settings** select **Network Security Groups**.
 
-  ![Screenshot](./Images/POC-25.png)
+  ![Screenshot](/Images/POC-25.png)
 
   * Click on **(prefix)-web02-vm-nsg**.
   * Under **Settings**, click on **Inbound Security Rules**.
@@ -212,7 +212,7 @@ For VM2: <h1>This is Web Server 02</h1>
     *  Port range: **80**
     *  Action: **Allow**
 
-   ![Screenshot](./Images/POC-26.png)
+   ![Screenshot](/Images/POC-26.png)
 
 
 # Assign DNS name to Load Balancer
@@ -223,28 +223,28 @@ For VM2: <h1>This is Web Server 02</h1>
   * Under DSN name enter **(prefix)**.
       * i.e. http://**(prefix)**.westus2.cloudapp.azure.com/
 
-   ![Screenshot](./Images/POC-27.png)
+   ![Screenshot](/Images/POC-27.png)
 
 # Testing 
   * Browse to load balancer public IP (or) **http://(prefix).westus2.cloudapp.azure.com/**
   * You will see IIS server default page, with either VM1 or VM2.
   * If you see VM1, then RDP1 into VM1, stop Default Web Site in IIS. Refresh web page, you will see VM2. Load balancer detects VM1 is down and redirects traffic to VM2.
 
-   ![Screenshot](./Images/POC-28.png)
+   ![Screenshot](/Images/POC-28.png)
 
 # Automation Scripts (ARM Template)
   * From the left panel on the Azure Portal, select **Resource Groups**.
   * Select **(prefix)-poc-rg**.
   * Under Settings, click **Download** | **Save As** | (select location)
 
-   ![Screenshot](./Images/POC-29.png)
+   ![Screenshot](/Images/POC-29.png)
 
   * After download, **Extract All** to (select location)
   
-  ![Screenshot](./Images/POC-30.png)
+  ![Screenshot](/Images/POC-30.png)
 
 # Visualize your Architecture with **ArmViz**
   * Open browser and goto **http://armviz.io** to view the template.
 
-   ![Screenshot](./Images/ArmVizDiagram.png)
+   ![Screenshot](/Images/ArmVizDiagram.png)
 

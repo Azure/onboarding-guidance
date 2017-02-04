@@ -22,13 +22,13 @@ To perform these steps, Login to VMs
 
   * From Virtual Machine blade, select the 1st VM, click **Connect** and login to machine
 
-   ![Screenshot](./Images/POC-9.png)
+   ![Screenshot](/images/POC-9.png)
 
 
 # Create Load Balancing Rule for HTTPS
   * Select the **Load Balancer** 
 
-     ![Screenshot](./Images/POC-17.png)
+     ![Screenshot](/images/POC-17.png)
 
   * Under **Settings** select **Load balancing rules**, click **Add**.
   * Enter name **(prefix)-https-lbr**.
@@ -42,7 +42,7 @@ To perform these steps, Login to VMs
     *  Floating IP (direct server return): **Disabled**
     *  Click **Ok**
 
-   ![Screenshot](./Images/POC-31.png)
+   ![Screenshot](/images/POC-31.png)
 
 # Update the NSG (inbound security rule)
 Following steps will add inbound security rule to allow HTTPS traffic to VM1 & VM2
@@ -54,7 +54,7 @@ Following steps will add inbound security rule to allow HTTPS traffic to VM1 & V
   * Under **Settings** select **Network Security Groups**.
   * Under **Network Security Group**, click on **(prefix)-web01-vm-nsg**.
 
-   ![Screenshot](./Images/POC-23.png)
+   ![Screenshot](/images/POC-23.png)
  
 
  * Under **Settings**, click on **Inbound Security Rules**.
@@ -66,7 +66,7 @@ Following steps will add inbound security rule to allow HTTPS traffic to VM1 & V
     *  Port range: **443**
     *  Action: **Allow**
 
-   ![Screenshot](./Images/POC-32.png)
+   ![Screenshot](/images/POC-32.png)
 
 
 ## Virtual machine #2
@@ -76,7 +76,7 @@ Following steps will add inbound security rule to allow HTTPS traffic to VM1 & V
   * Click on **(prefix)-web02-vm-nsg**.
   * Under **Settings** select **Network Security Groups**.
 
-  ![Screenshot](./Images/POC-25.png)
+  ![Screenshot](/images/POC-25.png)
 
  * Under **Settings**, click on **Inbound Security Rules**.
   * Click **Add**, Enter name **(prefix)-web02-vm-nsgr-https-allow**
@@ -87,11 +87,11 @@ Following steps will add inbound security rule to allow HTTPS traffic to VM1 & V
     *  Port range: **443**
     *  Action: **Allow**
 
-   ![Screenshot](./Images/POC-33.png)
+   ![Screenshot](/images/POC-33.png)
 
 # Testing 
   * Browse to load balancer public IP (or) **https://(prefix).westus2.cloudapp.azure.com/**
   * You will see IIS server default page, with either VM1 or VM2.
   * If you see VM1, then RDP1 into VM1, stop Default Web Site in IIS. Refresh web page, you will see VM2. Load balancer detects VM1 is down and redirects traffic to VM2.
 
-   ![Screenshot](./Images/POC-34.png)
+   ![Screenshot](/images/POC-34.png)
