@@ -32,6 +32,16 @@ Choose a cloud SQL Server option: [Azure SQL (PaaS) Database or SQL Server on Az
 # Estimated time to complete this module:
 Self-guided.
 
+# Performance best practices for SQL Server in Azure Virtual Machines
+
+This topic provides best practices for optimizing SQL Server performance in Microsoft Azure Virtual Machine. While running SQL Server in Azure Virtual Machines, we recommend that you continue using the same database performance tuning options that are applicable to SQL Server in on-premises server environment. However, the performance of a relational database in a public cloud depends on many factors such as the size of a virtual machine, and the configuration of the data disks. 
+
+When creating SQL Server images, [consider provisioning your VMs in the Azure portal](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision). SQL Server VMs provisioned in the Portal with Resource Manager implement all these best practices, including the storage configuration. 
+
+If your workload is less demanding, you might not require every optimization listed in the following performance best practices document. Consider your performance needs and workload patterns as you evaluate these recommendations.
+
+For more information on *how* to make optimizations, please review [Performance best practices for SQL Server in Azure Virtual Machines](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance)
+
 # Setup & Configuraiton
 When it comes to deploying SQL Server on IaaS VMs, it can be deployed in few different ways. It can be deployed through Azure Portal, PowerShell or using Resource Manager Template. Few widely used options covered below.
 
@@ -81,17 +91,30 @@ The figure below is a graphical representation of the solution.
 
 For a step-by-step tutorial please see on how to [Configure Always On availability group in Azure VM automatically - Resource Manager](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-availability-groups)
 
+# Migrate a SQL Server database to SQL Server in an Azure VM
+There are a number of methods for migrating an on-premises SQL Server user database to SQL Server in an Azure VM. 
 
-# Performance best practices for SQL Server in Azure Virtual Machines
+#### What are the primary migration methods?
 
-This topic provides best practices for optimizing SQL Server performance in Microsoft Azure Virtual Machine. While running SQL Server in Azure Virtual Machines, we recommend that you continue using the same database performance tuning options that are applicable to SQL Server in on-premises server environment. However, the performance of a relational database in a public cloud depends on many factors such as the size of a virtual machine, and the configuration of the data disks. 
+The primary migration methods are:
 
-When creating SQL Server images, [consider provisioning your VMs in the Azure portal](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision). SQL Server VMs provisioned in the Portal with Resource Manager implement all these best practices, including the storage configuration. 
+* Use the Deploy a SQL Server Database to a Microsoft Azure VM wizard
 
-If your workload is less demanding, you might not require every optimization listed in the following performance best practices document. Consider your performance needs and workload patterns as you evaluate these recommendations.
+* Perform on-premises backup using compression and manually copy the backup file into the Azure virtual machine
 
-For more information on *how* to make optimizations, please review [Performance best practices for SQL Server in Azure Virtual Machines](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance)
+* Perform a backup to URL and restore into the Azure virtual machine from the URL
 
+* Detach and then copy the data and log files to Azure blob storage and then attach to SQL Server in Azure VM from URL
+
+* Convert on-premises physical machine to Hyper-V VHD, upload to Azure Blob storage, and then deploy as new VM using uploaded VHD
+
+* Ship hard drive using Windows Import/Export Service
+
+* If you have an AlwaysOn deployment on-premises, use the [Add Azure Replica Wizard](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sqlclassic/virtual-machines-windows-classic-sql-onprem-availability) to create a replica in Azure and then failover, pointing users to the Azure database instance
+
+* Use SQL Server [transactional replication](https://msdn.microsoft.com/library/ms151176.aspx)  to configure the Azure SQL Server instance as a subscriber and then disable replication, pointing users to the Azure database instance
+
+For more information on choosing the right migration method see [Migrate a SQL Server database to SQL Server in an Azure VM](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)
 
 # Security Considerations for SQL Server in Azure Virtual Machines
 
