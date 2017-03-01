@@ -98,8 +98,6 @@ There are a number of methods for migrating an on-premises SQL Server user datab
 
 The primary migration methods are:
 
-* Use the Deploy a SQL Server Database to a Microsoft Azure VM wizard
-
 * Perform on-premises backup using compression and manually copy the backup file into the Azure virtual machine
 
 * Perform a backup to URL and restore into the Azure virtual machine from the URL
@@ -112,7 +110,7 @@ The primary migration methods are:
 
 * If you have an AlwaysOn deployment on-premises, use the [Add Azure Replica Wizard](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sqlclassic/virtual-machines-windows-classic-sql-onprem-availability) to create a replica in Azure and then failover, pointing users to the Azure database instance
 
-* Use SQL Server [transactional replication](https://msdn.microsoft.com/library/ms151176.aspx)  to configure the Azure SQL Server instance as a subscriber and then disable replication, pointing users to the Azure database instance
+* Use SQL Server [transactional replication](https://msdn.microsoft.com/library/ms151176.aspx) to configure the Azure SQL Server instance as a subscriber and then disable replication, pointing users to the Azure database instance
 
 For more information on choosing the right migration method see [Migrate a SQL Server database to SQL Server in an Azure VM](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)
 
