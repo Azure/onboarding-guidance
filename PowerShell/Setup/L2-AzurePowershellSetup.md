@@ -29,7 +29,7 @@ Today, using PowerShell, it is possible to accomplish nearly everything from the
 -------------------
 
 First Time installation  
-WebPI installer : [Download](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids/)
+WebAPI installer : [Download](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids/)
 
 Command Line : PowerShell Gallery
 
