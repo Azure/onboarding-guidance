@@ -1,9 +1,11 @@
 # POC Scenario: Deploying SQL Server on Azure IaaS VMs
 
 # Introduction
+Intent of this document is to curate and give you enough information in a single page to help you get started with deploying SQL Server on Azure IaaS VMs.
+
 SQL Server installed and hosted in the cloud on Windows Server Virtual Machines (VMs) running on Azure, also known as an infrastructure as a service (IaaS). SQL Server on Azure virtual machines is optimized for migrating existing SQL Server applications. All the versions and editions of SQL Server are available. It offers 100% compatibility with SQL Server, allowing you to host as many databases as needed and executing cross-database transactions. It offers full control on SQL Server and Windows.
 
-# Use Case Scenarios
+# Use Case Scenarios for SQL Server on IaaS VMs
 There are many reasons that you might choose to host your data in Azure. If your application is moving to Azure, it improves performance to also move the data. But there are other benefits. You automatically have access to multiple data centers for a global presence and disaster recovery. The data is also highly secured and durable.
 
 SQL Server running on Azure VMs is one option for storing your relational data in Azure. For example, you might want to configure the Azure VM as similarly as possible to an on-premises SQL Server machine. Or you might want to run additional applications and services on the same database server. 
@@ -23,14 +25,25 @@ In the event of a disaster, you can improve business continuity by placing your 
 #### For additional information refer to the following resources
 [SQL Server on Azure virtual machines](https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/)  provides an overview of the best scenarios for using SQL Server on Azure VMs.
 
-Choose a cloud SQL Server option: [Azure SQL (PaaS) Database or SQL Server on Azure VMs (IaaS)](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-paas-vs-sql-server-iaas) provides a detailed comparison between SQL Database and SQL Server running on a VM.
-
-
 # Prerequisite 
 * Understanding of Azure IaaS concepts & Azure Subscription to deploy SQL server.
 
-# Estimated time to complete this module:
-Self-guided.
+# Azure SQL DB (PaaS) vs. SQL Server on IaaS VMs
+While the intent of this document is to purely focus on SQL Server running on IaaS VMs, its better to understand Azure SQL DB using which you can reap the most benefit of going to cloud. Its recommended that you look at Azure SQL DB first, if it satisfies your need leverage that. If not use SQL Server on IaaS VMs.
+
+Here are couple of documents that can help you choose Azure SQL Database vs. SQL Server on IaaS VMs
+
+* High level comparision: [SQL Database (PaaS) vs. SQL Server on VMs (IaaS)](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-paas-vs-sql-server-iaas) 
+
+* Detailed feature level comparision: [SQL Database (PaaS) vs. SQL Server on VMs (IaaS)](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-features) 
+
+# Ramp up
+Here few resources that can help you get started with running SQL Server on IaaS VMs:
+
+* [SQL Server on an Azure Virtual Machine: Learning Path](https://azure.microsoft.com/en-us/documentation/learning-paths/sql-azure-vm/) 
+
+* [Overview of SQL Server on Azure Virtual Machines](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview)
+
 
 # Performance best practices for SQL Server in Azure Virtual Machines
 
