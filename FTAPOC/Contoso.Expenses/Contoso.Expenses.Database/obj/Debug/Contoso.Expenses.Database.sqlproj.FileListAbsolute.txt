@@ -1,0 +1,10 @@
+c:\proj\ef\Contoso.Expenses\Contoso.Expenses.Database\bin\Debug\Contoso.Expenses.Database.dacpac
+c:\proj\ef\Contoso.Expenses\Contoso.Expenses.Database\bin\Debug\Contoso.Expenses.Database.dll
+c:\proj\ef\Contoso.Expenses\Contoso.Expenses.Database\bin\Debug\Contoso.Expenses.Database.pdb
+c:\proj\ef\Contoso.Expenses\Contoso.Expenses.Database\obj\Debug\Contoso.Expenses.Database.dll
+c:\proj\ef\Contoso.Expenses\Contoso.Expenses.Database\obj\Debug\Contoso.Expenses.Database.pdb
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.Database\bin\Debug\Contoso.Expenses.Database.dacpac
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.Database\bin\Debug\Contoso.Expenses.Database.dll
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.Database\bin\Debug\Contoso.Expenses.Database.pdb
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.Database\obj\Debug\Contoso.Expenses.Database.dll
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.Database\obj\Debug\Contoso.Expenses.Database.pdb

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Contoso.Expenses.DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Expense">
+    <Key>
+      <PropertyRef Name="ExpenseId" />
+    </Key>
+    <Property Name="ExpenseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Purpose" Type="nvarchar" MaxLength="256" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Cost Center" Type="nvarchar" MaxLength="20" />
+    <Property Name="Amount" Type="float" />
+    <Property Name="Approver" Type="nvarchar" MaxLength="50" />
+    <Property Name="Receipt" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityContainer Name="ContosoExpensesDatabaseModelStoreContainer">
+    <EntitySet Name="Expense" EntityType="Self.Expense" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,10 @@
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.DataAccess\bin\Release\Contoso.Expenses.DataAccess.dll.config
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.DataAccess\bin\Release\Contoso.Expenses.DataAccess.dll
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.DataAccess\bin\Release\Contoso.Expenses.DataAccess.pdb
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.DataAccess\bin\Release\EntityFramework.dll
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.DataAccess\bin\Release\EntityFramework.xml
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.DataAccess\obj\Release\Contoso.Expenses.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.DataAccess\obj\Release\Contoso.Expenses.DataAccess.dll
+C:\Users\umarm\Source\Repos\FTAPOC\Contoso.Expenses\Contoso.Expenses.DataAccess\obj\Release\Contoso.Expenses.DataAccess.pdb

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Contoso Expenses";
+}
+
+<img src="~/images/Expenses.jpg" alt="Expenses" />
+
+<span style="font-size:xx-large">We track all your Expenses!</span>
+<br /><br /><br />
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Expenses", "Index", "Expenses")</h2>
+        <ul>
+            <li>Submit Expenses with in 31 days</li>
+            <li>Get paid on time</li>
+            <li>Remember Credit Card Late Fees!!!</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h2>We are</h2>
+        <ul>
+            <li>Contoso Expenses</li>
+            <li>Help you keep track of expenses</li>
+        </ul>
+    </div>
+</div>

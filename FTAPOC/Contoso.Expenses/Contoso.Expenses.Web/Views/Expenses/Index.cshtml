@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Contoso.Expenses.DataAccess.Models.Expense>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Purpose)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cost_Center)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Approver)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Receipt)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Purpose)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cost_Center)
+        </td>
+        <td>
+            $@Html.DisplayFor(modelItem => item.Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Approver)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Receipt)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ExpenseId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ExpenseId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ExpenseId })
+        </td>
+    </tr>
+}
+
+</table>
