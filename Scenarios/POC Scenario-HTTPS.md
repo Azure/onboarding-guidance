@@ -1,7 +1,7 @@
 # POC Scenario 1: Deploying Website on Azure IaaS VMs - HTTPS
 
 # Abstract
-To deploy website using HTTPS, complete the steps first from [HTTP scenario](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTP.md), once that done, proceed to the steps mentioend below.
+To deploy website using HTTPS, complete the steps first from [HTTP scenario](POC%20Scenario-HTTP.md), once that done, proceed to the steps mentioend below.
 Steps mentioned below only covers configuration needed on Azure side, it doesn't cover the steps that are needed to procure and install certificate on the VMs. These steps are beyond the scope of this document, and its exactly same as doing it in on-premises VMs. 
 
 # Learning objectives
@@ -10,7 +10,7 @@ After completing the exercises in this module, you will be able to:
 
 
 # Prerequisite 
-* [Deploying Website on Azure IaaS VMs - HTTP](https://github.com/Azure/onboarding-guidance/blob/master/Portal/POC%20Scenario-HTTP.md)
+* [Deploying Website on Azure IaaS VMs - HTTP](POC%20Scenario-HTTP.md)
 
 # Estimated time to complete this module:
 Self-guided.
