@@ -3,7 +3,7 @@
 This folder is work in progress, please stay tuned! 
 
 ## Pre-Requisites
-* You must have completed the [Xamarin Test Cloud](setup.md) section first.
+* You must have completed the [Xamarin Test Cloud](xamarin-test-cloud.md) section first.
 * If you do not yet have a HockeyApp account, first [sign up for an account](https://rink.hockeyapp.net/registrations/new). Once you have submitted the form, you will need to verify your e-mail address.
 
 ## Create a new HockeyApp Application
