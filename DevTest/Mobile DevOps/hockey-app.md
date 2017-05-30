@@ -10,9 +10,14 @@ This folder is work in progress, please stay tuned!
 1. Browse to your [HockeyApp Dashboard](https://rink.hockeyapp.net/manage/dashboard).
 2. Click on the New App button (Note: You will need to have verified your e-mail address first.)
 3. Select "Create the app manually instead".
-4. Enter the details, as shown in the image below. **INCLUDE IMAGE**
+4. Enter the details, as shown in the image below.
+
+     ![Screenshot](/Images/hockeyapp-1.png)
+
 5. Click Create.
-6. You will now be taken to a page specifically to manage your newly created application. Copy the App ID, as we will need it later. **INCLUDE IMAGE**
+6. You will now be taken to a page specifically to manage your newly created application. Copy the App ID, as we will need it later.
+
+     ![Screenshot](/Images/hockeyapp-2.png)
 
 ## Add Crash Analytics to your Application
 
@@ -45,10 +50,20 @@ throw new System.Exception("Example of HockeyApps Crash Analytics");
 ```
 8. Rebuild your CreditCardValidator.Droid solution, and deploy it to your Emulator.
 9. Enter a valid Credit Card Number (16 digits long), and allow the app to crash.
+
+
+     ![Screenshot](/Images/hockeyapp-3.png)
+
 10. Reopen the app by selecting the "Enter Credit Card Number" app from the app screen. Select "Send report" when the app completes loading.
+
+     ![Screenshot](/Images/hockeyapp-4.png)
+
 11. Navigate to your application in your [HockeyApp Dashboard](https://rink.hockeyapp.net/manage/dashboard).
+
+     ![Screenshot](/Images/hockeyapp-5.png)
+
 12. Select "Crashes" in the top navigation menu. You will see that information is beginning to appear from your application about your crashes.
-13. Open your CreditCardValidationSuccess.cs file and comment out the line with the exception.
+13. Open your CreditCardValidationSuccess.cs file and comment out the line with the exception, as we are now progressing to another section.
 
 ## User Metrics
 1. Open your MainActivity.cs file
@@ -64,8 +79,10 @@ MetricsManager.Register(Application, "{YourAppID}");
 **Note: Replace {YourAppID} with your App ID from the HockeyApp Portal**
 
 4. Rebuild your CreditCardValidator.Droid solution, and deploy it to your Emulator.
-5. Open the application.
+5. Open the application and perform some basic user testing.
 6. Navigate to your application in your [HockeyApp Dashboard](https://rink.hockeyapp.net/manage/dashboard). Scroll down to the User Metrics section. You should begin seeing data flow about your User Engagement, and number of sessions from those users.
+
+     ![Screenshot](/Images/hockeyapp-6.png)
 
 ## Add custom events
 1. First, ensure that you have correctly setup your User Metrics configuration as outlined above.
@@ -98,6 +115,10 @@ protected override void OnCreate(Bundle bundle)
     //throw new System.Exception("Example of HockeyApps Crash Analytics");
 }
 ```
+
+5. Navigate to your application in your [HockeyApp Dashboard](https://rink.hockeyapp.net/manage/dashboard) and select the Events tab.
+
+     ![Screenshot](/Images/hockeyapp-7.png)
 
 ## Add update distribution
 
@@ -178,15 +199,28 @@ FeedbackManager.Register(this, "{YourAppId}");
             };
 ```
 
+**Note: Replace {YourAppID} with your App ID from the HockeyApp Portal**
+
 4. Rebuild your CreditCardValidator.Droid solution, and deploy it to your Emulator.
 5. Open the application, and click on the Send Feedback button.
+
+     ![Screenshot](/Images/hockeyapp-8.png)
+
 6. Submit an example set of user feedback.
+
+     ![Screenshot](/Images/hockeyapp-9.png)
+
 7. Navigate to your application in your [HockeyApp Dashboard](https://rink.hockeyapp.net/manage/dashboard) and select the Feedback Tab. 
+
+     ![Screenshot](/Images/hockeyapp-10.png)
+
 8. You will see the feedback that you submitted through the app. Click on it, to find the details.
+
+     ![Screenshot](/Images/hockeyapp-11.png)
+
 9. Provide a response, and submit a comment. Once complete, refresh the application. You will see the response from Development team. 
 
-
-**Note: Replace {YourAppID} with your App ID from the HockeyApp Portal**
+     ![Screenshot](/Images/hockeyapp-12.png)
 
 ## Useful References
 * [How to integrate HockeyApp with Xamarin](https://support.hockeyapp.net/kb/client-integration-cross-platform/how-to-integrate-hockeyapp-with-xamarin)
