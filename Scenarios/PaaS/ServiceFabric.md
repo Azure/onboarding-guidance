@@ -1,40 +1,19 @@
-Have an Azure subscription (You can use your MSDN subscription)
+You need to have an Azure subscription
+     
+Visual Studio 2015 Update 3 or Visual Studio 2017
 
-·      
-Visual
-Studio 2013 Update 5 or preferably Visual
-Studio 2015 
+Download Azure SDK Tools 2.9 from the Web platform installer and install the SDK
 
-·      
-Download
-Azure SDK Tools 2.8.1 from the Web platform installer and install the SDK
+Download the Service Fabric developer SDK http://aka.ms/ServiceFabricSDK
+Service Faric Getting Started: http://aka.ms/ServiceFabric
 
-·       Download
-the Service Fabric developer SDK http://aka.ms/ServiceFabricSDK
+You will need Service Fabric Local Cluster Manager to manage your local dev cluster:
+Open following folder:
+C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager
+And run ServiceFabricLocalClusterManager.exe
 
-·      
-You will
-need Service Fabric Local Cluster Manager to manage your local dev cluster:
-
-·      
-Open
-following folder:
-
-o   C:\Program Files\Microsoft SDKs\Service
-Fabric\Tools\ServiceFabricLocalClusterManager
-
-                   
-and run ServiceFabricLocalClusterManager.exe.
-
-
-
-Download the Service Fabric developer SDK
-
-http://aka.ms/ServiceFabricSDK
-
-http://aka.ms/ServiceFabric
+Download the Service Fabric developer SDK: http://aka.ms/ServiceFabricSDK
 
 Download the samples for GitHub
-
 http://github.com/Azure/ServiceFabric-Samples 
 
