@@ -1,4 +1,5 @@
 You need to have an Azure subscription
+
 Visual Studio 2015 Update 3 or Visual Studio 2017
 
 Download Azure SDK Tools 2.9 from the Web platform installer and install the SDK
