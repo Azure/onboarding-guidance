@@ -15,6 +15,6 @@ Open following folder:
 C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager
 And run ServiceFabricLocalClusterManager.exe
 
-Download the samples for GitHub
+Download the samples for GitHub:
 http://github.com/Azure/ServiceFabric-Samples 
 
