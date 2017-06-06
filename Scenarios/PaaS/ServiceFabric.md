@@ -23,9 +23,7 @@ Service Fabric Learning Path: https://azure.microsoft.com/en-us/documentation/le
 
 Ignite Session: https://myignite.microsoft.com/videos/3168
 
-Theory: Microservices defined by Martin Fowler and James Lewis 
-
-http://martinfowler.com/microservices/
+Theory: Microservices defined by Martin Fowler and James Lewis: http://martinfowler.com/microservices/
 
 Service Fabric Service Communications: https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-and-communicate-with-services
 
