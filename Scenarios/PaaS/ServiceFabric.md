@@ -1,3 +1,4 @@
+## Set up and Getting Started
 You need to have an Azure subscription
 
 Visual Studio 2015 Update 3 or Visual Studio 2017
