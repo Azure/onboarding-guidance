@@ -25,9 +25,12 @@ Theory: Microservices defined by Martin Fowler and James Lewis 
 http://martinfowler.com/microservices/
 
 Service Fabric Service Communications: https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-and-communicate-with-services
+
 Create a Windows Cluster: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/
+
 On-Premise:
 https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/#plan-and-prepare-your-cluster-deployment
+
 Update Fabric Version: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade/#controlling-the-fabric-version-that-runs-on-your-cluster
 
 Upgrade Windows Servers: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade-windows-server/
