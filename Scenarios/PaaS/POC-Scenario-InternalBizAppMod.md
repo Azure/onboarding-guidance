@@ -1,6 +1,8 @@
 ## POC Steps
- 1) Build the Project in Visual Studio 
+ 1) Build the Project in Visual Studio
+ 
  2) Create the SQL Database and SQL Server 
+ 
  3) Add the Client IP in Firewall Settings for SQL Server 
  4) Deploy and Publish the Application to Azure using Web Deploy 
  5) Update the Connectiing String in App Settings once the application is deployed 
