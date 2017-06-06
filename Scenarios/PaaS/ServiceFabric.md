@@ -20,7 +20,9 @@ http://github.com/Azure/ServiceFabric-Samples
 
 ## Resources
 Service Fabric Learning Path: https://azure.microsoft.com/en-us/documentation/learning-paths/service-fabric/
+
 Ignite Session: https://myignite.microsoft.com/videos/3168
+
 Theory: Microservices defined by Martin Fowler and James Lewis 
 http://martinfowler.com/microservices/
 
