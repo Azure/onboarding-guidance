@@ -1,4 +1,4 @@
- ## POC Steps
+ ##POC Steps
  1) Build the Project in Visual Studio
  2) Create the SQL Database and SQL Server
  3) Add the Client IP in Firewall Settings for SQL Server
@@ -9,4 +9,5 @@
  8) Make a code change and deploy to Staging Slot
  9) Deploy to the Staging Slot
  10) Perform a Slot Swap
- 11) Automation using ARM Templates
+ 12) Monitoring and Diagnostics
+ 13) Automation using ARM Templates
