@@ -1,6 +1,4 @@
- ## POC Steps
- 
- Following are the steps to deploy the POC:
+ Following are the steps to deploy the POC:
  1) Build the Project in Visual Studio
  2) Create the SQL Database and SQL Server
  3) Add the Client IP in Firewall Settings for SQL Server
