@@ -20,30 +20,24 @@ http://github.com/Azure/ServiceFabric-Samples
 
 ## Resources
 Service Fabric Learning Path: https://azure.microsoft.com/en-us/documentation/learning-paths/service-fabric/
+Ignite Session: https://myignite.microsoft.com/videos/3168
 Theory: Microservices defined by Martin Fowler and James Lewis 
 http://martinfowler.com/microservices/
 
-https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-and-communicate-with-services
-
-https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/
-
+Service Fabric Service Communications: https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-and-communicate-with-services
+Create a Windows Cluster: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/
+On-Premise:
 https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/#plan-and-prepare-your-cluster-deployment
+Update Fabric Version: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade/#controlling-the-fabric-version-that-runs-on-your-cluster
 
-https://myignite.microsoft.com/videos/3168
+Upgrade Windows Servers: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade-windows-server/
 
-https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade/#controlling-the-fabric-version-that-runs-on-your-cluster
-
-https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade-windows-server/
-
-https://github.com/paolosalvatori/servicefabricobserver
-
-https://azure.microsoft.com/en-us/documentation/articles/service-fabric-linux-overview/
+Service Fabric on Linux: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-linux-overview/
 
 Connect to a Secure Cluster: https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-to-secure-cluster
 
 Upgrade and clean up Service Fabric Development
-environment:          
-https://azure.microsoft.com/en-us/documentation/articles/service-fabric-update-your-development-environment/
+environment: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-update-your-development-environment/
 
 Troubleshoot an environment: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-troubleshoot-local-cluster-setup/
 
