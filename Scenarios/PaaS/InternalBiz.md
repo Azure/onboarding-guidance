@@ -11,11 +11,17 @@ Download the zip file for the [ContosoExpenses Project](https://1drv.ms/u/s!An-8
 Learn About Web Apps: http://azure.microsoft.com/en-us/services/websites/
 
 ### App Serivce Plans
+Plans and Features: https://azure.microsoft.com/en-us/pricing/details/app-service/ 
 
 ### Publishing Methods
 Deploying Web Apps: http://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy/ 
 
 ### Continuous Deployment
+VS Online
+Local Git
+GitHub
+Bitbucket
+Deployment Docs: https://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy
 
 ### Scaling
 All details about sizing and pricing for Azure Apps:
@@ -31,14 +37,21 @@ Troubleshooting: http://azure.microsoft.com/en-us/documentation/articles/web-sit
 ## API Apps
 
 ## Azure Functions
-Try Functions – https://functions.azure.com 
+Try Functions – https://functions.azure.com
+
 App Service – https://tryappservice.azure.comLocal 
-Development/Debugging (Preview) - https://aka.ms/FunctionsVsTools 
+
+Development/Debugging (Preview) - https://aka.ms/FunctionsVsTools
+
 Local Tooling:https://blogs.msdn.microsoft.com/appserviceteam/2016/12/01/running-azure-functions-locally-with-the-cli/ 
+
 http://npmjs.com/package/azure-functions-cli 
 
 ## Best Practices
-
-
+https://docs.microsoft.com/en-us/azure/app-service-web/app-service-best-practices
+https://channel9.msdn.com/Shows/Azure-Friday/Azure-WebSites-Best-Practices
+https://docs.microsoft.com/en-us/azure/app-service/app-service-high-density-hosting
+https://channel9.msdn.com/Shows/Cloud+Cover/Episode-213-Azure-App-Service-Best-Practices-for-Large-Scale-Applications
+https://docs.microsoft.com/en-us/azure/app-service/app-service-environment-auto-scale
 
 ## Resources
