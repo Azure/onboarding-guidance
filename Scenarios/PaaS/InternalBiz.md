@@ -35,6 +35,7 @@ Troubleshooting: http://azure.microsoft.com/en-us/documentation/articles/web-sit
 ### ASE and Hybrid Connections
 
 ## API Apps
+Azure API Apps: https://azure.microsoft.com/en-us/services/app-service/api/
 
 ## Azure Functions
 Try Functions – https://functions.azure.com
