@@ -1,5 +1,5 @@
-## Add Steps from the Word Document
-Create a stateless service
+## Create a Stateless service
+
 1.	Open Visual Studio with elevated privileges by pressing the Start ( ) button on the keyboard and typing “Visual Studio”, then run Visual Studio by right clicking and choosing Run as Administrator. Visual Studio must be run using elevated privileges because it must interact with the Service Fabric runtime.
 2.	Select File | New | Project …
 3.	Go to Cloud and choose Service Fabric Application
