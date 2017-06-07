@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "orgprefix": {
-      "value": "ft2"
+      "value": "ft"
     },
     "environmentPrefix": {
       "value": "dev"
@@ -28,6 +28,15 @@
     },
     "allowedVmSizes": {
       "value": "\"Standard_DS1_v2\", \"Standard_DS2_v2\""
+    },    
+    "artifactRepoFolder": {
+        "value": "/Artifacts"
+    },
+    "artifactRepoBranch": {
+        "value": "master"
+    },
+    "artifactRepoSecurityToken": {
+        "value": "enter your PAT token here"
     },
     "VMSize": {
       "value": "Standard_DS1_v2"

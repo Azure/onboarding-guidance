@@ -79,6 +79,40 @@
         "description": "Set 'allowed VM sizes' policy: A comma-separated list of VM sizes that are allowed in the lab."
       }
     },
+    "artifactRepoUri": {
+      "type": "string",
+      "defaultValue": "https://github.com/christianreddington/azure-devtestlabsdemo.git",
+      "metadata": {
+        "description": "Set 'artifact repository': the Git clone URI."
+      }
+    },
+    "artifactRepoFolder": {
+      "type": "string",
+      "defaultValue": "/tree/master/Artifacts",
+      "metadata": {
+        "description": "Set 'artifact repository': the target folder in the repo."
+      }
+    },
+    "artifactRepoBranch": {
+      "type": "string",
+      "defaultValue": "master",
+      "metadata": {
+        "description": "Set 'artifact repository': the target branch in the repo."
+      }
+    },
+    "artifactRepoSecurityToken": {
+      "type": "securestring",
+      "metadata": {
+        "description": "Set 'artifact repository': the personal access token of the repo."
+      }
+    },
+    "artifactRepoType": {
+      "type": "string",
+      "defaultValue": "GitHub",
+      "metadata": {
+        "description": "Set 'artifact repository': the Git repo type, GitHub or VsoGit."
+      }
+    },
     "VMSize": {
       "type": "string",
       "defaultValue": "Standard_DS1_v2",
@@ -192,7 +226,25 @@
             "evaluatorType": "AllowedValuesPolicy",
             "status": "enabled"
           }
+        },        
+        {
+          "apiVersion": "2017-04-26-preview",
+          "name": "privaterepo885",
+          "type": "artifactsources",
+          "dependsOn": [
+            "[variables('labId')]"
+          ],
+          "properties": {
+            "uri": "[parameters('artifactRepoUri')]",
+            "folderPath": "[parameters('artifactRepoFolder')]",
+            "branchRef": "[parameters('artifactRepoBranch')]",
+            "displayName": "[concat(parameters('organisationName'),' Private Repo')]",
+            "securityToken": "[parameters('artifactRepoSecurityToken')]",
+            "sourceType": "[parameters('artifactRepoType')]",
+            "status": "Enabled"
+          }
         }
+
       ]
     },
     {
