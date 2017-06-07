@@ -3,10 +3,14 @@ Create a stateless service
 1.	Open Visual Studio with elevated privileges by pressing the Start ( ) button on the keyboard and typing “Visual Studio”, then run Visual Studio by right clicking and choosing Run as Administrator. Visual Studio must be run using elevated privileges because it must interact with the Service Fabric runtime.
 2.	Select File | New | Project …
 3.	Go to Cloud and choose Service Fabric Application
+
+ ![Screenshot](./Images/NewServiceFabricApplication.png)
+
 4.	Enter “Voting” for the Name and Solution name fields and then click OK
 5.	In Service Templates choose Stateless Web API and enter “VotingService” for the service name. Click OK.
- 
 
+ ![Screenshot](./Images/NewVotingService.png)
+ 
 6.	Visual Studio will create a solution containing two projects, Voting and VotingService. The Voting project is the Service Fabric project containing:
 a.	A reference to the VotingService project
 b.	ApplicationPackageRoot folder containing the ApplicationManifest.xml file describing your Service Fabric application
@@ -23,21 +27,27 @@ e.	ServiceEventSource.cs contains the class used for diagnostic events
 f.	Startup.cs containing the application server startup configuration
 g.	VotingService.cs contains the classed implementing the stateless voting service
 7.	At this point you have a functioning service that can be hosted within Service Fabric. Press F5 to see the service running. Within Visual Studio, the Diagnostic Events panel will be visible and display messages coming from within the application.
+
+ ![Screenshot](./Images/DisplayMessages.png)
  
 Note: In the 5.3 version of the SDK too many Service Fabric events are being generated and they hide the events that are part of this poc. To disable the extra events, click the gear icon in the diagnostic event window and remove the “Microsoft-ServiceFabric:5:0x4000000000000000” line. Then click Apply.
 8.	The deployed application can also be seen in Service Fabric Explorer. On the Service Fabric icon   in the notification area, right click on the icon and choose Manage Local Cluster. The Service Fabric Explorer (SFX) will start in a browser.
 Note: If the icon isn’t present, start the Service Fabric Local Cluster Manager by pressing the Start ( ) button on the keyboard and typing “Service Fabric Local Cluster Manager”, then run the application by pressing Enter. This will start the Service Fabric Local Cluster Manager and the Service Fabric icon   will appear in the notification area. If you haven’t already created a cluster, select Start Local Cluster and close 5 node.  
 9.	On the left side of SFX fully expand the applications tree. You can see that the application fabric:/Voting has been deployed and contains a single service named fabric:/Voting/VotingService. The service has a single instance that is deployed on a node (_Node_0 in this case). 
-10.	Select Instance (_Node_X) where X represent the number displayed. On the right side of SFX, you’ll see more details about the service including the endpoint where it curently resides (http://localhost:8454/ in this example, your port is likelly to be different).  Paste the endpoint there and append “api/values” into a browser address bar. This will return a JSON document containing [“value1”, “value2”], which is the standard behavior of this Visual Studio template.
- 
 
+10.	Select Instance (_Node_X) where X represent the number displayed. On the right side of SFX, you’ll see more details about the service including the endpoint where it curently resides (http://localhost:8454/ in this example, your port is likelly to be different).  Paste the endpoint there and append “api/values” into a browser address bar. This will return a JSON document containing [“value1”, “value2”], which is the standard behavior of this Visual Studio template.
+
+ ![Screenshot](./Images/ServiceFabricExplorer.png)
+ 
 11.	Stop the application by exiting the debugger. This will remove the application from Service Fabric.
 You have now completed the parts related to having your service replicas listen for HTTP client requests. In the next section, you will add code to process the requests to keep track of the voting items and their counts.
 
 Add Voting Endpoints
 The next step is to add some endpoints that can be used to vote and view the votes. We’ve written a single page application for this purpose. 
+
 12.	Right click on the Voting project and select Properties. Remove the Application URL property value and click OK. This will prevent a browser popping up each time we debug. For reference, the Application Debug Mode setting is set to automatically remove the Service Fabric application when debugging is stopped.  
   
+![Screenshot](./Images/VotingPropertiesPage.png)
 
 13.	In the VotingService project, open the ServiceManifest.xml file which is contained in the PackageRoot folder. Remove Port=”XXXX” from the Endpoint element, where XXXX is the port number assigned. In this example the port number is 8454. This allows Service Fabric to assign a random port for your service.
      Change  
