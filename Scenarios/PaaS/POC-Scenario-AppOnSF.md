@@ -3,7 +3,9 @@ Create a stateless service
 1.	Open Visual Studio with elevated privileges by pressing the Start ( ) button on the keyboard and typing “Visual Studio”, then run Visual Studio by right clicking and choosing Run as Administrator. Visual Studio must be run using elevated privileges because it must interact with the Service Fabric runtime.
 2.	Select File | New | Project …
 3.	Go to Cloud and choose Service Fabric Application
- 
+
+ ![Screenshot](./images/NewServiceFabricApplication.png)
+
 4.	Enter “Voting” for the Name and Solution name fields and then click OK
 5.	In Service Templates choose Stateless Web API and enter “VotingService” for the service name. Click OK.
  
