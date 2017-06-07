@@ -31,7 +31,9 @@ g.	VotingService.cs contains the classed implementing the stateless voting servi
  ![Screenshot](./Images/DisplayMessages.png)
  
 Note: In the 5.3 version of the SDK too many Service Fabric events are being generated and they hide the events that are part of this poc. To disable the extra events, click the gear icon in the diagnostic event window and remove the “Microsoft-ServiceFabric:5:0x4000000000000000” line. Then click Apply.
+
 8.	The deployed application can also be seen in Service Fabric Explorer. On the Service Fabric icon   in the notification area, right click on the icon and choose Manage Local Cluster. The Service Fabric Explorer (SFX) will start in a browser.
+
 Note: If the icon isn’t present, start the Service Fabric Local Cluster Manager by pressing the Start ( ) button on the keyboard and typing “Service Fabric Local Cluster Manager”, then run the application by pressing Enter. This will start the Service Fabric Local Cluster Manager and the Service Fabric icon   will appear in the notification area. If you haven’t already created a cluster, select Start Local Cluster and close 5 node.  
 9.	On the left side of SFX fully expand the applications tree. You can see that the application fabric:/Voting has been deployed and contains a single service named fabric:/Voting/VotingService. The service has a single instance that is deployed on a node (_Node_0 in this case). 
 
@@ -310,9 +312,14 @@ We’re allowing Service Fabric to assign ports because later in the poc, we’l
     }
 
 20.	Press F5 to enter debug mode. After the solution has been deployed locally there are two ways to determine the endpoint to browse to
+
 a.	In the Diagnostic Events window which should be open within Visual Studio, there will be an event named “ServiceMessage” with a message body containing the base URL the service is listening on, e.g. “Listening on http://localhost:34001”. If the Diagnostic Events windows is not open, it can be opened in Visual Studio by selecting View then Other Windows then Diagnostic Events.
+
 b.	Open Service Fabric Explorer (SFX), navigate to the instance and view the Endpoints properties as described in step 10.
+
 Note: In the 5.3 version of the SDK too many Service Fabric events are being generated and they hide the events that are part of this poc. To disable the extra events, click the gear icon in the diagnostic event window and remove the “Microsoft-ServiceFabric:5:0x4000000000000000” line. 
 When you have determined the correct base URI, browse to <base URI>/api/index.html. This will show the single page app just created, except without the data. Try it out. If you want to see that it is calling the services, you can place breakpoints in the VotesController class.
+
+![Screenshot](./Images/SampleVotingApplicationWhenRunning.png)
  
 21.	When done using the application, exit the debugging session by selecting Debug then Stop Debugging (Shift+F5). This will uninstall the application from Service Fabric and if viewing in Service Fabric Explorer (SFX) you will see that it is no longer deployed.
