@@ -54,9 +54,9 @@ The next step is to add some endpoints that can be used to vote and view the vot
 13.	In the VotingService project, open the ServiceManifest.xml file which is contained in the PackageRoot folder. Remove Port=”XXXX” from the Endpoint element, where XXXX is the port number assigned. In this example the port number is 8454. This allows Service Fabric to assign a random port for your service.
 
      Change  
-Endpoint Protocol="http" Name="ServiceEndpoint" Type="Input" Port="8454" /
+\<Endpoint Protocol="http" Name="ServiceEndpoint" Type="Input" Port="8454" />
      To           
-Endpoint Protocol="http" Name="ServiceEndpoint" Type="Input" /
+\<Endpoint Protocol="http" Name="ServiceEndpoint" Type="Input" />
 
 We’re allowing Service Fabric to assign ports because later in the poc, we’ll run multiple instances of the service on your development box. Without this change, only the first instance will start successfully. Even in production, it’s better to use dynamically assigned ports to avoid port conflicts with other services that may be running on the node except for nodes exposed to the Azure load balancer.
 
