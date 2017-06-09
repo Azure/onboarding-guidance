@@ -77,5 +77,3 @@ Running Azure Functions [Locally using CLI](https://blogs.msdn.microsoft.com/app
 [Best Practices for Large Scale Applications](https://channel9.msdn.com/Shows/Cloud+Cover/Episode-213-Azure-App-Service-Best-Practices-for-Large-Scale-Applications)
 
 [ASE Auto Scale](https://docs.microsoft.com/en-us/azure/app-service/app-service-environment-auto-scale)
-
-## Resources
