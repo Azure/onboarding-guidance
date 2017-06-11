@@ -21,12 +21,29 @@ After completing the exercises in this module, you will be able to:
     * [Sign up for Visual Studio Team Services Account](https://www.visualstudio.com/team-services/)
     * If you don't have one already, Click <**Getting Started for Free**>
 
-
 # Estimated time to complete this module:
 Self-guided
 
+# Login
+* How to login to VSTS.
+    * [Sign into your Visual Studio Team Services Account](https://www.visualstudio.com/team-services/)
+    * If you don't have one already, Click <**Getting Started for Free**>
 
+# Basic Navigation
 
+# Code
+
+# Tracking your work
+* Work Iteam Tracking
+
+# Setting up a Build
+* How to create a build definition
+
+# Setting up a Release
+* How to create a release definition
+
+# Setting up Tests
+* How to create a test plan
 
 
 ## Useful References
