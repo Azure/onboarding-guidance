@@ -6,20 +6,15 @@ During this module, you will learn about bringing together PaaS App Services com
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* Create a Resource Group
-* Create a Virtual Network
-* Create multiple virtual machines
-* Create and setup a load balancer
-* Create an availability set for VMs
-* Update Network Security Groups(NSG)
-* Deploy a website
+* 1
+* 2
+* 3
 
 # Prerequisite 
-* [Basic Setup Introduction](https://github.com/Azure/onboarding-guidance/blob/master/windows/Module%200/L2-SetupIntro.md)
-* [Storage Introduction](../ServicesIntro/L1-StorageIntro.md)
-* [Compute Introduction](../ServicesIntro/L1-ComputeIntro.md)
+* [You must have a Visual Studio Team Services Account](https://www.visualstudio.com/team-services/)
+
 
 # Estimated time to complete this module:
 Self-guided
 
-# Customize your Azure Portal
+# Xyz
