@@ -17,9 +17,9 @@ After completing the exercises in this module, you will be able to:
 * Overview of tracking sprints, building, and releasing applications.
 
 ## Pre-Requisites
-* You must have a Visual Studio Team Services Account..
-    * [Sign up for Visual Studio Team Services Account](https://www.visualstudio.com/team-services/)
-    * If you don't have one already, Click <**Getting Started for Free**>
+* To complete this PoC, you will need:
+    * Visual Studio Team Services account. If you don’t have one, you can create from [here](https://www.visualstudio.com/)
+    * Visual Studio 2015 or higher version
 
 # Estimated time to complete this module:
 Self-guided
@@ -30,11 +30,14 @@ Self-guided
     * If you don't have one already, Click <**Getting Started for Free**>
 
 # Basic Navigation
+* A quick tour of VSTS
 
 # Code
+* This area is where you can get up and running using Git with code already in Team Services or Team Foundation Server. 
 
 # Tracking your work
 * Work Iteam Tracking
+* In this section you will learn about the agile planning and portfolio management tools and processes provided by Visual Studio Team Services and how they can help you quickly plan, manage, and track work across your entire team.
 
 # Setting up a Build
 * How to create a build definition
