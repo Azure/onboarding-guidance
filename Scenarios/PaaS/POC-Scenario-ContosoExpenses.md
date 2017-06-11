@@ -12,12 +12,10 @@ After completing the exercises in this module, you will be able to:
 
 # Prerequisite 
 * [You must have a Visual Studio Team Services Account](https://www.visualstudio.com/team-services/)
-
+* If you don't have one already, Click <**Getting Started for Free**>
 
 # Estimated time to complete this module:
 Self-guided
 
-# Xyz XYZ
-# Test
-
+# 
 
