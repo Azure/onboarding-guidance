@@ -4,27 +4,30 @@ This folder is work in progress, please stay tuned!
 
 # Abstract
 
-During this module, you will learn about bringing together PaaS App Services components to build a sample application, Contoso Expenses, and making it scalable, highly available and secure.
+During this module, you will learn about Visual Studio Team System (VSTS) and setting it up for DevOps.  VSTS is an extension of the Microsoft Visual Studio architecture that allows it to encompass development teams, with special roles and tools for software architects, developer specialties and testers.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* 1
-* 2
-* 3
+* Login & Basic Navigation
+* Code Files, History, and Pulls Requests
+* Workitems and backlogs
+* Settign up a Build definition
+* Setting up a Release definition & plan
+* Setting up a Manual Test & Load Test plan
+* Overview of tracking sprints, building, and releasing applications.
 
 ## Pre-Requisites
 * You must have a Visual Studio Team Services Account..
-* [Sign up for Visual Studio Team Services Account](https://www.visualstudio.com/team-services/)
-* If you don't have one already, Click <**Getting Started for Free**>
-
-
-## Useful References
-* To be complete
-
-
-# POC Scenario Contoso Expenses: Deploying Website on Azure PaaS
-
+    * [Sign up for Visual Studio Team Services Account](https://www.visualstudio.com/team-services/)
+    * If you don't have one already, Click <**Getting Started for Free**>
 
 
 # Estimated time to complete this module:
 Self-guided
+
+
+
+
+
+## Useful References
+* To be complete
