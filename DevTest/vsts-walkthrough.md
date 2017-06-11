@@ -37,19 +37,20 @@ Self-guided
 # Code
 * This area is where you can get up and running using Git with code already in Team Services or Team Foundation Server. 
 
-# Tracking your work
-* Work Iteam Tracking
+# Work Iteam Tracking
 * In this section you will learn about the agile planning and portfolio management tools and processes provided by Visual Studio Team Services and how they can help you quickly plan, manage, and track work across your entire team.
 
 # Setting up a Build
-* How to create a build definition
+* How to create a build definition to provide ...
 
 # Setting up a Release
-* How to create a release definition
+* How to create a release definition to provide ...
 
 # Setting up Tests
-* How to create a test plan
+* How to create a test plan to provide ...
 
 
 ## Useful References
-* To be complete
+* [Visual Studio Team Services, Getting Started](https://www.visualstudio.com/)
+* [Visual Studio Team Services, Product Updates](https://www.visualstudio.com/team-services/updates/)
+* [Visual Studio Team Services, Support](https://www.visualstudio.com/team-services/support/)
