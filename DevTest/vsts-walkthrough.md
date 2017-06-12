@@ -26,6 +26,23 @@ After completing the exercises in this module, you will be able to:
 # Estimated time to complete this module:
 Self-guided
 
+# DevOps Overview
+* DevOps is the union of People, Process and our Products to enable continuous delivery of value to your end users. In todays world, the speed of business is so rediculously fast that this DevOps mindset, continously delivering value to your end user, is absolutely vital. If you have not adopted this mindset, your competitors either have or will and they will quickly out innovate you and render you obsolete. Microsoft has the products and services that easily enables full end to end DevOps coverage. That product is Visual Studio Team Services. VSTS provides full DevOps coverage with the following:
+    * Agile Planning/Work Item Tracking. VSTS has the ability to track any unit of work in an agile fashion for a software project. This includes things like, bugs, user stories,impediments etc.
+    * Source Control. VSTS has 2 source control systems. A centralized version control system and a distributed version control system. The distributed version control system is git. Not some weird microsoft only version of git, but just the open source version of git, implemented in VSTS.
+    * Build (Continuous Integration). A automated build system that can be easily customized to do anything. This build system can build any language on any platform
+    * Test. VSTS has a full end to end testing platform from unit testing, to manual testing, to automated testing, to load testing.
+    * Deploy (Continuous Delivery). VSTS has a fully customizable deployment system that can take your binaries and deploy them onto anything, anywhere.
+    * Feedback loop with Application Insights.
+
+* Visual Studio Team Services is everything you need to build software.
+
+# Key Takeaways
+  * Microsoft has products and services that give you full end to end DevOps coverage. Visual Studio Team Services. VSTS is everything you need to build software in any language for any platform.
+  * You can build out your CI/CD pipelines easily and make them do just about anything.
+
+  ![Screenshot](/Images/pic-1-vsts-walkthrough.png)
+
 # Login
 * How to login to VSTS.
     * [Sign into your Visual Studio Team Services Account](https://www.visualstudio.com/team-services/)
