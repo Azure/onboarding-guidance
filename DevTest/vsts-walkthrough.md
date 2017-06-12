@@ -48,11 +48,6 @@ Self-guided
     * [Sign into your Visual Studio Team Services Account](https://www.visualstudio.com/team-services/)
     * If you don't have one already, Click <**Getting Started for Free**>
 
-# Basic Navigation
-* A quick tour of VSTS
-
-  ![Screenshot](/Images/VSTS-Pic-2.png)
-
 # VSTS Home Page
 This is the home page for ALL your projects. You can select yours here. e.g **FTAPOC**
   ![Screenshot](/Images/VSTS-Pic-2.png)
