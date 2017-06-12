@@ -64,13 +64,16 @@ Team Services supports two types of version control Git and Team Foundation Vers
 
 Git is the default version control provider for new projects. You should use Git for version control in your projects unless you have a specific need for centralized version control features in TFVC.
 
-  ![Screenshot](/Images/VSTS-Pic-99.png)
+  ![Screenshot](/Images/VSTS-Pic-4.png)
 
 ## Files
+  ![Screenshot](/Images/VSTS-Pic-5.png)
 
 ## History
+  ![Screenshot](/Images/VSTS-Pic-6.png)
 
 ## Pull Requests
+* Create pull requests to review and merge code in a Git team project. Pull requests let your team give feedback on changes in feature branches before merging the code into the master branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
 # Work
 * In this section you will learn about the agile planning and portfolio management tools and processes provided by Visual Studio Team Services and how they can help you quickly plan, manage, and track work across your entire team.
