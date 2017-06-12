@@ -41,7 +41,7 @@ Self-guided
   * Microsoft has products and services that give you full end to end DevOps coverage. Visual Studio Team Services. VSTS is everything you need to build software in any language for any platform.
   * You can build out your CI/CD pipelines easily and make them do just about anything.
 
-  ![Screenshot](/Images/pic-1-vsts-walkthrough.png)
+  ![Screenshot](/Images/VSTS-Pic-1.png)
 
 # Login
 * How to login to VSTS.
@@ -51,10 +51,30 @@ Self-guided
 # Basic Navigation
 * A quick tour of VSTS
 
-# Code
-* This area is where you can get up and running using Git with code already in Team Services or Team Foundation Server. 
+  ![Screenshot](/Images/VSTS-Pic-99.png)
 
-# Work Iteam Tracking
+# Code
+Team Services supports two types of version control Git and Team Foundation Version Control (TFVC). Here is a quick overview of the two version control systems:
+
+* Team Foundation Version Control (TFVC): TFVC is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
+* Git: Git is a distributed version control system. Git repositories can live locally (such as on a developer’s machine). Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection.
+
+Git is the default version control provider for new projects. You should use Git for version control in your projects unless you have a specific need for centralized version control features in TFVC.
+
+  ## Sign in to your Visual Studio Team Services account and browse to MyhealthClinic project. 
+
+  ![Screenshot](/Images/VSTS-Pic-2.png)
+
+# Home Page, selecting a project
+This is the home page for ALL your projects. You can select yours here. e.e. FTAPOC
+  ![Screenshot](/Images/VSTS-Pic-2.png)
+
+# Dashboard, project activity
+Once you make a selection, you will be on the project home page. Here you can see the current activity, manage your work, collaborate on code, setup continuous integration and deployments, and visualize your progress.
+  ![Screenshot](/Images/VSTS-Pic-3.png)
+
+
+# Work Item Tracking
 * In this section you will learn about the agile planning and portfolio management tools and processes provided by Visual Studio Team Services and how they can help you quickly plan, manage, and track work across your entire team.
 
 # Setting up a Build
