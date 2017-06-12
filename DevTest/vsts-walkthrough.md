@@ -78,21 +78,27 @@ Git is the default version control provider for new projects. You should use Git
 # Work
 * In this section you will learn about the agile planning and portfolio management tools and processes provided by Visual Studio Team Services and how they can help you quickly plan, manage, and track work across your entire team.
 
-  ![Screenshot](/Images/VSTS-Pic-99.png)
+  ![Screenshot](/Images/VSTS-Pic-7.png)
 
 ## Backlogs
+* Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. Once defined, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.
 
 # Build & Release
 * How to create a build & release definition to provide the continous integration(CI) and continous deployment (CD) pipeline.
 
+  ![Screenshot](/Images/VSTS-Pic-99.png)
+
 ## Build Definition
 * How to create a build definition to provide ...
+  ![Screenshot](/Images/VSTS-Pic-99.png)
 
 ## Release Definition
 * How to create a release definition to provide ...
+  ![Screenshot](/Images/VSTS-Pic-99.png)
 
 ## Release Plans
 * How to create a release plan to provide ...
+  ![Screenshot](/Images/VSTS-Pic-99.png)
 
 # Setting up a Release
 
@@ -104,8 +110,12 @@ Git is the default version control provider for new projects. You should use Git
 ## Test Plans
 * You can create test plans designed efficiently to validate your software milestones. You will also be able to create and execute manual tests that can be consistently reproduced over the course of each release.
 
+  ![Screenshot](/Images/VSTS-Pic-99.png)
+
 ## Load Tests
-* Load Testing allow you to stress the application and review how it behaves under diferent load of users so we can take actions on the current infrastructure adding more capacities for the times we think we will need it. 
+* Load Testing allow you to stress the application and review how it behaves under diferent load of users so we can take actions on the current infrastructure adding more capacities for the times we think we will need it.
+
+  ![Screenshot](/Images/VSTS-Pic-99.png)
 
 ## Useful References
 * [Visual Studio Team Services, Getting Started](https://www.visualstudio.com/)
