@@ -51,9 +51,17 @@ Self-guided
 # Basic Navigation
 * A quick tour of VSTS
 
-  ![Screenshot](/Images/VSTS-Pic-99.png)
+  ![Screenshot](/Images/VSTS-Pic-2.png)
 
-# Code
+# VSTS Home Page
+This is the home page for ALL your projects. You can select yours here. e.g **FTAPOC**
+  ![Screenshot](/Images/VSTS-Pic-2.png)
+
+# Dashboard, project activity
+Once you make a selection, you will be on the project home page. Here you can see the current activity, manage your work, collaborate on code, setup continuous integration and deployments, and visualize your progress.
+  ![Screenshot](/Images/VSTS-Pic-3.png)
+
+# Code Files
 Team Services supports two types of version control Git and Team Foundation Version Control (TFVC). Here is a quick overview of the two version control systems:
 
 * Team Foundation Version Control (TFVC): TFVC is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
@@ -61,31 +69,45 @@ Team Services supports two types of version control Git and Team Foundation Vers
 
 Git is the default version control provider for new projects. You should use Git for version control in your projects unless you have a specific need for centralized version control features in TFVC.
 
-  ## Sign in to your Visual Studio Team Services account and browse to MyhealthClinic project. 
+  ![Screenshot](/Images/VSTS-Pic-99.png)
 
-  ![Screenshot](/Images/VSTS-Pic-2.png)
+## Files
 
-# Home Page, selecting a project
-This is the home page for ALL your projects. You can select yours here. e.e. FTAPOC
-  ![Screenshot](/Images/VSTS-Pic-2.png)
+## History
 
-# Dashboard, project activity
-Once you make a selection, you will be on the project home page. Here you can see the current activity, manage your work, collaborate on code, setup continuous integration and deployments, and visualize your progress.
-  ![Screenshot](/Images/VSTS-Pic-3.png)
+## Pull Requests
 
-
-# Work Item Tracking
+# Work
 * In this section you will learn about the agile planning and portfolio management tools and processes provided by Visual Studio Team Services and how they can help you quickly plan, manage, and track work across your entire team.
 
-# Setting up a Build
+  ![Screenshot](/Images/VSTS-Pic-99.png)
+
+## Backlogs
+
+# Build & Release
+* How to create a build & release definition to provide the continous integration(CI) and continous deployment (CD) pipeline.
+
+## Build Definition
 * How to create a build definition to provide ...
 
-# Setting up a Release
+## Release Definition
 * How to create a release definition to provide ...
 
-# Setting up Tests
-* How to create a test plan to provide ...
+## Release Plans
+* How to create a release plan to provide ...
 
+# Setting up a Release
+
+# Tests
+* Here is where you can manage your project test lifecycle using the Visual Studio Team Services.
+
+  ![Screenshot](/Images/VSTS-Pic-99.png)
+
+## Test Plans
+* You can create test plans designed efficiently to validate your software milestones. You will also be able to create and execute manual tests that can be consistently reproduced over the course of each release.
+
+## Load Tests
+* Load Testing allow you to stress the application and review how it behaves under diferent load of users so we can take actions on the current infrastructure adding more capacities for the times we think we will need it. 
 
 ## Useful References
 * [Visual Studio Team Services, Getting Started](https://www.visualstudio.com/)
