@@ -133,3 +133,9 @@ You have successfully setup a UI Test for your Xamarin Android application. Now 
 
 ## References
 * [Xamarin.Android Quickstart for Xamarin.UITest](https://developer.xamarin.com/guides/testcloud/uitest/quickstarts/android/)
+* [Intro to Xamarin Test Cloud](https://developer.xamarin.com/guides/testcloud/introduction-to-test-cloud/)
+* [Xamarin Test Cloud VSTS Task Reference](https://www.visualstudio.com/en-us/docs/build/steps/test/xamarin-test-cloud)
+* [Continuous Integration for Android with Visual Studio Team Services](https://blog.xamarin.com/continuous-integration-for-android-with-visual-studio-team-services/)
+* [Windows Store Visual Studio Team Services Tasks](https://marketplace.visualstudio.com/items?itemName=MS-RDX-MRO.windows-store-publish)
+* [Apple App Store Visual Studio Team Services Tasks](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store)
+* [Continous Delivery to Google Play with Visual Studio Team Services](https://blog.xamarin.com/continuous-delivery-to-google-play-with-team-services/)

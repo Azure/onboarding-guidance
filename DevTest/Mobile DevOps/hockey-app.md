@@ -1,10 +1,11 @@
-# Fast Track for Azure Dev Test Solution - Mobile DevOps - HockeyApp Setup
+# Fast Track for Azure Dev Test Solution - Mobile DevOps - HockeyApp Step by Step Introduction
 
 This folder is work in progress, please stay tuned! 
 
 ## Pre-Requisites
-* You must have completed the [Xamarin Test Cloud](xamarin-test-cloud.md) section first.
-* If you do not yet have a HockeyApp account, first [sign up for an account](https://rink.hockeyapp.net/registrations/new). Once you have submitted the form, you will need to verify your e-mail address.
+* It is advisable to first complete the [Xamarin Test Cloud](xamarin-test-cloud.md) section. NOTE: You do not need to have access to Xamarin Test Cloud to complete the Hockey App step by step introduction. 
+* If you have not completed the Xamarin Test Cloud section, download the [CreditCardValidatior.Droid.Zip file](https://github.com/xamarin/test-cloud-samples/raw/master/Quickstarts/downloads/CreditCardValidator.Droid.zip).
+* If you do not yet have a HockeyApp account, you can [sign up for a free account](https://rink.hockeyapp.net/registrations/new). Once you have submitted the form, you will need to verify your e-mail address. You can find out more about [Hockey App Plans and Pricing](https://hockeyapp.net/pricing/).
 
 ## Create a new HockeyApp Application
 1. Browse to your [HockeyApp Dashboard](https://rink.hockeyapp.net/manage/dashboard).
@@ -226,3 +227,5 @@ FeedbackManager.Register(this, "{YourAppId}");
 * [How to integrate HockeyApp with Xamarin](https://support.hockeyapp.net/kb/client-integration-cross-platform/how-to-integrate-hockeyapp-with-xamarin)
 * [HockeyApp for Android (SDK)](https://support.hockeyapp.net/kb/client-integration-android/hockeyapp-for-android-sdk)
 * [HockeyApp for iOS](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios)
+* [How to use HockeyApp with Visual Studio Team Services (VSTS)](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-visual-studio-team-services-vsts-or-team-foundation-server-tfs)
+* [Mobile DevOps with HockeyApp and Visual Studio Team Services](https://channel9.msdn.com/Events/Build/2016/B869)
