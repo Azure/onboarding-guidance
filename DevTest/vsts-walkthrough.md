@@ -86,8 +86,6 @@ Git is the default version control provider for new projects. You should use Git
 # Build & Release
 * How to create a build & release definition to provide the continous integration(CI) and continous deployment (CD) pipeline.
 
-  ![Screenshot](/Images/VSTS-Pic-8.png)
-
 * CI means starting an automated build (and possibly running tests) whenever new code is committed to or checked into the team project's source control repository. This gives you immediate feedback that the code builds and can potentially be deployed. 
 * CD means starting an automated deployment process whenever a new successful build is available. Together, CI and CD mean that any code changes you commit to your repository are quickly validated and deployed to a test server, a live web site, or wherever you need it.
 
@@ -176,7 +174,7 @@ Git is the default version control provider for new projects. You should use Git
    ![Screenshot](/Images/VSTS-Pic-36.png)
 
 ## Load Tests
-* Load Testing allow you to stress the application and review how it behaves under diferent load of users so we can take actions on the current infrastructure adding more capacities for the times we think we will need it.  You can automaticly run a load test during a build or release definition.  To trigger a load test, use the Visual Studio Team Services Cloud-based Load Test Service. The Cloud-based Load Test Service is based in Microsoft Azure and can be used to test your app's performance by generating load on it.
+* Load Testing allow you to stress the application and review how it behaves under a different load of users.  This allows us to take actions on the current infrastructure adding more capacities for the times we think we will need it.  You can automaticly run a load test during a build or release definition.  To trigger a load test, use the Visual Studio Team Services Cloud-based Load Test Service. The Cloud-based Load Test Service is based in Microsoft Azure and can be used to test your app's performance by generating load on it.
 
   ![Screenshot](/Images/VSTS-Pic-40.png)
 
