@@ -1,4 +1,4 @@
-# Fast Track for Azure Dev Test Solution - DevTest Labs Developer Walkthrough
+# Fast Track for Azure Dev Test Solution - DevTest Labs IT Walkthrough
 
 This folder is work in progress, please stay tuned! 
 
