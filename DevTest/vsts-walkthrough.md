@@ -86,36 +86,103 @@ Git is the default version control provider for new projects. You should use Git
 # Build & Release
 * How to create a build & release definition to provide the continous integration(CI) and continous deployment (CD) pipeline.
 
-  ![Screenshot](/Images/VSTS-Pic-99.png)
+  ![Screenshot](/Images/VSTS-Pic-8.png)
+
+* CI means starting an automated build (and possibly running tests) whenever new code is committed to or checked into the team project's source control repository. This gives you immediate feedback that the code builds and can potentially be deployed. 
+* CD means starting an automated deployment process whenever a new successful build is available. Together, CI and CD mean that any code changes you commit to your repository are quickly validated and deployed to a test server, a live web site, or wherever you need it.
+
+  ![Screenshot](/Images/VSTS-Pic-9.png)
 
 ## Build Definition
-* How to create a build definition to provide ...
-  ![Screenshot](/Images/VSTS-Pic-99.png)
+* Create a build definition to define how code gets compiled.
+
+  ![Screenshot](/Images/VSTS-Pic-10.png)
+
+* A build definition is the entity through which you define your automated build process. In the build definition, you compose a set of tasks, each of which perform a step in your build.
+
+* Choose a template that builds your kind of app.
+
+  ![Screenshot](/Images/VSTS-Pic-11.png)
+
+* The task catalog provides a rich set of tasks for you to get started. You can also add Powershell or shell scripts to your build definition.
+
+  ![Screenshot](/Images/VSTS-Pic-12.png)
+
+* Continuous Integration to build every change to matching branches. A continuous integration trigger on a build definition indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). 
+
+  ![Screenshot](/Images/VSTS-Pic-13.png)
+
+* Scheduled a build matching branches for each schedule.
+
+  ![Screenshot](/Images/VSTS-Pic-14.png)
+
+* Save and queue a build manually to test a build definition.
+
+  ![Screenshot](/Images/VSTS-Pic-15.png)
+
+* You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the Builds tab in the Build & Release hub. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
+
+  ![Screenshot](/Images/VSTS-Pic-16.png)
+
+* Once the build finishes, you can see the build report. In this build report, you see all the build issues, you see the changesets that were build, the associated work items, the unit tests that were run as well as the code coverage and even where this build got release to.
+
+  > The build system is basically a glorified task runner where it does one task, after another, after another. Out of the box, VSTS comes with a huge set of tasks that it can do. If you need your build to do something that doesn't exist out of the box, you can Go to the Marketplace where the community has created a library of tasks. If what you want to do doesn't exist in the Marketplace, you can easily create your own custom task. A custom task is nothing more than either powershell or node js. You bundle it together with the artifacts that you need, upload it to VSTS and voila, you have created your own custom task. What that means is if you can script something, you can get VSTS to do it. Or in other words, you can literally make this build system do whatever you want.
 
 ## Release Definition
-* How to create a release definition to provide ...
-  ![Screenshot](/Images/VSTS-Pic-99.png)
+* Create a release definition to define the process for running the script in two environments.
 
-## Release Plans
-* How to create a release plan to provide ...
-  ![Screenshot](/Images/VSTS-Pic-99.png)
+  ![Screenshot](/Images/VSTS-Pic-17.png)
 
-# Setting up a Release
+* A release definition is a collection of environments to which the application build artifacts are deployed. It also defines the actual deployment process for each environment, as well as how the artifacts are promoted from one environment to another.
 
-# Tests
+  ![Screenshot](/Images/VSTS-Pic-18.png)
+
+* Create a release definition.
+
+  ![Screenshot](/Images/VSTS-Pic-19.png)
+
+* Choose a source that publishes the artifacts to be deployed.
+
+  ![Screenshot](/Images/VSTS-Pic-25.png)
+
+* The first thing you do is you define all of your environments.
+
+  ![Screenshot](/Images/VSTS-Pic-26.png)
+
+* Then for each environment, you get to set quality gates going into the environment and going out. You can set as gate keepers individuals, or groups of people.
+
+  ![Screenshot](/Images/VSTS-Pic-21.png)
+
+* Then for each environment, you set the tasks that you want the deployment to do.
+
+  > Once again, out of the box, you have a full set of tasks that can do all sorts of stuff. But if you can't find the task that you need out of the box, go to the Marketplace and see if the community has already built what you need. And if you can't find it in the Marketplace. You can easily create your own custom task. Just like the build, a custom task is nothing more than powershell or node js. So once again, you can create tasks that can make this deployment system do anything. As the your app is deployed in each environment, people will need to approve it so it can flow through the approval gates until eventually it reaches all the way to production.
+
+  ![Screenshot](/Images/VSTS-Pic-20.png)
+
+* Since we have already set up our CI/CD pipeline, if this build is successful, it starts deploying in our CD pipeline. Here we can see the deployment happen in real time as well.
+
+## Tests
 * Here is where you can manage your project test lifecycle using the Visual Studio Team Services.
 
-  ![Screenshot](/Images/VSTS-Pic-99.png)
+  ![Screenshot](/Images/VSTS-Pic-34.png)
 
 ## Test Plans
-* You can create test plans designed efficiently to validate your software milestones. You will also be able to create and execute manual tests that can be consistently reproduced over the course of each release.
+* You can create manual test plans designed efficiently to validate your software milestones. You will also be able to create and execute manual tests that can be consistently reproduced over the course of each release.
 
-  ![Screenshot](/Images/VSTS-Pic-99.png)
+  ![Screenshot](/Images/VSTS-Pic-35.png)
+ 
+ * Assign pre-defined test cases to your user acceptance testers and run to validate changes.
+
+   ![Screenshot](/Images/VSTS-Pic-36.png)
 
 ## Load Tests
-* Load Testing allow you to stress the application and review how it behaves under diferent load of users so we can take actions on the current infrastructure adding more capacities for the times we think we will need it.
+* Load Testing allow you to stress the application and review how it behaves under diferent load of users so we can take actions on the current infrastructure adding more capacities for the times we think we will need it.  You can automaticly run a load test during a build or release definition.  To trigger a load test, use the Visual Studio Team Services Cloud-based Load Test Service. The Cloud-based Load Test Service is based in Microsoft Azure and can be used to test your app's performance by generating load on it.
 
-  ![Screenshot](/Images/VSTS-Pic-99.png)
+  ![Screenshot](/Images/VSTS-Pic-40.png)
+
+* Create and run high-scale load tests, analyze results – all using the browser.
+
+  ![Screenshot](/Images/VSTS-Pic-41.png)
 
 ## Useful References
 * [Visual Studio Team Services, Getting Started](https://www.visualstudio.com/)
