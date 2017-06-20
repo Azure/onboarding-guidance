@@ -12,9 +12,9 @@ After completing the exercises in this module, you will be able to:
 * Code Files, History, and Pulls Requests
 * Workitems and backlogs
 * Settign up a Build definition
-* Setting up a Release definition & plan
-* Setting up a Manual Test & Load Test plan
-* Overview of tracking sprints, building, and releasing applications.
+* Setting up a Release definition
+* Setting up a Manual Tests & Load Tests
+* Tracking sprints, builds, releases, and tests.
 
 ## Pre-Requisites
 * To complete this PoC, you will need:
@@ -183,6 +183,14 @@ Git is the default version control provider for new projects. You should use Git
 * Create and run high-scale load tests, analyze results – all using the browser.
 
   ![Screenshot](/Images/VSTS-Pic-41.png)
+
+## Dashboards
+
+* The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles.
+
+  ![Screenshot](/Images/VSTS-Pic-50.png)
+
+* Share progress and status with your team using configurable team dashboards.Each tile corresponds to a widget that provides access to one or more features or functions.
 
 ## Useful References
 * [Visual Studio Team Services, Getting Started](https://www.visualstudio.com/)
