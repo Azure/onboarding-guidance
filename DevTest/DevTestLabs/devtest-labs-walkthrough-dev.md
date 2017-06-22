@@ -1,7 +1,5 @@
 # Fast Track for Azure Dev Test Solution - DevTest Labs Developer Walkthrough
 
-This folder is work in progress, please stay tuned! 
-
 ## Pre-Requisites
 * You must have completed the [IT Persona Step by Step walkthrough](devtest-labs-walkthrough-it.md).
 
@@ -39,8 +37,9 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 8. Navigate back to the blade for your Virtual Machine. Select Auto-start.
 
-9. You will notice that it is not possible to adjust the settings for Auto-start. This is because the Lab Admin has not enabled Auto-start policies for the DevTest lab environment.
-
+9. You will notice that you can adjust the settings for Auto-start. This is because the Lab Admin has enabled Auto-start policies for the DevTest lab environment.
+    * Leave this set to "Off".
+    * This setting will be disabled if an Owner/Contributor has not enabled Auto-start on the DevTest lab.
 ![Screenshot](/Images/dtl-dev-6.png)
 
 10. Navigate back to the DevTest Labs environment. Select My secrets. Create a secret by entering a name, value, and select save.
@@ -51,19 +50,17 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 ![Screenshot](/Images/dtl-dev-7.png)
 
-12. On the list of options for Virtual Machine base, you will notice that there are some deployment options. This is because our lab admin has setup a private repository, that contains ARM Templates.
+12. On the list of options for Virtual Machine base, you will notice that there are a range of deployment options, in addition to Virtual Machines from the Azure Market Place and custom images. This is because our lab admin has setup a private repository, that contains ARM Templates.
 
 ![Screenshot](/Images/dtl-dev-75.png)
 
-13. Create a new Ubuntu Virtual Machine, and populate the machine details. 
+13. Create a new Machine based from the custom image made by your DevTest Labs Owner/Contributor, and populate the machine details. 
 
 14. Note, that you will be able to tick 'Use a shared secret' and use the password that you securely stored in Azure KeyVault earlier.
 
 ![Screenshot](/Images/dtl-dev-8.png)
 
-15. Add the Docker artifact to your linux virtual machine, so that Docker is installed upon creation of your VM.
-
-![Screenshot](/Images/dtl-dev-9.png)
+15. As a DevTest lab user, we also have the ability to add artifacts to the image. Our custom image already contains a number of artifacts, so we will not add any more.
 
 16. Create the Virtual Machine.
 
@@ -71,11 +68,11 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 ![Screenshot](/Images/dtl-dev-10.png)
 
-18. Return to your development VM, and select Create Formula (reuable base) from the left hand navigation menu.
+18. Return to your DevTest lab blade.
+    * Select Formulas (reusable bases) from the left hand navigation menu.
+    * Select Add at the top of the Formulas (reusable bases) blade.
 
-![Screenshot](/Images/dtl-dev-11.png)
-
-19. Create an appropriate name for your formula. Remember that other users will be able to use this formula, so you should use a description that accurately and succinctly describes the formula's purpose. 
+19. You would then follow the steps shown previously. First, select a base, then provide the appropriate metadata. This includes an appropriate name for your formula. Remember that other users will be able to use this formula, so you should use a name and description that accurately and succinctly describes the formula's purpose. 
 
 ![Screenshot](/Images/dtl-dev-12.png)
 
