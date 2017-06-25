@@ -206,17 +206,14 @@ Self-guided
       ![Screenshot](/Images/AppMod-Pic-50.png)
 
 
-
 ## ************************************************
-## @Faiasl - To be Revied/Updated ASAP!!!
+## ************************************************
+## @Faiasl - To be Reviewed/Updated ASAP!!!
+## ************************************************
 ## ************************************************
 
-## Create the SQL Database and SQL Server 
- 
 * Deploy and Publish the Application to Azure using Web Deploy 
- 
 * Walk through various settings and features in the portal ?
-
 * Console, show Kudu?
 * Create a Deployment Slot of Staging ?
 * Make a code change and deploy to Staging Slot ?
