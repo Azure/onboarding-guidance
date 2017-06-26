@@ -27,13 +27,13 @@ Self-guided
 
   ![Screenshot](/Images/AppMod-Pic-1.png)
 
-  >   There are 4 three projects that are in Visual Studio.
+  * There are 4 three projects that are in Visual Studio.
 
-    * Contoso.Expenses.API - This is an App Servicves API project.
-    * Contoso.Expenses.DataAccess - This is a Class Library that utilizes Entity Framework.
-    * Contoso.Expenses.Database - This is a Database project that contains the SQL to create the Expenses table and SQL to initially 
+    * **Contoso.Expenses.API** - This is an App Servicves API project.
+    * **Contoso.Expenses.DataAccess** - This is a Class Library that utilizes Entity Framework.
+    * **Contoso.Expenses.Database** - This is a Database project that contains the SQL to create the Expenses table and SQL to initially 
     seed default data.
-    * Contoso.Expenses.Web - This is the Internal Business Web App.
+    * **Contoso.Expenses.Web** - This is the Internal Business Web App.
 
 ## Build the Project in Visual Studio
   * Once you have downloaded the zip file for the POC Project, you may create a new project in VSTS and add this project to 
