@@ -13,7 +13,7 @@ After completing the exercises in this module, you will be able to:
 * To complete this PoC, you will need:
     * Visual Studio Team Services account.
         * If you don’t have one, you can create from [here](https://www.visualstudio.com/team-services/)
-    * Visual Studio 2015 or higher version
+    * Visual Studio 2017
     * Download Proof-of-concept project from [here](https://1drv.ms/f/s!An-8SCAjWpl43TWoz4w1rRXutCkR)
     * Ensure the SSDT package is installed from [here](https://msdn.microsoft.com/en-us/mt186501.aspx)
     * During this lab, we are using the Contoso Expenses application for the hands-on-labs.
@@ -32,9 +32,11 @@ Self-guided
     * (list them here)
 
 ## Build the Project in Visual Studio
-  * Link to the PoC [here](https://azurefasttrack.visualstudio.com/_projects)
-  * **FTAPOC** is the team project
-  * **ContosoExpenses** is the Project Name
+  * Once you have downloaded the zip file for the POC Project, you may create a new project in VSTS and add this project to 
+  Source Code control in VSTS using Visual Studio
+  * Link to the PoC for Microsoft FTE [here](https://azurefasttrack.visualstudio.com/_projects)
+  * For example, **FTAPOC** is the team project that is set up for FastTrack team members
+  * **ContosoExpenses** is the Solution Name
 
   * Unzip the Proof-of-concept project to any folder.
 
