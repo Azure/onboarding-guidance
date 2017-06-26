@@ -22,14 +22,18 @@ After completing the exercises in this module, you will be able to:
 Self-guided
 
 ## POC Steps
-* Ensure you are logged into the github or your VSTS account.
+* Ensure you are logged into the github or your VSTS account. Below is an example of FastTrack team memeber accessing the project in VSTS:
     * Goto the Azure FastTrack Projects tab [here](https://azurefasttrack.visualstudio.com/_projects)
 
   ![Screenshot](/Images/AppMod-Pic-1.png)
 
-  >   There are 3 three projects that are in Visual Studio.
+  >   There are 4 three projects that are in Visual Studio.
 
-    * (list them here)
+    * Contoso.Expenses.API - This is an App Servicves API project.
+    * Contoso.Expenses.DataAccess - This is a Class Library that utilizes Entity Framework.
+    * Contoso.Expenses.Database - This is a Database project that contains the SQL to create the Expenses table and SQL to initially 
+    seed default data.
+    * Contoso.Expenses.Web - This is the Internal Business Web App.
 
 ## Build the Project in Visual Studio
   * Once you have downloaded the zip file for the POC Project, you may create a new project in VSTS and add this project to 
