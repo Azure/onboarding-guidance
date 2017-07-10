@@ -19,7 +19,7 @@ By the end of this module you will be able to:
 * To complete this module you will need to:
     * Download the reference dataabase [WorldWide-Importers-Standard.bacpac](https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Standard.bacpac)
     * Create a Storeage account and a container in blob storage
-    * Upload the reference database to the container in blob storage
+a    * Upload the reference database to the container in blob storage
 
 # Estimated time to complete this module:
 Self-guided (10 minutes approx)# Exporting a Database (overview)
@@ -45,7 +45,7 @@ This walkthough assumes you do not currently have a logical SQL Server but you c
 To provision a SQL Server you need to:
 
 * Go to the Azure portal [http://ms.portal.azure.com](http://ms.portal.azure.com)
-* Select "new" fro the left hand menu
+* Select "new" from the left hand menu
 * Enter SQL Server in the search box and press enter
 * Select "SQL Server (logical server) from the result
 
@@ -55,7 +55,7 @@ Fill out the detail in the SQL Server blade and press create to provision the lo
 
 # Importing a Database
 
-Now that you have a running logical SQL Server you can start the import databse process. 
+Now that you have a running logical SQL Server you can start the import database process. 
 
 * Click on the SQL Server to open the Server blade
 * Press "Import Database" from the menu at the top
