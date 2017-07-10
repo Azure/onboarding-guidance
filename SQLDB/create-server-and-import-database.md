@@ -1,0 +1,16 @@
+# Fast Track for Azure - SQL Database
+
+This folder is work in progress, please stay tuned! 
+
+# Abstract
+
+During this module you will learn the process for exporting a database from a physical or virtual SQL Server and you will learn how to import a database into Azure SQL Databse using a reference database extract (bacpac)
+
+# Learning Objectves
+
+By the end of this module you will be able to:
+
+* Export a database from a physical or virtual SQL Server
+* Create an Azure SQL DB logical Server
+* Imort a database into Azure SLQ DB from a backpac file
+
