@@ -22,10 +22,7 @@ By the end of this module you will be able to:
     * Upload the reference database to the container in blob storage
 
 # Estimated time to complete this module:
-Self-guided (10 minutes approx)
-
-
-# Exporting a Database (overview)
+Self-guided (10 minutes approx)# Exporting a Database (overview)
 
 Exporting a database from a physical server or virtual machine makes use of the built in functionallity of SQL Server.  Data exports to Azure use the BACPAC file format, which is a specific type of zip file that contains metadata for the structure of teh databse as well as teh actual data its self.  To export a database to a bacpac file you need to:
 
@@ -63,7 +60,7 @@ Now that you have a running logical SQL Server you can start the import databse 
 * Click on the SQL Server to open the Server blade
 * Press "Import Database" from the menu at the top
 
-    ![Screenshot](/Images/SQLDB-Import-SQLDB.png)
+    ![Screenshot](/Images/SQLDB-Import-SQLDB.PNG)
 
 On the SQL Database blade you need to:
 
@@ -74,7 +71,7 @@ On the SQL Database blade you need to:
 * Enter the useranme and password that you used to provision the logical server with
 * Press OK to start the import
 
-    ![Screenshot](/Images/SQLDB-Import-DB-Options.png)
+    ![Screenshot](/Images/SQLDB-Import-DB-Options.PNG)
 
 # Monitoring the Import Progress
 
