@@ -12,5 +12,5 @@ By the end of this module you will be able to:
 
 * Export a database from a physical or virtual SQL Server
 * Create an Azure SQL DB logical Server
-* Imort a database into Azure SLQ DB from a backpac file
+* Import a database into Azure SLQ DB from a backpac file
 
