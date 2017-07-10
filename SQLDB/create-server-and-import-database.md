@@ -14,3 +14,8 @@ By the end of this module you will be able to:
 * Create an Azure SQL DB logical Server
 * Import a database into Azure SLQ DB from a backpac file
 
+## Pre-Requisites
+
+* To complete this module you will need to:
+    * Download the reference dataabase [WorldWide-Importers-Standard.bacpac](https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Standard.bacpac)
+    
