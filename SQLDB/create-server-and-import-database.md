@@ -1,3 +1,4 @@
+
 # Fast Track for Azure - SQL Database
 
 This folder is work in progress, please stay tuned! 
@@ -22,7 +23,9 @@ By the end of this module you will be able to:
 a    * Upload the reference database to the container in blob storage
 
 # Estimated time to complete this module:
-Self-guided (10 minutes approx)# Exporting a Database (overview)
+Self-guided (10 minutes approx)
+
+# Exporting a Database (overview)
 
 Exporting a database from a physical server or virtual machine makes use of the built in functionallity of SQL Server.  Data exports to Azure use the BACPAC file format, which is a specific type of zip file that contains metadata for the structure of teh databse as well as teh actual data its self.  To export a database to a bacpac file you need to:
 
