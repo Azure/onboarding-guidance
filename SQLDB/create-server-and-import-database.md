@@ -52,7 +52,7 @@ To provision a SQL Server you need to:
 * Enter SQL Server in the search box and press enter
 * Select "SQL Server (logical server) from the result
 
-    ![Screenshot](/Images/SQLDB-New-SQLDB-Server.png)
+    ![Screenshot](/Images/SQLDB-New-SQLDB-Server.PNG)
 
 Fill out the detail in the SQL Server blade and press create to provision the logical server
 
