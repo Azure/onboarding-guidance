@@ -488,12 +488,12 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 * Once published, copy the URL in the output folder and paste it into a browser. e.g. **http://contosoexpensesapi20170711011807.azurewebsites.net**.
 
 ## Testing out the API with Swagger
-* In the browser, add /swagger to the end of the URL, and press enter.
+* In the browser, add **/swagger** to the end of the URL, and press enter.
   * e.g. **http://contosoexpensesapi20170711011807.azurewebsites.net/swagger**
   * This will load the Swagger page that will allow you to explore and test your APIs.
 * Under **Employee**, click on **GET**.
 * Under **Parameters,** type in **Randy**, the click **Try it Out!**
-  * The response body will return ManagerName with a response code of 200.
+  * The response body will return **ManagerName** with a response code of 200.
 
   ![Screenshot](/Images/AppMod-Pic-0240.png)
 
@@ -503,7 +503,7 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 * Select the previously used Profile from the Publish dialog.
 * From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
 * Click on the App Service name you deployed, e.g. **ContosoExpensesWeb20170710012420**.
-* Click on URL to launch the website. e.g. **http://contosoexpensesweb20170625074825.azurewebsites.net**.
+* Click on URL to launch the website. e.g. **http://contosoexpensesweb20170710012420.azurewebsites.net/**.
 * From the website, click on **Expenses** | **Create New**.
 * Type in values for a test record and click **Create**.
 
