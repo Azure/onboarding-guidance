@@ -4,13 +4,12 @@ This folder is work in progress, please stay tuned!
 
 # Abstract
 
-During this module you will learn the process for exporting a database from a physical or virtual SQL Server and you will learn how to import a database into Azure SQL Databse using a reference database extract (bacpac)
+During this module you will learn how to import a database into Azure SQL Databse using a database extract (bacpac)
 
 # Learning Objectves
 
 By the end of this module you will be able to:
 
-* Export a database from a physical or virtual SQL Server
 * Create an Azure SQL DB logical Server
 * Import a database into Azure SLQ DB from a backpac file
 
@@ -18,25 +17,12 @@ By the end of this module you will be able to:
 
 * To complete this module you will need to:
     * Download the reference dataabase [WorldWide-Importers-Standard.bacpac](https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Standard.bacpac)
-    * Create a Storage account and a container in blob storage
-    * Upload the reference database to the container in blob storage
+    * A Storage account and a container in blob storage
+    * The reference database uploaded to the container in blob storage
 
 # Estimated time to complete this module:
 Self-guided (10 minutes approx)
 
-# Exporting a Database (overview)
-
-Exporting a database from a physical server or virtual machine makes use of the built in functionallity of SQL Server.  Data exports to Azure use the BACPAC file format, which is a specific type of zip file that contains metadata for the structure of teh databse as well as teh actual data its self.  To export a database to a bacpac file you need to:
-
-* Right click on the database in SQL Server Management Studio
-* Select "Tasks" from the context menu
-* Select "Export data tier Application" from the next context menu
-
-    ![Screenshot](/Images/SQLDB-exportdb.png)
-
-Follow the export wizard to export the database either locally or directly to Azure Blob Storage.  For larger databases it is recommended that you export teh database locally adn then upload using Azcopy.  
-
-For very large databases you should consider using the Azure import/export service to transfer the data. [https://azure.microsoft.com/en-us/pricing/details/storage-import-export/](https://azure.microsoft.com/en-us/pricing/details/storage-import-export/)
     
 # Creating a Logical SQL Server
 
