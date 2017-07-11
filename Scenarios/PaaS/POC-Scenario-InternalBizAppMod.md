@@ -77,7 +77,7 @@ Self-guided
 * Click the resource group **ContosoExpenses-RG-WestUS2**.
 * Select the database **contosoexpensesdbserver** and click on **Properties**.
 * Highlight the full database **Server Name**, **contosoexpensesdbserver.database.windows.net**
-a.	**Right-click** and select **Copy** to save it on the clipboard, you use the server name later on.
+* **Right-click** and select **Copy** to save it on the clipboard, you use the server name later on.
 
   ![Screenshot](/Images/AppMod-Pic-0114.png)
 
@@ -90,7 +90,8 @@ a.	**Right-click** and select **Copy** to save it on the clipboard, you use the 
 
 ## Publish the Database into Azure SQL DB
 * From Visual Studio, Expand the project **Contoso.Expenses.Database**.
-* Click on the **seed.sql** file, and look at contents in the preview window. This file will get executed post-deployment and add test data to the database.
+* Click on the **seed.sql** file, and look at contents in the preview window.
+  * Note: This file will get executed post-deployment and add test data to the database.
 
   ![Screenshot](/Images/AppMod-Pic-0118.png)
 
@@ -180,12 +181,6 @@ a.	**Right-click** and select **Copy** to save it on the clipboard, you use the 
   ![Screenshot](/Images/AppMod-Pic-0144.png)
   ![Screenshot](/Images/AppMod-Pic-0146.png)
 
-
-
-## Randy HERE - To Be Continued...
-
-
-
 ## Update the Connection String in App Settings
 * First, let's capture the database server name to the clipboard.
   * From the Azure Portal, click on **Resource Groups**.
@@ -208,9 +203,9 @@ a.	**Right-click** and select **Copy** to save it on the clipboard, you use the 
   * Note: Modify the following **bolded** items with your database login credentials and connection string, used in above steps.
   * Hint: **Cut-n-Paste** the following connection string into **Notepad**, then replace the 4 bolded areas with your information.
   
-    ![Screenshot](/Images/AppMod-Pic-0154.png)
+    > metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:**contosoexpensesdbserver.database.windows.net**;initial catalog=**Contoso.Expenses.Database**;Integrated Security=False;User Id=<**DatabaseLogin**>;Password=<**DatabasePassword**>;MultipleActiveResultSets=True;App=EntityFramework"
 
-   > metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:**contosoexpensesdbserver.database.windows.net**;initial catalog=**Contoso.Expenses.Database**;Integrated Security=False;User Id=<**DatabaseLogin**>;Password=<**DatabasePassword**>;MultipleActiveResultSets=True;App=EntityFramework"
+   ![Screenshot](/Images/AppMod-Pic-0154.png)
 
 * **Cut-n-Paste** the new connection string from Notepad.
 * **Paste** into the **Value** textbox, alongside of the name **ContosoExpensesDataEntities** entered above.
@@ -366,9 +361,12 @@ a.	**Right-click** and select **Copy** to save it on the clipboard, you use the 
 * Delete everything from the textbox.
 * Copy the following into the clipboard, then paste into text area.
 
-* *************************************
-* THIS AREA NEEDS TO RENDER CORRECTLY!!!
-* *************************************
+## ************************************************
+## @Faiasl - To be Reviewed/Updated!!!
+## ************************************************
+## THIS AREA NEEDS TO RENDER CORRECTLY!!!
+## *************************************
+
 #r "Newtonsoft.Json"
 #r "SendGrid"
 
