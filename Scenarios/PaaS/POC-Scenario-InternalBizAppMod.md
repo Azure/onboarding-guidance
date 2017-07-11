@@ -31,12 +31,12 @@ Self-guided
 
   ![Screenshot](/Images/AppMod-Pic-0102.png)
 
-    * There are 4 three projects that are in Visual Studio.
-    1) **Contoso.Expenses.API** - This is an App Servicves API project.
-    2) **Contoso.Expenses.DataAccess** - This is a Class Library that utilizes Entity Framework.
-    3) **Contoso.Expenses.Database** - This is a Database project that contains the SQL to create the Expenses table and SQL to initially 
+  * There are 4 three projects that are in Visual Studio.
+  * 1. **Contoso.Expenses.API** - This is an App Servicves API project.
+  * 2. **Contoso.Expenses.DataAccess** - This is a Class Library that utilizes Entity Framework.
+  * 3. **Contoso.Expenses.Database** - This is a Database project that contains the SQL to create the Expenses table and SQL to initially 
     seed default data.
-    4) **Contoso.Expenses.Web** - This is the Internal Business Web App.
+  * 4. **Contoso.Expenses.Web** - This is the Internal Business Web App.
 
 ## Create the SQL Database Server
 * Navigate to the Azure portal.
@@ -361,12 +361,7 @@ Self-guided
 * Delete everything from the textbox.
 * Copy the following into the clipboard, then paste into text area.
 
-## ************************************************
-## @Faiasl - To be Reviewed/Updated!!!
-## ************************************************
-## THIS AREA NEEDS TO RENDER CORRECTLY!!!
-## *************************************
-
+ ```
 #r "Newtonsoft.Json"
 #r "SendGrid"
 
@@ -413,6 +408,7 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
     // IasycnhCllection is the equivalent of out parameter, this is how you do it, since out parameter did not work with a method with asycnh
     await emailMessage.AddAsync(expenseMessage);
 }
+ ``` 
 
   ![Screenshot](/Images/AppMod-Pic-0220.png)
 
