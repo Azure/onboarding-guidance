@@ -435,6 +435,9 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 
 * From the left-hand panel, click on **Settings** | **API Keys**.
 * Click the button **Create API Key**.
+
+  ![Screenshot](/Images/AppMod-Pic-0225.png)
+
 * Type in **SendGridAPIKey** for the **API Key Name**.
 * Select **Full Access**, then click **Create & View**.
 * Click on the generated key and copy to the clipboard, paste it into Notepad.
