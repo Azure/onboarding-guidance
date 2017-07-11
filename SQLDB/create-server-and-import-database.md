@@ -19,7 +19,7 @@ By the end of this module you will be able to:
 
 * To complete this module you will need to:
     * Download the reference dataabase [WorldWide-Importers-Standard.bacpac](https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Standard.bacpac)
-    * Create a Storeage account and a container in blob storage
+    * Create a Storage account and a container in blob storage
     * Upload the reference database to the container in blob storage
 
 # Estimated time to complete this module:
