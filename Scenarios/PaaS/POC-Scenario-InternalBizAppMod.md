@@ -440,8 +440,14 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 
 * Type in **SendGridAPIKey** for the **API Key Name**.
 * Select **Full Access**, then click **Create & View**.
+
+  ![Screenshot](/Images/AppMod-Pic-0226.png)
+
 * Click on the generated key and copy to the clipboard, paste it into Notepad.
   * Note: This key will **NOT** be available to copy after this blade is closed.
+* Click **Done**.
+
+    ![Screenshot](/Images/AppMod-Pic-0227.png)
 
 * From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
 * Select the **ContosoExpensesFunction** function app.
@@ -457,17 +463,20 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 * Click on the **ContosoExpensesFunction** (lighting bolt) Function App.
 * From the top menu bar, click on **Settings**.
 * Under **Applications Settings**, click **Manage Application Settings**.
+
+  ![Screenshot](/Images/AppMod-Pic-0232.png)
+
 * Scroll down to **App Settings**.
 * Add new setting, type in **SendGridApiKey**, paste in the generated key copied to the clipboard from above step.
 * Click **Save**.
 
-  ![Screenshot](/Images/AppMod-Pic-023x.png)
+  ![Screenshot](/Images/AppMod-Pic-0234.png)
 
 * Close this blade by clicking on the **X** from upper right-hand corner.
-* Click on **Integrate**, notice under Outputs you will see **SendGrid (emailMessage)** shows up.
+* In the left panel, click on **Integrate**, notice under Outputs you will see **SendGrid (emailMessage)** shows up.
   * Note: What this function is doing is monitoring at the storage queue called **ContosoExpenses**. Every time a message comes in to that queue, this function will pick that message up and email it to an email address.
 
-  ![Screenshot](/Images/AppMod-Pic-023x.png)
+  ![Screenshot](/Images/AppMod-Pic-0236.png)
 
 ## Review the Contoso.Expenses.API app
 * From Visual Studio, press **Ctrl-Shift-B** to re-compile the entire project.
