@@ -11,7 +11,7 @@ During this module you will learn how to import a database into Azure SQL Databs
 By the end of this module you will be able to:
 
 * Create an Azure SQL DB logical Server
-* Import a database into Azure SLQ DB from a backpac file
+* Import a database into Azure SQL DB from a backpac file
 
 ## Pre-Requisites
 
@@ -54,12 +54,15 @@ On the SQL Database blade you need to:
 
 * Select your subscription from the dropdown menu
 * Browse to the .bacpac file that you uploaded into blob storage
+* Change the Pricing Tier to Premium P2 for the imoprt
 * Rename the database to "WorldImporters"
 * Change the Authentication to SQL Server
 * Enter the useranme and password that you used to provision the logical server with
 * Press OK to start the import
 
-    ![Screenshot](/Images/SQLDB-Import-DB-Options.PNG)
+**NOTE** *You should set the pricing tier when importing a databse to a Premium level so that the impport can complete quickly with plenty of resources.  Once imported you can scale the database down to a standard level if required*.
+
+![Screenshot](/Images/SQLDB-Import-DB-Options.PNG)
 
 # Monitoring the Import Progress
 
