@@ -203,8 +203,9 @@ Self-guided
   * Note: Modify the following **bolded** items with your database login credentials and connection string, used in above steps.
   * Hint: **Cut-n-Paste** the following connection string into **Notepad**, then replace the 4 bolded areas with your information.
   
-    > metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:**contosoexpensesdbserver.database.windows.net**;initial catalog=**Contoso.Expenses.Database**;Integrated Security=False;User Id=<**DatabaseLogin**>;Password=<**DatabasePassword**>;MultipleActiveResultSets=True;App=EntityFramework"
-
+  ```
+    metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:**contosoexpensesdbserver.database.windows.net**;initial catalog=**Contoso.Expenses.Database**;Integrated Security=False;User Id=<**DatabaseLogin**>;Password=<**DatabasePassword**>;MultipleActiveResultSets=True;App=EntityFramework"
+ ```
    ![Screenshot](/Images/AppMod-Pic-0154.png)
 
 * **Cut-n-Paste** the new connection string from Notepad.
