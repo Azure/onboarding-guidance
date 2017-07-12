@@ -12,7 +12,9 @@ After completing the exercises in this module, you will be able to:
 ## Pre-Requisites
 * To complete this PoC, you will need:
     * Visual Studio 2017
-    * Download Proof-of-concept project from [here](https://1drv.ms/f/s!An-8SCAjWpl43TWoz4w1rRXutCkR)
+    * Download Proof-of-concept project from [here](https://fasttrackforazure.blob.core.windows.net/sourcecode/Contoso.Expenses.zip)
+      * Secondary site [here](https://1drv.ms/f/s!An-8SCAjWpl43TWoz4w1rRXutCkR)
+
     * Ensure the SSDT package is installed from [here](https://msdn.microsoft.com/en-us/mt186501.aspx)
     * During this lab, we are using the Contoso Expenses application for the hands-on-labs.
 
