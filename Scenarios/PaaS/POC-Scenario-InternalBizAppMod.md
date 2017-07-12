@@ -205,6 +205,7 @@ Self-guided
   
    ```
     metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:**contosoexpensesdbserver.database.windows.net**;initial catalog=**Contoso.Expenses.Database**;Integrated Security=False;User Id=<**DatabaseLogin**>;Password=<**DatabasePassword**>;MultipleActiveResultSets=True;App=EntityFramework"
+    
    ```
 
    ![Screenshot](/Images/AppMod-Pic-0154.png)
