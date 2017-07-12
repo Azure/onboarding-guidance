@@ -205,7 +205,6 @@ Self-guided
   
    ```
     metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:**contosoexpensesdbserver.database.windows.net**;initial catalog=**Contoso.Expenses.Database**;Integrated Security=False;User Id=<**DatabaseLogin**>;Password=<**DatabasePassword**>;MultipleActiveResultSets=True;App=EntityFramework"
-    
    ```
 
    ![Screenshot](/Images/AppMod-Pic-0154.png)
@@ -252,7 +251,7 @@ Self-guided
 ## Update the App Service Settings
 * From the Azure Portal, click on **Resource Groups**.
 * Click on **ContosoExpenses-RG-WestUS2**.
-* Click on the **App Service name** you deployed, e.g. **ContosoExpensesWeb20170710012420**.
+* Click on the **App Service** you deployed, e.g. **ContosoExpensesAPI20170711011807**.
 * Click on **Overview** and copy the URL to the clipboard.
 
   ![Screenshot](/Images/AppMod-Pic-0170.png)
@@ -260,7 +259,7 @@ Self-guided
 * From the **Settings area**, click on **Application Settings**.
 * Under **App settings**, add a new entry in the first & second textboxs.
   * Type **EmployeeName** and <**your name**>.
-  * Type **EmployeeApiUri** and paste in the URL of the website, e.g. **http://contosoexpensesweb20170710012420.azurewebsites.net**
+  * Type **EmployeeApiUri** and paste in the URL of the website, e.g. **http://contosoexpensesapi20170711011807.azurewebsites.net**
 * Click **Save**.
 
   ![Screenshot](/Images/AppMod-Pic-0172.png)
@@ -496,19 +495,29 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
   * This will load the Swagger page that will allow you to explore and test your APIs.
 * Under **Employee**, click on **GET**.
 * Under **Parameters,** type in **Randy**, the click **Try it Out!**
-  * The response body will return **ManagerName** with a response code of 200.
 
   ![Screenshot](/Images/AppMod-Pic-0240.png)
+
+  * The response body will return **ManagerName** with a response code of 200.
+
+  ![Screenshot](/Images/AppMod-Pic-0241.png)
 
 ## Test out the Website
 * From Visual Studio, right-click on the Web Project, **Contoso.Expenses.Web**.
 * Select **Publish** from context menu, to pick a new publish target.
 * Select the previously used Profile from the Publish dialog.
-* From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
-* Click on the App Service name you deployed, e.g. **ContosoExpensesWeb20170710012420**.
+* From the Azure Portal, click on **Resource Groups**.
+* Click on **ContosoExpenses-RG-WestUS2**.
+* Click on the **App Service** you deployed, e.g. **ContosoExpensesWeb20170710012420**.
 * Click on URL to launch the website. e.g. **http://contosoexpensesweb20170710012420.azurewebsites.net/**.
-* From the website, click on **Expenses** | **Create New**.
+* From the website, click on **Expenses**.
+* Click on **Create New**.
+
+  ![Screenshot](/Images/AppMod-Pic-0244.png)
+
 * Type in values for a test record and click **Create**.
+  ![Screenshot](/Images/AppMod-Pic-0245.png)
+  ![Screenshot](/Images/AppMod-Pic-0246.png)
 
 ## View the Queue from Visual Studio
 * From Visual Studio, select the menu item **View** | **Cloud Explorer**.
