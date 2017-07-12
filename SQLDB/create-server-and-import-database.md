@@ -68,5 +68,8 @@ On the SQL Database blade you need to:
 
 Once the import is underway, you can monitor the progress by clicking on the Import/Export History tile located on the logical SQL Server blade.
 
+![Screenshot](/Images/SQLDB-Import-export.png)
+
+
 
 
