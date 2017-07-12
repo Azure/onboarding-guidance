@@ -531,20 +531,13 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 
     ![Screenshot](/Images/AppMod-Pic-0252.png)
 
-## ************************************************
-## ************************************************
-## @Faiasl - To be Reviewed/Updated!!!
-## ************************************************
-## ************************************************
-
-* Console, show Kudu?
-* Create a Deployment Slot of Staging ?
-* Make a code change and deploy to Staging Slot ?
-* Deploy to the Staging Slot ?
-* Perform a Slot Swap ?
-* Monitoring and Diagnostics ?
-* Automation using ARM Templates?
-* SSL Certs?
+## Coming soon...
+* Console, show Kudu!
+* Deployment Slots for Staging!
+* Deployment Slot Swap!
+* Monitoring and Diagnostics!
+* Automation using ARM Templates!
+* SSL Certs!
 
 ## Useful References
 * [Visual Studio Team Services, Getting Started](https://www.visualstudio.com/)
