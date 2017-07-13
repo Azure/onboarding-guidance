@@ -50,5 +50,15 @@ On the SQL Database blade you need to:
 
 Once the import is underway, you can monitor the progress by clicking on the Import/Export History tile located on the logical SQL Server blade.
 
+# Using SQLPackage.exe
+
+For performance and reliablity when migrating production databases and larger databases, it is recommended to use the SQLPackage.exe utility that ships with SQL Server Management Studio and SQL Server Data Tools.
+
+```cmd
+SqlPackage.exe /a:import /tcs:"Data Source=mynewserver20170403.database.windows.net;Initial Catalog=myMigratedDatabase;User Id=ServerAdmin;Password=<change_to_your_password>" /sf:AdventureWorks2008R2.bacpac /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=P6
+```
+
+![Screenshot](/Images/SQLDB-sqlpackage-import.png)
+
 
 
