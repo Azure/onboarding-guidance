@@ -7,17 +7,17 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 # Table of Contents
 
 ## Azure 101
-* Onboarding Team Introduction ([ Introduction] )
+* Onboarding Team Introduction ( [ Introduction ] )
 * Azure 101 ( [Azure Overview](https://github.com/Azure/onboarding-guidance/blob/master/Portal/Azure101.md) )
 * Azure Portal 101 ( [Azure Portal Walkthrough](https://github.com/Azure/onboarding-guidance/blob/master/Portal/PortalTour101.md) )
 
 :memo: [Supporting Resources](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-Azure101.md)
 
 ## Tools Setup
-* Tools Introduction ([ Introduction](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-ToolsIntro.md) )
+* Tools Introduction ( [ Introduction](https://github.com/Azure/onboarding-guidance/blob/master/ServicesIntro/L1-ToolsIntro.md) )
 * Azure Tools Setup ( [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Setup/L2-AzurePowershellSetup.md) | [XplatCLI](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Setup/L1-XplatCLIWindowsSetup.md) | [CLIv2](https://github.com/Azure/onboarding-guidance/blob/master/CLIv2/Setup/L1-CLIv2WindowsSetup.md) )
 * Connecting To Azure ( [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Setup/L3-ConnectToAzure.md) | [XplatCLI](https://github.com/Azure/onboarding-guidance/blob/master/XplatCLI/Setup/L2-ConnectToAzure.md) | [CLIv2](https://github.com/Azure/onboarding-guidance/blob/master/CLIv2/Setup/L2-ConnectToAzure.md) )
-* Setup for Azure Government ([Setup](https://github.com/Azure/onboarding-guidance/blob/master/Azure-Government/Azure%20Government%20Setup.md))
+* Setup for Azure Government ( [Setup](https://github.com/Azure/onboarding-guidance/blob/master/Azure-Government/Azure%20Government%20Setup.md))
 
 :memo: [Supporting Resources](https://github.com/Azure/onboarding-guidance/blob/master/SupportingResources/SR-ToolsSetup.md)
 
