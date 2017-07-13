@@ -18,6 +18,7 @@ By the end of this module you will be able to:
     * Download the reference dataabase [WorldWide-Importers-Standard.bacpac](https://github.com/Microsoft/sql-server-samples/releases/download/wide-world-importers-v1.0/WideWorldImporters-Standard.bacpac)
     * A Storage account and a container in blob storage
     * The reference database uploaded to the container in blob storage
+    * You should have completed the Create-blank-azure-sqldb Turorial First or have an existing logical SQL Server created.
 
 # Estimated time to complete this module:
 Self-guided (10 minutes approx)
