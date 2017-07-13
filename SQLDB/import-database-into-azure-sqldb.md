@@ -10,7 +10,6 @@ During this module you will learn how to import a database into Azure SQL Databs
 
 By the end of this module you will be able to:
 
-* Create an Azure SQL DB logical Server
 * Import a database into Azure SQL DB from a backpac file
 
 ## Pre-Requisites
@@ -24,26 +23,9 @@ By the end of this module you will be able to:
 Self-guided (10 minutes approx)
 
     
-# Creating a Logical SQL Server
-
-Before you can import a database you need to have a running logical Azure SQL Server.  The SQL Server is the administration point for the databases and allows you to import a bacpac file into it.  
-
-This walkthough assumes you do not currently have a logical SQL Server but you can easily use an existing one if you already have one in your subscription.
-
-To provision a SQL Server you need to:
-
-* Go to the Azure portal [http://ms.portal.azure.com](http://ms.portal.azure.com)
-* Select "new" from the left hand menu
-* Enter SQL Server in the search box and press enter
-* Select "SQL Server (logical server) from the result
-
-    ![Screenshot](/Images/SQLDB-New-SQLDB-Server.PNG)
-
-Fill out the detail in the SQL Server blade and press create to provision the logical server
-
 # Importing a Database
 
-Now that you have a running logical SQL Server you can start the import database process. 
+To start the import process you need to: 
 
 * Click on the SQL Server to open the Server blade
 * Press "Import Database" from the menu at the top
