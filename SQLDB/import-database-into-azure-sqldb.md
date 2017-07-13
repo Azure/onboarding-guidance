@@ -43,7 +43,9 @@ On the SQL Database blade you need to:
 * Enter the useranme and password that you used to provision the logical server with
 * Press OK to start the import
 
-**NOTE** *You should set the pricing tier when importing a databse to a Premium level so that the impport can complete quickly with plenty of resources.  Once imported you can scale the database down to a standard level if required*.
+>[!NOTE]
+>You should set the pricing tier when importing a databse to a Premium level so that the impport can complete quickly with plenty of resources.  Once imported you can scale the database down to a standard level if required.
+>
 
 ![Screenshot](/Images/SQLDB-Import-DB-Options.PNG)
 
