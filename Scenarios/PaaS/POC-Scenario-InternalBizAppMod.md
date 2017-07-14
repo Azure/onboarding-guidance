@@ -241,7 +241,7 @@ Self-guided
 
 ## Create App Service.
 * Login into the correct **Subscription** from the dropdown list.
-* Set the **Web App Name** to any name, e.g. **contosoexpensesapi20170711011807**
+* Set the **API App Name** to any name, e.g. **contosoexpensesapi20170711011807**
 * Select the correct **Subscription** from the dropdown list.
 * Select the correct **Resource Group** from the dropdown list, e.g. **ContosoExpenses-RG-WestUS2**.
 * Select the correct **App Service Plan** from the dropdown list, e.g. **ContosoExpensesWeb20170710012420Plan** from a previous step.
