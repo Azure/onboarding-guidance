@@ -104,10 +104,10 @@ Self-guided
   
 * Click **Edit**, then click **Browse**.
 
-  ![Screenshot](/Images/AppMod-Pic-0122.png)
-  
 * From the list presented, expand **Azure**.
 * Select the **Database** created on the SQL Server in the previous steps.
+
+  ![Screenshot](/Images/AppMod-Pic-0122.png)
 
 * Fort the Server Name, paste or enter  **contosoexpensesdbserver.database.windows.net**.
 * Change **Authentication** to **SQL Server Authentication**.
