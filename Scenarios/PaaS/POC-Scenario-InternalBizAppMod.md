@@ -100,8 +100,15 @@ Self-guided
 * **Right-click** on the project **Contoso.Expenses.Database** and select **Publish** to publish the database.
 
   ![Screenshot](/Images/AppMod-Pic-0120.png)
+  ![Screenshot](/Images/AppMod-PublishDatabaseScreen.png)
+  
+* Click **Edit**, then click **Browse**.
 
-* Click **Edit**, then click **Show connection string properties**.
+  ![Screenshot](/Images/AppMod-Pic-0122.png)
+  
+* From the list presented, expand **Azure**.
+* Select the **Database** created on the SQL Server in the previous steps.
+
 * Fort the Server Name, paste or enter  **contosoexpensesdbserver.database.windows.net**.
 * Change **Authentication** to **SQL Server Authentication**.
 * Enter the database server **User Name** and **Password**.
@@ -109,7 +116,7 @@ Self-guided
 * Click **Test Connection**, then **Ok**.
 * Click **Ok**, to close connect window.
 
-  ![Screenshot](/Images/AppMod-Pic-0122.png)
+  
 
 * Click on **Publish** to publish the database to Azure.
   * The database will be published to Azure and give you the results.
