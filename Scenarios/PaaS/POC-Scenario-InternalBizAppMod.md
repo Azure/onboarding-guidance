@@ -85,9 +85,9 @@ Self-guided
   ![Screenshot](/Images/AppMod-Pic-0114.png)
 
 ## Client IP in Firewall Settings for SQL Server
-* Add the **IP address** of the client you access the database from.
-* Under Settings, click on **Firewall**.
-* Click on **Add client IP**. This will add your current IP as a rule name.
+To add the **IP address** of the client you access the database from, do the following steps:
+* Under the SQL Server Settings, click on **Firewall**.
+* Click on **Add client IP** and click **Save**. This will add your current IP as a new rule on the Firewall.
 
   ![Screenshot](/Images/AppMod-Pic-0116.png)
 
