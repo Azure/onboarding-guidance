@@ -1,6 +1,8 @@
 # POC Scenario Voting Application: Working with Service Fabric Services  
 # Abstract  
-The goal of this poc is to make you familiar with an end to end development flow for Service Fabric applications. You will practice creating a new Service Fabric application on your development machine, working with stateless services, deploying, updating and monitoring an application deployment. Throughout the exercise, you will get accustomed with Visual Studio’s Service Fabric tooling, Service Fabric Explorer and learn how to effectively use both. .
+The goal of this poc is to make you familiar with an end to end development flow for Service Fabric applications. You will practice creating a new Service Fabric application on your development machine, working with stateless services, deploying, updating and monitoring an application deployment. Throughout the exercise, you will get accustomed with Visual Studio’s Service Fabric tooling, Service Fabric Explorer and learn how to effectively use both.
+
+In this scenario, you will build a generic voting service using Service Fabric reliable services. The service listens to an endpoint accessible from a Web browser. You’ll enter vote item strings (such as favorite sodas or cars) using a single page application (SPA). Each time the same vote item is voted on, a counter is incremented; this represents the number of times the item has been voted for. Each HTML response contains all the votes items and the number of times that vote item was voted for.  If you can’t wait to see the user interface, skip ahead to step 18, but make sure you come back here to start the poc.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
