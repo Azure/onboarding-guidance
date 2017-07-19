@@ -75,7 +75,7 @@ Self-guided
   ![Screenshot](/Images/AppMod-Pic-0112.png)
 
 ## Capture the database server name to the clipboard.
-* Navigate to the Azure Portal Home, click **Microsoft Azure**.
+* Click on **Microsoft Azure** to navigate to the Azure Portal Home.
 * Click on **Resource Groups**.
 * Click the resource group **ContosoExpenses-RG-WestUS2**.
 * Select the database **contosoexpensesdbserver** and click on **Properties**.
