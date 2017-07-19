@@ -16,7 +16,7 @@ After completing the exercises in this module, you will be able to:
       * Secondary site [here](https://1drv.ms/f/s!An-8SCAjWpl43TWoz4w1rRXutCkR)
 
     * Ensure the SSDT package is installed from [here](https://msdn.microsoft.com/en-us/mt186501.aspx)
-    * During this lab, we are using the Contoso Expenses application for the hands-on-labs.
+    * During this POC, we are using the Contoso Expenses application.
 
 # Estimated time to complete this module:
 Self-guided
