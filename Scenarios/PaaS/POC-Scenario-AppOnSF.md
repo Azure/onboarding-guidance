@@ -353,4 +353,17 @@ When you have determined the correct base URI, browse to <base URI>/api/index.ht
 ## Additional Resources
     * Service Farbic Getting Started: http://aka.ms/ServiceFabric
     * Download the samples from GitHub: http://github.com/Azure/ServiceFabric-Samples
-    * TO DO bring more from notes, previous md page
+    * Service Fabric Learning Path: https://azure.microsoft.com/en-us/documentation/learning-paths/service-fabric/
+    * Ignite Session: https://myignite.microsoft.com/videos/3168
+    * Theory: Microservices defined by Martin Fowler and James Lewis: http://martinfowler.com/microservices/
+    * Service Fabric Service Communications: https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-and-communicate-with-services
+    * Create a Windows Cluster: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/
+    * On-Premise: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/#plan-and-prepare-your-cluster-deployment
+    * Update Fabric Version: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade/#controlling-the-fabric-version-that-runs-on-your-cluster
+    * Upgrade Windows Servers: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade-windows-server/
+    * Service Fabric on Linux: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-linux-overview/
+    * Connect to a Secure Cluster: https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-to-secure-cluster
+    * Upgrade and clean up Service Fabric Development environment: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-update-your-development-environment/
+    * Troubleshoot an environment: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-troubleshoot-local-cluster-setup/
+    * Elastic Search: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-diagnostic-how-to-use-elasticsearch/
+    * Partitioning Concepts: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-concepts-partitioning/
