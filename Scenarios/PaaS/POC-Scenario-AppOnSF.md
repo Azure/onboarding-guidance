@@ -7,15 +7,19 @@ After completing the exercises in this module, you will be able to:
 * Set up and manage Service Fabric clusters on your development machine
 * Set up Service Fabric Clusters in Azure
 * Understand the concepts of Service Fabric applications, services, stateless services, application lifecycle management, upgrades, diagnostics and health
-* •	Use Visual Studio and Service Fabric Explorer to efficiently develop Service Fabric applications
+* Use Visual Studio and Service Fabric Explorer to efficiently develop Service Fabric applications
 
 ## Pre-Requisites
 * To complete this PoC, you will need:
     * Visual Studio 2017
-    * Download Proof-of-concept project from [here](https://fasttrackforazure.blob.core.windows.net/sourcecode/Contoso.Expenses.zip)
-      * Secondary site [here](https://1drv.ms/f/s!An-8SCAjWpl43TWoz4w1rRXutCkR)
-    * Ensure the SSDT package is installed from [here](https://msdn.microsoft.com/en-us/mt186501.aspx)
-    * During this lab, we are using the Contoso Expenses application for the hands-on-labs.
+    * You need to have an Azure subscription
+    * Download Azure SDK Tools 2.9 or above from the Web platform installer and install the SDK
+    * Download the Service Fabric developer SDK: http://aka.ms/ServiceFabricSDK
+     * You will need Service Fabric Local Cluster Manager to manage your local dev cluster.
+       * Open following folder:
+         C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManage And run ServiceFabricLocalClusterManager.exe
+
+
 
 ## Create a Stateless service
 
@@ -343,3 +347,8 @@ When you have determined the correct base URI, browse to <base URI>/api/index.ht
 ![Screenshot](./Images/SampleVotingApplicationWhenRunning.png)
  
 21.	When done using the application, exit the debugging session by selecting Debug then Stop Debugging (Shift+F5). This will uninstall the application from Service Fabric and if viewing in Service Fabric Explorer (SFX) you will see that it is no longer deployed.
+
+## Additional Resources
+    * Service Farbic Getting Started: http://aka.ms/ServiceFabric
+    * Download the samples from GitHub: http://github.com/Azure/ServiceFabric-Samples
+    * TO DO bring more from notes, previous md page
