@@ -1,3 +1,22 @@
+# POC Scenario Voting Application: Working with Service Fabric Services  
+# Abstract  
+The goal of this poc is to make you familiar with an end to end development flow for Service Fabric applications. You will practice creating a new Service Fabric application on your development machine, working with stateless services, deploying, updating and monitoring an application deployment. Throughout the exercise, you will get accustomed with Visual Studio’s Service Fabric tooling, Service Fabric Explorer and learn how to effectively use both. .
+
+# Learning objectives
+After completing the exercises in this module, you will be able to:
+* Set up and manage Service Fabric clusters on your development machine
+* Set up Service Fabric Clusters in Azure
+* Understand the concepts of Service Fabric applications, services, stateless services, application lifecycle management, upgrades, diagnostics and health
+* •	Use Visual Studio and Service Fabric Explorer to efficiently develop Service Fabric applications
+
+## Pre-Requisites
+* To complete this PoC, you will need:
+    * Visual Studio 2017
+    * Download Proof-of-concept project from [here](https://fasttrackforazure.blob.core.windows.net/sourcecode/Contoso.Expenses.zip)
+      * Secondary site [here](https://1drv.ms/f/s!An-8SCAjWpl43TWoz4w1rRXutCkR)
+    * Ensure the SSDT package is installed from [here](https://msdn.microsoft.com/en-us/mt186501.aspx)
+    * During this lab, we are using the Contoso Expenses application for the hands-on-labs.
+
 ## Create a Stateless service
 
 1.	Open Visual Studio with elevated privileges by pressing the Start ( ) button on the keyboard and typing “Visual Studio”, then run Visual Studio by right clicking and choosing Run as Administrator. Visual Studio must be run using elevated privileges because it must interact with the Service Fabric runtime.
