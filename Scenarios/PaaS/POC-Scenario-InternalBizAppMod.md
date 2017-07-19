@@ -6,8 +6,8 @@ During this module, you will learn about bringing together PaaS App Services com
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
-* **Azure PaaS Fundamentals** – Base PaaS concepts, as well as features and frameworks for creating enterprise line-of-business applications on Azure or modernizing existing apps using Azure App Service (Web Apps and API Apps). 
-* **Building on Azure App Service** - Design best practices and core principles for building new applications on Azure or moving existing applications to App Service. During this session, we will also build a web app reference PoC.
+* **Azure PaaS Fundamentals** – Understand base PaaS concepts, as well as features and frameworks for creating enterprise line-of-business applications on Azure or modernizing existing apps using Azure App Service (Web Apps and API Apps). 
+* **Building on Azure App Service** - Apply design best practices and core principles for building new applications on Azure or moving existing applications to App Service. During this session, we will also build a web app reference PoC.
 
 ## Pre-Requisites
 * To complete this PoC, you will need:
@@ -44,9 +44,9 @@ Self-guided
 * Navigate to the Azure portal.
 * Click on **+ New**, type in **Resource Group** in the search area, press **Enter**.
 * Click on **Resource Group**, click on **Create**.
-* Enter **ContosoExpenses-RG-WestUS2** as the resource group name.
+* Enter **ContosoExpenses-RG-WestUS2** as the **Resource group name**.
 * Select your **Subscription**.
-* Select your **Resource Group Location**.
+* Select your **Resource Group Location** (e.g. West US 2).
 * Click **Create**.
 
   ![Screenshot](/Images/AppMod-Pic-0104.png)
@@ -55,17 +55,18 @@ Self-guided
 
   ![Screenshot](/Images/AppMod-Pic-0106.png)
 
-* Click **+Add**, type in **SQL Server**, click on **SQL Server**.
+* Click **+Add**, type in **SQL Server** in the search area, press **Enter** and click on **SQL Server (logical server)**.
 
   ![Screenshot](/Images/AppMod-Pic-0108.png)
 
 * Click **Create**.
-* Enter **contosoexpensesdbserver** as the **Server Name**.
+* Enter **contosoexpensesUNIQUEIDdbserver** (e.g. contosoexpenses123dbserver) as the **Server Name**. Replace UNIQUEID with a random number, since the server name needs to be globally unique. 
 * Enter a **Server admin login** and **Password**.
   * Note: Save the **Login name** and **Password**, as you’ll need it later.
-* Select your **Subsription**.
-* For **Resource Group**, select **Use Existing**, then select your **Resource Group**.
-* Click **Create** to create a new SQL Server database server.
+* Select your **Subscription**.
+* For **Resource Group**, select **Use Existing**, then select the **Resource Group** created earlier (e.g. ContosoExpenses-RG-WestUS2).
+* For Location select **West US 2**.
+* Click **Create** to create a new SQL Database Server.
 
   ![Screenshot](/Images/AppMod-Pic-0110.png)
 
