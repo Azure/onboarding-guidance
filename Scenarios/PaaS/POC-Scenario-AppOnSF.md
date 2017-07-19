@@ -21,8 +21,6 @@ After completing the exercises in this module, you will be able to:
        * Open following folder:
          C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManage And run ServiceFabricLocalClusterManager.exe
 
-
-
 ## Create a Stateless service
 
 1.	Open Visual Studio with elevated privileges by pressing the Start ( ) button on the keyboard and typing “Visual Studio”, then run Visual Studio by right clicking and choosing Run as Administrator. Visual Studio must be run using elevated privileges because it must interact with the Service Fabric runtime.
@@ -351,19 +349,19 @@ When you have determined the correct base URI, browse to <base URI>/api/index.ht
 21.	When done using the application, exit the debugging session by selecting Debug then Stop Debugging (Shift+F5). This will uninstall the application from Service Fabric and if viewing in Service Fabric Explorer (SFX) you will see that it is no longer deployed.
 
 ## Additional Resources
-    * Service Farbic Getting Started: http://aka.ms/ServiceFabric
-    * Download the samples from GitHub: http://github.com/Azure/ServiceFabric-Samples
-    * Service Fabric Learning Path: https://azure.microsoft.com/en-us/documentation/learning-paths/service-fabric/
-    * Ignite Session: https://myignite.microsoft.com/videos/3168
-    * Theory: Microservices defined by Martin Fowler and James Lewis: http://martinfowler.com/microservices/
-    * Service Fabric Service Communications: https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-and-communicate-with-services
-    * Create a Windows Cluster: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/
-    * On-Premise: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/#plan-and-prepare-your-cluster-deployment
-    * Update Fabric Version: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade/#controlling-the-fabric-version-that-runs-on-your-cluster
-    * Upgrade Windows Servers: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade-windows-server/
-    * Service Fabric on Linux: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-linux-overview/
-    * Connect to a Secure Cluster: https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-to-secure-cluster
-    * Upgrade and clean up Service Fabric Development environment: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-update-your-development-environment/
-    * Troubleshoot an environment: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-troubleshoot-local-cluster-setup/
-    * Elastic Search: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-diagnostic-how-to-use-elasticsearch/
-    * Partitioning Concepts: https://azure.microsoft.com/en-us/documentation/articles/service-fabric-concepts-partitioning/
+    * Service Farbic Getting [Started](http://aka.ms/ServiceFabric)
+    * Download the samples from [GitHub](http://github.com/Azure/ServiceFabric-Samples)
+    * Service Fabric [Learning Path](https://azure.microsoft.com/en-us/documentation/learning-paths/service-fabric/)
+    * [Ignite Session](https://myignite.microsoft.com/videos/3168)
+    * Theory: [Microservices defined by Martin Fowler and James Lewis](http://martinfowler.com/microservices/)
+    * Service Fabric [Service Communications](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-and-communicate-with-services)
+    * Create a [Windows Cluster](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/)
+    * [On-Premise](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-creation-for-windows-server/#plan-and-prepare-your-cluster-deployment)
+    * Update [Fabric Version](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade/#controlling-the-fabric-version-that-runs-on-your-cluster)
+    * Upgrade [Windows Servers](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-upgrade-windows-server/)
+    * [Service Fabric on Linux](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-linux-overview/)
+    * Connect to a [Secure Cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-to-secure-cluster)
+    [* Upgrade and clean up Service Fabric Development environment](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-update-your-development-environment/)
+    * [Troubleshoot] (https://azure.microsoft.com/en-us/documentation/articles/service-fabric-troubleshoot-local-cluster-setup/) an environment
+    * [Elastic Search](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-diagnostic-how-to-use-elasticsearch/)
+    * [Partitioning Concepts](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-concepts-partitioning/)
