@@ -203,16 +203,16 @@ To add the **IP address** of the client you access the database from, do the fol
 * Click on **Resource Group**, select **ContosoExpenses-RG-WestUS2**.
 * Click on the **App Service name** you deployed, e.g. **ContosoExpensesWeb20170710012420**.
 * From the Settings area, click on **Application Settings**.
-* Type **ContosoExpensesDataEntities** as the connection string name.
+* On the **Connection stirngs** area, type **ContosoExpensesDataEntities** as the connection string name.
 
   ![Screenshot](/Images/AppMod-Pic-0152.png)
 
 * Provide the connection string value in Connection Strings in the portal for the WebApp.
-  * Note: Modify the following **bolded** items with your database login credentials and connection string, used in above steps.
+  * Note: Modify the following <**marked**> items with your server name, database name and login credentials, used in above steps.
   * Hint: **Cut-n-Paste** the following connection string into **Notepad**, then replace the 4 bolded areas with your information.
   
    ```
-    metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:**contosoexpensesdbserver.database.windows.net**;initial catalog=**Contoso.Expenses.Database**;Integrated Security=False;User Id=<**DatabaseLogin**>;Password=<**DatabasePassword**>;MultipleActiveResultSets=True;App=EntityFramework"
+    metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:<**contosoexpensesdbserver.database.windows.net**>;initial catalog=<**Contoso.Expenses.Database**>;Integrated Security=False;User Id=<**DatabaseLogin**>;Password=<**DatabasePassword**>;MultipleActiveResultSets=True;App=EntityFramework"
    ```
 
    ![Screenshot](/Images/AppMod-Pic-0154.png)
