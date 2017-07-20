@@ -512,7 +512,7 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 ## Test out the Website
 * From Visual Studio, right-click on the Web Project, **Contoso.Expenses.Web**.
 * Select **Publish** from context menu, to pick a new publish target.
-* Select the previously used Profile from the Publish dialog.
+* Select the previously used Profile from the Publish dialog and click on **Publish**.
 * From the Azure Portal, click on **Resource Groups**.
 * Click on **ContosoExpenses-RG-WestUS2**.
 * Click on the **App Service** you deployed, e.g. **ContosoExpensesWeb20170710012420**.
