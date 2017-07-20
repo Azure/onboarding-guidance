@@ -18,7 +18,7 @@ After completing the exercises in this module, you will be able to:
     * Ensure the SSDT package is installed from [here](https://msdn.microsoft.com/en-us/mt186501.aspx)
     * During this POC, we are using the Contoso Expenses application.
 
-# Estimated time to complete this module:
+# Estimated time to complete this module
 Self-guided
 
 ## Open application with Visual Studio
@@ -74,7 +74,7 @@ Self-guided
 
   ![Screenshot](/Images/AppMod-Pic-0112.png)
 
-## Capture the database server name to the clipboard.
+## Capture the database server name to the clipboard
 * Click on **Microsoft Azure** to navigate to the Azure Portal Home.
 * Click on **Resource Groups**.
 * Click the resource group **ContosoExpenses-RG-WestUS2**.
@@ -133,7 +133,7 @@ To add the **IP address** of the client you access the database from, do the fol
 
   ![Screenshot](/Images/AppMod-Pic-0130.png)
 
-## Publish the Business Web App.
+## Publish the Business Web App
 
 * From Visual Studio, **right-click** on the Web Project, **Contoso.Expenses.Web**.
 * Select **Publish** from context menu, to pick a new publish target.
@@ -148,7 +148,7 @@ To add the **IP address** of the client you access the database from, do the fol
 
   ![Screenshot](/Images/AppMod-Pic-0136.png)
 
-## Create App Service.
+## Create App Service
 * Login into the correct **Subscription** from the dropdown list.
 * Set the **Web App Name** to any name, e.g. **ContosoExpenesesWeb20170710012420**
 * Select the correct **Subscription** from the dropdown list.
@@ -238,7 +238,7 @@ To add the **IP address** of the client you access the database from, do the fol
 
   ![Screenshot](/Images/AppMod-Pic-0136.png)
 
-## Create App Service.
+## Create App Service
 * Login into the correct **Subscription** from the dropdown list.
 * Set the **API App Name** to any name, e.g. **contosoexpensesapi20170711011807**
 * Select the correct **Subscription** from the dropdown list.
