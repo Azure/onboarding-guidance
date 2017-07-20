@@ -129,7 +129,7 @@ To add the **IP address** of the client you access the database from, do the fol
 ## View the database using Visual Studio Tools
 * From **Visual Studio**, select **View** | **SQL Server Object Explorer**.
 * Expand the **SQL Server** node to view the connection.
-* Select the connection **contosoexpensesdbserver.database.windows.net**.
+* Expand the connection **contosoexpensesdbserver.database.windows.net**, and then **Databases | Contoso.Expenses.Database | Tables**. Confirm the existence of the **dbo.Expense** table.
 
   ![Screenshot](/Images/AppMod-Pic-0130.png)
 
