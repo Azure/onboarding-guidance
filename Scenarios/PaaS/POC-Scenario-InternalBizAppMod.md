@@ -274,14 +274,15 @@ To add the **IP address** of the client you access the database from, do the fol
 
 ## Create a Storage Account
 * From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
-* Click on the **+ Add**, type **Storage**, <**enter**>.
+* Click on the **+ Add**, type **Storage** and press **Enter**.
 * Click on **Storage Account  - blob, file, table, queue**.
 * Click on **Create**.
 
   ![Screenshot](/Images/AppMod-Pic-0180.png)
 
-* Type in **contosoexpensessa** for the **Name**.
+* Type in **contosoexpensesUNIQUEIDsa** (e.g. contosoexpenses123sa) for the **Name**. The name of a storage account needs to be globally unique.
 * Change **Replication** to **Locally-redundant storage (LRS)**.
+* Leave other fields with default options.
 * Click on **Create**.
 
   ![Screenshot](/Images/AppMod-Pic-0182.png)
