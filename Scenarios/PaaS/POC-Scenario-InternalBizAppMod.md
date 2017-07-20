@@ -532,8 +532,8 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 
   ![Screenshot](/Images/AppMod-Pic-0250.png)
 
-* Expand the nodes to **Storage Accounts** | **Queues**.
-* Right-click on **ContosoExpenses** and select **Open Queue Editor**.
+* Expand the nodes to **Storage Accounts** | YourStorageAccountName (e.g. contosoexpensessa) | **Queues**.
+* Right-click on **contosoexpenses** and select **Open Queue Editor**.
   * Note: The email message has been processed and de-queued.
 
     ![Screenshot](/Images/AppMod-Pic-0252.png)
