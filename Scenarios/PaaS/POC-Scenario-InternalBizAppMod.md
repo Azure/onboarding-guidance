@@ -493,7 +493,7 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 * Expand the **Controllers folder**, click on **EmployeeController.cs** file.
   * On line **#35** you will see name **Randy**.
 * Right-click on the project **Contoso.Expenses.API**, select **Publish**.
-* Verify the publish profile is **contosoexpensesapi20170711011807**, click **Publish**.
+* Verify the publish profile is the one previously created (e.g. **contosoexpensesapi20170711011807**), and click **Publish**.
 * Once published, copy the URL in the output folder and paste it into a browser. e.g. **http://contosoexpensesapi20170711011807.azurewebsites.net**.
 
 ## Testing out the API with Swagger
