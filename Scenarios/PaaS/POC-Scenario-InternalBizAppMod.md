@@ -500,8 +500,8 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 * In the browser, add **/swagger** to the end of the URL, and press enter.
   * e.g. **http://contosoexpensesapi20170711011807.azurewebsites.net/swagger**
   * This will load the Swagger page that will allow you to explore and test your APIs.
-* Under **Employee**, click on **GET**.
-* Under **Parameters,** type in **Randy**, the click **Try it Out!**
+* Click on **Employee**, and then click on **GET**.
+* Under **Parameters,** type in **Randy** for the **employeeName** parameter and then click **Try it Out!**
 
   ![Screenshot](/Images/AppMod-Pic-0240.png)
 
