@@ -338,14 +338,16 @@ To add the **IP address** of the client you access the database from, do the fol
 
 ## Create an Azure Function
 * From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
-* Click on the **+ Add**, type **Function App**.
+* Click on the **+ Add**, type **Function App** and press **Enter**.
 * Click on **Function App**.
 * Click **Create**.
 
   ![Screenshot](/Images/AppMod-Pic-0210.png)
 
-* Enter **ContosoExpensesFunction** for the **App Name**.
-* For **Storage**, select **Select existing**, and select **contosoexpensessa** from the dropdown list.
+* Enter **ContosoExpensesUNIQUEIDFunction** for the **App Name**. The Function App name needs to be globally unique.
+* For **Location** select **West US 2** (or the same used previously).
+* For **Storage**, select **Select existing**, and select from the dropdown list the storage account previously created (e.g. **contosoexpensessa**).
+* Leave other fields with the defaults.
 * Click on **Create**.
 
   ![Screenshot](/Images/AppMod-Pic-0212.png)
@@ -361,7 +363,7 @@ To add the **IP address** of the client you access the database from, do the fol
   ![Screenshot](/Images/AppMod-Pic-0216.png)
 
 * Click on **Queue Trigger – C#**.
-* Type in **QueueTriggerContosoExpenses** for the Name your Function.
+* Scroll down and type in **QueueTriggerContosoExpenses** for the Name your Function.
 * Click **Create**.
 
   ![Screenshot](/Images/AppMod-Pic-0218.png)
@@ -430,7 +432,6 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
 
   ![Screenshot](/Images/AppMod-Pic-0222.png)
 
-* For the Storage Account Connection, click on the dropdown.
 * From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
 * Select the **DemoSendGridEmail** SendGrid Account.
 * Under **Settings**, click on **Configurations**.
@@ -475,7 +476,7 @@ public static async void Run(string expenseItem, TraceWriter log, IAsyncCollecto
   ![Screenshot](/Images/AppMod-Pic-0232.png)
 
 * Scroll down to **App Settings**.
-* Add new setting, type in **SendGridApiKey**, paste in the generated key copied to the clipboard from above step.
+* Add new setting, type in **SendGridApiKey** in the **Key** field, and paste in the generated key copied to the clipboard from above step to the **Value** field.
 * Click **Save**.
 
   ![Screenshot](/Images/AppMod-Pic-0234.png)
