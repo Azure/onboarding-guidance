@@ -92,8 +92,8 @@ To add the **IP address** of the client you access the database from, do the fol
   ![Screenshot](/Images/AppMod-Pic-0116.png)
 
 ## Publish the Database into Azure SQL DB
-* From Visual Studio, Expand the project **Contoso.Expenses.Database**.
-* Click on the **seed.sql** file, and look at contents in the preview window.
+* From Visual Studio, expand the project **Contoso.Expenses.Database**.
+* Click on the **Seed.sql** file under the **Scripts folder**, and look at content in the preview window.
   * Note: This file will get executed post-deployment and add test data to the database.
 
   ![Screenshot](/Images/AppMod-Pic-0118.png)
@@ -103,21 +103,19 @@ To add the **IP address** of the client you access the database from, do the fol
   ![Screenshot](/Images/AppMod-Pic-0120.png)
   ![Screenshot](/Images/AppMod-PublishDatabaseScreen.png)
   
-* Click **Edit**, then click **Browse**.
+* On **Target database connection** click **Edit**, then click **Browse**.
 
 * From the list presented, expand **Azure**.
 * Select the **Database** created on the SQL Server in the previous steps.
 
   ![Screenshot](/Images/AppMod-Pic-0122.png)
 
-* Fort the Server Name, paste or enter  **contosoexpensesdbserver.database.windows.net**.
-* Change **Authentication** to **SQL Server Authentication**.
-* Enter the database server **User Name** and **Password**.
-* Enter the database name **Contoso.Expenses.Database**.
-* Click **Test Connection**, then **Ok**.
+* For the **Server Name**, confirm or enter the server name previously saved to the clipboard (e.g. contosoexpensesdbserver.database.windows.net).
+* Set **Authentication** to **SQL Server Authentication**.
+* Enter the database server **User Name** and **Password**. Select the checkbox **Remember Password**.
+* Select the database name **Contoso.Expenses.Database**.
+* Click **Test Connection**. The result should be **Test connection succeeded**, then click **Ok**.
 * Click **Ok**, to close connect window.
-
-  
 
 * Click on **Publish** to publish the database to Azure.
   * The database will be published to Azure and give you the results.
