@@ -300,7 +300,7 @@ To add the **IP address** of the client you access the database from, do the fol
   ![Screenshot](/Images/AppMod-Pic-0188.png)
   
 * From **Visual Studio**, open up the **web.config** under **Contoso.Expenses.Web**.
-* Scroll down and locate **StorageConnectionString**, then paste the connection string from the clipboard between the quotes.
+* Scroll down and locate **StorageConnectionString**, then paste the connection string from the clipboard between the quotes. Save the changes on the file.
 
   ![Screenshot](/Images/AppMod-Pic-0190.png)
 
