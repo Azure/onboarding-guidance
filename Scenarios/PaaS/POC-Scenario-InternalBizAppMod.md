@@ -184,7 +184,7 @@ To add the **IP address** of the client you access the database from, do the fol
 
   ![Screenshot](/Images/AppMod-Pic-0143.png)
 
-* Click on Overview then the URL to launch the website.
+* Click on **Overview** then the **URL** to launch the website.
 
   ![Screenshot](/Images/AppMod-Pic-0144.png)
   ![Screenshot](/Images/AppMod-Pic-0146.png)
