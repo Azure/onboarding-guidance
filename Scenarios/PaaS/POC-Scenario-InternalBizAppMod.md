@@ -306,7 +306,7 @@ To add the **IP address** of the client you access the database from, do the fol
 
 ## Setup a Sendgrid Email Account
 * From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
-* Click on the **+ Add**, type **SendGrid**.
+* Click on the **+ Add**, type **SendGrid** and press **Enter**.
 * Click on **SendGrid Email Delivery**.
 * Click on **Create**.
 
@@ -332,10 +332,7 @@ To add the **IP address** of the client you access the database from, do the fol
   ![Screenshot](/Images/AppMod-Pic-0200.png)
 
 * Click **Create**, to create the SendGrid Email Account.
-* From the Azure Portal, click on **Resource Groups**, **ContosoExpenses-RG-WestUS2**.
-* Select the **DemoSendGridEmail** SendGrid Account.
-* Under **Settings**, click on **Configurations**.
-* Copy the **Username** to the clipboard, paste into a Notepad.
+
 
   ![Screenshot](/Images/AppMod-Pic-0202.png)
 
