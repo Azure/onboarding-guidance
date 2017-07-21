@@ -21,6 +21,10 @@ After completing the exercises in this module, you will be able to:
        * Open following folder:
          C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManage And run ServiceFabricLocalClusterManager.exe
 
+## Create a Service Fabric Cluster in the portal
+
+ * ARM Templates to Deploy Service Fabric Clusters
+
 ## Create a Stateless service
 
 1.	Open Visual Studio with elevated privileges by pressing the Start ( ) button on the keyboard and typing “Visual Studio”, then run Visual Studio by right clicking and choosing Run as Administrator. Visual Studio must be run using elevated privileges because it must interact with the Service Fabric runtime.
