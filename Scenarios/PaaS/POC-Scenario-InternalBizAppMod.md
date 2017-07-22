@@ -40,7 +40,7 @@ Self-guided
     seed default data.
   * **Contoso.Expenses.Web** - This is the Internal Business Web App.
 
-## Create the SQL Database Server
+## Create the SQL Database
 * Navigate to the Azure portal.
 * Click on **+ New**, type in **Resource Group** in the search area, press **Enter**.
 * Click on **Resource Group**, click on **Create**.
@@ -55,20 +55,33 @@ Self-guided
 
   ![Screenshot](/Images/AppMod-Pic-0106.png)
 
-* Click **+Add**, type in **SQL Server** in the search area, press **Enter** and click on **SQL Server (logical server)**.
+* Click **+Add**, type in **SQL Database** in the search area, press **Enter** and click on **SQL Database**.
 
   ![Screenshot](/Images/AppMod-Pic-0108.png)
 
 * Click **Create**.
-* Enter **contosoexpensesUNIQUEIDdbserver** (e.g. contosoexpenses123dbserver) as the **Server Name**. Replace UNIQUEID with a random number, since the server name needs to be globally unique. 
+* Enter **contosoexpensesdb** as the **Database Name**.
+* For **Resource Group**, select **Use Existing**, then select the **Resource Group** created earlier (e.g. ContosoExpenses-RG-WestUS2).
+* For **Server**, click **Configure required settings**.
+* Click **Create a new Server**.
+* For **Server Name**, enter **contosoexpensesdbserver1**.
+  * Note: The server name needs to be globally unique, so add a number to the end of name.
 * Enter a **Server admin login** and **Password**.
   * Note: Save the **Login name** and **Password**, as you’ll need it later.
-* Select your **Subscription**.
-* For **Resource Group**, select **Use Existing**, then select the **Resource Group** created earlier (e.g. ContosoExpenses-RG-WestUS2).
 * For Location select **West US 2**.
-* Click **Create** to create a new SQL Database Server.
+* Click **Select** to save the server settings.
 
   ![Screenshot](/Images/AppMod-Pic-0110.png)
+
+* Click on **Pricing Tier**.
+* Move the **DTU** slider to **20**.
+  * Note: DTU's are Database Transaction Units and measure database performance with a blended measure of CPU, memory, I/O.  For more information on DTU's, see [Explaining Database Transaction Units](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-what-is-a-dtu).
+
+* Move the **Storage** slider to **5**.
+* Click **Apply**.
+* Click **Create** to create a new SQL Database Server & Database.
+
+  ![Screenshot](/Images/AppMod-Pic-0111.png)
 
   * Note: The Azure alert bell will indicate the deployment is in progress.
 
@@ -78,8 +91,8 @@ Self-guided
 * Click on **Microsoft Azure** to navigate to the Azure Portal Home.
 * Click on **Resource Groups**.
 * Click the resource group **ContosoExpenses-RG-WestUS2**.
-* Select the database **contosoexpensesdbserver** and click on **Properties**.
-* Highlight the full database **Server Name**, **contosoexpensesdbserver.database.windows.net**
+* Select the database **contosoexpensesdbserver1** and click on **Properties**.
+* Highlight the full database **Server Name**, **contosoexpensesdbserver1.database.windows.net**
 * **Right-click** and select **Copy** to save it on the clipboard, you use the server name later on.
 
   ![Screenshot](/Images/AppMod-Pic-0114.png)
@@ -110,10 +123,10 @@ To add the **IP address** of the client you access the database from, do the fol
 
   ![Screenshot](/Images/AppMod-Pic-0122.png)
 
-* For the **Server Name**, confirm or enter the server name previously saved to the clipboard (e.g. contosoexpensesdbserver.database.windows.net).
+* For the **Server Name**, confirm or enter the server name previously saved to the clipboard (e.g. **contosoexpensesdbserver1.database.windows.net**).
 * Set **Authentication** to **SQL Server Authentication**.
 * Enter the database server **User Name** and **Password**. Select the checkbox **Remember Password**.
-* Select the database name **Contoso.Expenses.Database**.
+* Select the database name **contosoexpensesdb**.
 * Click **Test Connection**. The result should be **Test connection succeeded**, then click **Ok**.
 * Click **Ok**, to close connect window.
 
@@ -129,7 +142,7 @@ To add the **IP address** of the client you access the database from, do the fol
 ## View the database using Visual Studio Tools
 * From **Visual Studio**, select **View** | **SQL Server Object Explorer**.
 * Expand the **SQL Server** node to view the connection.
-* Expand the connection **contosoexpensesdbserver.database.windows.net**, and then **Databases | Contoso.Expenses.Database | Tables**. Confirm the existence of the **dbo.Expense** table.
+* Expand the connection **contosoexpensesdbserver1.database.windows.net**, and then **Databases | contosoexpensesdb | Tables**. Confirm the existence of the **dbo.Expense** table.
 
   ![Screenshot](/Images/AppMod-Pic-0130.png)
 
@@ -212,7 +225,7 @@ To add the **IP address** of the client you access the database from, do the fol
   * Hint: **Cut-n-Paste** the following connection string into **Notepad**, then replace the 4 bolded areas with your information.
   
    ```
-    metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:<**contosoexpensesdbserver.database.windows.net**>;initial catalog=<**Contoso.Expenses.Database**>;Integrated Security=False;User Id=<**DatabaseLogin**>;Password=<**DatabasePassword**>;MultipleActiveResultSets=True;App=EntityFramework"
+    metadata=res://*/Models.ContosoExpensesModel.csdl|res://*/Models.ContosoExpensesModel.ssdl|res://*/Models.ContosoExpensesModel.msl;provider=System.Data.SqlClient;provider connection string="data source=tcp:contosoexpensesdbserver1.database.windows.net;initial catalog=contosoexpensesdb;Integrated Security=False;User Id=Username;Password=Password;MultipleActiveResultSets=True;App=EntityFramework"
    ```
 
    ![Screenshot](/Images/AppMod-Pic-0154.png)
