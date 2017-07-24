@@ -32,7 +32,7 @@ To create a new database and server you need to:
 
 From the New Database Blade:
 
-* Enter a name for your database *MyTestDatabase*
+* Enter a name for your database *AVWorks*
 * Select your subscription
 * Create a new Resource Group called *FastTrackDemo*
 * Select **AdventureWorksLT** from the Select Source Database drop down menu
