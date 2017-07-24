@@ -4,7 +4,7 @@ This folder is work in progress, please stay tuned!
 
 # Abstract
 
-During this module you will learn how to create a logical server and blank Azure SQL Database
+During this module you will learn how to create a logical server and an Azure SQL Database using the AdventureWorksLT sample
 
 # Learning Objectves
 
@@ -35,10 +35,10 @@ From the New Database Blade:
 * Enter a name for your database *MyTestDatabase*
 * Select your subscription
 * Create a new Resource Group called *FastTrackDemo*
-* Leave the Select Source Database as Blank
+* Select **AdventureWorksLT** from the Select Source Database drop down menu
 * Click on **Server** and then **Create New Server**
 * In the new server blade, give the server a unique name - this will be the connection URL
-* Enter a username an dpassword for the admin user
+* Enter a username and password for the admin user
 * Select a Location for the server *North Europe in this Example*
 * Click **Select** at the bottom of the new server blade to accept those values
 * Leave the Elastic Pool, Pricing Tier and Collation as default
@@ -46,7 +46,7 @@ From the New Database Blade:
 
 ![Screenshot](/Images/SQLDB-create-new-server.png)
 
-After a few minutes the logical server and the blank database will be created.  Once created you will be able to ater settings for the database or open the firewall to allow exteral connection - such as SQL Server Management Studio.
+After a few minutes the logical server and sample database will be created.  Once created you will be able to ater settings for the database or open the firewall to allow exteral connection - such as SQL Server Management Studio.
 
 
 
