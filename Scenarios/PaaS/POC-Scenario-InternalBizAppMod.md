@@ -19,7 +19,7 @@ After completing the exercises in this module, you will be able to:
     * During this POC, we are using the Contoso Expenses application.
 
 # Estimated time to complete this module
-Self-guided
+3.5 hours
 
 ## Open application with Visual Studio
 * If you haven’t done this already, download Proof-of-concept project from [here](https://msdn.microsoft.com/en-us/mt186501.aspx).
