@@ -1,4 +1,4 @@
-# Fast Track for Azure Dev Test Solution - DevTest Labs IT Walkthrough
+# FastTrack for Azure - DevTest Labs IT Walkthrough
 
 ## This step by step guide will be divided into three roles:
 * Owner (Can perform all task performed by Contributor )
