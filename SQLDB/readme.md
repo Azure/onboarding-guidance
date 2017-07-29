@@ -1,4 +1,4 @@
-# Fast Track for Azure SQL Database
+# FastTrack for Azure SQL Database
 
 In this folder you will find a number of walkthroughs that relate to common activities when working with Azure SQL Database.  These include:
 
