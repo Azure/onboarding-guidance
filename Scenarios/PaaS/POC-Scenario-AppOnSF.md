@@ -22,6 +22,8 @@ After completing the exercises in this module, you will be able to:
          C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManage And run ServiceFabricLocalClusterManager.exe
     * Download the starter application from [GitHub](https://github.com/Azure-Samples/service-fabric-dotnet-quickstart)
 
+## Walk through the voting sample application
+ * [Create a .NET Service Fabric application in Azure](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet)
 
 ## Create a Service Fabric Cluster in the portal
 
