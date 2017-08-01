@@ -25,6 +25,7 @@ After completing the exercises in this module, you will be able to:
 
 ## Create a Service Fabric Cluster in the portal
 
+ * Follow these steps to create a Service Fabric Cluster in Azure
  * ARM Templates to Deploy Service Fabric Clusters
 
 
