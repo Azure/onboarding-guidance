@@ -1,0 +1,296 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "_artifactsLocation": {
+            "type": "string",
+            "metadata": {
+                "description": "The base URI where artifacts required by this template are located. When the template is deployed using the accompanying scripts, a private location in the subscription will be used and this value will be automatically generated."
+            },
+            "defaultValue": "https://raw.githubusercontent.com/Azure/onboarding-guidance/master/ARMTemplate/Networking/"
+        },
+        "envPrefixName": {
+            "type": "string",
+            "metadata": {
+                "description": "Prefix for the environment (2-5 characters)"
+            },
+            "defaultValue": "cust1",
+            "minLength": 2,
+            "maxLength": 5
+        },
+        "username": {
+            "type": "string",
+            "metadata": {
+                "description": "IaaS VM local administrator username"
+            }
+        },
+        "password": {
+            "type": "securestring",
+            "metadata": {
+                "description": "IaaS VM local administrator password"
+            }
+        },
+        "webSrvVMSize": {
+            "type": "string",
+            "allowedValues": [
+                "Standard_DS1",
+                "Standard_DS2",
+                "Standard_DS3",
+                "Standard_DS4",
+                "Standard_DS11",
+                "Standard_DS12",
+                "Standard_DS13",
+                "Standard_DS14"
+            ],
+            "metadata": {
+                "description": "The size of the Web Server VMs Created"
+            },
+            "defaultValue": "Standard_DS2"
+        },
+        "numberOfWebSrvs": {
+            "type": "int",
+            "metadata": {
+                "description": "Number of Web Servers"
+            },
+            "allowedValues": [
+                1,
+                2
+            ],
+            "defaultValue": 1
+        }
+    },
+    "variables": {
+        "apiVersion": "2017-06-01",
+        "virtualNetworkName": "[concat(parameters('envPrefixName'), 'Vnet')]",
+        "addressPrefix": "10.0.0.0/16",
+        "feSubnetPrefix": "10.0.0.0/24",
+        "feNSGName": "feNsg",
+        "vnetId": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
+        "webSrvName": "[concat(parameters('envPrefixName'), 'webSrv')]",
+        "webSrvVMSize": "[parameters('webSrvVMSize')]",
+        "webSrvOSDiks": "[concat(parameters('envPrefixName'), 'WebSrvOS')]",
+        "webSrvNicName": "[concat(variables('webSrvName'), 'Nic')]",
+        "webSrvSubnetRef": "[concat(variables('vnetId'), '/subnets/', 'FESubnetName')]",
+        "webSrvPublicIP": "[concat(parameters('envPrefixName'), 'websrvpip')]",
+        "webSrvAvailabilitySetName": "[concat(parameters('envPrefixName'), 'webSrvAS')]",
+        "webSrvNumbOfInstances": "[parameters('numberOfWebSrvs')]",
+        "vmExtensionName": "dscExtension",
+        "modulesUrl": "[concat(parameters('_artifactsLocation'), 'scripts/WebServerConfig.ps1.zip')]",
+        "configurationFunction": "WebServerConfig.ps1\\WebServerConfig"
+    },
+    "resources": [
+        {
+            "apiVersion": "[variables('apiVersion')]",
+            "type": "Microsoft.Network/networkSecurityGroups",
+            "name": "[variables('feNSGName')]",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "displayName": "FrontEndNSG"
+            },
+            "properties": {
+                "securityRules": [
+                    {
+                        "name": "rdp_rule",
+                        "properties": {
+                            "description": "Allow RDP",
+                            "protocol": "Tcp",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "3389",
+                            "sourceAddressPrefix": "Internet",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 100,
+                            "direction": "Inbound"
+                        }
+                    },
+                    {
+                        "name": "web_rule",
+                        "properties": {
+                            "description": "Allow WEB",
+                            "protocol": "Tcp",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "80",
+                            "sourceAddressPrefix": "Internet",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 101,
+                            "direction": "Inbound"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "apiVersion": "[variables('apiVersion')]",
+            "type": "Microsoft.Network/virtualNetworks",
+            "name": "[variables('virtualNetworkName')]",
+            "location": "[resourceGroup().location]",
+            "dependsOn": [
+                "[concat('Microsoft.Network/networkSecurityGroups/', variables('feNSGName'))]"
+            ],
+            "tags": {
+                "displayName": "VirtualNetwork"
+            },
+            "properties": {
+                "addressSpace": {
+                    "addressPrefixes": [
+                        "[variables('addressPrefix')]"
+                    ]
+                },
+                "subnets": [
+                    {
+                        "name": "FESubnetName",
+                        "properties": {
+                            "addressPrefix": "[variables('feSubnetPrefix')]",
+                            "networkSecurityGroup": {
+                                "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('feNSGName'))]"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Microsoft.Compute/availabilitySets",
+            "name": "[variables('webSrvAvailabilitySetName')]",
+            "apiVersion": "2016-04-30-preview",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "displayName": "WebSrvAvailabilitySet"
+            },
+            "properties": {
+                "platformFaultDomainCount": "2",
+                "platformUpdateDomainCount": "2",
+                "managed": true
+            }
+        },
+        {
+            "apiVersion": "[variables('apiVersion')]",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "name": "[concat(variables('webSrvPublicIP'),'-',copyindex())]",
+            "location": "[resourceGroup().location]",
+            "copy": {
+                "name": "pipLoop",
+                "count": "[variables('webSrvNumbOfInstances')]"
+            },
+            "properties": {
+                "publicIPAllocationMethod": "Dynamic"
+            }
+        },
+        {
+            "name": "[concat(variables('webSrvNicName'), copyindex())]",
+            "type": "Microsoft.Network/networkInterfaces",
+            "location": "[resourceGroup().location]",
+            "apiVersion": "[variables('apiVersion')]",
+            "copy": {
+                "name": "nicLoop",
+                "count": "[variables('webSrvNumbOfInstances')]"
+            },
+            "dependsOn": [
+                "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]"
+            ],
+            "tags": {
+                "displayName": "WebSrvNic"
+            },
+            "properties": {
+                "ipConfigurations": [
+                    {
+                        "name": "ipconfig1",
+                        "properties": {
+                            "publicIPAddress": {
+                                "id": "[resourceId('Microsoft.Network/publicIPAddresses/', concat(variables('webSrvPublicIP'),'-',copyindex()))]"
+                            },
+                            "privateIPAllocationMethod": "Dynamic",
+                            "subnet": {
+                                "id": "[variables('webSrvSubnetRef')]"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "[concat(variables('webSrvName'), copyindex())]",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "[resourceGroup().location]",
+            "apiVersion": "2017-03-30",
+            "copy": {
+                "name": "webSrvMachineLoop",
+                "count": "[variables('webSrvNumbOfInstances')]"
+            },
+            "dependsOn": [
+                "[concat('Microsoft.Network/networkInterfaces/', variables('webSrvNicName'), copyindex())]",
+                "[concat('Microsoft.Compute/availabilitySets/', variables('webSrvAvailabilitySetName'))]"
+            ],
+            "tags": {
+                "displayName": "WebSrv"
+            },
+            "properties": {
+                "availabilitySet": {
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets',variables('webSrvAvailabilitySetName'))]"
+                },
+                "hardwareProfile": {
+                    "vmSize": "[variables('webSrvVMSize')]"
+                },
+                "osProfile": {
+                    "computerName": "[concat(variables('webSrvName'),copyindex())]",
+                    "adminUsername": "[parameters('username')]",
+                    "adminPassword": "[parameters('password')]"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "MicrosoftWindowsServer",
+                        "offer": "WindowsServer",
+                        "sku": "2016-Datacenter",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "name": "[concat(variables('webSrvName'),copyindex(),'-OSDisk')]",
+                        "caching": "ReadWrite",
+                        "managedDisk": {
+                            "storageAccountType": "Standard_LRS"
+                        },
+                        "createOption": "FromImage"
+                    }
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[resourceId('Microsoft.Network/networkInterfaces', concat(variables('webSrvNicName'), copyindex()))]"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "name": "[concat(variables('webSrvName'), copyindex(),'/', variables('vmExtensionName'))]",
+            "apiVersion": "2017-03-30",
+            "location": "[resourceGroup().location]",
+            "copy": {
+                "name": "webSrvMachineLoop",
+                "count": "[variables('webSrvNumbOfInstances')]"
+            },
+            "dependsOn": [
+                "[concat('Microsoft.Compute/virtualMachines/', variables('webSrvName'), copyindex())]"
+            ],
+            "tags": {
+                "displayName": "VM Extensions"
+            },
+            "properties": {
+                "publisher": "Microsoft.Powershell",
+                "type": "DSC",
+                "typeHandlerVersion": "2.19",
+                "autoUpgradeMinorVersion": true,
+                "settings": {
+                    "ModulesUrl": "[variables('modulesUrl')]",
+                    "SasToken": "",
+                    "ConfigurationFunction": "[variables('configurationFunction')]",
+                    "wmfVersion": "5.0",
+                    "Properties": {}
+                },
+                "protectedSettings": {}
+            }
+        }
+    ]
+}
