@@ -27,9 +27,10 @@ After completing the exercises in this module, you will be able to:
 
 ## Create a Service Fabric Cluster in the portal
 
- * Follow these steps to create a Service Fabric Cluster in Azure
- * ARM Templates to Deploy Service Fabric Clusters
-
+ * Follow [these](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-via-portal) steps to create a Service Fabric Cluster in Azure
+ * [ARM Template](https://github.com/Azure/azure-quickstart-templates/tree/master/service-fabric-secure-cluster-5-node-1-nodetype) to Deploy Service Fabric Clusters 
+ * [GitHub Quickstart Templates](https://github.com/Azure/azure-quickstart-templates)
+ * [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)
 
 ## Additional Resources
 * Service Farbic Getting [Started](http://aka.ms/ServiceFabric)
@@ -45,6 +46,6 @@ After completing the exercises in this module, you will be able to:
  * [Service Fabric on Linux](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-linux-overview/)
  * Connect to a [Secure Cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-to-secure-cluster)
  * [Upgrade and clean up Service Fabric Development environment](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-update-your-development-environment/)
- * [Troubleshoot] (https://azure.microsoft.com/en-us/documentation/articles/service-fabric-troubleshoot-local-cluster-setup/) an environment
+ * [Troubleshoot](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-troubleshoot-local-cluster-setup/) an environment
  * [Elastic Search](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-diagnostic-how-to-use-elasticsearch/)
  * [Partitioning Concepts](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-concepts-partitioning/)
