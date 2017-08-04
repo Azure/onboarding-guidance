@@ -1,4 +1,4 @@
-# Fast Track for Azure Dev Test Solution - DevTest Labs Developer Walkthrough
+# FastTrack for Azure - DevTest Labs Developer Walkthrough
 
 ## Pre-Requisites
 * You must have completed the [IT Persona Step by Step walkthrough](devtest-labs-walkthrough-it.md).

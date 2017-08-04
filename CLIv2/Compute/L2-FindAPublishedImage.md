@@ -37,8 +37,6 @@ az vm image list-skus -l eastus -p Canonical -f UbuntuServer
 ```
 #### Lists the virtual machines images
 ```shell
-azure vm image list --location eastus --publisher Canonical --offer UbuntuServer --sku 17.04 --all
-
 az vm image list --location eastus --publisher Canonical --offer UbuntuServer --sku 17.04 --all
 
 or
