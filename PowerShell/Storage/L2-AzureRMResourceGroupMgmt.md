@@ -33,7 +33,7 @@ The infrastructure for your application is typically made up of many components 
 4. You can move a resource from one resource group to another group. For more information, see Move resources to new resource group or subscription.
 5. A resource group can contain resources that reside in different regions.
 6. A resource group can be used to scope access control for administrative actions.
-7. A resource can interact with a resource in another resource groups when the two resources are related but they do not share the same lifecycle (for example, a web apps connecting to a database).
+7. Resource groups are not a definition of resource connectivity nor determine how resources communicate between eachother or to/from the internet
 
 
 ##### To create a new resource group, provide a name and location for your resource group.
