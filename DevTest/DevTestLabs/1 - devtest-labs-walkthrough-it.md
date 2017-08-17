@@ -95,7 +95,7 @@
 
 15. Once you have configured your cost notifications as desired, click on "Click here to add an integration". 
     * Notice that you can use a Webhook for notification purposes.
-    * We will not enter anything in this blade. Click on the "X" to exit this blade and then select "OK" on the manage target blade.
+    * We will not enter anything in this blade. Click on the "X" to exit this blade and then select "OK" on the primary blade.
 ![Screenshot](/Images/dtl-it-12.png)
 
 16. You will notice that there are now horizontal lines denoting the limits that you have enabled.
