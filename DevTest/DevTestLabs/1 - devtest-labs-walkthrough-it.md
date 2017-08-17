@@ -141,9 +141,9 @@
 22. Navigate to Formulas (reusable bases) on your DevTest Lab blade.
     * Click on "Add".
     * Select RedHat Enterprise Linux 7.3.
-    * Enter a representative name and description for the Forula
+    * Enter a representative name and description for the Formula
     * Notice that the premium disk "SSD" can be selected, but if the Formula is deployed with this option enabled there will be a warning message blocking the deployment based on the lab setup. 
-    * Select only the "HDD" option to avoid an error during deploying the Formula.
+    * Select only the standard disk "HDD" option to avoid an error during deployment of the Formula.
 
 ![Screenshot](/Images/dtl-it-19.png)
 
