@@ -1,51 +1,15 @@
 {
-  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "orgprefix": {
-      "value": "ft"
+    "prefix": {
+      "value": "fta-delta-dev"
     },
-    "environmentPrefix": {
-      "value": "dev"
+    "costThreshold": {
+      "value": "2000"
     },
-    "organisationName": {
-      "value": "Fast Track"
-    },
-    "labVmShutDownTime": {
-      "value": "17:30"
-    },
-    "devVmCount": {
-      "value": 2
-    },
-    "testVmCount": {
-      "value": 2
-    },
-    "maxAllowedVmsPerUser": {
-      "value": 10
-    },
-    "maxAllowedVmsPerLab": {
-      "value": 100
-    },
-    "allowedVmSizes": {
-      "value": "\"Standard_DS1_v2\", \"Standard_DS2_v2\""
-    },    
-    "artifactRepoFolder": {
-        "value": "/Artifacts"
-    },
-    "artifactRepoBranch": {
-        "value": "master"
-    },
-    "artifactRepoSecurityToken": {
-        "value": "enter your PAT token here"
-    },
-    "VMSize": {
-      "value": "Standard_DS1_v2"
-    },
-    "VMStorageType": {
-      "value": "Standard"
-    },
-    "username": {
-      "value": "demolab"
+    "timeZoneId": {
+      "value": "UTC"
     }
   }
 }
