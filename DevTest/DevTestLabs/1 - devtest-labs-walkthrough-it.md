@@ -41,7 +41,7 @@
 
 7. Login as the user that has "Contributor" access to DevTest labs. If you do not have an additional account available, you can continue with these steps as an owner as well.
 
-**NOTE: Remember that the primary difference between an Owner and Contributor is that an Owner can assign access to the resource. Both Owners and Contributors can manage the resource.**
+**NOTE: Remember that the primary difference between an Owner and Contributor is that an Owner can assign access to the resource. A Contributors can only manage the resource, but cannot assign access.**
 
 8. Navigate to your DevTest Lab.
     * Select Confguration and Policies. 
@@ -56,6 +56,7 @@
     * Set that limit as 2.
     * Set "Limit the number of virtual machines using premium OS disks (SSD)" to "Yes".
     * Set that limit as 0.
+    * Click on the "Save" button at the top and wate for confirmation that the changes were saved.
 
 ![Screenshot](/Images/dtl-it-8.png)
 
@@ -64,13 +65,15 @@
     * Set that limit as 20.
     * Set "Limit the number of virtual machines using premium OS disks (SSD)" to "Yes".
     * Set that limit as 0.
+    * Click on the "Save" button and verify the changes have been saved.
 
 ![Screenshot](/Images/dtl-it-9.png)
 
 12. Navigate to "Marketplace Images".
     * Set "Allow all Azure Marketplace images as virtual machine bases" to "No".
     * You may have a set of internal business rules on those operating systems that may be used.
-    * For demo purposes, we have selected Red Hat Enterprise Linux 7.2, 7.3, Windows Server 2016 and Visual Studio 2017 images.
+    * For demo purposes, we have selected Red Hat Enterprise Linux 7.2, 7.3, Windows Server 2016 Datacenter and Visual Studio 2017 images.
+    * Click on the "Save" button and verify that the changes have been saved. 
 
 ![Screenshot](/Images/dtl-it-95.png)
 
