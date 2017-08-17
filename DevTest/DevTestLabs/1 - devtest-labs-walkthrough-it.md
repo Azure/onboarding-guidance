@@ -151,7 +151,7 @@
     * Select Docker.
     * Click Add.
     * Click OK.
-    * Click Create to start building the Formula.
+    * Click Create to start building the Formula
 
 ![Screenshot](/Images/dtl-it-20.png)
 
