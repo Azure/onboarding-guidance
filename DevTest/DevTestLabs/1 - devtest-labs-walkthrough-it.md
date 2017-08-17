@@ -111,7 +111,7 @@
     * Set "Enabled" to "On".
     * Set "Scheduled Shutdown to 5:30:00 PM.
     * Notice that you can once again be notified of this, and use a webhook for this purpose.
-    * Click Save.
+    * Click on "Save" for the changes to take effect.
 
 ![Screenshot](/Images/dtl-it-15.png)
 
@@ -120,7 +120,7 @@
     * Set "Scheduled start" to 8:30:00 AM.
     * Select which days of the week you would like the machines to start automatically. 
     * Notice that you can once again be notified of this, and use a webhook for this purpose.
-    * Click ion "Save" and validate that the changes have been saved.
+    * Click on "Save" and validate that the changes have been saved.
 
 ![Screenshot](/Images/dtl-it-16.png)
 
@@ -143,7 +143,7 @@
     * Select RedHat Enterprise Linux 7.3.
     * Enter a representative name and description for the Forula
     * Notice that the premium disk "SSD" can be selected, but if the Formula is deployed with this option enabled there will be a warning message blocking the deployment based on the lab setup. 
-    * Notice that the disk options available are also limited to those that were selected during the lab setup process.
+    * Select only the "HDD" option to avoid an error during deploying the Formula.
 
 ![Screenshot](/Images/dtl-it-19.png)
 
@@ -151,7 +151,7 @@
     * Select Docker.
     * Click Add.
     * Click OK.
-    * Click Create to start building the Formula
+    * Click "Create" to start building the Formula.
 
 ![Screenshot](/Images/dtl-it-20.png)
 
