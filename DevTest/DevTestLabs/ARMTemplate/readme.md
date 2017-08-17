@@ -1,13 +1,8 @@
 # Dev Test Labs - Azure Resource Manager Template
 
-This ARM Teplates creates a Dev Test Lab environment, for demonstration purposes during a Fast Track for Azure DevTest engagement. In particular, the components created are as follows: 
+This ARM Teplates creates a Dev Test Lab environment, for demonstration purposes during a Fast Track for Azure DevTest engagement. In particular, the components created are as in line with those documented in the IT Owner step by step guide.
 
-* A DevTest Lab with policies 
-* **TBC: A private artifact repository for the lab environment**
-* Two VM Types, Dev and Test. Using a parameter, you can configure the number of each VM type that is created.
-* Two custom images, captured from those two VM types mentioned above.
-
-The lab has been designed, so that it can follow recommended practices around naming conventions. To customise the lab naming, please update the parameter values in azuredeploy.parameters.json.
+To customise the lab naming, please update the parameter values in azuredeploy.parameters.json.
 
 ## Pre-Requisites
 * Install [Azure Powershell](http://aka.ms/webpi-azps)

@@ -155,7 +155,7 @@ UnregisterManagers();
 
 **Note: Replace {YourAppID} with your App ID from the HockeyApp Portal**
 
-4. **To be completed...**
+4. From this point, you could then build your application using a Continus Integration / Continuous Deployment pipeline, using a tool such as Visual Studio Team Services. There are Hockey App tasks available in Visual Studio Team Services, allowing you to push a new build from your CI/CD pipeline into HockeyApp, and available for your beta users. Once this is complete, your users will receive a popup prompt to update when they next load the application.
 
 ## Add in-app feedback
 

@@ -1,198 +1,160 @@
 {
-  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-  "parameters": {
-    "orgPrefix": {
+  "parameters": {    
+    "artifactRepoSecurityToken": {
+      "type": "securestring",
+      "metadata": {
+        "description": "Your GitHub user Personal Access Token to add an example Private Artifacts Repository to your environment"
+      }
+    },
+    "costThreshold": {
       "type": "string",
-      "defaultValue": "ft",
       "metadata": {
-        "description": "Representative abbreviation for the organisation. Defaults to FTA (Fast Track for Azure)"
+        "description": "The budget that you have set for your DevTest labs environment per month."
       }
     },
-    "environmentPrefix": {
+    "prefix": {
       "type": "string",
-      "defaultValue": "dev",
       "metadata": {
-        "description": "Representative abbreviation for the environment to be deployed, e.g. dev, test, prod."
-      }
-    },
-    "organisationName": {
-      "type": "string",
-      "defaultValue": "Fast Track for Azure",
-      "metadata": {
-        "description": "Full representation of organisation name"
-      }
-    },
-    "devVmCount": {
-      "type": "int",
-      "minValue": 1,
-      "defaultValue": 2,
-      "metadata": {
-        "description": "Number of Dev Virtual Machines to be deployed."
-      }
-    },
-    "testVmCount": {
-      "type": "int",
-      "minValue": 1,
-      "defaultValue": 2,
-      "metadata": {
-        "description": "Number of Test (build) machines to be deployed"
+        "description": "Prefix for naming convention across resources"
       }
     },
     "timeZoneId": {
       "type": "string",
-      "defaultValue": "UTC",
-      "metadata": {
-        "description": "The timezone of the lab."
-      }
-    },
-    "labVmShutDownTime": {
-      "type": "string",
-      "minLength": 5,
-      "maxLength": 5,
-      "defaultValue": "21:00",
-      "metadata": {
-        "description": "Set 'Auto Shutdown' policy: The UTC time at which the Lab VMs will be automatically shutdown (E.g. 17:30, 20:00, 09:00)."
-      }
-    },
-    "maxAllowedVmsPerUser": {
-      "type": "int",
-      "minValue": 0,
-      "defaultValue": 10,
-      "metadata": {
-        "description": "Set 'max VM allowed per user' policy: The maximum number of VMs allowed per user."
-      }
-    },
-    "maxAllowedVmsPerLab": {
-      "type": "int",
-      "minValue": 0,
-      "defaultValue": 100,
-      "metadata": {
-        "description": "Set 'Total VMs allowed in Lab' policy: The maximum number of VMs allowed per lab."
-      }
-    },
-    "allowedVmSizes": {
-      "type": "string",
-      "defaultValue": "\"Standard_DS1_v2\", \"Standard_DS2_v2\"",
       "minLength": 3,
       "metadata": {
-        "description": "Set 'allowed VM sizes' policy: A comma-separated list of VM sizes that are allowed in the lab."
-      }
-    },
-    "artifactRepoUri": {
-      "type": "string",
-      "defaultValue": "https://github.com/christianreddington/azure-devtestlabsdemo.git",
-      "metadata": {
-        "description": "Set 'artifact repository': the Git clone URI."
-      }
-    },
-    "artifactRepoFolder": {
-      "type": "string",
-      "defaultValue": "/tree/master/Artifacts",
-      "metadata": {
-        "description": "Set 'artifact repository': the target folder in the repo."
-      }
-    },
-    "artifactRepoBranch": {
-      "type": "string",
-      "defaultValue": "master",
-      "metadata": {
-        "description": "Set 'artifact repository': the target branch in the repo."
-      }
-    },
-    "artifactRepoSecurityToken": {
-      "type": "securestring",
-      "metadata": {
-        "description": "Set 'artifact repository': the personal access token of the repo."
-      }
-    },
-    "artifactRepoType": {
-      "type": "string",
-      "defaultValue": "GitHub",
-      "metadata": {
-        "description": "Set 'artifact repository': the Git repo type, GitHub or VsoGit."
-      }
-    },
-    "VMSize": {
-      "type": "string",
-      "defaultValue": "Standard_DS1_v2",
-      "metadata": {
-        "description": "The size of all the VMs to be created in the lab."
-      }
-    },
-    "VMStorageType": {
-      "type": "string",
-      "defaultValue": "Premium",
-      "metadata": {
-        "description": "The storage type ('Premium' or 'Standard') of all the VMs to be created in the lab."
-      }
-    },
-    "username": {
-      "type": "string",
-      "defaultValue": "demolab",
-      "metadata": {
-        "description": "The username for the local account that will be created on all the new VMs."
-      }
-    },
-    "password": {
-      "type": "securestring",
-      "metadata": {
-        "description": "The password for the local account that will be created on all the new VMs."
+        "description": "The Windows time zone id associated with labVmShutDownTime (E.g. UTC, Pacific Standard Time, Central Europe Standard Time)."
       }
     }
   },
   "variables": {
-    "devImageBasis": "[resourceId('Microsoft.DevTestLab/labs/virtualMachines', variables('labName'), concat(variables('resourcePrefix'), 'devvm1'))]",
-    "labId": "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]",
-    "labName": "[concat(variables('resourcePrefix'),'dtl')]",
-    "labSubnetName": "[concat(variables('labVirtualNetworkName'), 'Subnet')]",
-    "labVirtualNetworkName": "[concat(variables('resourcePrefix'),'vNet')]",
-    "labVirtualNetworkId": "[resourceId('Microsoft.DevTestLab/labs/virtualNetworks', variables('labName'), variables('labVirtualNetworkName'))]",
-    "resourcePrefix": "[concat(parameters('orgPrefix'),'-',parameters('environmentPrefix'),'-')]",
-    "testImageBasis": "[resourceId('Microsoft.DevTestLab/labs/virtualMachines', variables('labName'), concat(variables('resourcePrefix'), 'tstvm1'))]"
+    "allowedImages": "\"{\\\"offer\\\":\\\"RHEL\\\",\\\"publisher\\\":\\\"RedHat\\\",\\\"sku\\\":\\\"7.3\\\",\\\"osType\\\":\\\"Linux\\\",\\\"version\\\":\\\"latest\\\"}\", \"{\\\"offer\\\":\\\"RHEL\\\",\\\"publisher\\\":\\\"RedHat\\\",\\\"sku\\\":\\\"7.2\\\",\\\"osType\\\":\\\"Linux\\\",\\\"version\\\":\\\"latest\\\"}\", \"{\\\"offer\\\":\\\"WindowsServer\\\",\\\"publisher\\\":\\\"MicrosoftWindowsServer\\\",\\\"sku\\\":\\\"2016-Nano-Server\\\",\\\"osType\\\":\\\"Windows\\\",\\\"version\\\":\\\"latest\\\"}\", \"{\\\"offer\\\":\\\"WindowsServer\\\",\\\"publisher\\\":\\\"MicrosoftWindowsServer\\\",\\\"sku\\\":\\\"2016-Datacenter-with-Containers\\\",\\\"osType\\\":\\\"Windows\\\",\\\"version\\\":\\\"latest\\\"}\", \"{\\\"offer\\\":\\\"WindowsServer\\\",\\\"publisher\\\":\\\"MicrosoftWindowsServer\\\",\\\"sku\\\":\\\"2016-Datacenter-Server-Core\\\",\\\"osType\\\":\\\"Windows\\\",\\\"version\\\":\\\"latest\\\"}\", \"{\\\"offer\\\":\\\"WindowsServer\\\",\\\"publisher\\\":\\\"MicrosoftWindowsServer\\\",\\\"sku\\\":\\\"2016-Datacenter\\\",\\\"osType\\\":\\\"Windows\\\",\\\"version\\\":\\\"latest\\\"}\"",
+    "allowedVmSizes": "\"Standard_DS1\", \"Standard_DS2\"",    
+    "artifactRepoType":  "GitHub",
+    "artifactRepoBranch": "master",   
+    "artifactRepoFolder": "Artifacts/",
+    "artifactRepoUri": "https://github.com/christianreddington/azure-devtestlabsdemo.git",
+    "artifactRepositoryName": "Project Delta Repository",
+    "formulaName": "fta-delta-linux-vm",
+    "labName": "[concat(parameters('prefix'), '-dtl')]",
+    "labVirtualNetworkName": "[concat(parameters('prefix'), '-vNet')]","publicRepo": "Public Repo",
+    "labVmShutDownTime": "18:30",
+    "maxAllowedVmsPerLab": 20,    
+    "maxAllowedVmsPerUser": 2
   },
   "resources": [
     {
       "apiVersion": "2017-04-26-preview",
       "type": "Microsoft.DevTestLab/labs",
-      "name": "[trim(variables('labName'))]",
+      "name": "[variables('labName')]",
       "location": "[resourceGroup().location]",
       "resources": [
         {
           "apiVersion": "2017-04-26-preview",
           "name": "[variables('labVirtualNetworkName')]",
-          "type": "virtualnetworks",
+          "type": "virtualNetworks",
           "dependsOn": [
-            "[variables('labId')]"
+            "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
           ]
+        },
+        {
+          "apiVersion": "2017-04-26-preview",
+          "name": "[variables('artifactRepositoryName')]",
+          "type": "artifactSources",
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
+          ],
+          "properties": {
+            "uri": "[variables('artifactRepoUri')]",
+            "folderPath": "[variables('artifactRepoFolder')]",
+            "branchRef": "[variables('artifactRepoBranch')]",
+            "displayName": "[variables('artifactRepositoryName')]",
+            "securityToken": "[parameters('artifactRepoSecurityToken')]",
+            "sourceType": "[variables('artifactRepoType')]",
+            "status": "Enabled"
+          }
+        },        
+        {
+          "apiVersion": "2017-04-26-preview",
+          "name": "targetCost",
+          "type": "costs",
+          "properties": {
+            "targetCost": {
+              "cycleType": "CalendarMonth",
+              "status": "Enabled",
+              "target": "[parameters('costThreshold')]",
+              "costThresholds": [
+                {
+                  "thresholdId": "96c08eae-885f-4a46-a15d-9dc991a32cbf",
+                  "thresholdStatus": "Disabled",
+                  "displayOnChart": "Enabled",
+                  "sendNotificationWhenExceeded": "Disabled",
+                  "percentageThreshold": { "thresholdValue": 75 }
+                },
+                {
+                  "thresholdId": "5ef03748-2e10-4b3c-afc2-cc766abf2d5d",
+                  "thresholdStatus": "Disabled",
+                  "displayOnChart": "Enabled",
+                  "sendNotificationWhenExceeded": "Enabled",
+                  "percentageThreshold": { "thresholdValue": 100 }
+                },
+                {
+                  "thresholdId": "b0bf180e-2e09-4073-8040-56e8a23dcd84",
+                  "thresholdStatus": "Disabled",
+                  "displayOnChart": "Disabled",
+                  "sendNotificationWhenExceeded": "Disabled",
+                  "percentageThreshold": { "thresholdValue": 125 }
+                }
+               ]
+            }
+            },        
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
+          ]
+        },
+        {
+            "apiVersion": "2015-05-21-preview",
+            "name": "default/GalleryImage",
+            "type": "policySets/policies",
+            "dependsOn": [
+                "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
+            ],
+            "properties": {
+                "description": "",
+                "factName": "GalleryImage",
+                "evaluatorType": "AllowedValuesPolicy",
+                "status": "Enabled",
+                "threshold": "[concat('[', trim(variables('allowedImages')), ']')]"
+            }
         },
         {
           "apiVersion": "2017-04-26-preview",
           "name": "LabVmsShutdown",
           "type": "schedules",
           "dependsOn": [
-            "[variables('labId')]"
+            "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
           ],
           "properties": {
-            "status": "Enabled",
-            "timeZoneId": "[parameters('timeZoneId')]",
+            "status": "enabled",
             "taskType": "LabVmsShutdownTask",
+            "timeZoneId": "[string(parameters('timeZoneId'))]",
             "dailyRecurrence": {
-              "time": "[replace(parameters('labVmShutDownTime'),':','')]"
+              "time": "[string(variables('labVmShutDownTime'))]"
             }
           }
         },
         {
           "apiVersion": "2017-04-26-preview",
           "name": "default/MaxVmsAllowedPerUser",
-          "type": "policysets/policies",
+          "type": "policySets/policies",
           "dependsOn": [
-            "[variables('labId')]"
+            "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
           ],
           "properties": {
             "description": "",
             "factName": "UserOwnedLabVmCount",
-            "threshold": "[string(parameters('maxAllowedVmsPerUser'))]",
+            "threshold": "[string(variables('maxAllowedVmsPerUser'))]",
             "evaluatorType": "MaxValuePolicy",
             "status": "enabled"
           }
@@ -200,14 +162,14 @@
         {
           "apiVersion": "2017-04-26-preview",
           "name": "default/MaxVmsAllowedPerLab",
-          "type": "policysets/policies",
+          "type": "policySets/policies",
           "dependsOn": [
-            "[variables('labId')]"
+            "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
           ],
           "properties": {
             "description": "",
             "factName": "LabVmCount",
-            "threshold": "[string(parameters('maxAllowedVmsPerLab'))]",
+            "threshold": "[string(variables('maxAllowedVmsPerLab'))]",
             "evaluatorType": "MaxValuePolicy",
             "status": "enabled"
           }
@@ -215,144 +177,81 @@
         {
           "apiVersion": "2017-04-26-preview",
           "name": "default/AllowedVmSizesInLab",
-          "type": "policysets/policies",
+          "type": "policySets/policies",
           "dependsOn": [
-            "[variables('labId')]"
+            "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
           ],
           "properties": {
             "description": "",
             "factName": "LabVmSize",
-            "threshold": "[concat('[', trim(parameters('allowedVmSizes')), ']')]",
+            "threshold": "[concat('[', trim(variables('allowedVmSizes')), ']')]",
             "evaluatorType": "AllowedValuesPolicy",
             "status": "enabled"
           }
         },        
         {
-          "apiVersion": "2017-04-26-preview",
-          "name": "privaterepo885",
-          "type": "artifactsources",
+        "apiVersion": "2017-04-26-preview",
+        "name": "[concat(variables('labName'), '/', 'LabVmAutoStart')]",
+        "type": "microsoft.devtestlab/labs/schedules",
+        "properties": {
+            "status": "Enabled",
+            "timeZoneId": "[string(parameters('timeZoneId'))]",
+            "weeklyRecurrence": {
+            "time": "08:30",
+            "weekdays": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ]
+            },
+            "taskType": "LabVmsStartupTask",
+            "notificationSettings": {
+            "status": "Disabled",
+            "timeInMinutes": 15
+            }
+        },        
           "dependsOn": [
-            "[variables('labId')]"
+            "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]"
+          ]
+        },
+        {
+        "type": "microsoft.devtestlab/labs/formulas",
+        "name": "[concat(variables('labName'), '/', variables('formulaName'))]",
+        "location": "[resourceGroup().location]",
+        "apiversion": "2017-04-26-preview",        
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', variables('labName'))]",
+            "[resourceId('Microsoft.DevTestLab/labs/virtualNetworks', variables('labName'), variables('labVirtualNetworkName'))]"
           ],
-          "properties": {
-            "uri": "[parameters('artifactRepoUri')]",
-            "folderPath": "[parameters('artifactRepoFolder')]",
-            "branchRef": "[parameters('artifactRepoBranch')]",
-            "displayName": "[concat(parameters('organisationName'),' Private Repo')]",
-            "securityToken": "[parameters('artifactRepoSecurityToken')]",
-            "sourceType": "[parameters('artifactRepoType')]",
-            "status": "Enabled"
+        "properties": {
+          "description": "This is the formula for our organisation's Linux Development image.",
+          "ostype": "Linux",
+          "formulacontent": {
+            "properties": {
+              "size": "Standard_DS1",
+              "username": "",
+              "password": "",
+              "labsubnetname": "[concat(variables('labVirtualNetworkName'),'Subnet')]",
+              "labvirtualnetworkid": "[resourceId('Microsoft.DevTestLab/labs/virtualNetworks', variables('labName'), variables('labVirtualNetworkName'))]",
+              "artifacts": [
+                {
+                  "artifactid": "[concat('/artifactsources/public repo/artifacts/linux-install-docker')]"
+                }
+              ],
+              "galleryimagereference": {
+                "offer": "RHEL",
+                "publisher": "RedHat",
+                "sku": "7.3",
+                "ostype": "Linux",
+                "version": "latest"
+              }
+            }
           }
         }
-
+      }
       ]
-    },
-    {
-      "apiVersion": "2017-04-26-preview",
-      "type": "Microsoft.DevTestLab/labs/virtualmachines",
-      "name": "[concat(variables('labName'), '/', variables('resourcePrefix'), 'devvm', copyIndex(1))]",
-      "location": "[resourceGroup().location]",
-      "dependsOn": [
-        "[variables('labVirtualNetworkId')]"
-      ],
-      "properties": {
-        "galleryImageReference": {
-          "offer": "VisualStudio",
-          "publisher": "MicrosoftVisualStudio",
-          "sku": "VS-2017-Comm-WS2016",
-          "osType": "Windows",
-          "version": "latest"
-        },
-        "artifacts": [
-          {
-            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-azurepowershell')]"
-          },
-          {
-            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-vscode')]"
-          },
-          {
-            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', variables('labName'), 'public repo', 'windows-git')]"
-          }
-        ],
-        "allowClaim": true,
-        "size": "[parameters('VMSize')]",
-        "storageType": "[parameters('VMStorageType')]",
-        "isAuthenticationWithSshKey": false,
-        "userName": "[parameters('username')]",
-        "sshKey": "",
-        "password": "[parameters('password')]",
-        "labVirtualNetworkId": "[variables('labVirtualNetworkId')]",
-        "labSubnetName": "[variables('labSubnetName')]"
-      },
-      "copy": {
-        "name": "devVmCopy",
-        "count": "[parameters('devVmCount')]"
-      }
-    },
-    {
-      "apiVersion": "2017-04-26-preview",
-      "name": "[concat(variables('labName'), '/Dev Build Image')]",
-      "type": "Microsoft.DevTestLab/labs/customimages",
-      "dependsOn": [
-        "[variables('devImageBasis')]"
-      ],
-      "properties": {
-        "vm": {
-          "sourceVmId": "[variables('devImageBasis')]",
-          "windowsOsInfo": {
-            "windowsOsState": "NonSysprepped"
-          }
-        },
-        "description": "This is the base image used for our Developer Virtual Machines, based on Windows Server 2017 and Visual Studio 2017."
-      }
-    },    
-    {
-      "apiVersion": "2017-04-26-preview",
-      "type": "Microsoft.DevTestLab/labs/virtualmachines",
-      "name": "[concat(variables('labName'), '/', variables('resourcePrefix'), 'tstvm', copyIndex(1))]",
-      "location": "[resourceGroup().location]",
-      "dependsOn": [
-        "[variables('labVirtualNetworkId')]"
-      ],
-      "properties": {
-        "galleryImageReference": {
-          "offer": "WindowsServer",
-          "publisher": "MicrosoftWindowsServer",
-          "sku": "2016-Datacenter",
-          "osType": "Windows",
-          "version": "latest"
-        },
-        "allowClaim": true,
-        "size": "[parameters('VMSize')]",
-        "storageType": "[parameters('VMStorageType')]",
-        "isAuthenticationWithSshKey": false,
-        "userName": "[parameters('username')]",
-        "sshKey": "",
-        "password": "[parameters('password')]",
-        "labVirtualNetworkId": "[variables('labVirtualNetworkId')]",
-        "labSubnetName": "[variables('labSubnetName')]"
-      },
-      "copy": {
-        "name": "testVmCopy",
-        "count": "[parameters('testVmCount')]"
-      }
-    },
-    {
-      "apiVersion": "2017-04-26-preview",
-      "name": "[concat(variables('labName'), '/Build 12345 Output')]",
-      "type": "Microsoft.DevTestLab/labs/customimages",
-      "dependsOn": [
-        "[variables('testImageBasis')]"
-      ],
-      "properties": {
-        "vm": {
-          "sourceVmId": "[variables('testImageBasis')]",
-          "windowsOsInfo": {
-            "windowsOsState": "NonSysprepped"
-          }
-        },
-        "description": "This is the base image used for our Test Virtual Machine Build 12345, based on Windows Server 2016."
-      }
     }
   ],
   "outputs": {
