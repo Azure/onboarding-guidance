@@ -159,7 +159,7 @@
     * Note that the IP Address configuration is set to shared. This means that the lab will share an IP Address across Virtual Machines, and give each VM a different port. This is dealt on your behalf by the DevTest lab service.
     * Set "Make this machine claimable" to "Yes".
     * Set "Number of Instances" to 2.
-    * Accept the changes and create the formula.
+    * Accept the changes and create the Formula.
 
 ![Screenshot](/Images/dtl-it-21.png)
 
