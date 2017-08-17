@@ -80,7 +80,7 @@
 ## Cost Control
 
 13. Navigate to "Configurations and Policies" in your DevTest lab. 
-    * Select Cost Overview
+    * Select Cost Tracking
     * Select Cost Trend
     * Select Manage Target
 
@@ -89,12 +89,13 @@
 14. Select Monthly Time Period, and enter a relevant target cost.
     * Select one of the %s in the table below.
     * In the resulting blade, ensure that both "Notification" and "Display on Chart" are set to "On".
+    * Click "OK" to save the changes.
 
 ![Screenshot](/Images/dtl-it-11.png)
 
 15. Once you have configured your cost notifications as desired, click on "Click here to add an integration". 
     * Notice that you can use a Webhook for notification purposes.
-    * We will not enter anything in this blade. Click Ok and select Ok on the manage target blade.
+    * We will not enter anything in this blade. Click on the "X" to exit this blade and then select "OK" on the manage target blade.
 ![Screenshot](/Images/dtl-it-12.png)
 
 16. You will notice that there are now horizontal lines denoting the limits that you have enabled.
@@ -117,8 +118,9 @@
 19. Select "Auto-start" from the left hand menu.
     * Set "Allow virtual machines to be scheduled for automatic start" to On.
     * Set "Scheduled start" to 8:30:00 AM.
+    * Select which days of the week you would like the machines to start automatically. 
     * Notice that you can once again be notified of this, and use a webhook for this purpose.
-    * Click Save.
+    * Click ion "Save" and validate that the changes have been saved.
 
 ![Screenshot](/Images/dtl-it-16.png)
 
@@ -132,13 +134,15 @@
     * Enter a name for your secret 
     * Enter the value of your secret
     * This could be either a password, or SSHKey. This is stored in Azure KeyVault, and has a personal secret store for each user.
+    * Click on "Save" and validate that the changes have been saved.
 
 ![Screenshot](/Images/dtl-it-18.png)
 
 22. Navigate to Formulas (reusable bases) on your DevTest Lab blade.
+    * Click on "Add".
     * Select RedHat Enterprise Linux 7.3.
-    * Enter a representative name and description
-    * Notice that the premium option is disabled, due to the options that were selected during the lab setup process.
+    * Enter a representative name and description for the Forula
+    * Notice that the premium disk "SSD" can be selected, but if the Formula is deployed with this option enabled there will be a warning message blocking the deployment based on the lab setup. 
     * Notice that the disk options available are also limited to those that were selected during the lab setup process.
 
 ![Screenshot](/Images/dtl-it-19.png)
@@ -146,6 +150,8 @@
 23. Click on Artifacts.
     * Select Docker.
     * Click Add.
+    * Click OK.
+    * Click Create to start building the Formula.
 
 ![Screenshot](/Images/dtl-it-20.png)
 
