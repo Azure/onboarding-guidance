@@ -2,7 +2,7 @@
 
 ## This step by step guide will be divided into three roles:
 * Owner (Can perform all task performed by Contributor )
-* Contributor  
+* Contributor 
 * DevTest lab user (Covered in a [separate article](devtest-labs-walkthrough-dev.md))
 
 ## Initial Setup
@@ -10,13 +10,13 @@
 
 ![Screenshot](/Images/dtl-it-1.png)
 
-2. Create a Dev Test Lab using your naming convention. You will notice that you have an option to enable Auto-Shutdown while creation. We will select Enabled to "No" for this option.
+2. Create a Dev Test Lab using your naming convention. You will notice that you have an option to enable Auto-Shutdown during the creation process. We will select Enabled to "No" for this option.
 
 ![Screenshot](/Images/dtl-it-2.png)
 
 **NOTE: We have used fta-delta-dev-dtl. This follows a format of &lt;Organisation&gt;-&lt;Project&gt;-&lt;Environment&gt;-&lt;Resource&gt;.**
 
-3. Once deployment has complete, you will find five newly created resources:
+3. Once the deployment has completed, you will find five newly created resources:
     * A Resource Group
     * A Storage Account
     * A Virtual Network
