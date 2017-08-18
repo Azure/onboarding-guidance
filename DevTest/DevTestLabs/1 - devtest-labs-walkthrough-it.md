@@ -1,9 +1,9 @@
 # FastTrack for Azure - DevTest Labs IT Walkthrough
 
 ## This step by step guide will be divided into three roles:
-* Owner (Can perform all task performed by Contributor )
-* Contributor 
-* DevTest lab user (Covered in a [separate article](devtest-labs-walkthrough-dev.md))
+* Owner (Can manage everything in the lab including access to resources)
+* Contributor (Can manage everything like an Owner, but cannot assign access to resources)
+* DevTest lab user (Covered in a [separate article](2 - devtest-labs-walkthrough-dev.md))
 
 ## Initial Setup
 1. Navigate to DevTest Labs in the Azure Portal.
@@ -56,7 +56,7 @@
     * Set that limit as 2.
     * Set "Limit the number of virtual machines using premium OS disks (SSD)" to "Yes".
     * Set that limit as 0.
-    * Click on the "Save" button at the top and wate for confirmation that the changes were saved.
+    * Click on the "Save" button at the top and wait for confirmation that the changes were saved.
 
 ![Screenshot](/Images/dtl-it-8.png)
 
