@@ -212,4 +212,4 @@
 ![Screenshot](/Images/dtl-it-28.png)
 
 # Next Steps
-Progress to the [developer walkthrough](devtest-labs-walkthrough-dev.md), which details the features of DevTest Labs from a DevTest Labs user perspective.
+Progress to the [developer walkthrough](https://github.com/Azure/onboarding-guidance/blob/master/DevTest/DevTestLabs/2%20-%20devtest-labs-walkthrough-dev.md), which details the features of DevTest Labs from a DevTest Labs user perspective.
