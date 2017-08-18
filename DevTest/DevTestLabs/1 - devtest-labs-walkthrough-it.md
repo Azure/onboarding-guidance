@@ -3,7 +3,7 @@
 ## This step by step guide will be divided into three roles:
 * Owner (Can manage everything in the lab including access to resources)
 * Contributor (Can manage everything like an Owner, but cannot assign access to resources)
-* DevTest lab user (Covered in a [separate article]("2 - devtest-labs-walkthrough-dev.md"))
+* DevTest lab user (A lab user can view all lab resources, such as VMs, policies, networks, but cannot modify policies or VMs created by other users)
 
 ## Initial Setup
 1. Navigate to DevTest Labs in the Azure Portal.
