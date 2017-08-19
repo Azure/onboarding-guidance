@@ -59,18 +59,18 @@ Self-guided
      ![Screenshot](/Images/POC-5.png)
 
   * For the size select **D1_V2**
-  * Create Storage account - **(prefix)web01vmst01**
-  * Create Storage account - **(prefix)web02vmst01**
-  * Create availability set - **(prefix)as-web**
   
-   ![Screenshot](/Images/POC-6.png)
+  * Create availability set - **(prefix)as-web**
+  > Note: During 2nd VM creation pick the previously created Availability set  
+  * On Storage select **Yes** to **Use managed disks**
+  * Select the previously create Virtual Network and the Web subnet
+  
+   ![Screenshot](/Images/POC-vm-settings-1.png)
 
   * Create Diagnostics Storage account named **(prefix)webdiag**
 
    ![Screenshot](/Images/POC-7.png)
-  > Note: During 2nd VM creation pick the previously created Availability set
 
-   ![Screenshot](/Images/POC-8.png)
 
 # Install IIs on VMs
   * From Virtual Machine blade, select the 1st VM, click **Connect** and login to machine
