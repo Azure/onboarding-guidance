@@ -23,7 +23,7 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 ![Screenshot](/Images/dtl-dev-2.png)
 
-5. Within minutes, the Virtual Machine will appear under the My virtual machines section and is no longer available as part of the shared pool.
+5. Within minutes, the Virtual Machine will appear under the "My virtual machines" section and is no longer available as part of the shared pool.
 
 ![Screenshot](/Images/dtl-dev-3.png)
 
