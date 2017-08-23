@@ -68,7 +68,7 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 ![Screenshot](/Images/dtl-dev-10.png)
 
-18. Return to your DevTest lab blade.
+18. Return to your DevTest Lab blade.
     * Select Formulas (reusable bases) from the left hand navigation menu.
     * Select Add at the top of the Formulas (reusable bases) blade.
 
@@ -92,9 +92,9 @@ Formulas, in addition to base images, provide a mechanism for fast VM provisioni
 As a DevTest Labs user, you:
 * Do not have permissions to create custom images.
 * Do not have permissions configure policies of the lab environment.
-* Do have permissions to create new Virtual Machines (up until the machine limit per user)
-* My secrets are stored on a per-user basis
-* Can only delete those Virtual Machines in the DevTest labs that belong to you. You cannot delete those in the pool, or that belong to other users.
+* Do have permissions to create new Virtual Machines (up until the machine limit per user).
+* My secrets are stored on a per-user basis.
+* Can only delete those Virtual Machines in the DevTest Labs that belong to you. You cannot delete those in the pool, or that belong to other users.
 
 ## Useful References
 * [Using VSTS to manage a virtual machine in Azure DevTest Labs](https://www.visualstudio.com/en-us/docs/build/apps/cd/azure/deploy-provision-devtest-lab)
