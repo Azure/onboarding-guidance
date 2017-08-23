@@ -56,7 +56,7 @@
     * Set that limit as 2.
     * Set "Limit the number of virtual machines using premium OS disks (SSD)" to "Yes".
     * Set that limit as 0.
-    * Click on the "Save" button at the top and wait for confirmation that the changes were saved.
+    * Click on the "Save" button and wait for confirmation that the changes were saved.
 
 ![Screenshot](/Images/dtl-it-8.png)
 
