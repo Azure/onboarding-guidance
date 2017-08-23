@@ -131,8 +131,8 @@
 ![Screenshot](/Images/dtl-it-17.png)
 
 21. On the resulting blade
-    * Enter a name for your secret 
-    * Enter the value of your secret
+    * Enter a name for your secret. 
+    * Enter the value of your secret.
     * This could be either a password, or SSHKey. This is stored in Azure KeyVault, and has a personal secret store for each user.
     * Click on "Save" and validate that the changes have been saved.
 
@@ -141,7 +141,7 @@
 22. Navigate to Formulas (reusable bases) on your DevTest Lab blade.
     * Click on "Add".
     * Select RedHat Enterprise Linux 7.3.
-    * Enter a representative name and description for the Formula
+    * Enter a representative name and description for the Formula.
     * Notice that the premium disk "SSD" can be selected, but if the Formula is deployed with this option enabled there will be a warning message blocking the deployment based on the lab setup. 
     * Select only the standard disk "HDD" option to avoid an error during deployment of the Formula.
 
