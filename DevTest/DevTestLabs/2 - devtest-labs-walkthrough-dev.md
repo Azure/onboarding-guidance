@@ -19,7 +19,7 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 ![Screenshot](/Images/dtl-dev-1.png)
 
-4. Select Claim Machine at the top of the newly selected Virtual Machine's blade.
+4. Select "Claim machine" at the top of the newly selected Virtual Machine's blade.
 
 ![Screenshot](/Images/dtl-dev-2.png)
 
