@@ -60,7 +60,7 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 ![Screenshot](/Images/dtl-dev-8.png)
 
-15. As a DevTest lab user, we also have the ability to add artifacts to the image. Our custom image already contains a number of artifacts, so we will not add any more.
+15. As a DevTest Lab user, we also have the ability to add artifacts to the image. Our custom image already contains a number of artifacts, so we will not add any more.
 
 16. Create the Virtual Machine.
 
