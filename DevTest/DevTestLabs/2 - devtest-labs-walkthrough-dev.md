@@ -37,7 +37,7 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 8. Navigate back to the blade for your Virtual Machine. Select Auto-start.
 
-9. You will notice that you can adjust the settings for Auto-start. This is because the Lab Admin has enabled Auto-start policies for the DevTest lab environment.
+9. You will notice that you can adjust the settings for Auto-start. This is because the Lab Admin has enabled Auto-start policies for the DevTest Lab environment.
     * Leave this set to "Off".
     * This setting will be disabled if an Owner/Contributor has not enabled Auto-start on the DevTest Lab.
 ![Screenshot](/Images/dtl-dev-6.png)
