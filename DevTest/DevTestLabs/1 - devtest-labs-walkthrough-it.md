@@ -103,7 +103,7 @@
 ![Screenshot](/Images/dtl-it-13.png)
 
 17. Select "Cost by resource" from the left hand menu.
-    * This page will give you a break down of the cost of the resources contained within your DevTest lab environment.
+    * This page will give you a break down of the cost of the resources contained within your DevTest Lab environment.
 
 ![Screenshot](/Images/dtl-it-14.png)
 
