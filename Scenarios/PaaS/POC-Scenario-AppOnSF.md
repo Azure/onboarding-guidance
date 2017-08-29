@@ -35,7 +35,8 @@ After completing the exercises in this module, you will be able to:
 
 ## Create a Service Fabric Cluster in the portal
 
- * Follow [these](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-via-portal) steps to create a Service Fabric Cluster in Azure
+ * Follow [these](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-via-portal) steps to create a Secure Service Fabric Cluster in Azure
+ * [Create a Secure Service Fabric Cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-cluster-azure-ps) using PowerShell
  * [ARM Template](https://github.com/Azure/azure-quickstart-templates/tree/master/service-fabric-secure-cluster-5-node-1-nodetype) to Deploy Service Fabric Clusters 
  * [GitHub Quickstart Templates](https://github.com/Azure/azure-quickstart-templates)
  * [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)
