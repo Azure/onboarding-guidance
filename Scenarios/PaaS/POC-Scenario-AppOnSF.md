@@ -33,7 +33,7 @@ After completing the exercises in this module, you will be able to:
  * [Create a .NET Service Fabric application in Azure](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-dotnet)
  * [Steb-by-Step](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-dotnet-app), build the .NET Voting application
 
-## Create a Service Fabric Cluster in the portal
+## Create a Service Fabric Cluster
 
  * Follow [these](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-via-portal) steps to create a Secure Service Fabric Cluster in Azure
  * [Create a Secure Service Fabric Cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-cluster-azure-ps) using PowerShell
