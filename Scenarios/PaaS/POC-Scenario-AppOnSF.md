@@ -2,7 +2,16 @@
 # Abstract  
 The goal of this poc is to make you familiar with an end to end development flow for Service Fabric applications. You will practice creating a new Service Fabric application on your development machine, working with stateless services, deploying, updating and monitoring an application deployment. Throughout the exercise, you will get accustomed with Visual Studio’s Service Fabric tooling, Service Fabric Explorer and learn how to effectively use both.
 
-In this scenario, you will build a generic voting service using Service Fabric reliable services. The service listens to an endpoint accessible from a Web browser. You’ll enter vote item strings (such as favorite sodas or cars) using a single page application (SPA). Each time the same vote item is voted on, a counter is incremented; this represents the number of times the item has been voted for. Each HTML response contains all the votes items and the number of times that vote item was voted for.
+## The voting application consists of two services:
+* Web front-end service (VotingWeb)- An ASP.NET Core web front-end service, which serves the web page and exposes web APIs to communicate with the backend service.
+* Back-end service (VotingData)- An ASP.NET Core web service, which exposes an API to store the vote results in a reliable dictionary persisted on disk.
+ 
+## When you vote in the application the following events occur:
+1. A JavaScript sends the vote request to the web API in the web front-end service as an HTTP PUT request.
+2. The web front-end service uses a proxy to locate and forward an HTTP PUT request to the back-end service.
+3. The back-end service takes the incoming request, and stores the updated result in a reliable dictionary, which gets replicated to multiple nodes within the cluster and persisted on disk. All the application's data is stored in the cluster, so no database is needed.
+
+The service listens to an endpoint accessible from a Web browser. You’ll enter vote item strings (such as favorite sodas or cars) using a single page application (SPA). Each time the same vote item is voted on, a counter is incremented; this represents the number of times the item has been voted for. Each HTML response contains all the votes items and the number of times that vote item was voted for.
 
 # Learning objectives
 After completing the exercises in this module, you will be able to:
