@@ -56,7 +56,7 @@
     * Set that limit as 2.
     * Set "Limit the number of virtual machines using premium OS disks (SSD)" to "Yes".
     * Set that limit as 0.
-    * Click on the "Save" button at the top and wait for confirmation that the changes were saved.
+    * Click on the "Save" button and wait for confirmation that the changes were saved.
 
 ![Screenshot](/Images/dtl-it-8.png)
 
@@ -103,7 +103,7 @@
 ![Screenshot](/Images/dtl-it-13.png)
 
 17. Select "Cost by resource" from the left hand menu.
-    * This page will give you a break down of the cost of the resources contained within your DevTest lab environment.
+    * This page will give you a break down of the cost of the resources contained within your DevTest Lab environment.
 
 ![Screenshot](/Images/dtl-it-14.png)
 
@@ -131,8 +131,8 @@
 ![Screenshot](/Images/dtl-it-17.png)
 
 21. On the resulting blade
-    * Enter a name for your secret 
-    * Enter the value of your secret
+    * Enter a name for your secret. 
+    * Enter the value of your secret.
     * This could be either a password, or SSHKey. This is stored in Azure KeyVault, and has a personal secret store for each user.
     * Click on "Save" and validate that the changes have been saved.
 
@@ -141,7 +141,7 @@
 22. Navigate to Formulas (reusable bases) on your DevTest Lab blade.
     * Click on "Add".
     * Select RedHat Enterprise Linux 7.3.
-    * Enter a representative name and description for the Formula
+    * Enter a representative name and description for the Formula.
     * Notice that the premium disk "SSD" can be selected, but if the Formula is deployed with this option enabled there will be a warning message blocking the deployment based on the lab setup. 
     * Select only the standard disk "HDD" option to avoid an error during deployment of the Formula.
 

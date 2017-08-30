@@ -1,7 +1,7 @@
 # FastTrack for Azure - DevTest Labs Developer Walkthrough
 
 ## Pre-Requisites
-* You must have completed the [IT Persona Step by Step walkthrough](devtest-labs-walkthrough-it.md).
+* You must have completed the [IT Persona Step by Step walkthrough](https://github.com/Azure/onboarding-guidance/blob/master/DevTest/DevTestLabs/1%20-%20devtest-labs-walkthrough-it.md).
 
 ## Step by step guide
 
@@ -19,11 +19,11 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 ![Screenshot](/Images/dtl-dev-1.png)
 
-4. Select Claim Machine at the top of the newly selected Virtual Machine's blade.
+4. Select "Claim machine" at the top of the newly selected Virtual Machine's blade.
 
 ![Screenshot](/Images/dtl-dev-2.png)
 
-5. Within minutes, the Virtual Machine will appear under the My virtual machines section and is no longer available as part of the shared pool.
+5. Within minutes, the Virtual Machine will appear under the "My virtual machines" section and is no longer available as part of the shared pool.
 
 ![Screenshot](/Images/dtl-dev-3.png)
 
@@ -37,9 +37,9 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 8. Navigate back to the blade for your Virtual Machine. Select Auto-start.
 
-9. You will notice that you can adjust the settings for Auto-start. This is because the Lab Admin has enabled Auto-start policies for the DevTest lab environment.
+9. You will notice that you can adjust the settings for Auto-start. This is because the Lab Admin has enabled Auto-start policies for the DevTest Lab environment.
     * Leave this set to "Off".
-    * This setting will be disabled if an Owner/Contributor has not enabled Auto-start on the DevTest lab.
+    * This setting will be disabled if an Owner/Contributor has not enabled Auto-start on the DevTest Lab.
 ![Screenshot](/Images/dtl-dev-6.png)
 
 10. Navigate back to the DevTest Labs environment. Select My secrets. Create a secret by entering a name, value, and select save.
@@ -60,7 +60,7 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 ![Screenshot](/Images/dtl-dev-8.png)
 
-15. As a DevTest lab user, we also have the ability to add artifacts to the image. Our custom image already contains a number of artifacts, so we will not add any more.
+15. As a DevTest Lab user, we also have the ability to add artifacts to the image. Our custom image already contains a number of artifacts, so we will not add any more.
 
 16. Create the Virtual Machine.
 
@@ -68,7 +68,7 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 ![Screenshot](/Images/dtl-dev-10.png)
 
-18. Return to your DevTest lab blade.
+18. Return to your DevTest Lab blade.
     * Select Formulas (reusable bases) from the left hand navigation menu.
     * Select Add at the top of the Formulas (reusable bases) blade.
 
@@ -76,14 +76,14 @@ A VM that is claimable is not initially assigned to any particular user, but wil
 
 ![Screenshot](/Images/dtl-dev-12.png)
 
-Formulas, in addition to base images, provide a mechanism for fast VM provisioning. A formula in DevTest Labs is a list of default property values used to create a lab VM. With formulas, VMs with the same set of properties - such as base image, VM size, virtual network, and artifacts - can be created without needing to specify those properties each time. When creating a VM from a formula, the default values can be used as-is or modified.
+Formulas, in addition to base images, provide a mechanism for fast VM provisioning. A Formula in DevTest Labs is a list of default property values used to create a lab VM. With Formulas, VMs with the same set of properties - such as base image, VM size, virtual network, and artifacts - can be created without needing to specify those properties each time. When creating a VM from a Formula, the default values can be used as-is or modified.
 
-20. Navigate to your DevTest Labs environment. Create a new Virtual Machine. You will notice the formula that you created in the previous step.
+20. Navigate to your DevTest Labs environment. Create a new Virtual Machine. You will notice the Formula that you created in the previous step.
 
 
 ![Screenshot](/Images/dtl-dev-13.png)
 
-22. Remember, that you must be below the limit of Virtual Machines per user to be able to deploy this formula. 
+22. Remember, that you must be below the limit of Virtual Machines per user to be able to deploy this Formula. 
 
 23. Congratulations, you have had a run-through of a developer or end-user experience within DevTest Labs.
 
@@ -92,9 +92,9 @@ Formulas, in addition to base images, provide a mechanism for fast VM provisioni
 As a DevTest Labs user, you:
 * Do not have permissions to create custom images.
 * Do not have permissions configure policies of the lab environment.
-* Do have permissions to create new Virtual Machines (up until the machine limit per user)
-* My secrets are stored on a per-user basis
-* Can only delete those Virtual Machines in the DevTest labs that belong to you. You cannot delete those in the pool, or that belong to other users.
+* Do have permissions to create new Virtual Machines (up until the machine limit per user set by policy).
+* My secrets are stored on a per-user basis.
+* Can only delete those Virtual Machines in the DevTest Labs that belong to you. You cannot delete those in the pool, or that belong to other users.
 
 ## Useful References
 * [Using VSTS to manage a virtual machine in Azure DevTest Labs](https://www.visualstudio.com/en-us/docs/build/apps/cd/azure/deploy-provision-devtest-lab)
