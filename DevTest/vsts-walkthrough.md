@@ -190,6 +190,22 @@ Git is the default version control provider for new projects. You should use Git
 
 * Share progress and status with your team using configurable team dashboards.Each tile corresponds to a widget that provides access to one or more features or functions.
 
+## Hands on Labs
+### Continuous Integration & Continuous Deployment
+* [Setting up Continuous Delivery workflow from the Azure Portal](https://almvm.azurewebsites.net/labs/vsts/azurecd/)
+* [Continuous Deployment using Visual Studio Team Services](https://almvm.azurewebsites.net/labs/vsts/continuousdeployment/)
+* [Continuous Integration using Visual Studio Team Services](https://almvm.azurewebsites.net/labs/vsts/continuousintegration/)
+
+### Testing
+* [Load Testing Using Visual Studio Team Services](https://almvm.azurewebsites.net/labs/vsts/load/)
+* [Exploratory Testing and Feedback Management using Visual Studio Team Services](https://almvm.azurewebsites.net/labs/vsts/exploratorytesting/)
+* [Test Planning and Management with Visual Studio Team Services](https://almvm.azurewebsites.net/labs/vsts/testmanagement/)
+
+### Miscellaneous
+* [Agile Planning and Portfolio Management using Visual Studio Team Services](https://almvm.azurewebsites.net/labs/vsts/agile/)
+* [Version Controlling with Git using Visual Studio Team Services](https://almvm.azurewebsites.net/labs/vsts/git/)
+* [Package Management using Visual Studio Team Services](https://almvm.azurewebsites.net/labs/vsts/packagemanagement/)
+
 ## Useful References
 * [Visual Studio Team Services, Getting Started](https://www.visualstudio.com/)
 * [Visual Studio Team Services, Product Updates](https://www.visualstudio.com/team-services/updates/)
