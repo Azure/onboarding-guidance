@@ -5,7 +5,6 @@
 * [Introduction](#Introduction)
     * [Abstract](#Abstract)
     * [Learning objectives](#Learning-objectives)
-
 * [How to install WordPress on Azure WebApps](#How-to-install-WordPress-on-Azure-WebApps) 
 * [Configuring WordPress on Azure WebApps](#Configuring-WordPress-on-Azure-WebApps)
 * [Best Practices for running WordPress on Azure WebApps](#Best-Practices-for-running-WordPress-on-Azure-WebApps)
@@ -13,7 +12,6 @@
 * [Optional: WordPress site with MySQL db on IaaS VM](#Optional:-WordPress-site-with-MySQL-db-on-IaaS-VM)
 * [Optional: Adding Custom Domain](#Optional:-Adding-Custom-Domain)
 * [Optional: Adding TLS](#Optional:-Adding-TLS)
-
 
 ## Introduction
 
@@ -29,3 +27,16 @@ Your digital marketing solution allows your organization to engage with customer
 * Adding custom domain to your WordPress site
 * Adding TLS (SSL) to your WordPress Site
 
+#### How to install WordPress on Azure WebApps
+
+#### Configuring WordPress on Azure WebApps
+
+#### Best Practices for running WordPress on Azure WebApps
+
+#### Migrating WordPress Site
+
+#### Optional: WordPress site with MySQL db on IaaS VM
+
+#### Optional: Adding Custom Domain
+
+#### Optional: Adding TLS
