@@ -24,33 +24,33 @@ Self-guided
 # Customize your Azure Portal
 * Launch [Azure Portal](https://portal.azure.com/)
 * On left most panel, scroll to bottom, then click **More Services**
-* Find and Pin, **Virtual Network**
-* Find and Pin, **Availability Set**
-* Find and Pin, **Load Balancer**
-* Find and Pin, **Network Security Group**
+* Find and Pin, **Virtual networks**
+* Find and Pin, **Availability sets**
+* Find and Pin, **Load balancers**
+* Find and Pin, **Network security groups**
 
    ![Screenshot](../Images/POC-1.png)
 
 # Resource Group creation
   > Note: For all **(prefix)** references, use a globally unique name to be used throughout this walkthrough.
 
-  * Create Resource Group - **(prefix)-poc-rg**
+  * Create a Resource Group named **(prefix)-poc-rg**
 
    ![Screenshot](../Images/POC-2.png)
 
 # Virtual Network Creation
-  * Create a VNET named **(prefix)-vnet-usw1**
-  * Create a Web Subnet named **(prefix)-web-snet**
+  * Create a VNET named **(prefix)-usw2-vnet**
+  * Create a Subnet named **(prefix)-web-snet**
 
    ![Screenshot](../Images/POC-3.png)
 
-  * Create a App Subnet named **(prefix)-app-snet**
+  * Create a Subnet named **(prefix)-app-snet**
 
    ![Screenshot](../Images/POC-4.png)
 
 # Virtual Machine Creation
   * Create 2 VMs
-  * Select from the marketplace, **Windows Server 2012 R2 Datacenter**
+  * Select from the marketplace, **Windows Server 2016 Datacenter**
   * Name the 1st VM **(prefix)-web01-vm**
   * Name the 2nd VM **(prefix)-web02-vm**
   * Make sure to choose **HDD disk**
@@ -59,20 +59,20 @@ Self-guided
 
   * For the size select **D1_V2**
   
-  * Create availability set - **(prefix)as-web**
-  > Note: During 2nd VM creation pick the previously created Availability set  
-  * On Storage select **Yes** to **Use managed disks**
+  * Create an availability set named **(prefix)-web-as**
+  > Note: During the 2nd VM creation pick the previously created Availability set  
+  * Below Storage select **Yes** to **Use managed disks**
   * Select the previously create Virtual Network and the Web subnet
   
    ![Screenshot](../Images/POC-vm-settings-1.png)
 
-  * Create Diagnostics Storage account named **(prefix)webdiag**
+  * Create a Diagnostics Storage account named **(prefix)webdiag**
 
    ![Screenshot](../Images/POC-7.png)
 
 
-# Install IIs on VMs
-  * From Virtual Machine blade, select the 1st VM, click **Connect** and login to machine
+# Install IIs on the VMs
+  * From the Virtual Machine blade, select the 1st VM, click **Connect** and login to machine
 
    ![Screenshot](../Images/POC-9.png)
 
@@ -83,8 +83,9 @@ Self-guided
   * Click **Next** on **Before you Begin**
   * Click **Next** on **Installation Type**
   * Click **Next** on **Server Selection**
-  * On **Server Roles**, select **Web Server IIS**, click **Next**
+  * On **Server Roles**, select **Web Server IIS**
   * On **Add Roles and Features** popup, click **Add Features**
+  * On **Server Roles**, click **Next**
   * On **Features**, click **Next**
   * On **Web Server Role(IIS)**, click **Next**
   * On **Role Services**, click **Next**
@@ -95,7 +96,7 @@ Self-guided
   >Note: Wait for installation to complete
  
   * On  **Confirmation**, click **Close**
-  * From the **Start** menu, type **IIS**, and Launch IIS manager
+  * Launch the **Internet Information Services (IIS) Manager** from the **Server Manager** tools menu
   * In the **Connections** panel, drill down to **Sites**
   * On **Default Web Site**, **Right-Click** and select **Switch to Content View**
   * **Right-Click** anywhere in panel and select **Explore**
@@ -116,8 +117,8 @@ For VM2: <h1>This is Web Server 02</h1>
 
   ![Screenshot](../Images/POC-14.png)
 
-# Create Load Balancer
-  * From the left panel on the Azure Portal, select **Load Balancers**.
+# Load Balancer Creation
+  * From the left panel on the Azure Portal, select **Load balancers**.
   * Click on **Add**
   * Name: **(prefix)-web-lb**
   * Click **Public IP Address**, click **New**
@@ -142,7 +143,7 @@ For VM2: <h1>This is Web Server 02</h1>
   * Under **Settings** select **Backend pools**, click **Add**.
   * Enter name **(prefix)-web-pool**.
   * For **Associated to**, select **Availability set**.
-  * For the **Availability set**, select **(prefix)as-web**.
+  * For the **Availability set**, select **(prefix)-web-as**.
   * Click **Add a target network IP configuration** to add the first web server and its IP address.
 
    ![Screenshot](../Images/POC-19.png)
@@ -150,7 +151,7 @@ For VM2: <h1>This is Web Server 02</h1>
   * **Repeat** the step above to also add the IP configuration for the second web server.
   * Click **OK**.
 
-# Create Load Balancing Rules for HTTP
+# Create the load balancing rule for HTTP
   * Under **Settings** select **Load balancing rules**, click **Add**.
   * Enter name **(prefix)-http-lbr**.
     *  Protocol: **TCP**
@@ -213,16 +214,15 @@ For VM2: <h1>This is Web Server 02</h1>
   * From the left panel on the Azure Portal, select **Public IP sddresses**.
   * Select **(prefix)-web-pip**.
   * Under Settings, click on **Configuration**.
-  * Click **Associated to**
-  * Under DSN name enter **(prefix)**.
+  * Under DNS name enter **(prefix)**.
       * i.e. http://**(prefix)**.westus2.cloudapp.azure.com/
 
    ![Screenshot](../Images/POC-27.png)
 
 # Testing 
-  * Browse to load balancer public IP (or) **http://(prefix).westus2.cloudapp.azure.com/**
-  * You will see IIS server default page, with either VM1 or VM2.
-  * If you see VM1, then RDP1 into VM1, stop Default Web Site in IIS. Refresh web page, you will see VM2. Load balancer detects VM1 is down and redirects traffic to VM2.
+  * Browse to hte load balancer public IP or **http://(prefix).westus2.cloudapp.azure.com/**
+  * You will see the IIS server default page showing either Web Server 01 or 02.
+  * If you see Web Server 01, then RDP into VM1, stop the Default Web Site in IIS. Refresh the web page, you will see Web Server 02. The Load balancer detects VM1 is down and redirects traffic to VM2.
 
    ![Screenshot](../Images/POC-28.png)
 
