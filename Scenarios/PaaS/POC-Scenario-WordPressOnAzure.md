@@ -125,8 +125,35 @@ To disable ARR cookie:
         * From now on if you upload any Images, Audio or Video files to your WordPress site (part of your Posts or Pages), it will be uploaded to Azure Stroage account automatically instead of being stored in Web server. You can verify this once you upload any image, by going to your Storage account, Blob container.
 
 
+* **Configure Redis cache for WordPress to improve performance**: You can use Microsoft Azure Redis Cache with WordPress site to improve performance. Websites that receive massive large amounts of user traffic (hundreds of thousands to millions of page views and unique visitors) will benefit from the use of a distributed caching server such as Redis cache. To setup Redis cache and connect to WordPress site
+    * Create Azure [Redis cache from Azure portal](http://azure.microsoft.com/en-us/services/cache/)
+    
+        * ![Screenshot](../../Images/WordPress/wp-14.png)
+
+        * After successfully creating Redis cache, note down **Host Name** & one of the **Access Key**
+        * ![Screenshot](../../Images/WordPress/wp-16.png)
 
 
+    * Install WordPress **Redis Object Cache** plugin
+
+        * Go to WordPress site **Dashboard** page
+        * Click on **Plugins**, then **Add New**
+        * In the **Search plugins**, enter **Redis Object Cache**
+        * Click **Install Now**
+        * ![Screenshot](../../Images/WordPress/wp-15.png)
+        * After installation, make sure to **Activate**
+
+    * Connecting to Redis cache by updating wp-config.php
+        * To edit wp-config, go to WebApp Kudu console
+        * ![Screenshot](../../Images/WordPress/wp-17.png)
+        
+
+
+        *define('WP_REDIS_SCHEME', 'tcp');
+        define('WP_REDIS_HOST', '<your redis account name>.redis.cache.windows.net');
+        define('WP_REDIS_PORT', '6379');
+        define('WP_REDIS_DATABASE', '0');
+        define('WP_REDIS_PASSWORD', '<your primary access key>');
 
 #### Migrating WordPress Site
 
