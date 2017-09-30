@@ -34,8 +34,33 @@ Your digital marketing solution allows your organization to engage with customer
 * Select WordPress, click Create
 * Enter **App name** (example: fasttrackdemo) for your WordPress site, it will validate to make sure the sub domain name available under azurewebsites.net
 * Select your **Subscription**
-* For **Resource Group** Create new for this demo (example:FasttTackDemo-RG)
+* For **Resource Group** Create new for this demo (example:fastttackdemo-test-rg)
 * For **Database Provider** select **Azure Database for MySQL (Preview)** for this demo
+* Select **App Service Plan/Location**, click Create New, enter 
+    * App Service Plan: **fastttackdemo-asp**
+    * Location: **West US**
+    * Pricing tier: **S1 Standard**
+    * Click **OK**
+![Screenshot](../../Images/WordPress/wp-1.png)
+
+* Select Database, etner
+    * Server name: **fasttrackdemo-mysqldbserver**
+    * Server admin login name: **mysqldbuser**
+    * Password: **your strong password**
+    * Confirm password: **your strong password**
+    * Version: **5.7 or latest version**
+    * Pricing Tier: **Basic**
+        * Compute Units: **50**
+        * Stroage (GB): **50**
+    * Verify with the following screenshot and click **OK**
+    ![Screenshot](../../Images/WordPress/wp-2.png)
+
+* Application Insights: **Off**
+
+* Verify with the following screenshot 
+![Screenshot](../../Images/WordPress/wp-3.png)
+* Click **Create**
+
 
 
 #### Configuring WordPress on Azure WebApps
