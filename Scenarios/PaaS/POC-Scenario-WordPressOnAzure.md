@@ -109,8 +109,8 @@ To disable ARR cookie:
     * Click **Save** on the top
 
 * **Azure Blob storage for Media Content**: If your WordPress site is heavy with Video and Images content, we recommend using a blob storage to store all your media content. To learn to create an Azure Storage account, see [How to create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account). Once you have created the account, activate and configure [Windows Azure Storage for WordPress plugin](https://wordpress.org/plugins/windows-azure-storage/) for your WordPress website.
-    * Make sure to create Storage Account and a Blob Container 
-    * Go to WordPress site Dashboard page. For example: (http://fasttrackdemo.azurewebsites.net/wp-admin/)
+    * Make sure to [Create Storage Account and a Blob Container](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account) first before proceeding to next step.
+    * Once Storage Account created, go to WordPress site Dashboard page. For example: (http://fasttrackdemo.azurewebsites.net/wp-admin/)
     * Click on **Plugins**, then **Add New**
     * In the **Search plugins**, enter **Windows Azure Storage for WordPress**
     * Click **Install Now**
