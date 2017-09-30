@@ -41,7 +41,7 @@ Your digital marketing solution allows your organization to engage with customer
     * Location: **West US**
     * Pricing tier: **S1 Standard**
     * Click **OK**
-![Screenshot](../../Images/WordPress/wp-1.png)
+    * ![Screenshot](../../Images/WordPress/wp-1.png)
 
 * Select Database, etner
     * Server name: **fasttrackdemo-mysqldbserver**
@@ -52,14 +52,14 @@ Your digital marketing solution allows your organization to engage with customer
     * Pricing Tier: **Basic**
         * Compute Units: **50**
         * Stroage (GB): **50**
-    * Verify with the following screenshot and click **OK**
-    ![Screenshot](../../Images/WordPress/wp-2.png)
+    * **OK**
+    * ![Screenshot](../../Images/WordPress/wp-2.png)
 
 * Application Insights: **Off**
 
-* Verify with the following screenshot 
-![Screenshot](../../Images/WordPress/wp-3.png)
-* Click **Create**
+* Click **Create** 
+* ![Screenshot](../../Images/WordPress/wp-3.png)
+
 
 
 
