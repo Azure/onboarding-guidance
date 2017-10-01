@@ -143,17 +143,28 @@ To disable ARR cookie:
         * ![Screenshot](../../Images/WordPress/wp-15.png)
         * After installation, make sure to **Activate**
 
-    * Connecting to Redis cache by updating wp-config.php
-        * To edit wp-config, go to WebApp Kudu console
+    * Connecting to Redis cache by updating **wp-config.php**
+        * To edit wp-config, go to WebApp Kudu console, by selecting WebApp --> search **Kudu** --> **Advanced Tools** --> click **Go**
         * ![Screenshot](../../Images/WordPress/wp-17.png)
-        
 
+        * Select **Debug console**, then click **CMD**
+        * ![Screenshot](../../Images/WordPress/wp-18.png)
+
+        * In the CMD, navigate to **site\wwwroot** folder
+        * Edit **wp-config.php**
+        * ![Screenshot](../../Images/WordPress/wp-19.png)
+
+        * Add the following right before **"That's all, stop editing! Happy blogging."** comment
 
         *define('WP_REDIS_SCHEME', 'tcp');
         define('WP_REDIS_HOST', '<your redis account name>.redis.cache.windows.net');
         define('WP_REDIS_PORT', '6379');
         define('WP_REDIS_DATABASE', '0');
         define('WP_REDIS_PASSWORD', '<your primary access key>');
+
+        * ![Screenshot](../../Images/WordPress/wp-20.png)
+
+        * Click **Save** on the top
 
 #### Migrating WordPress Site
 
