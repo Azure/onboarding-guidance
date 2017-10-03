@@ -8,6 +8,9 @@
 * [How to install WordPress on Azure WebApps](#How-to-install-WordPress-on-Azure-WebApps) 
 * [Configuring WordPress on Azure WebApps](#Configuring-WordPress-on-Azure-WebApps)
 * [Best Practices for running WordPress on Azure WebApps](#Best-Practices-for-running-WordPress-on-Azure-WebApps)
+
+* [Creating a sample Post](#Creating-a-sample-Post)
+
 * [Migrating WordPress Site](#Migrating-WordPress-Site)
 * [Optional: WordPress site with MySQL db on IaaS VM](#Optional:-WordPress-site-with-MySQL-db-on-IaaS-VM)
 * [Optional: Adding Custom Domain](#Optional:-Adding-Custom-Domain)
@@ -176,6 +179,23 @@ To disable ARR cookie:
     * [How to speed up your WordPress site on Azure App Service](https://azure.microsoft.com/en-us/blog/10-ways-to-speed-up-your-wordpress-site-on-azure-websites/)
     
 
+#### Creating a sample Post
+To create a sample post, follow these steps:
+
+* Go to WordPress site **Dashboard** page
+* Click on **Posts**, then **Add New**
+* Enter **Title** (Example: "FastTrack for Azure Demo post")
+* In the **Content**, enter your post details
+    (Exmaple: "Welcome to FastTrack for Azure Demo post. One stop shop for Azure onboarding")
+* Click on **Add Media** and upload any picture file from your machine. Once the picture is uploaded, click on **Insert into post**.
+* Finally click on Publish
+* ![Screenshot](../../Images/WordPress/wp-22.png)
+
+* Your post can be viewed on your home page using a link similar to this: http://fasttrackdemo.azurewebsites.net/
+* ![Screenshot](../../Images/WordPress/wp-23.png)
+
+* Now if you head over to the Storage Account in the Azure Portal, the image you uploaded part of your post can be seen under **Storage Account > Blobs > Container > Year folder > month**
+* ![Screenshot](../../Images/WordPress/wp-24.png)
 
 #### Migrating WordPress Site
 
