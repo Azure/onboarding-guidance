@@ -3,9 +3,9 @@
 ## Table of Contents
 
 <!-- * [Introduction](#Introduction) -->
-* [Abstract](#Abstract)
-* [Learning objectives](#Learning-objectives)
-* [How to install WordPress on Azure WebApps](#How-to-install-WordPress-on-Azure-WebApps) 
+* [Abstract](#abstract)
+* [Learning objectives](#learning-objectives)
+* [How to install WordPress on Azure WebApps](#how-to-install-wordpress-on-azure-webapps) 
 * [Configuring WordPress on Azure WebApps](#Configuring-WordPress-on-Azure-WebApps)
 * [Best Practices for running WordPress on Azure WebApps](#Best-Practices-for-running-WordPress-on-Azure-WebApps)
 * [Creating a sample Post](#Creating-a-sample-Post)
