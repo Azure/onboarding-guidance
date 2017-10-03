@@ -130,7 +130,7 @@ To disable ARR cookie:
     
         * ![Screenshot](../../Images/WordPress/wp-14.png)
 
-        * After successfully creating Redis cache, note down **Host Name** & one of the **Access Key**
+        * After successfully creating Redis cache, note down **Host Name** & **Primary Access Key**. We will use these values in the following step
         * ![Screenshot](../../Images/WordPress/wp-16.png)
 
 
@@ -165,6 +165,17 @@ To disable ARR cookie:
         * ![Screenshot](../../Images/WordPress/wp-20.png)
 
         * Click **Save** on the top
+    
+    * Verify **Redis cache** connected
+        * Go to WordPress site **Dashboard** page
+        * Click on **Settings**, then **Redis**
+        * Status should be: **Connected**
+        * ![Screenshot](../../Images/WordPress/wp-21.png)
+        
+* **Other Performance Best practices**: There are only few best practices mentioned above to give an idea on how to get started. You can find additional best practices using the following resources, keep in mind you may not need all the best practices, select based on your need:
+    * [How to speed up your WordPress site on Azure App Service](https://azure.microsoft.com/en-us/blog/10-ways-to-speed-up-your-wordpress-site-on-azure-websites/)
+    
+
 
 #### Migrating WordPress Site
 
