@@ -157,11 +157,13 @@ To disable ARR cookie:
 
         * Add the following right before **"That's all, stop editing! Happy blogging."** comment
 
-        *define('WP_REDIS_SCHEME', 'tcp');
-        define('WP_REDIS_HOST', '<your redis account name>.redis.cache.windows.net');
-        define('WP_REDIS_PORT', '6379');
-        define('WP_REDIS_DATABASE', '0');
-        define('WP_REDIS_PASSWORD', '<your primary access key>');
+        *
+        
+            define('WP_REDIS_SCHEME', 'tcp');
+            define('WP_REDIS_HOST', '<your redis account name>.redis.cache.windows.net');
+            define('WP_REDIS_PORT', '6379');
+            define('WP_REDIS_DATABASE', '0');
+            define('WP_REDIS_PASSWORD', '<your primary access key>');
 
         * ![Screenshot](../../Images/WordPress/wp-20.png)
 
@@ -216,6 +218,27 @@ To migrate WordPress site from your on-premises environment or from colo or from
 * ![Screenshot](../../Images/WordPress/wp-29.png)
 
 #### Optional: WordPress site with MySQL db on IaaS VM
+Normally when you create a WordPress site using Azure Web Apps you are presented with an option to select an existing/create ClearDB MySQL database or Azure Database for MySQL. But what if you don’t want to use an existing instance or create a new one? What if you want to use a MySQL database instance deployed to an Azure VM.
+
+The easiest approach is to create a WordPress site with Azure Web Apps and select either an existing/create new Azure Database for MySQL or ClearDB database. Once the WordPress site is deployed, you can then change the database connection string via **Web App > Application Settings > Connection string** or edit **wp-config.php** file to be the database you want (e.g. a MySQL instance on an Azure VM). Here are the steps to follow:
+
+* Let the WordPress site be deployed, but do not complete the installation/configuration. In other words, once the site is deployed, browsing to the site’s URL should result in the standard WordPress default installation prompt.
+* ![Screenshot](../../Images/WordPress/wp-5.png)
+
+* Edit **wp-config.php** file via Kudu (not recommended)
+* Open the Kudu console by going to http:[your-site-name].scm.azurewebsites.net (example: http://fasttrackdemo.scm.azurewebsites.net/)
+
+* In the CMD, navigate to **\site\wwwroot** directory
+* Edit **wp-config.php**
+* ![Screenshot](../../Images/WordPress/wp-19.png) 
+
+* Change the following four values: **DB_NAME, DB_USER, DB_PASSWORD, DB_HOST** with MySQL on IaaS VM values. **Important**: as you can see these values are read from Web App's App Settings Connection string instead of being hard coded here. So its recommended to update the App settings. So follow the next method.
+* ![Screenshot](../../Images/WordPress/wp-30.png) 
+
+* Edit **App Settings Connection string** via Azure Portal (Recommended approach)
+* Using Azure Portal, go to your **Web App > Application Settings > Connection string** 
+* Click on **(hidden for Security)** and update the defaultConnection string with MySQL on IaaS VM values
+* ![Screenshot](../../Images/WordPress/wp-31.png) 
 
 #### Optional: Adding Custom Domain
 
