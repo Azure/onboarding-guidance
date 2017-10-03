@@ -8,9 +8,7 @@
 * [How to install WordPress on Azure WebApps](#How-to-install-WordPress-on-Azure-WebApps) 
 * [Configuring WordPress on Azure WebApps](#Configuring-WordPress-on-Azure-WebApps)
 * [Best Practices for running WordPress on Azure WebApps](#Best-Practices-for-running-WordPress-on-Azure-WebApps)
-
 * [Creating a sample Post](#Creating-a-sample-Post)
-
 * [Migrating WordPress Site](#Migrating-WordPress-Site)
 * [Optional: WordPress site with MySQL db on IaaS VM](#Optional:-WordPress-site-with-MySQL-db-on-IaaS-VM)
 * [Optional: Adding Custom Domain](#Optional:-Adding-Custom-Domain)
@@ -198,6 +196,24 @@ To create a sample post, follow these steps:
 * ![Screenshot](../../Images/WordPress/wp-24.png)
 
 #### Migrating WordPress Site
+To migrate WordPress site from your on-premises environment or from colo or from another Azure webapp, follow these steps:
+
+* There are two main steps involved in migration. 1) Copying WordPress site content (wwwroot directory in Azure web app) and 2) Importing MySQL database
+
+* **Copying WordPress site content**: Simply zip your WordPress site content from on-premises. For example if your WordPress site is running on another Azure web app, using **Kudu > CMD console**, download **wwwroot** directory as zip file. 
+* ![Screenshot](../../Images/WordPress/wp-25.png)
+
+* Next step is to import **wwwroot** directory in to Azure web app using Kudu console. To do this simply drag your content zip file (example:wwwroot.zip) from your desktop folder on to Kudu console Size column. This will extract the content in that directory.
+* ![Screenshot](../../Images/WordPress/wp-26.png)
+
+* Now export your MySQL database. You can use many tools like phpMyAdmin (web interface) or MySQL WorkBench. For example: phpMyAdmin is offered as Azure web app site **Extension**. You can install this and export your MySQL db
+* ![Screenshot](../../Images/WordPress/wp-27.png)
+
+* Next step is to import your MySQL database. Again you can use many tools phpMyAdmin (web interface) or MySQL WorkBench. From phpMyAdmin, go to Import tab, select your your MySQL file that you exported in the previous step and click Go. 
+* ![Screenshot](../../Images/WordPress/wp-28.png)
+
+* One last step, you may need to go to **wp_options** table using phpMyAdmin (web interface) or MySQL WorkBench, to replace old site url address with new site address URL.
+* ![Screenshot](../../Images/WordPress/wp-29.png)
 
 #### Optional: WordPress site with MySQL db on IaaS VM
 
