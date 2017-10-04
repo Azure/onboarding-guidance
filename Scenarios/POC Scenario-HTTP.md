@@ -17,7 +17,7 @@
 * [Assign DNS name to Load Balancer](#assign-dns-name-to-load-balancer)
 * [Testing](#testing)
 * [Automation Scripts (ARM Template)](#automation-scripts-arm-template)
-* [Visualize your Architecture with **ArmViz**](#visualize-your-architecture-with-armViz)
+* [Visualize your Architecture with **ArmViz**](#visualize-your-architecture-with-armviz)
 
 
 # Abstract
