@@ -3,6 +3,21 @@
 ## Table of Contents
 * [Abstract](#abstract)
 * [Learning objectives](#learning-objectives)
+* [Prerequisites](#prerequisites)
+* [Estimated time to complete this module](#estimated-time-to-complete-this-module)
+* [Customize your Azure Portal](#customize-your-azure-portal)
+* [Resource Group creation](#resource-group-creation)
+* [Virtual Network Creation](#virtual-network-creation)
+* [Virtual Machine Creation](#virtual-machine-creation)
+* [Install IIs on the VMs](#install-iis-on-the-vms)
+* [Load Balancer Creation](#load-balancer-creation)
+* [Add the VMs to Load Balancer](#add-the-vms-to-load-balancer)
+* [Create the load balancing rule for HTTP](#create-the-load-balancing-rule-for-http)
+* [Update the NSG (inbound security rule)](#update-the-nsg-(inbound-security-rule))
+* [Assign DNS name to Load Balancer](#assign-dns-name-to-load-balancer)
+* [Testing](#testing)
+* [Automation Scripts (ARM Template)](#automation-scripts-(arm-template))
+* [Visualize your Architecture with **ArmViz**](#visualize-your-architecture-with-ArmViz)
 
 
 # Abstract
@@ -19,11 +34,11 @@ After completing the exercises in this module, you will be able to:
 * Update Network Security Groups(NSG)
 * Deploy a website
 
-# Prerequisite 
+# Prerequisites 
 * [Storage Introduction](../ServicesIntro/L1-StorageIntro.md)
 * [Compute Introduction](../ServicesIntro/L1-ComputeIntro.md)
 
-# Estimated time to complete this module:
+# Estimated time to complete this module
 Self-guided
 
 # Customize your Azure Portal
