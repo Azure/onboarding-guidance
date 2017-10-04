@@ -13,11 +13,11 @@
 * [Load Balancer Creation](#load-balancer-creation)
 * [Add the VMs to Load Balancer](#add-the-vms-to-load-balancer)
 * [Create the load balancing rule for HTTP](#create-the-load-balancing-rule-for-http)
-* [Update the NSG (inbound security rule)](#update-the-nsg-(inbound-security-rule))
+* [Update the NSG (inbound security rule)](#update-the-nsg-inbound-security-rule)
 * [Assign DNS name to Load Balancer](#assign-dns-name-to-load-balancer)
 * [Testing](#testing)
-* [Automation Scripts (ARM Template)](#automation-scripts-(arm-template))
-* [Visualize your Architecture with **ArmViz**](#visualize-your-architecture-with-ArmViz)
+* [Automation Scripts (ARM Template)](#automation-scripts-arm-template)
+* [Visualize your Architecture with **ArmViz**](#visualize-your-architecture-with-armViz)
 
 
 # Abstract
