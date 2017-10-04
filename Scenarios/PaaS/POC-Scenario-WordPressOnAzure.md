@@ -237,7 +237,7 @@ The easiest approach is to create a WordPress site with Azure Web Apps and selec
 
 * Edit **App Settings Connection string** via Azure Portal (Recommended approach)
 * Using Azure Portal, go to your **Web App > Application Settings > Connection string** 
-* Click on **(hidden for Security)** and update the defaultConnection string with MySQL on IaaS VM values
+* Click on **(hidden for Security)** and update the defaultConnection string with MySQL on IaaS VM values.
 * ![Screenshot](../../Images/WordPress/wp-31.png) 
 
 #### Adding Custom Domain
@@ -266,8 +266,13 @@ To add SSL certificate binding to your WordPress site, follow these steps:
 
 * [Buy and Configure an SSL Certificate for your Azure App Service](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-purchase-ssl-web-site)
 
+* [HTTPS for WordPress](https://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/)
+
 #### Additional Resources
 
 * [Running WordPress on App Services (Windows/Linux)](https://blogs.msdn.microsoft.com/appserviceteam/2017/09/12/how-to-for-wordpress-on-app-service-windowslinux/)
 
 * [Best Practices for WordPress Security on Azure](https://blogs.msdn.microsoft.com/azureossds/2016/12/26/best-practices-for-wordpress-security-on-azure/)
+
+* [Single Sign On with ADFS/Azure AD/Windows Plugin](https://wordpress.org/plugins/miniorange-windows-single-sign-on/)
+
