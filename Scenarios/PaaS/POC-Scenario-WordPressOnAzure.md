@@ -11,6 +11,7 @@
 * [WordPress site with MySQL db on IaaS VM](#wordpress-site-with-mysql-db-on-iaas-vm)
 * [Adding Custom Domain](#adding-custom-domain)
 * [Adding TLS](#adding-tls)
+* [Additional Resources](#additional-resources)
 
 
 #### Abstract
@@ -197,7 +198,9 @@ To create a sample post, follow these steps:
 #### Migrating WordPress Site
 To migrate WordPress site from your on-premises environment or from colo or from another Azure webapp, follow these steps:
 
-* There are two main steps involved in migration. 1) Copying WordPress site content (wwwroot directory in Azure web app) and 2) Importing MySQL database
+* There are two main steps involved in migration. 
+* 1) Copying WordPress site content (wwwroot directory in Azure web app) 
+* 2) Importing MySQL database
 
 * **Copying WordPress site content**: Simply zip your WordPress site content from on-premises. For example if your WordPress site is running on another Azure web app, using **Kudu > CMD console**, download **wwwroot** directory as zip file. 
 * ![Screenshot](../../Images/WordPress/wp-25.png)
@@ -238,5 +241,33 @@ The easiest approach is to create a WordPress site with Azure Web Apps and selec
 * ![Screenshot](../../Images/WordPress/wp-31.png) 
 
 #### Adding Custom Domain
+There are two main steps to add custom domain to your WordPress site
+* **Step 1)** [Buy a custom domain from Azure and configure your web app](https://docs.microsoft.com/en-us/azure/app-service/custom-dns-web-site-buydomains-web-app) Or  [Use an existing domain to configure your web app](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain)
+
+
+* **Step 2)** Update WordPress site to resolve to the new domain
+    *   You can do this in 2 ways
+        * **1)** Using WordPress dashboard. Update **Settings > General > WordPress Address (URL) & Site Address (URL)**. This might be greyed out and may not allow you to update for multiple reasons (example: updating wp-config.php). 
+        * ![Screenshot](../../Images/WordPress/wp-32.png)         
+
+        * **2)** Update the database using **phpMyAdmin** extension. 
+            * First Install **phpMyAdmin** extension, by going to **WebApp > Extensions > Add phpMyAdmin** 
+            * ![Screenshot](../../Images/WordPress/wp-33.png)
+             
+            * Once you install **phpMyAdmin** extension, Browse to it. It should take you to phpMyAdmin web interface (for example: https://fasttrackdemo.scm.azurewebsites.net/phpmyadmin/)
+
+            * Expand you MySQL database from left tree and open up **wp-options** table and update two records (Column: **option_value**) where **option_name = siteurl & home**. This value should be your custom domain.
+            * ![Screenshot](../../Images/WordPress/wp-34.png). 
+
 
 #### Adding TLS
+To add SSL certificate binding to your WordPress site, follow these steps:
+* [Bind an existing custom SSL certificate to Azure Web Apps](https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-tutorial-custom-ssl)
+
+* [Buy and Configure an SSL Certificate for your Azure App Service](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-purchase-ssl-web-site)
+
+#### Additional Resources
+
+* [Running WordPress on App Services (Windows/Linux)](https://blogs.msdn.microsoft.com/appserviceteam/2017/09/12/how-to-for-wordpress-on-app-service-windowslinux/)
+
+* [Best Practices for WordPress Security on Azure](https://blogs.msdn.microsoft.com/azureossds/2016/12/26/best-practices-for-wordpress-security-on-azure/)
