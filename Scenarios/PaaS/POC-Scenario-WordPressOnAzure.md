@@ -1,8 +1,6 @@
 # POC Scenario: Running WordPress on Azure
 
 ## Table of Contents
-
-<!-- * [Introduction](#Introduction) -->
 * [Abstract](#abstract)
 * [Learning objectives](#learning-objectives)
 * [How to install WordPress on Azure WebApps](#how-to-install-wordpress-on-azure-webapps) 
@@ -10,11 +8,10 @@
 * [Best Practices for running WordPress on Azure WebApps](#best-practices-for-running-wordpress-on-azure-webapps)
 * [Creating a sample Post](#creating-a-sample-post)
 * [Migrating WordPress Site](#migrating-wordpress-site)
-* [Optional: WordPress site with MySQL db on IaaS VM](#optional:-wordpress-site-with-mysql-db-on-iaas-vm)
-* [Optional: Adding Custom Domain](#Optional:-Adding-Custom-Domain)
-* [Optional: Adding TLS](#Optional:-Adding-TLS)
+* [WordPress site with MySQL db on IaaS VM](#wordpress-site-with-mysql-db-on-iaas-vm)
+* [Adding Custom Domain](#adding-custom-domain)
+* [Adding TLS](#adding-tls)
 
-<!-- ## Introduction -->
 
 #### Abstract
 Your digital marketing solution allows your organization to engage with customers around the world with rich, personalized digital marketing experiences. Azure provides a scalable, secure, and easy-to-use environment to build your digital marketing sites using WordPress, quickly launch digital campaigns that automatically scale with customer demand, and analyze the effectiveness of those campaigns with data analytics.
@@ -217,7 +214,7 @@ To migrate WordPress site from your on-premises environment or from colo or from
 * One last step, you may need to go to **wp_options** table using phpMyAdmin (web interface) or MySQL WorkBench, to replace old site url address with new site address URL.
 * ![Screenshot](../../Images/WordPress/wp-29.png)
 
-#### Optional: WordPress site with MySQL db on IaaS VM
+#### WordPress site with MySQL db on IaaS VM
 Normally when you create a WordPress site using Azure Web Apps you are presented with an option to select an existing/create ClearDB MySQL database or Azure Database for MySQL. But what if you don’t want to use an existing instance or create a new one? What if you want to use a MySQL database instance deployed to an Azure VM.
 
 The easiest approach is to create a WordPress site with Azure Web Apps and select either an existing/create new Azure Database for MySQL or ClearDB database. Once the WordPress site is deployed, you can then change the database connection string via **Web App > Application Settings > Connection string** or edit **wp-config.php** file to be the database you want (e.g. a MySQL instance on an Azure VM). Here are the steps to follow:
@@ -240,6 +237,6 @@ The easiest approach is to create a WordPress site with Azure Web Apps and selec
 * Click on **(hidden for Security)** and update the defaultConnection string with MySQL on IaaS VM values
 * ![Screenshot](../../Images/WordPress/wp-31.png) 
 
-#### Optional: Adding Custom Domain
+#### Adding Custom Domain
 
-#### Optional: Adding TLS
+#### Adding TLS
