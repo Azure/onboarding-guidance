@@ -17,7 +17,7 @@
 * [Assign DNS name to Load Balancer](#assign-dns-name-to-load-balancer)
 * [Testing](#testing)
 * [Automation Scripts (ARM Template)](#automation-scripts-arm-template)
-* [Visualize your Architecture with **ArmViz**](#visualize-your-architecture-with-armviz)
+* [Visualize your Architecture with ArmViz](#visualize-your-architecture-with-armviz)
 
 
 # Abstract
@@ -257,7 +257,7 @@ For VM2: <h1>This is Web Server 02</h1>
   
   ![Screenshot](../Images/POC-30.png)
 
-# Visualize your Architecture with **ArmViz**
+# Visualize your Architecture with ArmViz
   * Open browser and goto **http://armviz.io** to view the template.
 
    ![Screenshot](../Images/ArmVizDiagram.png)
