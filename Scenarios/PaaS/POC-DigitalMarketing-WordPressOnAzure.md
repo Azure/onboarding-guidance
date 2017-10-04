@@ -1,4 +1,4 @@
-# POC Scenario: Running WordPress on Azure
+# Digital Marketing POC: Running WordPress on Azure
 
 ## Table of Contents
 * [Abstract](#abstract)
