@@ -1,0 +1,677 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourcePrefix": {
+      "type": "string",
+      "minLength": 1
+    },
+    "webPlanSkuName": {
+      "type": "string",
+      "defaultValue": "F1",
+      "allowedValues": [
+        "F1",
+        "D1",
+        "B1",
+        "B2",
+        "B3",
+        "S1",
+        "S2",
+        "S3",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "metadata": {
+        "description": "Describes plan's pricing tier and instance size. Check details at https://azure.microsoft.com/en-us/pricing/details/app-service/"
+      }
+    },
+    "webPlanInstanceCount": {
+      "type": "int",
+      "defaultValue": 1,
+      "minValue": 1,
+      "metadata": {
+        "description": "Describes plan's instance count"
+      }
+    },
+    "sqlDatabaseAdministratorLogin": {
+      "type": "string"
+    },
+    "sqlDatabaseAdministratorPassword": {
+      "type": "securestring"
+    },
+    "sqlDatabaseCollation": {
+      "type": "string",
+      "defaultValue": "SQL_Latin1_General_CP1_CI_AS"
+    },
+    "sqlDatabaseEdition": {
+      "type": "string",
+      "defaultValue": "Basic",
+      "allowedValues": [
+        "Basic",
+        "Standard",
+        "Premium"
+      ]
+    },
+    "sqlDatabaseMaxSizeBytes": {
+      "type": "string",
+      "defaultValue": "1073741824"
+    },
+    "sqlDatabaseRequestedServiceObjectiveName": {
+      "type": "string",
+      "defaultValue": "Basic",
+      "allowedValues": [
+        "Basic",
+        "S0",
+        "S1",
+        "S2",
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "metadata": {
+        "description": "Describes the performance level for Edition"
+      }
+    },
+    "redisCacheSkuName": {
+      "type": "string",
+      "allowedValues": [
+        "Basic",
+        "Standard"
+      ],
+      "defaultValue": "Basic"
+    },
+    "redisCacheSkuCapacity": {
+      "type": "int",
+      "allowedValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "defaultValue": 0
+    },
+    "storageAccountType": {
+      "type": "string",
+      "defaultValue": "Standard_LRS",
+      "allowedValues": [
+        "Standard_LRS",
+        "Standard_ZRS",
+        "Standard_GRS",
+        "Standard_RAGRS",
+        "Premium_LRS"
+      ]
+    },
+    "searchServiceSkuName": {
+      "type": "string",
+      "defaultValue": " basic",
+      "allowedValues": [
+        "free",
+        "basic",
+        "standard",
+        "standard2",
+        "standard3"
+      ]
+    },
+    "searchServiceReplicaCount": {
+      "type": "int",
+      "defaultValue": 1
+    },
+    "searchServicePartitionCount": {
+      "type": "int",
+      "defaultValue": 1
+    },
+    "trafficManagerRoutingMethod": {
+      "type": "string",
+      "defaultValue": "Performance",
+      "allowedValues": [
+        "Performance",
+        "Weighted",
+        "Priority",
+        "Geographic"
+      ]
+    },
+    "aadb2cClientId": {
+      "type": "string"
+    },
+    "aadb2cTenant": {
+      "type": "string"
+    },
+    "aadb2cSignUpSignInPolicyId": {
+      "type": "string"
+    },
+    "aadb2cResetPasswordPolicyId": {
+      "type": "string"
+    },
+    "aadb2cEditProfilePolicyId": {
+      "type": "string"
+    },
+    "cognitiveServicesSkuName": {
+      "type": "string",
+      "allowedValues": [
+        "F0",
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "defaultValue": "S1"
+    }
+  },
+  "variables": {
+    "webPlanName": "[concat(parameters('resourcePrefix'), '-web-plan')]",
+    "webSiteName": "[concat(parameters('resourcePrefix'), '-web-app')]",
+    "sqlServerName": "[concat(parameters('resourcePrefix'), '-sql-server')]",
+    "sqlDatabaseName": "[concat(parameters('resourcePrefix'), '-sql-database')]",
+    "appInsightsName": "[concat(parameters('resourcePrefix'), '-appinsights')]",
+    "appInsightsApplicationId": "[parameters('resourcePrefix')]",
+    "redisCacheName": "[concat(parameters('resourcePrefix'), '-redis')]",
+    "redisCacheSkuFamily": "C",
+    "redisCacheRedisVersion": "2.8",
+    "storageAccountName": "[concat(toLower(parameters('resourcePrefix')), 'storage')]",
+    "searchServiceName": "[concat(parameters('resourcePrefix'), '-search')]",
+    "searchServiceHostingMode": "Default",
+    "functionAppName": "[concat(parameters('resourcePrefix'), '-functions')]",
+    "trafficManagerName": "[concat(parameters('resourcePrefix'), '-traffic')]",
+    "trafficManagerDnsName": "[concat(parameters('resourcePrefix'), '-traffic')]",
+    "eventQueueName": "events",
+    "cognitiveServicesAccountName": "[concat(parameters('resourcePrefix'), '-cognitiveservices')]"
+  },
+  "resources": [
+    {
+      "name": "[variables('sqlServerName')]",
+      "type": "Microsoft.Sql/servers",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "displayName": "SqlServer"
+      },
+      "apiVersion": "2014-04-01-preview",
+      "properties": {
+        "administratorLogin": "[parameters('sqlDatabaseAdministratorLogin')]",
+        "administratorLoginPassword": "[parameters('sqlDatabaseAdministratorPassword')]"
+      },
+      "resources": [
+        {
+          "name": "[variables('sqlDatabaseName')]",
+          "type": "databases",
+          "location": "[resourceGroup().location]",
+          "tags": {
+            "displayName": "Database"
+          },
+          "apiVersion": "2014-04-01-preview",
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers/', variables('sqlServerName'))]"
+          ],
+          "properties": {
+            "edition": "[parameters('sqlDatabaseEdition')]",
+            "collation": "[parameters('sqlDatabaseCollation')]",
+            "maxSizeBytes": "[parameters('sqlDatabaseMaxSizeBytes')]",
+            "requestedServiceObjectiveName": "[parameters('sqlDatabaseRequestedServiceObjectiveName')]"
+          }
+        },
+        {
+          "type": "firewallrules",
+          "apiVersion": "2014-04-01-preview",
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers/', variables('sqlServerName'))]"
+          ],
+          "location": "[resourceGroup().location]",
+          "name": "AllowAllWindowsAzureIps",
+          "properties": {
+            "endIpAddress": "0.0.0.0",
+            "startIpAddress": "0.0.0.0"
+          }
+        },
+        {
+          "type": "firewallrules",
+          "apiVersion": "2014-04-01-preview",
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers/', variables('sqlServerName'))]"
+          ],
+          "location": "[resourceGroup().location]",
+          "name": "AllowAllIps",
+          "properties": {
+            "endIpAddress": "255.255.255.255",
+            "startIpAddress": "0.0.0.0"
+          }
+        }
+      ]
+    },
+    {
+      "apiVersion": "2015-08-01",
+      "name": "[variables('webPlanName')]",
+      "type": "Microsoft.Web/serverfarms",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "displayName": "AppServicePlan"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/sites/', variables('functionAppName'))]"
+      ],
+      "sku": {
+        "name": "[parameters('webPlanSkuName')]",
+        "capacity": "[parameters('webPlanInstanceCount')]"
+      },
+      "properties": {
+        "name": "[variables('webPlanName')]"
+      }
+    },
+    {
+      "apiVersion": "2015-08-01",
+      "name": "[variables('webSiteName')]",
+      "type": "Microsoft.Web/sites",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverFarms/', variables('webPlanName'))]",
+        "[resourceId('microsoft.insights/components/', variables('appInsightsName'))]"
+      ],
+      "tags": {
+        "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', variables('webPlanName'))]": "empty",
+        "displayName": "WebApp"
+      },
+      "properties": {
+        "name": "[variables('webSiteName')]",
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('webPlanName'))]",
+        "clientAffinityEnabled": false,
+        "siteConfig": {
+          "AlwaysOn": true
+        }
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-08-01",
+          "type": "config",
+          "name": "appsettings",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/Sites/', variables('webSiteName'))]"
+          ],
+          "tags": {
+            "displayName": "WebAppSettings"
+          },
+          "properties": {
+            "App:SqlDatabase:ConnectionString": "[concat('Data Source=tcp:', reference(resourceId('Microsoft.Sql/servers/', variables('sqlServerName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', variables('sqlDatabaseName'), ';User Id=', parameters('sqlDatabaseAdministratorLogin'), '@', variables('sqlServerName'), ';Password=', parameters('sqlDatabaseAdministratorPassword'), ';')]",
+            "App:RedisCache:ConnectionString": "[concat(reference(resourceId('Microsoft.Cache/redis', variables('redisCacheName'))).hostName, ':', reference(resourceId('Microsoft.Cache/redis', variables('redisCacheName'))).sslPort, ',password=', listkeys(resourceId('Microsoft.Cache/redis', variables('redisCacheName')), providers('Microsoft.Cache', 'redis').apiVersions[0]).primaryKey, ',ssl=True,abortConnect=False,syncTimeout=2000,allowAdmin=true')]",
+            "App:StorageAccount:ConnectionString": "[concat('DefaultEndpointsProtocol=https;AccountName=',variables('storageAccountName'),';AccountKey=',concat(listKeys(concat(resourceGroup().id,'/providers/Microsoft.Storage/storageAccounts/', variables('storageAccountName')),'2015-05-01-preview').key1))]",
+            "App:StorageAccount:EventQueueName": "[variables('eventQueueName')]",
+            "App:AzureSearch:ServiceName": "[variables('searchServiceName')]",
+            "App:AzureSearch:AdminKey": "[listAdminKeys(resourceId('Microsoft.Search/searchServices', variables('searchServiceName')), '2015-02-28').primaryKey]",
+            "App:Authentication:ClientId": "[parameters('aadb2cClientId')]",
+            "App:Authentication:Tenant": "[parameters('aadb2cTenant')]",
+            "App:Authentication:SignUpSignInPolicyId": "[parameters('aadb2cSignUpSignInPolicyId')]",
+            "App:Authentication:ResetPasswordPolicyId": "[parameters('aadb2cResetPasswordPolicyId')]",
+            "App:Authentication:EditProfilePolicyId": "[parameters('aadb2cEditProfilePolicyId')]",
+            "ApplicationInsights:InstrumentationKey": "[reference(resourceId('microsoft.insights/components/', variables('appInsightsName'))).InstrumentationKey]"
+          }
+        }
+      ]
+    },
+    {
+      "apiVersion": "2014-04-01",
+      "name": "[concat(variables('webPlanName'), '-autoscale')]",
+      "type": "Microsoft.Insights/autoscalesettings",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', variables('webPlanName'))]": "Resource",
+        "displayName": "AutoScaleSettings"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms/', variables('webPlanName'))]"
+      ],
+      "properties": {
+        "profiles": [
+          {
+            "name": "Default",
+            "capacity": {
+              "minimum": 1,
+              "maximum": 2,
+              "default": 1
+            },
+            "rules": [
+              {
+                "metricTrigger": {
+                  "metricName": "CpuPercentage",
+                  "metricResourceUri": "[concat(resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', variables('webPlanName'))]",
+                  "timeGrain": "PT1M",
+                  "statistic": "Average",
+                  "timeWindow": "PT10M",
+                  "timeAggregation": "Average",
+                  "operator": "GreaterThan",
+                  "threshold": 80.0
+                },
+                "scaleAction": {
+                  "direction": "Increase",
+                  "type": "ChangeCount",
+                  "value": 1,
+                  "cooldown": "PT10M"
+                }
+              },
+              {
+                "metricTrigger": {
+                  "metricName": "CpuPercentage",
+                  "metricResourceUri": "[concat(resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', variables('webPlanName'))]",
+                  "timeGrain": "PT1M",
+                  "statistic": "Average",
+                  "timeWindow": "PT1H",
+                  "timeAggregation": "Average",
+                  "operator": "LessThan",
+                  "threshold": 60.0
+                },
+                "scaleAction": {
+                  "direction": "Decrease",
+                  "type": "ChangeCount",
+                  "value": 1,
+                  "cooldown": "PT1H"
+                }
+              }
+            ]
+          }
+        ],
+        "enabled": false,
+        "name": "[concat(variables('webPlanName'), '-autoscale')]",
+        "targetResourceUri": "[concat(resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', variables('webPlanName'))]"
+      }
+    },
+    {
+      "apiVersion": "2014-04-01",
+      "name": "[concat(variables('webSiteName'), '-alert-servererrors')]",
+      "type": "Microsoft.Insights/alertrules",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/sites/', variables('webSiteName'))]"
+      ],
+      "tags": {
+        "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/sites/', variables('webSiteName'))]": "Resource",
+        "displayName": "ServerErrorsAlertRule"
+      },
+      "properties": {
+        "name": "[concat(variables('webSiteName'), '-alert-servererrors')]",
+        "description": "[concat(variables('webSiteName'), ' has some server errors, status code 5xx.')]",
+        "isEnabled": false,
+        "condition": {
+          "odata.type": "Microsoft.Azure.Management.Insights.Models.ThresholdRuleCondition",
+          "dataSource": {
+            "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleMetricDataSource",
+            "resourceUri": "[concat(resourceGroup().id, '/providers/Microsoft.Web/sites/', variables('webSiteName'))]",
+            "metricName": "Http5xx"
+          },
+          "operator": "GreaterThan",
+          "threshold": 0.0,
+          "windowSize": "PT5M"
+        },
+        "action": {
+          "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleEmailAction",
+          "sendToServiceOwners": true,
+          "customEmails": []
+        }
+      }
+    },
+    {
+      "apiVersion": "2014-04-01",
+      "name": "[concat(variables('webSiteName'), '-alert-forbiddenrequests')]",
+      "type": "Microsoft.Insights/alertrules",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/sites/', variables('webSiteName'))]"
+      ],
+      "tags": {
+        "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/sites/', variables('webSiteName'))]": "Resource",
+        "displayName": "ForbiddenRequestsAlertRule"
+      },
+      "properties": {
+        "name": "[concat(variables('webSiteName'), '-alert-forbiddenrequests')]",
+        "description": "[concat(variables('webSiteName'), ' has some requests that are forbidden, status code 403.')]",
+        "isEnabled": false,
+        "condition": {
+          "odata.type": "Microsoft.Azure.Management.Insights.Models.ThresholdRuleCondition",
+          "dataSource": {
+            "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleMetricDataSource",
+            "resourceUri": "[concat(resourceGroup().id, '/providers/Microsoft.Web/sites/', variables('webSiteName'))]",
+            "metricName": "Http403"
+          },
+          "operator": "GreaterThan",
+          "threshold": 0,
+          "windowSize": "PT5M"
+        },
+        "action": {
+          "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleEmailAction",
+          "sendToServiceOwners": true,
+          "customEmails": []
+        }
+      }
+    },
+    {
+      "apiVersion": "2014-04-01",
+      "name": "[concat(variables('webPlanName'), '-alert-highcpu')]",
+      "type": "Microsoft.Insights/alertrules",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms/', variables('webPlanName'))]"
+      ],
+      "tags": {
+        "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', variables('webPlanName'))]": "Resource",
+        "displayName": "CPUHighAlertRule"
+      },
+      "properties": {
+        "name": "[concat(variables('webPlanName'), '-alert-highcpu')]",
+        "description": "[concat('The average CPU is high across all the instances of ', variables('webPlanName'))]",
+        "isEnabled": false,
+        "condition": {
+          "odata.type": "Microsoft.Azure.Management.Insights.Models.ThresholdRuleCondition",
+          "dataSource": {
+            "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleMetricDataSource",
+            "resourceUri": "[concat(resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', variables('webPlanName'))]",
+            "metricName": "CpuPercentage"
+          },
+          "operator": "GreaterThan",
+          "threshold": 90,
+          "windowSize": "PT15M"
+        },
+        "action": {
+          "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleEmailAction",
+          "sendToServiceOwners": true,
+          "customEmails": []
+        }
+      }
+    },
+    {
+      "apiVersion": "2014-04-01",
+      "name": "[concat(variables('webPlanName'), '-alert-longhttpqueue')]",
+      "type": "Microsoft.Insights/alertrules",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms/', variables('webPlanName'))]"
+      ],
+      "tags": {
+        "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', variables('webPlanName'))]": "Resource",
+        "displayName": "AutoScaleSettings"
+      },
+      "properties": {
+        "name": "concat(variables('webPlanName'), '-alert-longhttpqueue')]",
+        "description": "[concat('The HTTP queue for the instances of ', variables('webPlanName'), ' has a large number of pending requests.')]",
+        "isEnabled": false,
+        "condition": {
+          "odata.type": "Microsoft.Azure.Management.Insights.Models.ThresholdRuleCondition",
+          "dataSource": {
+            "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleMetricDataSource",
+            "resourceUri": "[concat(resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', variables('webPlanName'))]",
+            "metricName": "HttpQueueLength"
+          },
+          "operator": "GreaterThan",
+          "threshold": 100.0,
+          "windowSize": "PT5M"
+        },
+        "action": {
+          "odata.type": "Microsoft.Azure.Management.Insights.Models.RuleEmailAction",
+          "sendToServiceOwners": true,
+          "customEmails": []
+        }
+      }
+    },
+    {
+      "apiVersion": "2014-04-01",
+      "name": "[variables('appInsightsName')]",
+      "type": "Microsoft.Insights/components",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [],
+      "tags": {
+        "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/sites/', variables('webSiteName'))]": "Resource",
+        "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/sites/', variables('functionAppName'))]": "Resource",
+        "displayName": "AppInsights"
+      },
+      "properties": {
+        "ApplicationId": "[variables('appInsightsApplicationId')]"
+      }
+    },
+    {
+      "name": "[variables('redisCacheName')]",
+      "type": "Microsoft.Cache/Redis",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "2016-04-01",
+      "dependsOn": [],
+      "tags": {
+        "displayName": "RedisCache"
+      },
+      "properties": {
+        "sku": {
+          "name": "[parameters('redisCacheSkuName')]",
+          "family": "[variables('redisCacheSkuFamily')]",
+          "capacity": "[parameters('redisCacheSkuCapacity')]"
+        },
+        "redisVersion": "[variables('redisCacheRedisVersion')]"
+      }
+    },
+    {
+      "name": "[variables('storageAccountName')]",
+      "type": "Microsoft.Storage/storageAccounts",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "2016-01-01",
+      "sku": {
+        "name": "[parameters('storageAccountType')]"
+      },
+      "dependsOn": [],
+      "tags": {
+        "displayName": "StorageAccount"
+      },
+      "kind": "Storage"
+    },
+    {
+      "apiVersion": "2015-08-19",
+      "name": "[variables('searchServiceName')]",
+      "location": "[resourceGroup().location]",
+      "sku": {
+        "name": "[parameters('searchServiceSkuName')]"
+      },
+      "type": "Microsoft.Search/searchServices",
+      "properties": {
+        "replicaCount": "[parameters('searchServiceReplicaCount')]",
+        "partitionCount": "[parameters('searchServicePartitionCount')]",
+        "hostingMode": "[variables('searchServiceHostingMode')]"
+      },
+      "tags": {
+        "displayName": "SearchService"
+      }
+    },
+    {
+      "apiVersion": "2016-03-01",
+      "name": "[variables('functionAppName')]",
+      "location": "[resourceGroup().location]",
+      "type": "Microsoft.Web/sites",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
+        "[resourceId('microsoft.insights/components/', variables('appInsightsName'))]"
+      ],
+      "properties": {
+        "name": "[variables('functionAppName')]",
+        "clientAffinityEnabled": false
+      },
+      "kind": "functionapp",
+      "tags": {
+        "displayName": "FunctionApp"
+      },
+      "resources": [
+        {
+          "name": "appsettings",
+          "type": "config",
+          "apiVersion": "2015-08-01",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/sites', variables('functionAppName'))]"
+          ],
+          "tags": {
+            "displayName": "FunctionAppSettings"
+          },
+          "properties": {
+            "AzureWebJobsDashboard": "[concat('DefaultEndpointsProtocol=https;AccountName=',variables('storageAccountName'),';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2015-05-01-preview').key1)]",
+            "AzureWebJobsStorage": "[concat('DefaultEndpointsProtocol=https;AccountName=',variables('storageAccountName'),';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2015-05-01-preview').key1)]",
+            "FUNCTIONS_EXTENSION_VERSION": "~1",
+            "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "[concat('DefaultEndpointsProtocol=https;AccountName=',variables('storageAccountName'),';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2015-05-01-preview').key1)]",
+            "WEBSITE_CONTENTSHARE": "[concat(toLower(variables('functionAppName')), 'bbed')]",
+            "WEBSITE_NODE_DEFAULT_VERSION": "6.5.0",
+            "APPINSIGHTS_INSTRUMENTATIONKEY": "[reference(resourceId('microsoft.insights/components/', variables('appInsightsName'))).InstrumentationKey]",
+            "App:SqlDatabase:ConnectionString": "[concat('Data Source=tcp:', reference(resourceId('Microsoft.Sql/servers/', variables('sqlServerName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', variables('sqlDatabaseName'), ';User Id=', parameters('sqlDatabaseAdministratorLogin'), '@', variables('sqlServerName'), ';Password=', parameters('sqlDatabaseAdministratorPassword'), ';')]",
+            "App:StorageAccount:ConnectionString": "[concat('DefaultEndpointsProtocol=https;AccountName=',variables('storageAccountName'),';AccountKey=',concat(listKeys(concat(resourceGroup().id,'/providers/Microsoft.Storage/storageAccounts/', variables('storageAccountName')),'2015-05-01-preview').key1))]",
+            "App:StorageAccount:EventQueueName": "[variables('eventQueueName')]",
+            "App:CognitiveServices:EndpointUri": "https://westus.api.cognitive.microsoft.com/text/analytics/v2.0",
+            "App:CognitiveServices:ApiKey": "[listKeys(resourceId('Microsoft.CognitiveServices/accounts', variables('cognitiveServicesAccountName')),'2017-04-18').key1]"
+          }
+        }
+      ]
+    },
+    {
+      "apiVersion": "2017-03-01",
+      "type": "Microsoft.Network/trafficManagerProfiles",
+      "name": "[variables('trafficManagerName')]",
+      "location": "global",
+      "properties": {
+        "profileStatus": "Enabled",
+        "trafficRoutingMethod": "[parameters('trafficManagerRoutingMethod')]",
+        "dnsConfig": {
+          "relativeName": "[variables('trafficManagerDnsName')]",
+          "ttl": 300
+        },
+        "monitorConfig": {
+          "protocol": "HTTP",
+          "port": 80,
+          "path": "/"
+        }
+      },
+      "tags": {
+        "displayName": "TrafficManager"
+      }
+    },
+    {
+      "apiVersion": "2015-11-01",
+      "type": "Microsoft.Network/trafficManagerProfiles/azureEndpoints",
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/trafficManagerProfiles/', variables('trafficManagerName'))]",
+        "[resourceId('Microsoft.Web/sites/', variables('webSiteName'))]"
+      ],
+      "location": "global",
+      "name": "[concat(variables('trafficManagerName'), '/', variables('webSiteName'))]",
+      "properties": {
+        "targetResourceId": "[resourceId('Microsoft.Web/sites/', variables('webSiteName'))]",
+        "endpointStatus": "Enabled"
+      },
+      "tags": {
+        "displayName": "TrafficManagerWebsiteEndpoint"
+      }
+    },
+    {
+      "apiVersion": "2016-02-01-preview",
+      "name": "[variables('cognitiveServicesAccountName')]",
+      "location": "westus",
+      "type": "Microsoft.CognitiveServices/accounts",
+      "kind": "TextAnalytics",
+      "sku": {
+        "name": "[parameters('cognitiveServicesSkuName')]"
+      },
+      "properties": {},
+      "tags": {
+        "displayName": "CognitiveServices"
+      }
+    }
+  ]
+}

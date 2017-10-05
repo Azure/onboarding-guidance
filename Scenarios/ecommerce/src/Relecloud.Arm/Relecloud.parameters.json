@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    // General
+    "resourcePrefix": { "value": "relecloud" },
+
+    // Web App
+    "webPlanSkuName": { "value": "S1" },
+    "webPlanInstanceCount": { "value": 1 },
+
+    // SQL Database
+    "sqlDatabaseAdministratorLogin": { "value": "relecloud-admin" },
+    "sqlDatabaseAdministratorPassword": { "value": "NFoDplCoOd8w" },
+    "sqlDatabaseEdition": { "value": "Basic" },
+    "sqlDatabaseRequestedServiceObjectiveName": { "value": "Basic" },
+
+    // Redis Cache
+    "redisCacheSkuName": { "value": "Basic" },
+    "redisCacheSkuCapacity": { "value": 0 },
+
+    // Storage Account
+    "storageAccountType": { "value": "Standard_LRS" },
+
+    // Search Service
+    "searchServiceSkuName": { "value": "basic" },
+    "searchServiceReplicaCount": { "value": 1 },
+    "searchServicePartitionCount": { "value": 1 },
+
+    // Traffic Manager
+    "trafficManagerRoutingMethod": { "value": "Performance" },
+
+    // Azure Active Directory B2C
+    "aadb2cClientId": { "value": "52491d14-a0f2-4876-a8e7-9548b2cbca72" },
+    "aadb2cTenant": { "value": "relecloudconcerts.onmicrosoft.com" },
+    "aadb2cSignUpSignInPolicyId": { "value": "B2C_1_SignUpOrIn" },
+    "aadb2cResetPasswordPolicyId": { "value": "B2C_1_ResetPassword" },
+    "aadb2cEditProfilePolicyId": { "value": "B2C_1_EditProfile" },
+    
+    // Cognitive Services
+    "cognitiveServicesSkuName": { "value": "S1" }
+  }
+}

@@ -1,0 +1,13 @@
+﻿@model Relecloud.Web.Models.Cart
+@{
+    ViewData["Title"] = "Checkout";
+}
+<h1>@ViewData["Title"]</h1>
+<form asp-controller="Cart" asp-action="Checkout" method="post" class="form-inline">
+    <div class="alert alert-info">
+        Are you sure you want to buy <b>@Model.TotalTickets</b> ticket(s) for a total price of <b>@Model.TotalPrice.ToString("c")</b>?
+    </div>
+    <div>
+        <input type="submit" class="btn btn-success btn-lg" value="Confirm" />
+    </div>
+</form>

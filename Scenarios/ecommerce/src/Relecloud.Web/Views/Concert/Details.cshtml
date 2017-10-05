@@ -1,0 +1,73 @@
+﻿@model Relecloud.Web.Models.Concert
+@{
+    ViewData["Title"] = $"{Model.Artist} - {Model.Title}";
+}
+<h1>
+    @Model.Artist &ndash; @Model.Title
+    <span class="label label-info">@Model.Price.ToString("c")</span>
+</h1>
+<div class="text-muted">@Model.StartTime.UtcDateTime.ToString() &raquo; @Model.Location</div>
+<div class="well offset-top-md">@Model.Description</div>
+<a asp-controller="Cart" asp-action="Add" asp-route-concertId="@Model.Id" class="btn btn-success">Add To Cart &raquo;</a>
+
+<fieldset>
+    <legend>User Reviews</legend>
+    @if (!Model.Reviews.Any())
+    {
+        <div class="alert alert-info">There aren't any reviews yet, be the first to add one below!</div>
+    }
+    @foreach (var review in Model.Reviews)
+    {
+        var ratingCssClass = review.Rating <= 1 ? "text-danger" : (review.Rating <= 2 ? "text-warning" : (review.Rating <= 3 ? "text-primary" : (review.Rating <= 4 ? "text-info" : "text-success")));
+        <div class="media">
+            <div class="media-left">
+                <span class="glyphicon glyphicon-user" aria-hidden="true" style="width: 64px; height: 64px; font-size: 64px;"></span>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">
+                    <span class="@ratingCssClass">
+                        @for (var i = 0; i < review.Rating; i++)
+                        {
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        }
+                    </span>
+                </h4>
+                <div>@review.Description</div>
+                @if (review.SentimentScore.HasValue)
+                {
+                    var sentimentCssClass = review.SentimentScore < 0.2f ? "text-danger" : (review.SentimentScore < 0.4f ? "text-warning" : (review.SentimentScore < 0.6f ? "text-primary" : (review.SentimentScore < 0.8f ? "text-info" : "text-success")));
+                    var sentimentScoreInterpretation = review.SentimentScore < 0.2f ? "very negative" : (review.SentimentScore < 0.4f ? "fairly negative" : (review.SentimentScore < 0.6f ? "neutral" : (review.SentimentScore < 0.8f ? "fairly positive" : "very positive")));
+                    <div class="small @sentimentCssClass">Sentiment Score: @review.SentimentScore.Value.ToString("0.000") (@sentimentScoreInterpretation)</div>
+                }
+                <div class="small text-muted">@review.CreatedTime.UtcDateTime.ToString()</div>
+            </div>
+        </div>
+    }
+</fieldset>
+
+<fieldset>
+    <legend>Your Review</legend>
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <div class="alert alert-warning">You have to <a asp-controller="Account" asp-action="SignIn" asp-route-returnurl="@this.Context.Request.Path">sign in</a> to add a review!</div>
+    }
+    else
+    {
+        <form asp-controller="Concert" asp-action="Review" method="post">
+            <div>
+                <input type="radio" name="rating" value="1" id="rating1" /> <label for="rating1" class="text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> &mdash; Terrible</label><br />
+                <input type="radio" name="rating" value="2" id="rating2" /> <label for="rating2" class="text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span> &mdash; Bad</label><br />
+                <input type="radio" name="rating" value="3" id="rating3" /> <label for="rating3" class="text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span> &mdash; OK</label><br />
+                <input type="radio" name="rating" value="4" id="rating4" /> <label for="rating4" class="text-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span> &mdash; Good</label><br />
+                <input type="radio" name="rating" value="5" id="rating5" /> <label for="rating5" class="text-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span> &mdash; Excellent</label><br />
+            </div>
+            <div>
+                <textarea name="description" class="form-control offset-top-md" placeholder="We appreciate your feedback!"></textarea>
+            </div>
+            <div>
+                <input type="hidden" name="concertId" value="@Model.Id" />
+                <input type="submit" class="btn btn-primary offset-top-md" value="Submit" />
+            </div>
+        </form>
+    }
+</fieldset>
