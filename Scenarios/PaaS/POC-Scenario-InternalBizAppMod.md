@@ -13,8 +13,7 @@ After completing the exercises in this module, you will be able to:
 * To complete this PoC, you will need:
     * Visual Studio 2017
     * Download Proof-of-concept project from [here](https://fasttrackforazure.blob.core.windows.net/sourcecode/Contoso.Expenses.zip)
-      * Secondary site [here](https://1drv.ms/f/s!An-8SCAjWpl43TWoz4w1rRXutCkR)
-
+      
 # Estimated time to complete this module
 3.5 hours
 
