@@ -167,6 +167,7 @@ To disable ARR cookie:
 * **Other Performance Best practices**: There are only few best practices mentioned above to give you an idea on how to get started. You can find additional best practices using the following resources, keep in mind you may not need all the best practices, select best practices based on your need:
     * [How to speed up your WordPress site on Azure App Service](https://azure.microsoft.com/en-us/blog/10-ways-to-speed-up-your-wordpress-site-on-azure-websites/)
     
+    * [Use Azure CDN for WordPress site on Azure App](https://blogs.msdn.microsoft.com/azureossds/2015/04/27/improving-wordpress-performance-use-azure-cdn/)
 
 #### Creating a sample Post
 To create a sample post, follow these steps:
