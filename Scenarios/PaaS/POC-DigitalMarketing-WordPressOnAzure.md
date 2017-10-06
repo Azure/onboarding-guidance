@@ -220,7 +220,7 @@ The easiest approach is to create a WordPress site with Azure Web Apps and selec
 ## Adding a Custom Domain
 There are two main steps to add a custom domain to your WordPress site
 
-  1. [Buy a custom domain from Azure and configure your web app](https://docs.microsoft.com/en-us/azure/app-service/custom-dns-web-site-buydomains-web-app) Or [Use an existing domain to configure your web app](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain)
+  1. [Buy a custom domain from Azure and configure your web app](https://docs.microsoft.com/en-us/azure/app-service/custom-dns-web-site-buydomains-web-app) or [Use an existing domain to configure your web app](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain)
   2. Update the WordPress site to resolve to the new domain
 
 Updating the WordPress site to resolve to the nes domain can be done in 2 ways:
@@ -229,9 +229,11 @@ Updating the WordPress site to resolve to the nes domain can be done in 2 ways:
   ![Screenshot](../../Images/WordPress/wp-32.png)
   2. Update the database using **phpMyAdmin** extension.
         * First Install **phpMyAdmin** extension, by going to **WebApp > Extensions > Add phpMyAdmin**  
+        
         ![Screenshot](../../Images/WordPress/wp-33.png)             
         * Once you install **phpMyAdmin** extension, Browse to it. It should take you to phpMyAdmin web interface (for example: https://fasttrackdemo.scm.azurewebsites.net/phpmyadmin/)
         * Expand you MySQL database from left tree and open up **wp-options** table and update two records (Column: **option_value**) where **option_name = siteurl & home**. This value should be your custom domain.  
+
         ![Screenshot](../../Images/WordPress/wp-34.png). 
 
 
