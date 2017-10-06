@@ -86,16 +86,15 @@ Your digital marketing solution allows your organization to engage with customer
 
 In this section, we will configure WordPress with few best practices.
 
-### Disable ARR cookie
+### Disable the ARR cookie
 > Azure Websites make great use of the Application Request Routing (ARR) IIS Extension to distribute connections between active instances. ARR helps keep track of users by giving them a special cookie (known as an affinity cookie) that allows Azure Websites to know upon subsequent requests which server instance handled previous requests by the same user. This way, we can be sure that once a client establishes a session with a specific server instance, he will keep talking to the same server as long as the session is active. This is of particular importance for session-sensitive applications (a.k.a. stateful application). Because WordPress is stateless by default and stores all the session information in the database, it does not require clients to connect to the same web server instance. Disabling the ARR cookie will improve performance when running a WordPress site on multiple instances.
 
-To disable ARR cookie:
-
-    * Login to the [Azure portal](http://portal.azure.com/)
-    * Go to App Services and select you **fasttrackdemo** web app
-    * Select **Application settings**, find **ARR Affinity** and click **Off**  
-    ![Screenshot](../../Images/WordPress/wp-11.png)
-    * Click **Save** on the top
+To disable the ARR cookie:
+* Login to the [Azure portal](http://portal.azure.com/)
+* Go to App Services and select you **fasttrackdemo** web app
+* Select **Application settings**, find **ARR Affinity** and click **Off**  
+![Screenshot](../../Images/WordPress/wp-11.png)
+* Click **Save** on the top
 
 ### Azure Blob storage for Media Content
 > If your WordPress site consists of a lot of video and image content, we recommend using blob storage to store all your media content. To learn how to create an Azure storage account, see [How to create an Azure storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account). Once you have created the account, activate and configure [Windows Azure Storage for WordPress plugin](https://wordpress.org/plugins/windows-azure-storage/) for your WordPress website.
