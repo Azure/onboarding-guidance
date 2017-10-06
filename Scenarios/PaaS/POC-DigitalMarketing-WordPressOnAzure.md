@@ -13,7 +13,6 @@
 * [Adding TLS](#adding-tls)
 * [Additional Resources](#additional-resources)
 
-
 #### Abstract
 Your digital marketing solution allows your organization to engage with customers around the world with rich, personalized digital marketing experiences. Azure provides a scalable, secure, and easy-to-use environment to build your digital marketing sites using WordPress, quickly launch digital campaigns that automatically scale with customer demand, and analyze the effectiveness of those campaigns with data analytics.
 
@@ -39,8 +38,7 @@ Your digital marketing solution allows your organization to engage with customer
     * App Service Plan: **fastttackdemo-asp**
     * Location: **West US**
     * Pricing tier: **S1 Standard**
-    * Click **OK**
-    
+    * Click **OK**    
     ![Screenshot](../../Images/WordPress/wp-1.png)
 * Select Database, enter
     * Server name: **fasttrackdemo-mysqldbserver**
@@ -51,8 +49,7 @@ Your digital marketing solution allows your organization to engage with customer
     * Pricing Tier: **Basic**
         * Compute Units: **50**
         * Stroage (GB): **50**
-    * **OK**
-    
+    * **OK**    
     ![Screenshot](../../Images/WordPress/wp-2.png)
 * Application Insights: **Off**
 * Click **Create** 
