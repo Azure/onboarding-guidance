@@ -49,7 +49,7 @@ Your digital marketing solution allows your organization to engage with customer
     * Version: **5.7 or latest version**
     * Pricing Tier: **Basic**
         * Compute Units: **50**
-        * Stroage (GB): **50**
+        * Storage (GB): **50**
 * **OK**
 
   ![Screenshot](../../Images/WordPress/wp-2.png)
