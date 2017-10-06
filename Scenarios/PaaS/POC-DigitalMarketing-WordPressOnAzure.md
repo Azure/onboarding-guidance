@@ -3,9 +3,9 @@
 ## Table of Contents
 * [Abstract](#abstract)
 * [Learning objectives](#learning-objectives)
-* [How to install WordPress on Azure Web Apps](#how-to-install-wordpress-on-azure-webapps) 
-* [Configuring WordPress on Azure Web Apps](#configuring-wordpress-on-azure-webapps)
-* [Best Practices for running WordPress on Azure Web Apps](#best-practices-for-running-wordpress-on-azure-webapps)
+* [How to install WordPress on Azure Web Apps](#how-to-install-wordpress-on-azure-web-apps) 
+* [Configuring WordPress on Azure Web Apps](#configuring-wordpress-on-azure-web-apps)
+* [Best Practices for running WordPress on Azure Web Apps](#best-practices-for-running-wordpress-on-azure-web-apps)
 * [Creating a sample Post](#creating-a-sample-post)
 * [Migrating WordPress Site](#migrating-wordpress-site)
 * [WordPress site with MySQL db on IaaS VM](#wordpress-site-with-mysql-db-on-iaas-vm)
@@ -96,7 +96,7 @@ Your digital marketing solution allows your organization to engage with customer
 
 In this section, we will configure WordPress with few best practices.
 
-### Disable the ARR cookie
+### **Disable the ARR cookie**
 > Azure Websites make great use of the Application Request Routing (ARR) IIS Extension to distribute connections between active instances. ARR helps keep track of users by giving them a special cookie (known as an affinity cookie) that allows Azure Websites to know upon subsequent requests which server instance handled previous requests by the same user. This way, we can be sure that once a client establishes a session with a specific server instance, he will keep talking to the same server as long as the session is active. This is of particular importance for session-sensitive applications (a.k.a. stateful application). Because WordPress is stateless by default and stores all the session information in the database, it does not require clients to connect to the same web server instance. Disabling the ARR cookie will improve performance when running a WordPress site on multiple instances.
 
 To disable the ARR cookie:
@@ -107,7 +107,7 @@ To disable the ARR cookie:
   ![Screenshot](../../Images/WordPress/wp-11.png)
 * Click **Save** on the top
 
-### Azure Blob storage for Media Content
+### **Azure Blob storage for Media Content**
 > If your WordPress site consists of a lot of video and image content, we recommend using blob storage to store all your media content. To learn how to create an Azure storage account, see [How to create an Azure storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account). Once you have created the account, activate and configure [Windows Azure Storage for WordPress plugin](https://wordpress.org/plugins/windows-azure-storage/) for your WordPress website.
 
 * Make sure to [Create a storage account and a blob container](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account) first before proceeding to next step. Remark: when creating the container make sure you set the **access level** to **Container** so that users visiting the WordPress site can see the actual media content.
@@ -128,12 +128,12 @@ To disable the ARR cookie:
 * After clicking save you should see the **Default Storage Container** setting being populated with the container you created when preparing the storage account.
 * From now on if you upload any images, audio or video files to your WordPress site (part of your Posts or Pages), they will be uploaded to the Azure storage account automatically instead of being stored in the Web server. You can verify this once you upload an image, by going to your storage account and verify the container contents.
 
-### Configure Redis cache for WordPress to improve performance
+### **Configure Redis cache for WordPress to improve performance**
 > You can use Microsoft Azure Redis Cache with a WordPress site to improve performance. Websites that receive massive amounts of user traffic (hundreds of thousands to millions of page views and unique visitors) will benefit from the use of a distributed caching solution such as Redis cache. To setup Redis cache and connect to the WordPress site
  
  * Create Azure [Redis cache from Azure portal](http://azure.microsoft.com/en-us/services/cache/)
 
-  ![Screenshot](../../Images/WordPress/wp-14.png)
+    ![Screenshot](../../Images/WordPress/wp-14.png)
 * After successfully creating Redis cache, note down the **Host Name** & **Primary Access Key**. We will use these values in the following step
 
   ![Screenshot](../../Images/WordPress/wp-16.png)
@@ -175,12 +175,13 @@ To disable the ARR cookie:
     * Click on **Settings**, then **Redis**
     * Click **Enable Object Cache**
     * Status should be: **Connected**
-
-  ![Screenshot](../../Images/WordPress/wp-21.png)
+    ![Screenshot](../../Images/WordPress/wp-21.png)
         
 * **Other Performance Best practices**: There are only few best practices mentioned above to give you an idea on how to get started. You can find additional best practices using the following resources, keep in mind you may not need all the best practices, select best practices based on your need:
-    * [How to speed up your WordPress site on Azure App Service](https://azure.microsoft.com/en-us/blog/10-ways-to-speed-up-your-wordpress-site-on-azure-websites/)    
+
     * [Use Azure CDN for WordPress site on Azure App](https://blogs.msdn.microsoft.com/azureossds/2015/04/27/improving-wordpress-performance-use-azure-cdn/)
+
+    * [How to speed up your WordPress site on Azure App Service](https://azure.microsoft.com/en-us/blog/10-ways-to-speed-up-your-wordpress-site-on-azure-websites/)    
 
 ## Creating a sample Post
 To create a sample post, follow these steps:
@@ -234,20 +235,25 @@ The easiest approach is to create a WordPress site with Azure Web Apps and selec
 * Let the WordPress site be deployed, but do not complete the installation/configuration. In other words, once the site is deployed, browsing to the site’s URL should result in the standard WordPress default installation prompt.
 
   ![Screenshot](../../Images/WordPress/wp-5.png)
-* Edit the **wp-config.php** file via Kudu (not recommended)
-* Open the Kudu console by going to http:[your-site-name].scm.azurewebsites.net (example: http://fasttrackdemo.scm.azurewebsites.net/)
-* In the CMD prompt, navigate to the **D:\home\site\wwwroot** directory
-* Edit **wp-config.php**
 
-  ![Screenshot](../../Images/WordPress/wp-19.png) 
-* Change the following values: **DB_NAME, DB_USER, DB_PASSWORD, DB_HOST** with MySQL on IaaS VM values. **Important**: as you can see these values are read from Web App's App Settings Connection string instead of being hard coded here. So its recommended to update the App settings. So follow the next method.
+There are two ways to update the database connection string:
 
-![Screenshot](../../Images/WordPress/wp-30.png)  
-* Edit **App Settings Connection string** via the Azure Portal (Recommended approach)
-* Using Azure Portal, go to your **Web App > Application Settings > Connection string** 
-* Click on **(hidden for Security)** and update the defaultConnection string with MySQL on IaaS VM values.
+1. Edit **App Settings Connection string** via the Azure Portal (**Recommended approach**)
 
-  ![Screenshot](../../Images/WordPress/wp-31.png) 
+    * Using Azure Portal, go to your **Web App > Application Settings > Connection string** 
+    * Click on **(hidden for Security)** and update the **DefaultConnection** string with MySQL on IaaS VM values.
+        ![Screenshot](../../Images/WordPress/wp-31.png) 
+
+
+
+2. Edit the **wp-config.php** file via Kudu (**not recommended**)
+    * Open the Kudu console by going to http:[your-site-name].scm.azurewebsites.net (example: http://fasttrackdemo.scm.azurewebsites.net/)
+    * In the CMD prompt, navigate to the **D:\home\site\wwwroot** directory
+    * Edit **wp-config.php**
+        ![Screenshot](../../Images/WordPress/wp-19.png) 
+    
+    * Change the following values: **DB_NAME, DB_USER, DB_PASSWORD, DB_HOST** with MySQL on IaaS VM values. **Important**: as you can see these values are read from Web App's App Settings Connection string instead of being hard coded here. So its recommended to update the App settings. So follow the next method.
+        ![Screenshot](../../Images/WordPress/wp-30.png)  
 
 ## Adding a Custom Domain
 There are two main steps to add a custom domain to your WordPress site
