@@ -59,7 +59,9 @@ Your digital marketing solution allows your organization to engage with customer
 
 * Once the WordPress deployment has succeeded, from the left navigation bar in the portal, select **App Services**, then select **fasttrackdemo** web app, then click on the URL: http://fasttrackdemo.azurewebsites.net  
 ![Screenshot](../../Images/WordPress/wp-4.png)
-* This will take you to the initial configuration page:  http://fasttrackdemo.azurewebsites.net/wp-admin/install.php. Select **English (United States)** click **Continue**  
+* This will take you to the initial configuration page:  http://fasttrackdemo.azurewebsites.net/wp-admin/install.php. 
+* Select **English (United States)** 
+* click **Continue**  
 ![Screenshot](../../Images/WordPress/wp-5.png)
 * In the **Information needed** page, enter
     * Site Title: **FastTrack Demo**
@@ -84,84 +86,75 @@ Your digital marketing solution allows your organization to engage with customer
 
 In this section, we will configure WordPress with few best practices.
 
-* **Disable ARR cookie**: Azure Websites make great use of the Application Request Routing (ARR) IIS Extension to distribute connections between active instances. ARR helps keep track of users by giving them a special cookie (known as an affinity cookie) that allows Azure Websites to know upon subsequent requests which server instance handled previous requests by the same user. This way, we can be sure that once a client establishes a session with a specific server instance, he will keep talking to the same server as long as the session is active. This is of particular importance for session-sensitive applications (a.k.a. stateful application). Because WordPress is stateless by default and stores all the session information in the database, it does not require clients to connect to the same web server instance. Disabling the ARR cookie will improve performance when running a WordPress site on multiple instances.
+* **Disable ARR cookie**
+> Azure Websites make great use of the Application Request Routing (ARR) IIS Extension to distribute connections between active instances. ARR helps keep track of users by giving them a special cookie (known as an affinity cookie) that allows Azure Websites to know upon subsequent requests which server instance handled previous requests by the same user. This way, we can be sure that once a client establishes a session with a specific server instance, he will keep talking to the same server as long as the session is active. This is of particular importance for session-sensitive applications (a.k.a. stateful application). Because WordPress is stateless by default and stores all the session information in the database, it does not require clients to connect to the same web server instance. Disabling the ARR cookie will improve performance when running a WordPress site on multiple instances.
 
 To disable ARR cookie:
     * Login to the [Azure portal](http://portal.azure.com/)
     * Go to App Services and select you **fasttrackdemo** web app
-    * Select **Application settings**, find **ARR Affinity** and click **Off**
-
-![Screenshot](../../Images/WordPress/wp-11.png)
+    * Select **Application settings**, find **ARR Affinity** and click **Off**  
+    ![Screenshot](../../Images/WordPress/wp-11.png)
     * Click **Save** on the top
 
-* **Azure Blob storage for Media Content**: If your WordPress site consists of a lot of video and image content, we recommend using blob storage to store all your media content. To learn how to create an Azure storage account, see [How to create an Azure storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account). Once you have created the account, activate and configure [Windows Azure Storage for WordPress plugin](https://wordpress.org/plugins/windows-azure-storage/) for your WordPress website.
-    * Make sure to [Create a storage account and a blob container](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account) first before proceeding to next step. Remark: when creating the container make sure you set the **access level** to **Container** so that users visiting the WordPress site can see the actual media content.
-    * Once the storage account is created, go to the WordPress site Dashboard page. For example: (http://fasttrackdemo.azurewebsites.net/wp-admin/)
-    * Click on **Plugins**, then **Add New**
-    * In the **Search plugins**, enter **Windows Azure Storage for WordPress**
-    * Click **Install Now**
+* **Azure Blob storage for Media Content**
+> If your WordPress site consists of a lot of video and image content, we recommend using blob storage to store all your media content. To learn how to create an Azure storage account, see [How to create an Azure storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account). Once you have created the account, activate and configure [Windows Azure Storage for WordPress plugin](https://wordpress.org/plugins/windows-azure-storage/) for your WordPress website.
 
+* Make sure to [Create a storage account and a blob container](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account) first before proceeding to next step. Remark: when creating the container make sure you set the **access level** to **Container** so that users visiting the WordPress site can see the actual media content.
+* Once the storage account is created, go to the WordPress site Dashboard page. For example: (http://fasttrackdemo.azurewebsites.net/wp-admin/)
+* Click on **Plugins**, then **Add New**
+* In the **Search plugins**, enter **Windows Azure Storage for WordPress**
+* Click **Install Now**  
 ![Screenshot](../../Images/WordPress/wp-12.png)
-    * Once successfully installed, Click **Activate**
-    * From the WordPress Dashboard page, go to **Settings**, click **Windows Azure**, enter the following:
-        * Store Account Name: **your storage account name**
-        * Store Account Key: **one of the storage access keys**
-        * Use Windows Azure Storage for default upload: **check this box**
+* Once successfully installed, Click **Activate**
+* From the WordPress Dashboard page, go to **Settings**, click **Windows Azure**, enter the following:
+    * Store Account Name: **your storage account name**
+    * Store Account Key: **one of the storage access keys**
+    * Use Windows Azure Storage for default upload: **check this box**  
+    ![Screenshot](../../Images/WordPress/wp-13.png)
+* Click **Save Changes**
+* After clicking save you should see the **Default Storage Container** setting being populated with the container you created when preparing the storage account.
+* From now on if you upload any images, audio or video files to your WordPress site (part of your Posts or Pages), they will be uploaded to the Azure storage account automatically instead of being stored in the Web server. You can verify this once you upload an image, by going to your storage account and verify the container contents.
 
-![Screenshot](../../Images/WordPress/wp-13.png)
-        * Click **Save Changes**
-        * After clicking save you should see the **Default Storage Container** setting being populated with the container you created when preparing the storage account.
-        * From now on if you upload any images, audio or video files to your WordPress site (part of your Posts or Pages), they will be uploaded to the Azure storage account automatically instead of being stored in the Web server. You can verify this once you upload an image, by going to your storage account and verify the container contents.
-
-
-* **Configure Redis cache for WordPress to improve performance**: You can use Microsoft Azure Redis Cache with a WordPress site to improve performance. Websites that receive massive amounts of user traffic (hundreds of thousands to millions of page views and unique visitors) will benefit from the use of a distributed caching solution such as Redis cache. To setup Redis cache and connect to the WordPress site
-    * Create Azure [Redis cache from Azure portal](http://azure.microsoft.com/en-us/services/cache/)    
-
+* **Configure Redis cache for WordPress to improve performance**
+> You can use Microsoft Azure Redis Cache with a WordPress site to improve performance. Websites that receive massive amounts of user traffic (hundreds of thousands to millions of page views and unique visitors) will benefit from the use of a distributed caching solution such as Redis cache. To setup Redis cache and connect to the WordPress site
+ 
+ * Create Azure [Redis cache from Azure portal](http://azure.microsoft.com/en-us/services/cache/)  
 ![Screenshot](../../Images/WordPress/wp-14.png)
-        * After successfully creating Redis cache, note down the **Host Name** & **Primary Access Key**. We will use these values in the following step
-
+* After successfully creating Redis cache, note down the **Host Name** & **Primary Access Key**. We will use these values in the following step  
 ![Screenshot](../../Images/WordPress/wp-16.png)
-
-    * Install WordPress **Redis Object Cache** plugin
-        * Go to the WordPress site **Dashboard** page
-        * Click on **Plugins**, then **Add New**
-        * In the **Search plugins**, enter **Redis Object Cache**
-        * Click **Install Now**
-
-![Screenshot](../../Images/WordPress/wp-15.png)
-        * After installation, make sure to click **Activate**
-
-    * Connecting to the Redis cache by updating the **wp-config.php** configuration file
-        * To edit the wp-config.php file, go to the Web App Kudu console, by selecting Web App --> search **Kudu** --> **Advanced Tools** --> click **Go**
-
-![Screenshot](../../Images/WordPress/wp-17.png)
-        * Select **Debug console**, then click **CMD**
- 
- ![Screenshot](../../Images/WordPress/wp-18.png)
-        * In the CMD, navigate to **D:\home\site\wwwroot** folder
-        * Edit **wp-config.php**
- 
- ![Screenshot](../../Images/WordPress/wp-19.png)
-        * Add the following right before **"That's all, stop editing! Happy blogging."**                
-            ```
-            /* Redis Cache */
-            define('WP_REDIS_SCHEME', 'tcp');
-            define('WP_REDIS_HOST', '<your redis account name>.redis.cache.windows.net');
-            define('WP_REDIS_PORT', '6379');
-            define('WP_REDIS_DATABASE', '0');
-            define('WP_REDIS_PASSWORD', '<your primary access key>');
-            ```
- 
- ![Screenshot](../../Images/WordPress/wp-20.png)
-        * Click **Save** on the top
+* Install WordPress **Redis Object Cache** plugin
+    * Go to the WordPress site **Dashboard** page
+    * Click on **Plugins**, then **Add New**
+    * In the **Search plugins**, enter **Redis Object Cache**
+    * Click **Install Now**  
+    ![Screenshot](../../Images/WordPress/wp-15.png)
+* After installation, make sure to click **Activate**
+* Connecting to the Redis cache by updating the **wp-config.php** configuration file
+    * To edit the wp-config.php file, go to the Web App Kudu console, by selecting Web App --> search **Kudu** --> **Advanced Tools** --> click **Go**  
+    ![Screenshot](../../Images/WordPress/wp-17.png)
+    * Select **Debug console**, then click **CMD**  
+     ![Screenshot](../../Images/WordPress/wp-18.png)
+    * In the CMD, navigate to **D:\home\site\wwwroot** folder
+    * Edit **wp-config.php**  
+    ![Screenshot](../../Images/WordPress/wp-19.png)
+    * Add the following right before **"That's all, stop editing! Happy blogging."**                
+```
+/* Redis Cache */
+define('WP_REDIS_SCHEME', 'tcp');
+define('WP_REDIS_HOST', '<your redis account name>.redis.cache.windows.net');
+define('WP_REDIS_PORT', '6379');
+define('WP_REDIS_DATABASE', '0');
+define('WP_REDIS_PASSWORD', '<your primary access key>');
+```  
+    ![Screenshot](../../Images/WordPress/wp-20.png)
+    * Click **Save** on the top
     
-    * Verify the **Redis Cache** is connected
-        * Go to the WordPress site **Dashboard** page
-        * Click on **Settings**, then **Redis**
-        * Click **Enable Object Cache**
-        * Status should be: **Connected**
- 
- ![Screenshot](../../Images/WordPress/wp-21.png)
+* Verify the **Redis Cache** is connected
+    * Go to the WordPress site **Dashboard** page
+    * Click on **Settings**, then **Redis**
+    * Click **Enable Object Cache**
+    * Status should be: **Connected**  
+    ![Screenshot](../../Images/WordPress/wp-21.png)
         
 * **Other Performance Best practices**: There are only few best practices mentioned above to give you an idea on how to get started. You can find additional best practices using the following resources, keep in mind you may not need all the best practices, select best practices based on your need:
     * [How to speed up your WordPress site on Azure App Service](https://azure.microsoft.com/en-us/blog/10-ways-to-speed-up-your-wordpress-site-on-azure-websites/)    
