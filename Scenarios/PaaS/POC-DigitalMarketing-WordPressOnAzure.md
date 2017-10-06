@@ -181,8 +181,8 @@ To create a sample post, follow these steps:
 To migrate a WordPress site from your on-premises environment or from colo or from another Azure Web App, follow these steps:
 
 There are two main steps involved in migration: 
-    1. Copying the WordPress site content (wwwroot directory in the Azure Web App) 
-    2. Importing the MySQL database
+  1. Copying the WordPress site content (wwwroot directory in the Azure Web App) 
+  2. Importing the MySQL database
 
 ### Copying WordPress site content
 Simply zip your WordPress site content from on-premises. For example if your WordPress site is running on another Azure Web App, using **Kudu > CMD console**, download **wwwroot** directory as zip file.  
@@ -220,14 +220,14 @@ The easiest approach is to create a WordPress site with Azure Web Apps and selec
 ## Adding a Custom Domain
 There are two main steps to add a custom domain to your WordPress site
 
-    1. [Buy a custom domain from Azure and configure your web app](https://docs.microsoft.com/en-us/azure/app-service/custom-dns-web-site-buydomains-web-app) Or [Use an existing domain to configure your web app](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain)
-    2. Update the WordPress site to resolve to the new domain
+  1. [Buy a custom domain from Azure and configure your web app](https://docs.microsoft.com/en-us/azure/app-service/custom-dns-web-site-buydomains-web-app) Or [Use an existing domain to configure your web app](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain)
+  2. Update the WordPress site to resolve to the new domain
 
 Updating the WordPress site to resolve to the nes domain can be done in 2 ways:
 
-    1. Using WordPress dashboard. Update **Settings > General > WordPress Address (URL) & Site Address (URL)**. This might be greyed out and may not allow you to update for multiple reasons (example: updating wp-config.php).  
-    ![Screenshot](../../Images/WordPress/wp-32.png)
-    2. Update the database using **phpMyAdmin** extension.
+  1. Using WordPress dashboard. Update **Settings > General > WordPress Address (URL) & Site Address (URL)**. This might be greyed out and may not allow you to update for multiple reasons (example: updating wp-config.php).  
+  ![Screenshot](../../Images/WordPress/wp-32.png)
+  2. Update the database using **phpMyAdmin** extension.
         * First Install **phpMyAdmin** extension, by going to **WebApp > Extensions > Add phpMyAdmin**  
         ![Screenshot](../../Images/WordPress/wp-33.png)             
         * Once you install **phpMyAdmin** extension, Browse to it. It should take you to phpMyAdmin web interface (for example: https://fasttrackdemo.scm.azurewebsites.net/phpmyadmin/)
