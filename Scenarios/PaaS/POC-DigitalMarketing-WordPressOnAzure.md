@@ -13,10 +13,10 @@
 * [Adding TLS](#adding-tls)
 * [Additional Resources](#additional-resources)
 
-#### Abstract
+## Abstract
 Your digital marketing solution allows your organization to engage with customers around the world with rich, personalized digital marketing experiences. Azure provides a scalable, secure, and easy-to-use environment to build your digital marketing sites using WordPress, quickly launch digital campaigns that automatically scale with customer demand, and analyze the effectiveness of those campaigns with data analytics.
 
-#### Learning objectives
+## Learning objectives
 
 * Understanding the Azure App Service platform and installing/configuring WordPress on Web Apps
 * Implementing various best practices to run WordPress on Azure
@@ -25,7 +25,7 @@ Your digital marketing solution allows your organization to engage with customer
 * Adding a custom domain to your WordPress site
 * Adding TLS (SSL) to your WordPress Site
 
-#### How to install WordPress on Azure Web Apps
+## How to install WordPress on Azure Web Apps
 
 * Navigate to the Azure Portal
 * Click on + New, type WordPress in the search area, press Enter
@@ -55,7 +55,7 @@ Your digital marketing solution allows your organization to engage with customer
 * Click **Create**
 ![Screenshot](../../Images/WordPress/wp-3.png)
 
-#### Configuring WordPress on Azure Web Apps
+## Configuring WordPress on Azure Web Apps
 
 * Once the WordPress deployment has succeeded, from the left navigation bar in the portal, select **App Services**, then select **fasttrackdemo** web app, then click on the URL: http://fasttrackdemo.azurewebsites.net  
 ![Screenshot](../../Images/WordPress/wp-4.png)
@@ -82,11 +82,11 @@ Your digital marketing solution allows your organization to engage with customer
 ![Screenshot](../../Images/WordPress/wp-10.png)
 * Before we add any Posts & Pages, lets configure WordPress with some best practices
 
-#### Best Practices for running WordPress on Azure Web Apps
+## Best Practices for running WordPress on Azure Web Apps
 
 In this section, we will configure WordPress with few best practices.
 
-* **Disable ARR cookie**
+### Disable ARR cookie
 > Azure Websites make great use of the Application Request Routing (ARR) IIS Extension to distribute connections between active instances. ARR helps keep track of users by giving them a special cookie (known as an affinity cookie) that allows Azure Websites to know upon subsequent requests which server instance handled previous requests by the same user. This way, we can be sure that once a client establishes a session with a specific server instance, he will keep talking to the same server as long as the session is active. This is of particular importance for session-sensitive applications (a.k.a. stateful application). Because WordPress is stateless by default and stores all the session information in the database, it does not require clients to connect to the same web server instance. Disabling the ARR cookie will improve performance when running a WordPress site on multiple instances.
 
 To disable ARR cookie:
@@ -96,7 +96,7 @@ To disable ARR cookie:
     ![Screenshot](../../Images/WordPress/wp-11.png)
     * Click **Save** on the top
 
-* **Azure Blob storage for Media Content**
+### Azure Blob storage for Media Content
 > If your WordPress site consists of a lot of video and image content, we recommend using blob storage to store all your media content. To learn how to create an Azure storage account, see [How to create an Azure storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account). Once you have created the account, activate and configure [Windows Azure Storage for WordPress plugin](https://wordpress.org/plugins/windows-azure-storage/) for your WordPress website.
 
 * Make sure to [Create a storage account and a blob container](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account) first before proceeding to next step. Remark: when creating the container make sure you set the **access level** to **Container** so that users visiting the WordPress site can see the actual media content.
@@ -115,7 +115,7 @@ To disable ARR cookie:
 * After clicking save you should see the **Default Storage Container** setting being populated with the container you created when preparing the storage account.
 * From now on if you upload any images, audio or video files to your WordPress site (part of your Posts or Pages), they will be uploaded to the Azure storage account automatically instead of being stored in the Web server. You can verify this once you upload an image, by going to your storage account and verify the container contents.
 
-* **Configure Redis cache for WordPress to improve performance**
+### Configure Redis cache for WordPress to improve performance
 > You can use Microsoft Azure Redis Cache with a WordPress site to improve performance. Websites that receive massive amounts of user traffic (hundreds of thousands to millions of page views and unique visitors) will benefit from the use of a distributed caching solution such as Redis cache. To setup Redis cache and connect to the WordPress site
  
  * Create Azure [Redis cache from Azure portal](http://azure.microsoft.com/en-us/services/cache/)  
@@ -137,15 +137,16 @@ To disable ARR cookie:
     * In the CMD, navigate to **D:\home\site\wwwroot** folder
     * Edit **wp-config.php**  
     ![Screenshot](../../Images/WordPress/wp-19.png)
-    * Add the following right before **"That's all, stop editing! Happy blogging."**                
-```
-/* Redis Cache */
-define('WP_REDIS_SCHEME', 'tcp');
-define('WP_REDIS_HOST', '<your redis account name>.redis.cache.windows.net');
-define('WP_REDIS_PORT', '6379');
-define('WP_REDIS_DATABASE', '0');
-define('WP_REDIS_PASSWORD', '<your primary access key>');
-```  
+    * Add the following right before **"That's all, stop editing! Happy blogging."**  
+    ```
+    /* Redis Cache */
+    define('WP_REDIS_SCHEME', 'tcp');
+    define('WP_REDIS_HOST', '<your redis account name>.redis.cache.windows.net');
+    define('WP_REDIS_PORT', '6379');
+    define('WP_REDIS_DATABASE', '0');
+    define('WP_REDIS_PASSWORD', '<your primary access key>');
+    ```
+      
     ![Screenshot](../../Images/WordPress/wp-20.png)
     * Click **Save** on the top
     
@@ -160,7 +161,7 @@ define('WP_REDIS_PASSWORD', '<your primary access key>');
     * [How to speed up your WordPress site on Azure App Service](https://azure.microsoft.com/en-us/blog/10-ways-to-speed-up-your-wordpress-site-on-azure-websites/)    
     * [Use Azure CDN for WordPress site on Azure App](https://blogs.msdn.microsoft.com/azureossds/2015/04/27/improving-wordpress-performance-use-azure-cdn/)
 
-#### Creating a sample Post
+## Creating a sample Post
 To create a sample post, follow these steps:
 
 * Go to the WordPress site **Dashboard** page
@@ -179,7 +180,7 @@ To create a sample post, follow these steps:
 
 ![Screenshot](../../Images/WordPress/wp-24.png)
 
-#### Migrating a WordPress Site
+## Migrating a WordPress Site
 To migrate a WordPress site from your on-premises environment or from colo or from another Azure Web App, follow these steps:
 
 * There are two main steps involved in migration: 
@@ -202,7 +203,7 @@ To migrate a WordPress site from your on-premises environment or from colo or fr
 
 ![Screenshot](../../Images/WordPress/wp-29.png)
 
-#### WordPress site with MySQL db on IaaS VM
+## WordPress site with MySQL db on IaaS VM
 Normally when you create a WordPress site using Azure Web Apps you are presented with an option to select an existing or create a ClearDB MySQL database or Azure Database for MySQL. But what if you don’t want to use an existing instance or create a new one? What if you want to use a MySQL database instance deployed to an Azure VM.
 
 The easiest approach is to create a WordPress site with Azure Web Apps and select either an existing/create new Azure Database for MySQL or ClearDB database. Once the WordPress site is deployed, you can then change the database connection string via **Web App > Application Settings > Connection string** or edit the **wp-config.php** file to be the database you want (e.g. a MySQL instance on an Azure VM). Here are the steps to follow:
@@ -225,7 +226,7 @@ The easiest approach is to create a WordPress site with Azure Web Apps and selec
 
 ![Screenshot](../../Images/WordPress/wp-31.png) 
 
-#### Adding a Custom Domain
+## Adding a Custom Domain
 There are two main steps to add a custom domain to your WordPress site
 * **Step 1)** [Buy a custom domain from Azure and configure your web app](https://docs.microsoft.com/en-us/azure/app-service/custom-dns-web-site-buydomains-web-app) Or [Use an existing domain to configure your web app](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain)
 * **Step 2)** Update the WordPress site to resolve to the new domain
@@ -246,13 +247,13 @@ There are two main steps to add a custom domain to your WordPress site
 ![Screenshot](../../Images/WordPress/wp-34.png). 
 
 
-#### Adding TLS
+## Adding TLS
 To add an SSL certificate binding to your WordPress site, follow these steps:
 * [Bind an existing custom SSL certificate to Azure Web Apps](https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-tutorial-custom-ssl)
 * [Buy and Configure an SSL Certificate for your Azure App Service](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-purchase-ssl-web-site)
 * [HTTPS for WordPress](https://make.wordpress.org/support/user-manual/web-publishing/https-for-wordpress/)
 
-#### Additional Resources
+## Additional Resources
 * [Running WordPress on App Services (Windows/Linux)](https://blogs.msdn.microsoft.com/appserviceteam/2017/09/12/how-to-for-wordpress-on-app-service-windowslinux/)
 * [Best Practices for WordPress Security on Azure](https://blogs.msdn.microsoft.com/azureossds/2016/12/26/best-practices-for-wordpress-security-on-azure/)
 * [Single Sign On with ADFS/Azure AD/Windows Plugin](https://wordpress.org/plugins/miniorange-windows-single-sign-on/)
