@@ -52,8 +52,7 @@ Your digital marketing solution allows your organization to engage with customer
     * **OK**    
     ![Screenshot](../../Images/WordPress/wp-2.png)
 * Application Insights: **Off**
-* Click **Create** 
-
+* Click **Create**
 ![Screenshot](../../Images/WordPress/wp-3.png)
 
 
