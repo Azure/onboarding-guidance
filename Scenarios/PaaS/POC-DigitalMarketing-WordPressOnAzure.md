@@ -183,6 +183,21 @@ To disable the ARR cookie:
 
     * [How to speed up your WordPress site on Azure App Service](https://azure.microsoft.com/en-us/blog/10-ways-to-speed-up-your-wordpress-site-on-azure-websites/)    
 
+### **Configure CDN for WordPress to improve performance**
+Azure CDN can increase the performance and stability of your wordpress blog by caching static content on [edge servers](https://docs.microsoft.com/en-us/azure/cdn/cdn-pop-locations) closer to users. Please see the [Azure CDN Overview](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview) for more details.  
+
+To configure CDN in wordpress, follow these steps:
+ 1.  [Create an Azure CDN profile](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint) 
+ 2. [Map a custom domain] (https://docs.microsoft.com/en-us/azure/cdn/cdn-map-content-to-custom-domain) such as *cdn.my-company-blog.com* to your CDN profile
+ 3. Install a CDN plugin 
+ 4. Configure your CDN plugin to use the custom CDN domain for cached content. To popular plugins available in the Wordpress plugin repository are [WP Super Cache](https://wordpress.org/plugins/wp-super-cache) and [CDN Enabler](https://wordpress.org/plugins/cdn-enabler).
+
+ WP Super Cache Configuration:
+ ![](images/WpSuperCacheCDN.png)
+
+ CDN Enabler Configuration:
+ ![](images/CDNEnabler.png)
+
 ## Creating a sample Post
 To create a sample post, follow these steps:
 
