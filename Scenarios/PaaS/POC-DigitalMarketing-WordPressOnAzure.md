@@ -90,6 +90,7 @@ In this section, we will configure WordPress with few best practices.
 > Azure Websites make great use of the Application Request Routing (ARR) IIS Extension to distribute connections between active instances. ARR helps keep track of users by giving them a special cookie (known as an affinity cookie) that allows Azure Websites to know upon subsequent requests which server instance handled previous requests by the same user. This way, we can be sure that once a client establishes a session with a specific server instance, he will keep talking to the same server as long as the session is active. This is of particular importance for session-sensitive applications (a.k.a. stateful application). Because WordPress is stateless by default and stores all the session information in the database, it does not require clients to connect to the same web server instance. Disabling the ARR cookie will improve performance when running a WordPress site on multiple instances.
 
 To disable ARR cookie:
+
     * Login to the [Azure portal](http://portal.azure.com/)
     * Go to App Services and select you **fasttrackdemo** web app
     * Select **Application settings**, find **ARR Affinity** and click **Off**  
@@ -146,7 +147,7 @@ To disable ARR cookie:
     define('WP_REDIS_DATABASE', '0');
     define('WP_REDIS_PASSWORD', '<your primary access key>');
     ```
-      
+
     ![Screenshot](../../Images/WordPress/wp-20.png)
     * Click **Save** on the top
     
@@ -167,40 +168,34 @@ To create a sample post, follow these steps:
 * Go to the WordPress site **Dashboard** page
 * Click on **Posts**, then **Add New**
 * Enter a **Title** (Example: "FastTrack for Azure Demo post")
-* In the **Content** field, enter your post details
-    (Example: "Welcome to the FastTrack for Azure Demo post. One stop shop for Azure onboarding")
+* In the **Content** field, enter your post details (Example: "Welcome to the FastTrack for Azure Demo post. One stop shop for Azure onboarding")
 * Click on **Add Media** and upload any picture from your machine. Once the picture is uploaded, click on **Insert into post**.
-* Finally click on Publish
-
+* Finally click on Publish  
 ![Screenshot](../../Images/WordPress/wp-22.png)
-* Your post can be viewed on your home page using a link similar to this: http://fasttrackdemo.azurewebsites.net/
-
+* Your post can be viewed on your home page using a link similar to this: http://fasttrackdemo.azurewebsites.net/  
 ![Screenshot](../../Images/WordPress/wp-23.png)
-* Now if you head over to the Storage Account in the Azure Portal, the image you uploaded as part of your post can be seen under **Storage Account > Blobs > Container > Year folder > month**
-
+* Now if you head over to the Storage Account in the Azure Portal, the image you uploaded as part of your post can be seen under **Storage Account > Blobs > Container > Year folder > month**  
 ![Screenshot](../../Images/WordPress/wp-24.png)
 
 ## Migrating a WordPress Site
 To migrate a WordPress site from your on-premises environment or from colo or from another Azure Web App, follow these steps:
 
-* There are two main steps involved in migration: 
-1. Copying the WordPress site content (wwwroot directory in the Azure Web App) 
-2. Importing the MySQL database
+There are two main steps involved in migration: 
+    1. Copying the WordPress site content (wwwroot directory in the Azure Web App) 
+    2. Importing the MySQL database
 
-* **Copying WordPress site content**: Simply zip your WordPress site content from on-premises. For example if your WordPress site is running on another Azure Web App, using **Kudu > CMD console**, download **wwwroot** directory as zip file. 
-
+### Copying WordPress site content
+Simply zip your WordPress site content from on-premises. For example if your WordPress site is running on another Azure Web App, using **Kudu > CMD console**, download **wwwroot** directory as zip file.  
 ![Screenshot](../../Images/WordPress/wp-25.png)
-* Next step: import the **wwwroot** directory in to the Azure Web App using the Kudu console. To do this simply drag your content zip file (example:wwwroot.zip) from your desktop folder on to the Kudu console Size column. This will extract the content in that directory.
-
+* Next step: import the **wwwroot** directory in to the Azure Web App using the Kudu console. To do this simply drag your content zip file (example:wwwroot.zip) from your desktop folder on to the Kudu console Size column. This will extract the content in that directory.  
 ![Screenshot](../../Images/WordPress/wp-26.png)
-* Now export your MySQL database. You can use tools like phpMyAdmin (web interface) or MySQL WorkBench. For example: phpMyAdmin is offered as an Azure Web App site **Extension**. You can install this and use it to export your MySQL db
 
+### Importing the MySQL database
+* Now export your MySQL database. You can use tools like phpMyAdmin (web interface) or MySQL WorkBench. For example: phpMyAdmin is offered as an Azure Web App site **Extension**. You can install this and use it to export your MySQL db  
 ![Screenshot](../../Images/WordPress/wp-27.png)
-* Next step: import your MySQL database. Again you can use tools like phpMyAdmin (web interface) or MySQL WorkBench. From phpMyAdmin, go to the Import tab, select the MySQL file you exported in the previous step and click Go. 
-
+* Next step: import your MySQL database. Again you can use tools like phpMyAdmin (web interface) or MySQL WorkBench. From phpMyAdmin, go to the Import tab, select the MySQL file you exported in the previous step and click Go.  
 ![Screenshot](../../Images/WordPress/wp-28.png)
-* One last step, you may need to go to the **wp_options** table using the phpMyAdmin (web interface) or MySQL WorkBench, to replace the old site URL address with the new site URL address.
-
+* One last step, you may need to go to the **wp_options** table using the phpMyAdmin (web interface) or MySQL WorkBench, to replace the old site URL address with the new site URL address.  
 ![Screenshot](../../Images/WordPress/wp-29.png)
 
 ## WordPress site with MySQL db on IaaS VM
@@ -208,43 +203,36 @@ Normally when you create a WordPress site using Azure Web Apps you are presented
 
 The easiest approach is to create a WordPress site with Azure Web Apps and select either an existing/create new Azure Database for MySQL or ClearDB database. Once the WordPress site is deployed, you can then change the database connection string via **Web App > Application Settings > Connection string** or edit the **wp-config.php** file to be the database you want (e.g. a MySQL instance on an Azure VM). Here are the steps to follow:
 
-* Let the WordPress site be deployed, but do not complete the installation/configuration. In other words, once the site is deployed, browsing to the site’s URL should result in the standard WordPress default installation prompt.
-
+* Let the WordPress site be deployed, but do not complete the installation/configuration. In other words, once the site is deployed, browsing to the site’s URL should result in the standard WordPress default installation prompt.  
 ![Screenshot](../../Images/WordPress/wp-5.png)
 * Edit the **wp-config.php** file via Kudu (not recommended)
 * Open the Kudu console by going to http:[your-site-name].scm.azurewebsites.net (example: http://fasttrackdemo.scm.azurewebsites.net/)
 * In the CMD prompt, navigate to the **D:\home\site\wwwroot** directory
-* Edit **wp-config.php**
-
+* Edit **wp-config.php**  
 ![Screenshot](../../Images/WordPress/wp-19.png) 
-* Change the following values: **DB_NAME, DB_USER, DB_PASSWORD, DB_HOST** with MySQL on IaaS VM values. **Important**: as you can see these values are read from Web App's App Settings Connection string instead of being hard coded here. So its recommended to update the App settings. So follow the next method.
-
+* Change the following values: **DB_NAME, DB_USER, DB_PASSWORD, DB_HOST** with MySQL on IaaS VM values. **Important**: as you can see these values are read from Web App's App Settings Connection string instead of being hard coded here. So its recommended to update the App settings. So follow the next method.  
 ![Screenshot](../../Images/WordPress/wp-30.png) 
 * Edit **App Settings Connection string** via the Azure Portal (Recommended approach)
 * Using Azure Portal, go to your **Web App > Application Settings > Connection string** 
-* Click on **(hidden for Security)** and update the defaultConnection string with MySQL on IaaS VM values.
-
+* Click on **(hidden for Security)** and update the defaultConnection string with MySQL on IaaS VM values.  
 ![Screenshot](../../Images/WordPress/wp-31.png) 
 
 ## Adding a Custom Domain
 There are two main steps to add a custom domain to your WordPress site
-* **Step 1)** [Buy a custom domain from Azure and configure your web app](https://docs.microsoft.com/en-us/azure/app-service/custom-dns-web-site-buydomains-web-app) Or [Use an existing domain to configure your web app](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain)
-* **Step 2)** Update the WordPress site to resolve to the new domain
-    * You can do this in 2 ways
-        * **1)** Using WordPress dashboard. Update **Settings > General > WordPress Address (URL) & Site Address (URL)**. This might be greyed out and may not allow you to update for multiple reasons (example: updating wp-config.php).
 
+    1. [Buy a custom domain from Azure and configure your web app](https://docs.microsoft.com/en-us/azure/app-service/custom-dns-web-site-buydomains-web-app) Or [Use an existing domain to configure your web app](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain)
+    2. Update the WordPress site to resolve to the new domain
 
-![Screenshot](../../Images/WordPress/wp-32.png)
-        * **2)** Update the database using **phpMyAdmin** extension. 
+Updating the WordPress site to resolve to the nes domain can be done in 2 ways:
 
-            * First Install **phpMyAdmin** extension, by going to **WebApp > Extensions > Add phpMyAdmin** 
-
-![Screenshot](../../Images/WordPress/wp-33.png)             
-            * Once you install **phpMyAdmin** extension, Browse to it. It should take you to phpMyAdmin web interface (for example: https://fasttrackdemo.scm.azurewebsites.net/phpmyadmin/)
-
-            * Expand you MySQL database from left tree and open up **wp-options** table and update two records (Column: **option_value**) where **option_name = siteurl & home**. This value should be your custom domain.
-
-![Screenshot](../../Images/WordPress/wp-34.png). 
+    1. Using WordPress dashboard. Update **Settings > General > WordPress Address (URL) & Site Address (URL)**. This might be greyed out and may not allow you to update for multiple reasons (example: updating wp-config.php).  
+    ![Screenshot](../../Images/WordPress/wp-32.png)
+    2. Update the database using **phpMyAdmin** extension.
+        * First Install **phpMyAdmin** extension, by going to **WebApp > Extensions > Add phpMyAdmin**  
+        ![Screenshot](../../Images/WordPress/wp-33.png)             
+        * Once you install **phpMyAdmin** extension, Browse to it. It should take you to phpMyAdmin web interface (for example: https://fasttrackdemo.scm.azurewebsites.net/phpmyadmin/)
+        * Expand you MySQL database from left tree and open up **wp-options** table and update two records (Column: **option_value**) where **option_name = siteurl & home**. This value should be your custom domain.  
+        ![Screenshot](../../Images/WordPress/wp-34.png). 
 
 
 ## Adding TLS
