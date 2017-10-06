@@ -40,7 +40,8 @@ Your digital marketing solution allows your organization to engage with customer
     * Location: **West US**
     * Pricing tier: **S1 Standard**
     * Click **OK**
-    * ![Screenshot](../../Images/WordPress/wp-1.png)
+    
+    ![Screenshot](../../Images/WordPress/wp-1.png)
 * Select Database, enter
     * Server name: **fasttrackdemo-mysqldbserver**
     * Server admin login name: **your admin user name**
@@ -51,7 +52,7 @@ Your digital marketing solution allows your organization to engage with customer
         * Compute Units: **50**
         * Stroage (GB): **50**
     * **OK**
-    * ![Screenshot](../../Images/WordPress/wp-2.png)
+    ![Screenshot](../../Images/WordPress/wp-2.png)
 * Application Insights: **Off**
 * Click **Create** 
 * ![Screenshot](../../Images/WordPress/wp-3.png)
