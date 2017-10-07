@@ -193,10 +193,10 @@ To configure CDN in wordpress, follow these steps:
  4. Configure your CDN plugin to use the custom CDN domain for cached content. Two popular plugins available in the Wordpress plugin repository are [WP Super Cache](https://wordpress.org/plugins/wp-super-cache) and [CDN Enabler](https://wordpress.org/plugins/cdn-enabler).
 
  WP Super Cache Configuration:
- ![](images/WpSuperCacheCDN.png)
+ ![Wp Super Cache](./Images/WpSuperCacheCDN.png)
 
  CDN Enabler Configuration:
- ![](images/CDNEnabler.png)
+ ![CDN Enabler](./Images/CDNEnabler.png)
 
 ## Creating a sample Post
 To create a sample post, follow these steps:
