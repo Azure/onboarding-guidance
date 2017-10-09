@@ -243,9 +243,9 @@ Simply zip your WordPress site content from on-premises. For example if your Wor
   ![Screenshot](../../Images/WordPress/wp-29.png)
 
 ## WordPress site with MySQL db on IaaS VM
-Normally when you create a WordPress site using Azure Web Apps you are presented with an option to select an existing or create a ClearDB MySQL database or Azure Database for MySQL. But what if you don’t want to use an existing instance or create a new one? What if you want to use a MySQL database instance deployed to an Azure VM.
+Normally when you create a WordPress site using Azure Web Apps you are presented with an option to select an existing or create a Azure Database for MySQL. But what if you don’t want to use an existing instance or create a new one? What if you want to use a MySQL database instance deployed to an Azure VM.
 
-The easiest approach is to create a WordPress site with Azure Web Apps and select either an existing/create new Azure Database for MySQL or ClearDB database. Once the WordPress site is deployed, you can then change the database connection string via **Web App > Application Settings > Connection string** or edit the **wp-config.php** file to be the database you want (e.g. a MySQL instance on an Azure VM). Here are the steps to follow:
+The easiest approach is to create a WordPress site with Azure Web Apps and select an existing/create new Azure Database for MySQL database. Once the WordPress site is deployed, you can then change the database connection string via **Web App > Application Settings > Connection string** or edit the **wp-config.php** file to be the database you want (e.g. a MySQL instance on an Azure VM). Here are the steps to follow:
 
 * Let the WordPress site be deployed, but do not complete the installation/configuration. In other words, once the site is deployed, browsing to the site’s URL should result in the standard WordPress default installation prompt.
 
