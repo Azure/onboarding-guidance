@@ -172,6 +172,7 @@ App:SqlDatabase:ConnectionString | The connection string you copied before (with
   * After the policy is created, copy its full name to Notepad (including the `B2C_1_` prefix that is automatically appended)
 * Create a [password reset policy](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-password-reset-policy)
   * For the policy **Name**, use `ResetPassword`
+  * For the **Identity Providers** use `Reset password using email address`
   * For the **Application claims**, select at least `Display Name`, `Email Addresses` and `User's Object ID`
   * After the policy is created, copy its full name to Notepad (including the `B2C_1_` prefix that is automatically appended)
 * Navigate to the App Service for the Web App and open the **Application settings** blade
