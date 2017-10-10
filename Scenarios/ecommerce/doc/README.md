@@ -159,6 +159,7 @@ App:SqlDatabase:ConnectionString | The connection string you copied before (with
 * Go back to the Azure AD B2C **Applications** blade to create the necessary policies
 * Create a combined [sign-up or sign-in policy](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy)
   * For the policy **Name**, use `SignUpOrIn`
+  * For the **Identity Providers** use `Email signup`
   * For the **Sign-up attributes**, select at least `Display Name` and `Email Address`
   * For the **Application claims**, select at least `Display Name`, `Email Addresses` and `User's Object ID`
   * ![Add Sign Up Or In Sign Policy to Azure AD B2C](images/aadb2c-policy-signuporin.png)
