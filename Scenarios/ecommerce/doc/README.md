@@ -166,6 +166,7 @@ App:SqlDatabase:ConnectionString | The connection string you copied before (with
   * After the policy is created, copy its full name to Notepad (including the `B2C_1_` prefix that is automatically appended)
 * Create a [profile editing policy](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-profile-editing-policy)
   * For the policy **Name**, use `EditProfile`
+  * For the **Identity Providers** use `Local Account SignIn`
   * For the **Profile attributes**, select at least `Display Name` so the user can edit their name as it is displayed in the web application
   * For the **Application claims**, select at least `Display Name`, `Email Addresses` and `User's Object ID`
   * After the policy is created, copy its full name to Notepad (including the `B2C_1_` prefix that is automatically appended)
