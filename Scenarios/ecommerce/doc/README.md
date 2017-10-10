@@ -146,7 +146,7 @@ App:SqlDatabase:ConnectionString | The connection string you copied before (with
   * Ensure to create a _new_ tenant, not to link an existing one
   * ![Create Azure AD B2C](images/aadb2c-create.png)
   * After the Azure AD B2C tenant is created, copy the full domain name from the **Overview** blade (e.g. `relecloudconcerts.onmicrosoft.com`) and paste it in Notepad for later
-  * Please note, remeber to also to do a full browser refresh. This will ensure you can see the new Azure AD tenant you created when you click on your profile in the top right hand corner
+  * Please note, remember to do a full browser refresh. This will ensure you can see the new Azure AD tenant you created when you click on your profile in the top right hand corner
 * [Register the web application in the Azure AD B2C tenant](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-app-registration)
   * Follow the steps to register a **web app**
   * For the **Name** (which will be seen by users when they sign in), use `Relecloud Concerts`
