@@ -159,20 +159,17 @@ App:SqlDatabase:ConnectionString | The connection string you copied before (with
 * Go back to the Azure AD B2C **Applications** blade to create the necessary policies
 * Create a combined [sign-up or sign-in policy](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy)
   * For the policy **Name**, use `SignUpOrIn`
-  * For the **Identity Providers** use `Email signup`
   * For the **Sign-up attributes**, select at least `Display Name` and `Email Address`
   * For the **Application claims**, select at least `Display Name`, `Email Addresses` and `User's Object ID`
   * ![Add Sign Up Or In Sign Policy to Azure AD B2C](images/aadb2c-policy-signuporin.png)
   * After the policy is created, copy its full name to Notepad (including the `B2C_1_` prefix that is automatically appended)
 * Create a [profile editing policy](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-profile-editing-policy)
   * For the policy **Name**, use `EditProfile`
-  * For the **Identity Providers** use `Local Account SignIn`
   * For the **Profile attributes**, select at least `Display Name` so the user can edit their name as it is displayed in the web application
   * For the **Application claims**, select at least `Display Name`, `Email Addresses` and `User's Object ID`
   * After the policy is created, copy its full name to Notepad (including the `B2C_1_` prefix that is automatically appended)
 * Create a [password reset policy](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-password-reset-policy)
   * For the policy **Name**, use `ResetPassword`
-  * For the **Identity Providers** use `Reset password using email address`
   * For the **Application claims**, select at least `Display Name`, `Email Addresses` and `User's Object ID`
   * After the policy is created, copy its full name to Notepad (including the `B2C_1_` prefix that is automatically appended)
 * Navigate to the App Service for the Web App and open the **Application settings** blade
