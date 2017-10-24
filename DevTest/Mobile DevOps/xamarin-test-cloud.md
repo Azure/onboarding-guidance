@@ -1,5 +1,17 @@
-# Fast Track for Azure Dev Test Solution - Mobile DevOps - Setup
+# Fast Track for - Mobile DevOps
 
+- [Fast Track for - Mobile DevOps](#fast-track-for---mobile-devops)
+  * [Introduction](#introduction)
+  * [Pre-Requisites](#pre-requisites)
+  * [Walkthrough](#walkthrough)
+  * [Next Steps](#next-steps)
+  * [References](#references)
+
+## Introduction
+
+Managing quality across a variety of Mobile Applications is hard. During this walkthrough, we will develop the Credit Card Validator Android Xamarin sample. 
+
+The main focus of this guide is to leverage Xamarin Test Cloud as part of a DevOps pipeline. Xamarin Test Cloud will allow you to perform UI Tests across a range of  physical devices and view the output on the Xamarin Test Cloud dashboard.
 
 ## Pre-Requisites
 * You must have access and be able to deploy into a Microsoft Azure Subscription
@@ -9,7 +21,7 @@
     * [Visual Studio 2013/2015](https://developer.xamarin.com/guides/android/getting_started/installation/windows/#vs2015)
     * [Visual Studio 2017](https://developer.xamarin.com/guides/android/getting_started/installation/windows/#vs2017)
 
-## Steps
+## Walkthrough
 
 1. Download the [CreditCardValidatior.Droid.Zip file](https://github.com/xamarin/test-cloud-samples/raw/master/Quickstarts/downloads/CreditCardValidator.Droid.zip). Unzip the file.
 
