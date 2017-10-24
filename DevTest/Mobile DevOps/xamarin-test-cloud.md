@@ -1,6 +1,6 @@
-# Fast Track for - Mobile DevOps
+# Fast Track for Azure - Mobile DevOps
 
-- [Fast Track for - Mobile DevOps](#fast-track-for---mobile-devops)
+- [Fast Track for Azure - Mobile DevOps](#fast-track-for---mobile-devops)
   * [Introduction](#introduction)
   * [Pre-Requisites](#pre-requisites)
   * [Walkthrough](#walkthrough)
