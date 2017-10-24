@@ -134,7 +134,7 @@ The main focus of this guide is to leverage Xamarin Test Cloud as part of a DevO
     * Configure the **Source (Build Definition)** as the Build Definition that you had created earlier in this walkthrough
     * Click Add
 
-22. Adjust **Environment 1** to **Testing Environment.**
+22. Rename **Environment 1** to **Testing Environment.**
     * Create a Xamarin Test Cloud task in the Testing Environment.    
     ![Screenshot](../../Images/XTC/vsts-xtc-16.png)
 
