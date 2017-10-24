@@ -16,7 +16,7 @@
 2. Using the command line, navigate into the newly created folder. 
     * Initialise the repository using the `git init` command. 
     * Track changes of the files in Git by using the `git Add .` command.
-    * Commit the changes by using `git commit -m "*Enter your message here*"
+    * Commit the changes by using `git commit -m "*Enter your message here*"`
     * Push the changes to the remote Git repository on your Visual Studio Team Services Team Project. You can find the location of the repository on the **Code** tab of your Team Project.
     
     ![Screenshot](../../Images/XTC/vsts-xtc-1.png)
@@ -30,7 +30,7 @@
 
 4. Add the following code Snippet into the Tests class:
 
-    ```
+    ```csharp
     [Test]
     public void CreditCardNumber_TooShort_DisplayErrorMessage()
         {
@@ -68,7 +68,7 @@
 
     ![Screenshot](../../Images/XTC/vsts-xtc-6.png)
 
-9. You will then need to specify meta-data about the run (e.g. The Series for the test, as well as the system language).
+9. You will then need to specify metadata about the run (e.g. The Series for the test, as well as the system language).
 
     ![Screenshot](../../Images/XTC/vsts-xtc-7.png)
 
@@ -77,11 +77,11 @@
 
     ![Screenshot](../../Images/XTC/vsts-xtc-8.png)
 
-11. Select Done. Navigate to the Account Settings section in Xamarin Test Cloud. 
+11. Select Done. Navigate to the **Account Settings** section in Xamarin Test Cloud. 
 
     ![Screenshot](../../Images/XTC/vsts-xtc-9.png)
 
-12. Navigate to the Teams & Apps section of the appropriate organisation in Xamarin Test Cloud.
+12. Navigate to the **Teams & Apps** section of the appropriate organisation in Xamarin Test Cloud.
     
     ![Screenshot](../../Images/XTC/vsts-xtc-10.png)
 
@@ -90,11 +90,11 @@
     
     ![Screenshot](../../Images/XTC/vsts-xtc-11.png)
 
-14. Navigate to the Build tab inside of Visual Studio Team Services. Create a new Build Definition.
+14. Navigate to the **Build tab** inside of Visual Studio Team Services. Create a new Build Definition.
     
     ![Screenshot](../../Images/XTC/vsts-xtc-12.png)
 
-15. Search for Xamarin templates in the search box, and select the Xamarin.Android template.
+15. Search for **Xamarin templates** in the search box, and select the **Xamarin.Android template**.
     
     ![Screenshot](../../Images/XTC/vsts-xtc-13.png)
 
@@ -104,10 +104,10 @@
     * **User Email:** Use the e-mail address that you login to Xamarin Test Cloud / where you would like to be notified
     * **Devices:** Use the device hash that you had set aside earlier
 
-17. Navigate to the "Build Project" task. 
+17. Navigate to the **Build Project** task. 
     * Configure Project to **CreditCardValidator.Droid.csproj**. If you do not complete this step, then you will likely encounter build failures, as the task will also attempt to build the Tests
 
-18. Add an additional "Publish Artifact" task to the Build Definition.
+18. Add an additional **Publish Artifact** task to the Build Definition.
     * Set **Path to publish** as **$(Build.SourcesDirectory)/packages/**
     * Set **Artifact name** as **packages**
 
@@ -117,7 +117,7 @@
 
 20. Create a new Release Definition, and start with an **empty process**.
 
-21. Select Artifacts on the left hand side of the pipeline.
+21. Select **Artifacts** on the left hand side of the pipeline.
     * Click Add Artifact
     * Configure the **Source (Build Definition)** as the Build Definition that you had created earlier in this walkthrough
     * Click Add
@@ -135,7 +135,7 @@
     * Initiate a release
 
 
-14. Navigate back to Xamarin Test Cloud. You should see that your test run has completed successfully, without any failures. Click on the *Credit Card Number Too Short Display* test in the left hand menu.
+14. Navigate to Xamarin Test Cloud. You should see that your test run has completed successfully, without any failures. Click on the **Credit Card Number Too Short Display** test in the left hand menu.
 
     ![Screenshot](../../Images/XTC/vsts-xtc-17.png)
 
@@ -149,7 +149,7 @@
 
     ![Screenshot](../../Images/XTC/vsts-xtc-19.png)
 
-17. This device log section allows you to view the output from the physical device on which your application test ran and is helpful if you have encountered a test failure.
+17. This **device log** allows you to view the output from the physical device on which your application test ran and is helpful if you have encountered a test failure.
 
     ![Screenshot](../../Images/XTC/vsts-xtc-20.png)
 
