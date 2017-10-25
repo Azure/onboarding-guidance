@@ -3,12 +3,14 @@
 - [Fast Track for Azure - Mobile DevOps - HockeyApp](#fast-track-for-azure---mobile-devops---hockeyapp)
   * [Introduction](#introduction)
   * [Pre-Requisites](#pre-requisites)
+  * [Signing Your Build](#signing-your-build)
   * [Create a new Application in HockeyApp](#create-a-new-application-in-hockeyapp)
   * [Add update distribution](#add-update-distribution)
   * [Add Crash Analytics to your Application](#add-crash-analytics-to-your-application)
   * [User Metrics](#user-metrics)
   * [Add custom events](#add-custom-events)
   * [Add in-app feedback](#add-in-app-feedback)
+  * [Updating Builds](#updating-builds)
   * [Useful References](#useful-references)
 
 ## Introduction
@@ -22,9 +24,80 @@ The main focus of this guide is to display HockeyApp as part of a DevOps pipelin
 * You must have an active HockeyApp account.
     > If you do not yet have a HockeyApp account, you can [sign up for a free account](https://rink.hockeyapp.net/registrations/new). Once you have submitted the form, you will need to verify your e-mail address. You can find out more about [Hockey App Plans and Pricing](https://hockeyapp.net/pricing/).    
 * You should have access to a Visual Studio Team Services Account. In particular, you should have access to a Team Project, where you can commit code, create and maintain Build / Release Definitions Find more information about [creating a VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/create-account-msa-or-work-student).
+* You will need the [HockeyApp Extension](https://marketplace.visualstudio.com/items?itemName=ms.hockeyapp) installed to your VSTS environment.
 * You should have first completed the [Xamarin Test Cloud](xamarin-test-cloud.md) section. 
     > If you have not completed the Xamarin Test Cloud section, download the [CreditCardValidatior.Droid.Zip file](https://github.com/xamarin/test-cloud-samples/raw/master/Quickstarts/downloads/CreditCardValidator.Droid.zip).
 * You will require Visual Studio to add the HockeyApp nuget package to the project.
+
+## Signing Your Build
+To deploy your application through HockeyApp, you should sign your built packages in accordance with requirements of the target platform. More information about application requirements are available in the [app management](https://support.hockeyapp.net/kb/app-management-2/how-to-create-a-new-version) documentation.
+
+### Android APK Signing
+In this example, we are going to create a keystore / alias combination to use for signing our apk, encrypt it so it can be packaged with our build information, then we will decrypt it during our build from a value stored in Azure Key Vault, and then use it to sign our apk.
+
+1. Navigate to the [Azure Portal](https://portal.azure.com), click **New**, type **Key Vault**, select **Key Vault** and then click **Create**.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-20.png)
+
+2. Fill out the information necessary to create the Key Vault.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-21.png)
+
+3. Once the Key Vault is created, click **Secrets**, then click **Add**. Enter the details:
+    * **Upload options**: Manual
+    * **Name**: SigningKey
+    * **Value**: The key you will use (keep this key for later)
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-22.png)
+
+4. (Requires Java SDK) On your computer, we will now create the keystore / alias combination. Open a command prompt and type the following command:
+
+    ```
+    "c:\Program Files\Java\jdk1.8.0_131\bin\keytool.exe" -genkeypair -v -keystore androidsigning.keystore -alias android -keyalg RSA -keysize 2048 -validity 10000
+    ```
+
+    Keep track of the password you used for the keystore as well as the password for the alias. These values can also be included in Key Vault if required.
+
+5. We will encrypt this keystore using [OpenSSL](http://gnuwin32.sourceforge.net/packages/openssl.htm). In your command prompt, we will encrypt that keystore with the following command:
+
+    ```
+    openssl enc -aes-256-cbc -in "androidsigning.keystore" -out "androidsigning.keystore.enc"
+    ```
+
+    When prompted, provide the key that was stored in Key Vault earlier.
+6. Open the CreditCardValidator.Droid solution in Visual Studio. In the CreditCardValidator.Droid project, create a new folder called **Build**. Add the androidsigning.keystore.enc to the folder so it can be included with your build.
+7. In VSTS, edit your build definition. Add an Azure Key Vault task before the Sign APK task.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-23.png)
+
+8. Fill out the information on the Key Vault you created earlier.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-24.png)
+
+    If you do not have an Azure subscription linked, click **Manage** to create a new Azure Resource Manager connection. You will need to keep track of the Service Principal Name that is created by this process.
+9. In VSTS, add a Decrypt File (OpenSSL) task after the Key Vault step.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-25.png)
+
+10. Fill out the information in the Decrypt File step to use the retrieved key from Key Vault.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-26.png)
+
+11. Update the Sign and Align APK task to use the decrypted keystore file. In this case, we are using secret environment variables in VSTS, however these values can be stored in Key Vault as well.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-27.png)
+
+12. We need to grant permissions to the Service Principal Name created earlier to access values out of Key Vault. Open the Key Vault in the Azure portal and select Access Policies, then click Add new.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-28.png)
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-29.png)
+
+13. Select the Service Principal and in the **Secret permissions** area grant it **Get** and **List** permissions, then click Ok.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-30.png)
+
+14. The build process should now be able to grab secrets from Key Vault, decrypt the keystore file, sign the APK, and then publish it for release.
 
 ## Create a new Application in HockeyApp
 1. Browse to your [HockeyApp Dashboard](https://rink.hockeyapp.net/manage/dashboard).
@@ -290,6 +363,48 @@ The main focus of this guide is to display HockeyApp as part of a DevOps pipelin
 12. Provide a response, and submit a comment. Once complete, refresh the application. You will see the response from Development team. 
 
      ![Screenshot](../../Images/HockeyApp/vsts-ha-15.png)
+
+## Updating Builds
+We have now published a build to our users for testing and feedback. Once we collect the feedback and make the changes, we will want to publish a new build to our users for validation before we push our code out for general use. In order for HockeyApp to detect a new version is available, we will have to make some changes to our build proces to stamp a new version.
+
+### Updating version information for Android
+Version information for Android apps is stored in the AndroidManifest.xml file. In particular you want to look at **versionCode** and **versionName** attributes. **versionCode** is an internal number that increases each time there is a new version available while **versionName** is a display value that is represented to your users. More information about versioning is available in the [Android documentation](https://developer.android.com/studio/publish/versioning.html).
+
+In this sample we will modify our build process to increment the versionCode on each new build and update versionName to take the name of our build number from VSTS.
+1. If you have not already completed the code signing process above, in the CreditCardValidation.Droid project, create a new folder called **Build**.
+2. Add a new PowerShell file called **UpdateAndroidVersions.ps1**
+    * Add the following code to the PowerShell file
+        ```powershell
+        $files = gci $Env:BUILD_SOURCESDIRECTORY -Recurse -Include "*Properties*" | ?{ $_.PSIsContainer } | foreach { gci -Path $_.FullName -Recurse -Include AndroidManifest.* }
+        
+        if ($files)
+        {
+            Write-Verbose "Updating $($files.count) files";
+            foreach ($file in $files)
+            {
+                $xml = [xml](Get-Content $file);
+                $node = $xml.manifest;
+                $versionCode = [int]$node.GetAttribute("android:versionCode");
+                $versionCode += 1;
+                $node.SetAttribute("android:versionCode", $versionCode);
+                $node.SetAttribute("android:versionName", $Env:BUILD_BUILDNUMBER);
+                $xml.Save($file);
+            }
+        }
+        ```
+3. In VSTS, edit your build definition for the Android application
+4. In your build process, after the NuGet restore, add a new PowerShell task
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-16.png)
+5. Configure the task to invoke the PowerShell file we just created.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-17.png)
+6. Since this script users our VSTS build number for creating the display version for our users, we can adjust that in VSTS to our desired format.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-18.png)
+7. Once we rebuild and redeploy the app out to HockeyApp, our new version will be available for our users.
+
+    ![Screenshot](../../Images/HockeyApp/vsts-ha-19.png)
 
 ## Useful References
 * [How to integrate HockeyApp with Xamarin](https://support.hockeyapp.net/kb/client-integration-cross-platform/how-to-integrate-hockeyapp-with-xamarin)
