@@ -4,6 +4,7 @@
   * [Introduction](#introduction)
   * [Pre-Requisites](#pre-requisites)
   * [Walkthrough](#walkthrough)
+  * [Enhacing Your Pipeline](#enhancing-your-pipeline)
   * [Next Steps](#next-steps)
   * [References](#references)
 
@@ -171,6 +172,22 @@ If you later decided that you want to extend your testing across a larger pool o
 
 You will notice that the triggering of builds and releases was driven manually, though the process is set up to be repeatable. Consider reviewing the documentation around Build Triggers (Continous Integration / Scheduled Builds) and Release Triggers.
 
+## Enhancing Your Pipeline
+
+The example shown here is enough to get started to building and testing your application with VSTS and Xamarin Test Cloud. There are some additional steps you can take that, while not required, can help enhance your devops cycles.
+
+While this example does not currently invoke any backend cloud services, most applications would. In a more realistic devops workflow, you would create an environment for cloud load testing.
+
+In a release pipeline, this would exist either in parallel with or following the automated UI tests we just created and before you start pushing your application out to your users which will happen in the next section. An example of what that pipeline might look like is shown here.
+
+![Screenshot](../../Images/XTC/vsts-xtc-21.png)
+
+There are 2 ways you can run a load test: manually and automated. For manually scheduled tests, the Azure portal supports creating and running load tests for app services. Find out more information about [creating a load test from the Azure Portal](https://docs.microsoft.com/en-us/vsts/load-test/app-service-web-app-performance-test).
+
+If you want to run load tests as part of your release pipeline, you would use Visual Studio to author your test file. Read more on [creating a load testing project](https://docs.microsoft.com/en-us/vsts/load-test/run-performance-tests-app-before-release). Once you have your test project created and in source control, you can invoke it from your release pipeline. In your environment, add a reference to the **Cloud-based Load Test** task and [configure the settings](https://docs.microsoft.com/en-us/vsts/load-test/getting-started-with-performance-testing#run-and-analyze-your-load-test) to your load test project.
+
+![Screenshot](../../Images/XTC/vsts-xtc-22.png)
+
 ## Next Steps
 
 You have successfully setup a UI Test for your Xamarin Android application. Now progress to the next module on [configuring HockeyApp in your app](hockey-app.md).
@@ -179,6 +196,7 @@ You have successfully setup a UI Test for your Xamarin Android application. Now 
 * [Xamarin.Android Quickstart for Xamarin.UITest](https://developer.xamarin.com/guides/testcloud/uitest/quickstarts/android/)
 * [Intro to Xamarin Test Cloud](https://developer.xamarin.com/guides/testcloud/introduction-to-test-cloud/)
 * [Xamarin Test Cloud VSTS Task Reference](https://www.visualstudio.com/en-us/docs/build/steps/test/xamarin-test-cloud)
+* [Load Testing with VSTS](https://docs.microsoft.com/en-us/vsts/load-test/)
 * [Continuous Integration for Android with Visual Studio Team Services](https://blog.xamarin.com/continuous-integration-for-android-with-visual-studio-team-services/)
 * [Windows Store Visual Studio Team Services Tasks](https://marketplace.visualstudio.com/items?itemName=MS-RDX-MRO.windows-store-publish)
 * [Apple App Store Visual Studio Team Services Tasks](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store)
