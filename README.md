@@ -1,5 +1,5 @@
 # Meet the team!
-We are a team of dedicated engineers providing customers structured guidance to get started with Azure. We help setup and configure Azure infrastructure as well as provide architecture concepts, best practices and design principles for deploying applications on Azure.  Let's get started!
+We are a team of dedicated engineers providing customers structured guidance to get started with Azure. We help setup and configure Azure infrastructure as well as provide architecture concepts, best practices and design principles for deploying applications on Azure.  Let's get started!!
 
 # Set up & configuration  of Azure infrastructure
 The below onboarding guidance will be applicable across multiple scenarios that leverage Azure infrastructure services. It helps you to provision compute, storage and set up hybrid connectivity.
@@ -53,4 +53,4 @@ The below onboarding guidance will be applicable across multiple scenarios that 
 ## Reference Proof of Concept
 * Data Migration to Storage Account ([StorageExplorer](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellStorageDemo.ps1) | [PowerShell](https://github.com/Azure/onboarding-guidance/blob/master/PowerShell/Exercises/PowerShellStorageDemo.ps1) )
 * Deploying Website on Azure IaaS VMs ([HTTP](https://github.com/Azure/onboarding-guidance/blob/master/Scenarios/POC%20Scenario-HTTP.md) | [HTTPS](https://github.com/Azure/onboarding-guidance/blob/master/Scenarios/POC%20Scenario-HTTPS.md))
-* Deploying SQL Server on Azure IaaS VMs ([Tutorial](https://github.com/Azure/onboarding-guidance/blob/master/Scenarios/SQL%20Server%20on%20IaaS%20VMs.md))
+* Deploying SQL Server on Azure IaaS VMs ([Tutorial](https://github.com/Azure/onboarding-guidance/blob/master/Scenarios/SQL%20Server%20on%20IaaS%20VMs.md)) 
