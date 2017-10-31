@@ -1,3 +1,13 @@
+# This GitHub has been replaced by a new landing page for all of the Fast Track for Azure content. The content can be found here [FastTrack For Azure GitHub](https://github.com/Azure/fasttrackforazure)
+# Consider content on this GitHub repository as old content 
+
+
+
+
+
+
+
+
 # Meet the team!
 We are a team of dedicated engineers providing customers structured guidance to get started with Azure. We help setup and configure Azure infrastructure as well as provide architecture concepts, best practices and design principles for deploying applications on Azure.  Let's get started!!
 
