@@ -4,7 +4,7 @@ This folder is work in progress, please stay tuned!
 
 # Abstract
 
-During the import of the WorldImporters database you set the performce tier to Premium P2 so that the import would complete quickly and so the import process had enough resources avaialble to do the import.  In this module you will learn how to scale an existing Azure SQL Database up and down through the performance tiers
+During the import of the WorldImporters database you set the performce tier to Premium P2 so that the import would complete quickly and so the import process had enough resources available to do the import.  In this module you will learn how to scale an existing Azure SQL Database up and down through the performance tiers
 
 # Learning Objective
 
