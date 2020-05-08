@@ -33,7 +33,7 @@ You will now see the geo-replication screen which shows a map of the world, the 
 
 ![Screenshot](/Images/SQLDB-initial-geo-replication.png)
 
-To set-up geo-replication you shoudl now:
+To set-up geo-replication you should now:
 
 * Select any other Azure Datacentre (East US in this example)
 * Create a new server in the new window
