@@ -43,6 +43,6 @@ Once you have captured the performance data you can upload the CSV into the calu
 
 # Analysis Results
 
-Once the calculator has reviewed the data it will give an approximate recommendation on the performance tier you shoudl select to run that database in Azure SQL DB.
+Once the calculator has reviewed the data it will give an approximate recommendation on the performance tier you should select to run that database in Azure SQL DB.
 
 ![Screenshot](/Images/SQLDB-DTU-Results.png)
